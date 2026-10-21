@@ -9,6 +9,10 @@ on:
         description: "Print messages in the log instead of posting (no state saved)"
         type: boolean
         default: false
+      test_message:
+        description: "Only send a test message to each Chat space (checks the webhooks), then stop"
+        type: boolean
+        default: false
 
 permissions:
   contents: write             # needed to save state.json
@@ -33,6 +37,7 @@ jobs:
           GCHAT_WEBHOOK_URL: ${{ secrets.GCHAT_WEBHOOK_URL }}
           GCHAT_WEBHOOK_ALERTS: ${{ secrets.GCHAT_WEBHOOK_ALERTS }}   # optional; falls back to the default webhook
           DRY_RUN: ${{ inputs.dry_run && '1' || '0' }}
+          TEST_MESSAGE: ${{ inputs.test_message && '1' || '0' }}
           # FEED_TZ: Asia/Kolkata                                    # timezone shown in messages
         run: python feed_to_gchat.py
       - name: Save state

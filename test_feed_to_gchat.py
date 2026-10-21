@@ -295,3 +295,16 @@ def test_overflow_posts_one_summary_and_marks_seen(monkeypatch, tmp_path):
     posts.clear()
     f.main()
     assert posts == []   # everything is now seen
+
+
+def test_test_message_posts_to_both_spaces(monkeypatch):
+    sent = []
+    monkeypatch.setenv("TEST_MESSAGE", "1")
+    monkeypatch.setattr(f, "DRY_RUN", False)
+    monkeypatch.setattr(f, "WEBHOOK", "http://d")
+    monkeypatch.setattr(f, "WEBHOOK_ALERTS", "http://a")
+    monkeypatch.setattr(f, "post", lambda text, url, thread=None: sent.append(url) or True)
+    assert f.main() == 0 and sent == ["http://d", "http://a"]
+    sent.clear()
+    monkeypatch.setattr(f, "post", lambda text, url, thread=None: sent.append(url) or False)
+    assert f.main() == 1

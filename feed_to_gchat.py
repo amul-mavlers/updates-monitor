@@ -407,6 +407,14 @@ def main() -> int:
         print("GCHAT_WEBHOOK_URL is not set", file=sys.stderr)
         return 1
 
+    if os.environ.get("TEST_MESSAGE") == "1":   # "Run workflow" > send test message: checks both webhooks
+        targets = {"default space": WEBHOOK, "alerts space": WEBHOOK_ALERTS}
+        results = [post(f"✅ *Feed bot* · test message to the {label}. Webhook works.", url)
+                   for label, url in targets.items() if url]
+        if WEBHOOK_ALERTS == WEBHOOK:
+            print("GCHAT_WEBHOOK_ALERTS is not set: alerts will go to the default space")
+        return 0 if all(results) else 1
+
     state = json.loads(STATE_FILE.read_text(encoding="utf-8")) if STATE_FILE.exists() else {}
 
     for feed in FEEDS:
