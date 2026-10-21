@@ -1,0 +1,52 @@
+name: Feed alerts to Google Chat
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"   # every 15 min (GitHub may delay a few minutes)
+  workflow_dispatch:          # manual run button
+    inputs:
+      dry_run:
+        description: "Print messages in the log instead of posting (no state saved)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write             # needed to save state.json
+
+concurrency:
+  group: feed-alerts
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Check feeds and post to Google Chat
+        env:
+          GCHAT_WEBHOOK_URL: ${{ secrets.GCHAT_WEBHOOK_URL }}
+          GCHAT_WEBHOOK_ALERTS: ${{ secrets.GCHAT_WEBHOOK_ALERTS }}   # optional; falls back to the default webhook
+          DRY_RUN: ${{ inputs.dry_run && '1' || '0' }}
+          # FEED_TZ: Asia/Kolkata                                    # timezone shown in messages
+        run: python feed_to_gchat.py
+      - name: Save state
+        if: always()   # keep progress even if a later feed crashed, so posted items aren't reposted
+        run: |
+          git config user.name "feed-bot"
+          git config user.email "feed-bot@users.noreply.github.com"
+          git add state.json
+          git diff --staged --quiet || (git commit -m "Update feed state" && git push)
+      - name: Tell the team if the job failed
+        if: failure()
+        env:
+          URL: ${{ secrets.GCHAT_WEBHOOK_ALERTS || secrets.GCHAT_WEBHOOK_URL }}
+          RUN: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          [ -n "$URL" ] && curl -sS -X POST -H 'Content-Type: application/json' \
+            -d "{\"text\": \"⚠️ Feed bot workflow failed: $RUN\"}" "$URL" || true
