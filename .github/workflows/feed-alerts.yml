@@ -2,7 +2,7 @@ name: Feed alerts to Google Chat
 
 on:
   schedule:
-    - cron: "*/15 * * * *"   # every 15 min (GitHub may delay a few minutes)
+    - cron: "*/5 * * * *"    # every 5 min, the minimum GitHub allows (free on public repos; runs may be delayed a few minutes)
   workflow_dispatch:          # manual run button
     inputs:
       dry_run:
