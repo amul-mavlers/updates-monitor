@@ -22,8 +22,8 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v7
-      - uses: actions/setup-python@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
           python-version: "3.12"
           cache: pip
@@ -42,7 +42,14 @@ jobs:
           git config user.email "feed-bot@users.noreply.github.com"
           [ -f state.json ] || { echo "no state.json to save"; exit 0; }   # script stopped before writing any state
           git add state.json
-          git diff --staged --quiet || (git commit -m "Update feed state" && git push)
+          git diff --staged --quiet && exit 0
+          git commit -m "Update feed state"
+          # another push (or a slow run) may have moved main: rebase on top of it and retry
+          for i in 1 2 3; do
+            git pull --rebase --autostash && git push && exit 0
+            sleep $((i * 5))
+          done
+          echo "could not push state.json" >&2; exit 1
       - name: Tell the team if the job failed
         if: failure()
         env:

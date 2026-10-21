@@ -83,7 +83,7 @@ def api_entries(data: dict, feed: dict | None = None, limit: int = 25) -> list:
     """Turn Statuspage incidents / scheduled-maintenances JSON into feed-like entries
     (one per incident, carrying its newest update)."""
     match = re.compile(feed["maintenance_match"], re.I) if feed and feed.get("maintenance_match") else None
-    out = []
+    by_id: dict = {}
     for inc in data.get("incidents", []) + data.get("scheduled_maintenances", []):
         ups = inc.get("incident_updates") or []
         up = max(ups, key=lambda u: u.get("created_at", ""), default=None)
@@ -104,9 +104,10 @@ def api_entries(data: dict, feed: dict | None = None, limit: int = 25) -> list:
         }
         if is_maint:
             entry["starts"] = inc["scheduled_for"]
-        out.append(entry)
-    out.sort(key=lambda e: e["updated"], reverse=True)
-    return out[:limit]
+        # a maintenance can appear in both the upcoming and active lists: keep its newest update
+        if inc["id"] not in by_id or entry["updated"] > by_id[inc["id"]]["updated"]:
+            by_id[inc["id"]] = entry
+    return sorted(by_id.values(), key=lambda e: e["updated"], reverse=True)[:limit]
 
 
 def fetch_entries(feed: dict) -> list:
@@ -114,17 +115,29 @@ def fetch_entries(feed: dict) -> list:
     if feed.get("api"):
         # feed["api"] is the Statuspage base, e.g. https://www.githubstatus.com/api/v2
         data: dict = {}
-        paths = ["incidents.json"] + (["scheduled-maintenances/upcoming.json"] if feed.get("maintenance") else [])
-        for path in paths:
-            resp = requests.get(f"{feed['api']}/{path}", timeout=20, headers=headers)
-            resp.raise_for_status()
-            for k, v in resp.json().items():
+        optional = (["scheduled-maintenances/upcoming.json", "scheduled-maintenances/active.json"]
+                    if feed.get("maintenance") else [])
+        for path in ["incidents.json"] + optional:
+            try:
+                resp = requests.get(f"{feed['api']}/{path}", timeout=20, headers=headers)
+                resp.raise_for_status()
+                payload = resp.json()
+            except (requests.RequestException, ValueError):
+                if path == "incidents.json":
+                    raise
+                # maintenance is optional: keep incident alerts working if it is down
+                print(f"[{feed['name']}] {path} unavailable, continuing without it", file=sys.stderr)
+                continue
+            for k, v in payload.items():
                 if isinstance(v, list):
                     data.setdefault(k, []).extend(v)
         return api_entries(data, feed)
     resp = requests.get(feed["url"], timeout=20, headers=headers)
     resp.raise_for_status()
-    return feedparser.parse(resp.content).entries
+    entries = feedparser.parse(resp.content).entries
+    # newest first, whatever order the feed uses (stable: undated entries keep their order)
+    return sorted(entries, key=lambda e: calendar.timegm(e.get("published_parsed") or e.get("updated_parsed") or time.gmtime(0)),
+                  reverse=True)
 
 
 def clean(text: str) -> str:
@@ -176,8 +189,13 @@ def format_time(dt: datetime) -> str:
     return f"{local.day} {local:%b %Y, %H:%M %Z}"
 
 
+def safe(text: str) -> str:
+    """Stop feed text from becoming Chat markup (links via <url|text>, bold, strike, code)."""
+    return text.replace("<", "‹").replace(">", "›").translate({ord("*"): None, ord("~"): None, ord("`"): None})
+
+
 def build_message(feed: dict, e) -> str:
-    title = clean(e.get("title", "(no title)"))
+    title = safe(clean(e.get("title", "(no title)")))
     link = e.get("link", "")
     raw = e.get("summary") or e.get("description") or ""
     prefix = ""
@@ -205,9 +223,9 @@ def build_message(feed: dict, e) -> str:
     if when:
         lines.append(f"🕒 {prefix}{format_time(when)}")
     if summary:
-        lines.append(shorten(summary))
-    if link:
-        lines.append(f"<{link}|Read more>")
+        lines.append(safe(shorten(summary)))
+    if link.startswith(("http://", "https://")):
+        lines.append(f"<{link.replace('|', '%7C').replace('>', '%3E')}|Read more>")
     return "\n".join(lines)
 
 
@@ -255,17 +273,28 @@ def post(text: str, url: str, thread: str | None = None) -> bool:
             time.sleep(wait)
         try:
             r = requests.post(url, json=body, params=params, timeout=15)
+        except requests.ConnectionError as ex:   # never reached Chat, so retrying can't duplicate
             _last_post = time.monotonic()
-            if r.status_code == 429 or r.status_code >= 500:
-                delay = min(float(r.headers.get("Retry-After", 2 ** (attempt + 1))), 30)
-                print(f"  post got {r.status_code}, retrying in {delay:.0f}s", file=sys.stderr)
-                time.sleep(delay)
-                continue
-            r.raise_for_status()
-            return True
-        except (requests.RequestException, ValueError) as ex:
-            print(f"  post failed: {ex}", file=sys.stderr)
+            print(f"  post connection error ({type(ex).__name__}), retrying", file=sys.stderr)
+            time.sleep(2 ** (attempt + 1))
+            continue
+        except requests.RequestException as ex:  # e.g. read timeout: Chat may have received it
+            # log the type only: the exception text can contain the webhook URL with its key/token
+            print(f"  post failed: {type(ex).__name__}", file=sys.stderr)
             return False
+        _last_post = time.monotonic()
+        if r.status_code in (429, 502, 503, 504):
+            try:
+                delay = min(float(r.headers.get("Retry-After", "")), 30)
+            except ValueError:   # missing or an HTTP-date
+                delay = 2 ** (attempt + 1)
+            print(f"  post got {r.status_code}, retrying in {delay:.0f}s", file=sys.stderr)
+            time.sleep(delay)
+            continue
+        if r.status_code >= 400:
+            print(f"  post failed: HTTP {r.status_code}", file=sys.stderr)
+            return False
+        return True
     return False
 
 
@@ -289,24 +318,42 @@ def save_state(state: dict) -> None:
     tmp.replace(STATE_FILE)
 
 
-def send(feed: dict, e, state: dict, key: str) -> bool:
-    """Post one entry (unless a sibling feed already posted the same story) and record it."""
-    name = feed["name"]
+def announce(feed: dict, e, state: dict) -> bool:
+    """Post one entry unless a sibling feed already posted the same story. True = handled."""
     group = feed.get("dedupe")
     if group:
         titles = state.setdefault("_dedupe", {}).setdefault(group, [])
         norm = dedupe_title(e.get("title", ""))
         if norm in titles:
-            state[name].insert(0, key)
             return True
     url = WEBHOOK_ALERTS if is_urgent(feed, e) else WEBHOOK
     if not post(build_message(feed, e), url, thread_key(feed, e)):
         return False
-    state[name].insert(0, key)
     if group:
         titles.insert(0, norm)
         del titles[DEDUPE_KEEP:]
     return True
+
+
+def send(feed: dict, e, state: dict, key: str) -> bool:
+    """announce() and, on success, remember the key so it isn't posted again."""
+    if not announce(feed, e, state):
+        return False
+    state[feed["name"]].insert(0, key)
+    return True
+
+
+def post_overflow(feed: dict, items: list) -> bool:
+    """One summary message for items beyond MAX_PER_FEED, so none is dropped silently."""
+    lines = [f"➕ *{feed['name']}* · {len(items)} more updates (too many to post one by one)"]
+    for _, e in items[-10:]:
+        title = safe(clean(e.get("title", "(no title)")))
+        link = e.get("link", "")
+        lines.append(f"• <{link}|{title}>" if link.startswith(("http://", "https://")) else f"• {title}")
+    if len(items) > 10:
+        lines.append(f"…and {len(items) - 10} older")
+    url = WEBHOOK_ALERTS if any(is_urgent(feed, e) for _, e in items) else WEBHOOK
+    return post("\n".join(lines), url)
 
 
 def process_feed(feed: dict, state: dict) -> None:
@@ -321,12 +368,17 @@ def process_feed(feed: dict, state: dict) -> None:
     # First time we see a feed: remember what exists so old items aren't posted,
     # but do announce incidents that are still open right now.
     if name not in state and not DRY_RUN:
-        state[name] = []
-        open_now = [(k, e) for k, e in zip(keys, entries) if is_open_incident(feed, e)]
-        for k, e in reversed(open_now[:MAX_PER_FEED]):
-            send(feed, e, state, k)
-        state[name] = list(dict.fromkeys(state[name] + keys))[:keep]
-        print(f"[{name}] first run, seeded {len(keys)} items, announced {len(open_now[:MAX_PER_FEED])} open")
+        # Record everything as seen first, so a crash or failed post below can't leave an empty
+        # state that would flood the space with old items on the next run.
+        state[name] = list(dict.fromkeys(keys))[:keep]
+        open_now = [(k, e) for k, e in zip(keys, entries) if is_open_incident(feed, e)][:MAX_PER_FEED]
+        announced = 0
+        for k, e in reversed(open_now):
+            if announce(feed, e, state):
+                announced += 1
+            else:   # not delivered: forget the key so the next run tries again
+                state[name].remove(k)
+        print(f"[{name}] first run, seeded {len(keys)} items, announced {announced} open")
         return
 
     seen = set() if DRY_RUN else set(state[name])
@@ -339,9 +391,11 @@ def process_feed(feed: dict, state: dict) -> None:
     state.setdefault(name, [])
     for k, e in new[-MAX_PER_FEED:]:
         send(feed, e, state, k)
-    # items beyond the cap are marked seen so they don't repost next run
-    for k, _ in new[:-MAX_PER_FEED]:
-        state[name].insert(0, k)
+    # items beyond the cap go out as one summary message; if that fails they stay unseen
+    overflow = new[:-MAX_PER_FEED]
+    if overflow and (DRY_RUN or post_overflow(feed, overflow)):
+        for k, _ in overflow:
+            state[name].insert(0, k)
     state[name] = state[name][:keep]
 
 
