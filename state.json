@@ -993,6 +993,8 @@
     "http://php.net/releases/8_2_35.php"
   ],
   "Shopify Changelog": [
+    "https://shopify.dev/changelog/manualpaymentgateway-field-added-to-ordertransaction-object",
+    "https://shopify.dev/changelog/built-for-shopify-category-specific-criteria-are-now-available",
     "https://shopify.dev/changelog/conditionally-disable-gift-cards-in-checkout-using-custom-logic-with-the-payment-customization-api",
     "https://shopify.dev/changelog/marketing-activity-extensions-can-be-migrated-to-cli",
     "https://shopify.dev/changelog/changes-to-our-font-library",
@@ -1768,8 +1770,6 @@
     "https://shopify.dev/changelog/add-pickupaddress-for-subscription-contracts-in-customer-api",
     "https://shopify.dev/changelog/increased-limits-for-automatic-function-based-discounts",
     "https://shopify.dev/changelog/search-and-browse-apps-using-structured-category-details-in-the-shopify-app-store",
-    "https://shopify.dev/changelog/new-dynamic-source-attributes-available-in-the-online-store-editor",
-    "https://shopify.dev/changelog/strongly-matched-apps-will-be-highlighted-in-shopify-app-store-search-results",
-    "https://shopify.dev/changelog/edit-customer-account-menu-including-adding-full-page-extensions"
+    "https://shopify.dev/changelog/new-dynamic-source-attributes-available-in-the-online-store-editor"
   ]
 }
