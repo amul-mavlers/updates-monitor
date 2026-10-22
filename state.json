@@ -29,6 +29,8 @@
   ],
   "_health": {},
   "Cloudflare Status": [
+    "nwgwgbrn9a71|2026-10-22T02:09:33.617Z",
+    "33k6g8j7mhah|2026-10-22T00:35:20.769Z",
     "33k6g8j7mhah|2026-10-21T23:50:36.035Z",
     "p1vurmibvmag|2026-10-21T21:21:40.888Z",
     "5112v6g0y552|2026-10-21T21:01:07.975Z",
@@ -991,6 +993,8 @@
     "http://php.net/releases/8_2_35.php"
   ],
   "Shopify Changelog": [
+    "https://shopify.dev/changelog/updates-to-theme-information-access-in-shopify",
+    "https://shopify.dev/changelog/web-pixels-now-support-checkout-error-events",
     "https://shopify.dev/changelog/breaking-changes-to-captcha-protection-on-storefront-forms",
     "https://shopify.dev/changelog/update-to-fulfillmenthold-heldbyapp-field-from-fulfillmenthold-heldby-field",
     "https://shopify.dev/changelog/set-product-categories-on-custom-line-items-in-draft-orders-and-order-edits",
@@ -1766,8 +1770,6 @@
     "https://shopify.dev/changelog/content-type-application-graphql-is-deprecated",
     "https://shopify.dev/changelog/removing-multilocation-field-from-shopfeatures",
     "https://shopify.dev/changelog/merchants-can-now-view-your-app-extension-collections",
-    "https://shopify.dev/changelog/metaobject-and-metaobject_list-theme-settings-now-available",
-    "https://shopify.dev/changelog/hydrogen-october-2024-release",
-    "https://shopify.dev/changelog/change-to-metafield-type-handling-in-liquid"
+    "https://shopify.dev/changelog/metaobject-and-metaobject_list-theme-settings-now-available"
   ]
 }
