@@ -993,6 +993,8 @@
     "http://php.net/releases/8_2_35.php"
   ],
   "Shopify Changelog": [
+    "https://shopify.dev/changelog/pos-legacy-extensions-will-be-deprecated-in-february-2025",
+    "https://shopify.dev/changelog/remove-metafielddelete-in-favor-of-metafieldsdelete",
     "https://shopify.dev/changelog/updates-to-shopify-s-standard-product-taxonomy-october-2024",
     "https://shopify.dev/changelog/graphql-over-http",
     "https://shopify.dev/changelog/content-type-application-graphql-is-deprecated",
@@ -1768,8 +1770,6 @@
     "https://shopify.dev/changelog/manualpaymentgateway-field-added-to-ordertransaction-object",
     "https://shopify.dev/changelog/built-for-shopify-category-specific-criteria-are-now-available",
     "https://shopify.dev/changelog/conditionally-disable-gift-cards-in-checkout-using-custom-logic-with-the-payment-customization-api",
-    "https://shopify.dev/changelog/marketing-activity-extensions-can-be-migrated-to-cli",
-    "https://shopify.dev/changelog/changes-to-our-font-library",
-    "https://shopify.dev/changelog/built-for-shopify-fulfillment-services-assessments-category-specific-criteria"
+    "https://shopify.dev/changelog/marketing-activity-extensions-can-be-migrated-to-cli"
   ]
 }
