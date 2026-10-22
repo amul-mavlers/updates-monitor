@@ -40,3 +40,14 @@ pytest
 - A broken feed is logged and skipped; after 4 failed runs in a row the alerts space gets one warning.
 - Posts are spaced about 1.1s apart and retried on 429/5xx.
 - GitHub pauses scheduled workflows after 60 days without repo activity. Re-enable from the Actions tab if that happens.
+
+## Reliable 5-minute trigger (Cloudflare Worker)
+
+GitHub's `schedule:` is best-effort and can run hours late. `worker/index.js` is a Cloudflare Worker whose cron trigger (`wrangler.jsonc`, every 5 minutes) starts this workflow through GitHub's `workflow_dispatch` API. The workflow's own schedule stays as a backup.
+
+1. Create a fine-grained GitHub token (Settings > Developer settings > Fine-grained tokens): this repo only, permission **Actions: Read and write**.
+2. In Cloudflare: Workers > feed-alerts-trigger > Settings > Variables and Secrets > add a **Secret** named `GH_TOKEN` with that token.
+3. In the Worker's Settings > Build > Build watch paths, include only `worker/**` and `wrangler.jsonc`, so the bot's `state.json` commits don't trigger a redeploy each time.
+4. Check: Workers > feed-alerts-trigger > Logs, or open the Worker URL for a status page. A new "Manually run" entry appears in the Actions tab every 5 minutes.
+
+Test locally with `node worker/test.mjs`.
