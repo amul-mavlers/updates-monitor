@@ -1,5 +1,5 @@
 {
-  "name": "feed-alerts-trigger",
+  "name": "updates-monitor",
   "main": "worker/index.js",
   "compatibility_date": "2026-10-01",
   "triggers": { "crons": ["*/5 * * * *"] },
@@ -8,5 +8,7 @@
     "WORKFLOW": "feed-alerts.yml",
     "REF": "main"
   },
+  "workers_dev": true,
+  "preview_urls": false,
   "observability": { "enabled": true }
 }

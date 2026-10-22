@@ -46,8 +46,8 @@ pytest
 GitHub's `schedule:` is best-effort and can run hours late. `worker/index.js` is a Cloudflare Worker whose cron trigger (`wrangler.jsonc`, every 5 minutes) starts this workflow through GitHub's `workflow_dispatch` API. The workflow's own schedule stays as a backup.
 
 1. Create a fine-grained GitHub token (Settings > Developer settings > Fine-grained tokens): this repo only, permission **Actions: Read and write**.
-2. In Cloudflare: Workers > feed-alerts-trigger > Settings > Variables and Secrets > add a **Secret** named `GH_TOKEN` with that token.
+2. In Cloudflare: Workers > updates-monitor > Settings > Variables and Secrets > add a **Secret** named `GH_TOKEN` with that token.
 3. In the Worker's Settings > Build > Build watch paths, include only `worker/**` and `wrangler.jsonc`, so the bot's `state.json` commits don't trigger a redeploy each time.
-4. Check: Workers > feed-alerts-trigger > Logs, or open the Worker URL for a status page. A new "Manually run" entry appears in the Actions tab every 5 minutes.
+4. Check: Workers > updates-monitor > Logs, or open the Worker URL for a status page. A new "Manually run" entry appears in the Actions tab every 5 minutes.
 
 Test locally with `node worker/test.mjs`.
