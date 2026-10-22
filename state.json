@@ -993,6 +993,8 @@
     "http://php.net/releases/8_2_35.php"
   ],
   "Shopify Changelog": [
+    "https://shopify.dev/changelog/hydrogen-october-2024-release",
+    "https://shopify.dev/changelog/change-to-metafield-type-handling-in-liquid",
     "https://shopify.dev/changelog/updates-to-theme-information-access-in-shopify",
     "https://shopify.dev/changelog/web-pixels-now-support-checkout-error-events",
     "https://shopify.dev/changelog/breaking-changes-to-captcha-protection-on-storefront-forms",
@@ -1768,8 +1770,6 @@
     "https://shopify.dev/changelog/updates-to-shopify-s-standard-product-taxonomy-october-2024",
     "https://shopify.dev/changelog/graphql-over-http",
     "https://shopify.dev/changelog/content-type-application-graphql-is-deprecated",
-    "https://shopify.dev/changelog/removing-multilocation-field-from-shopfeatures",
-    "https://shopify.dev/changelog/merchants-can-now-view-your-app-extension-collections",
-    "https://shopify.dev/changelog/metaobject-and-metaobject_list-theme-settings-now-available"
+    "https://shopify.dev/changelog/removing-multilocation-field-from-shopfeatures"
   ]
 }
