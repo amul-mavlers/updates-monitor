@@ -308,3 +308,49 @@ def test_test_message_posts_to_both_spaces(monkeypatch):
     sent.clear()
     monkeypatch.setattr(f, "post", lambda text, url, thread=None: sent.append(url) or False)
     assert f.main() == 1
+
+
+def test_old_items_that_resurface_are_not_posted(monkeypatch, tmp_path):
+    posts = []
+    monkeypatch.setattr(f, "DRY_RUN", False)
+    monkeypatch.setattr(f, "WEBHOOK", "http://d")
+    monkeypatch.setattr(f, "WEBHOOK_ALERTS", "http://a")
+    monkeypatch.setattr(f, "STATE_FILE", tmp_path / "state.json")
+    feed = {"name": "N", "kind": "news", "url": "u", "label": "News"}
+    monkeypatch.setattr(f, "FEEDS", [feed])
+    seed = [{"id": "a", "title": "a", "published": "2026-10-01T00:00:00+00:00"}]
+    data = [seed]
+    monkeypatch.setattr(f, "fetch_entries", lambda fd: data[0])
+    monkeypatch.setattr(f, "post", lambda text, url, thread=None: posts.append(text) or True)
+    f.main()   # seed
+    now = datetime.now(timezone.utc).isoformat()
+    data[0] = [{"id": "fresh", "title": "Fresh", "published": now},
+               {"id": "old", "title": "Old", "published": "2024-11-14T17:30:00+00:00"}] + seed
+    f.main()
+    assert len(posts) == 1 and "Fresh" in posts[0]
+    st = json.loads((tmp_path / "state.json").read_text(encoding="utf-8"))["N"]
+    assert "old" in st and "fresh" in st   # remembered, so it never comes back
+    posts.clear()
+    f.main()
+    assert posts == []
+
+
+def test_seen_list_is_not_trimmed_when_feed_shrinks(monkeypatch, tmp_path):
+    monkeypatch.setattr(f, "DRY_RUN", False)
+    monkeypatch.setattr(f, "WEBHOOK", "http://d")
+    monkeypatch.setattr(f, "WEBHOOK_ALERTS", "http://a")
+    monkeypatch.setattr(f, "STATE_FILE", tmp_path / "state.json")
+    feed = {"name": "N", "kind": "news", "url": "u"}
+    monkeypatch.setattr(f, "FEEDS", [feed])
+    full = [{"id": str(i), "title": str(i)} for i in range(600)]
+    data = [full]
+    monkeypatch.setattr(f, "fetch_entries", lambda fd: data[0])
+    monkeypatch.setattr(f, "post", lambda *a, **k: True)
+    f.main()
+    data[0] = full[:400]   # feed temporarily shorter
+    f.main()
+    data[0] = full         # and back: nothing may look new
+    posts = []
+    monkeypatch.setattr(f, "post", lambda text, url, thread=None: posts.append(text) or True)
+    f.main()
+    assert posts == []

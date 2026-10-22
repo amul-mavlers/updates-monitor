@@ -22,7 +22,9 @@ STATE_FILE = Path(__file__).with_name("state.json")
 MAX_PER_FEED = 5       # safety cap per run, avoids floods
 SUMMARY_LEN = 220
 TZ_NAME = os.environ.get("FEED_TZ", "Asia/Kolkata")   # timezone shown in messages
-KEEP_SEEN = 300        # minimum seen keys kept per feed (never fewer than the feed currently lists)
+KEEP_SEEN = 5000       # seen keys kept per feed. Feeds drift in size (items drop out and return), so
+                       # this must stay well above any feed's length or old items look new again
+MAX_AGE_DAYS = 30      # never post items older than this, even if they look new (belt and braces)
 HEALTH_FAIL_RUNS = 4   # consecutive failed runs (~1h) before a feed health warning is posted
 POST_GAP = 1.1         # seconds between posts; Chat webhooks allow ~1 request/second per space
 DEDUPE_KEEP = 500
@@ -363,7 +365,7 @@ def process_feed(feed: dict, state: dict) -> None:
         raise LookupError("no entries found (check URL)")
 
     keys = [entry_key(feed, e) for e in entries]
-    keep = max(KEEP_SEEN, len(keys))   # never trim below what the feed itself still lists
+    keep = max(KEEP_SEEN, len(keys))
 
     # First time we see a feed: remember what exists so old items aren't posted,
     # but do announce incidents that are still open right now.
@@ -384,11 +386,18 @@ def process_feed(feed: dict, state: dict) -> None:
     seen = set() if DRY_RUN else set(state[name])
     new = [(k, e) for k, e in zip(keys, entries) if k not in seen]
     new.reverse()  # oldest first
-    print(f"[{name}] {len(new)} new")
+    # Old items that resurface (a feed re-listing history) are remembered silently, not posted.
+    cutoff = datetime.now(timezone.utc).timestamp() - MAX_AGE_DAYS * 86400
+    stale = [(k, e) for k, e in new if (t := entry_time(feed, e)) and t.timestamp() < cutoff]
+    new = [(k, e) for k, e in new if (k, e) not in stale]
+    print(f"[{name}] {len(new)} new" + (f", {len(stale)} old ignored" if stale else ""))
 
     if DRY_RUN:
         new = new[-2:]
     state.setdefault(name, [])
+    if not DRY_RUN:
+        for k, _ in stale:
+            state[name].insert(0, k)
     for k, e in new[-MAX_PER_FEED:]:
         send(feed, e, state, k)
     # items beyond the cap go out as one summary message; if that fails they stay unseen
