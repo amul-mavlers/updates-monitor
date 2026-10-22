@@ -32,3 +32,11 @@ assert.equal(ok.status, 200);
 assert.ok(!(await ok.text()).includes("tok\n"), "status page must not print the token");
 assert.equal((await worker.fetch(new Request("https://x/"), { REPO: "o/r" })).status, 500);
 console.log("worker tests passed");
+
+// pasted token with whitespace is trimmed; 401 gives an actionable hint
+calls.fail = false;
+await dispatch({ ...env, GH_TOKEN: "  tok\n" });
+assert.equal(calls.at(-1).init.headers.Authorization, "Bearer tok");
+globalThis.fetch = async () => new Response('{"message":"Bad credentials"}', { status: 401 });
+await assert.rejects(dispatch(env), /HTTP 401 \(token invalid/);
+console.log("worker token tests passed");

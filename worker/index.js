@@ -7,7 +7,7 @@ async function dispatch(env) {
   const res = await fetch(url, {
     method: "POST",
     headers: {
-      Authorization: `Bearer ${env.GH_TOKEN}`,
+      Authorization: `Bearer ${String(env.GH_TOKEN).trim()}`, // trim: pasted secrets often carry a trailing newline
       Accept: "application/vnd.github+json",
       "X-GitHub-Api-Version": "2022-11-28",
       "User-Agent": "feed-alerts-trigger",
@@ -17,7 +17,9 @@ async function dispatch(env) {
   });
   if (res.status !== 204) {
     // GitHub's error body is safe to log: it never echoes the token.
-    throw new Error(`dispatch failed: HTTP ${res.status} ${(await res.text()).slice(0, 300)}`);
+    const hint = res.status === 401 ? " (token invalid, expired or revoked: create a new one and re-save the GH_TOKEN secret)"
+      : res.status === 403 || res.status === 404 ? " (token needs Actions: Read and write on this repo)" : "";
+    throw new Error(`dispatch failed: HTTP ${res.status}${hint} ${(await res.text()).slice(0, 300)}`);
   }
 }
 
