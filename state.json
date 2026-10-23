@@ -178,6 +178,8 @@
     "https://wordpress.org/news/?p=21420"
   ],
   "PHP News": [
+    "https://www.php.net/archive/2026.php#2026-10-23-1",
+    "https://www.php.net/archive/2026.php#2026-10-21-6",
     "https://www.php.net/archive/2026.php#2026-10-21-5",
     "https://www.php.net/archive/2026.php#2026-10-21-4",
     "https://www.php.net/archive/2026.php#2026-10-21-3",
@@ -1853,5 +1855,11 @@
     "https://shopify.dev/changelog/js-buy-sdk-deprecation-notice",
     "https://shopify.dev/changelog/add-pickupaddress-for-subscription-contracts-in-customer-api",
     "https://shopify.dev/changelog/increased-limits-for-automatic-function-based-discounts"
-  ]
+  ],
+  "_dedupe": {
+    "php": [
+      "informational advisory session upload progress",
+      "php 8 6 0 rc4 available for testing"
+    ]
+  }
 }
