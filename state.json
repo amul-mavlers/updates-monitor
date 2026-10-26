@@ -61,7 +61,9 @@
     "zw1hbx2yyhvr|2026-09-04T22:26:46.740Z",
     "r05vk75c594j|2026-09-04T22:23:34.887Z"
   ],
-  "_health": {},
+  "_health": {
+    "Shopify Status": 1
+  },
   "Cloudflare Status": [
     "dv2vbq9kbgxn|2026-10-26T16:03:32.129Z",
     "dv2vbq9kbgxn|2026-10-26T15:38:12.668Z",
