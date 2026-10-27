@@ -64,10 +64,9 @@
     "zw1hbx2yyhvr|2026-09-04T22:26:46.740Z",
     "r05vk75c594j|2026-09-04T22:23:34.887Z"
   ],
-  "_health": {
-    "Shopify Status": 1
-  },
+  "_health": {},
   "Cloudflare Status": [
+    "03gc4o049emd|2026-10-27T16:41:35.569Z",
     "mbq512v9oe4s|2026-10-27T16:38:29.917Z",
     "03gc4o049emd|2026-10-27T16:34:32.279Z",
     "8s6pn9rvof3l|2026-10-27T16:14:34.056Z",
@@ -1112,6 +1111,7 @@
     "http://php.net/releases/8_2_35.php"
   ],
   "Shopify Changelog": [
+    "https://shopify.dev/changelog/migrate-to-expiring-offline-access-tokens-before-january-2027",
     "https://shopify.dev/changelog/app-security-updates-october-2026",
     "https://shopify.dev/changelog/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
     "https://shopify.dev/changelog/restrict-admin-api-access-to-your-app-with-an-ip-allowlist",
