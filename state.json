@@ -1113,6 +1113,7 @@
     "http://php.net/releases/8_2_35.php"
   ],
   "Shopify Changelog": [
+    "https://shopify.dev/changelog/analytics-queryable-capability-is-configurable-in-shopify-app-toml-for-metaobject-definitions",
     "https://shopify.dev/changelog/migrate-to-expiring-offline-access-tokens-before-january-2027",
     "https://shopify.dev/changelog/app-security-updates-october-2026",
     "https://shopify.dev/changelog/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
