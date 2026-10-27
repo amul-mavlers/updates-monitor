@@ -1105,6 +1105,9 @@
     "http://php.net/releases/8_2_35.php"
   ],
   "Shopify Changelog": [
+    "https://shopify.dev/changelog/app-security-updates-october-2026",
+    "https://shopify.dev/changelog/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
+    "https://shopify.dev/changelog/restrict-admin-api-access-to-your-app-with-an-ip-allowlist",
     "https://shopify.dev/changelog/promoted-placements-beta-now-includes-shop-campaigns",
     "https://shopify.dev/changelog/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta",
     "https://shopify.dev/changelog/make-metafield-definitions-analytics-queryable-from-app-s-toml",
