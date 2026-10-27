@@ -66,6 +66,7 @@
   ],
   "_health": {},
   "Cloudflare Status": [
+    "2eno8w1fk27j|2026-10-27T12:55:24.566Z",
     "2eno8w1fk27j|2026-10-27T12:50:00.344Z",
     "dk2obcyw2aew|2026-10-27T12:28:07.676Z",
     "2eno8w1fk27j|2026-10-27T11:38:53.650Z",
@@ -1097,6 +1098,7 @@
     "http://php.net/releases/8_2_35.php"
   ],
   "Shopify Changelog": [
+    "https://shopify.dev/changelog/promoted-placements-beta-now-includes-shop-campaigns",
     "https://shopify.dev/changelog/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta",
     "https://shopify.dev/changelog/make-metafield-definitions-analytics-queryable-from-app-s-toml",
     "https://shopify.dev/changelog/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
