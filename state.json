@@ -1094,6 +1094,7 @@
     "http://php.net/releases/8_2_35.php"
   ],
   "Shopify Changelog": [
+    "https://shopify.dev/changelog/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta",
     "https://shopify.dev/changelog/make-metafield-definitions-analytics-queryable-from-app-s-toml",
     "https://shopify.dev/changelog/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
     "https://shopify.dev/changelog/discover-a-merchant-s-retail-stores-with-ucp-location-search-and-lookup",
