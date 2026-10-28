@@ -1142,6 +1142,17 @@
     "http://php.net/releases/8_2_35.php"
   ],
   "Shopify Changelog": [
+    "https://shopify.dev/changelog/app-events-send-events-from-checkout-and-customer-account-ui-extensions",
+    "https://shopify.dev/changelog/shopify-flow-manage-automations-through-admin-api",
+    "https://shopify.dev/changelog/managed-mode-for-shopify-tax-is-released",
+    "https://shopify.dev/changelog/first-sign-ins-to-new-customer-accounts-now-set-customer-state-and-send-customers-enable",
+    "https://shopify.dev/changelog/add-selling-plans-to-draft-order-line-items-with-the-admin-graphql-api",
+    "https://shopify.dev/changelog/cart-and-checkout-permalinks-now-support-ucp-at-buy",
+    "https://shopify.dev/changelog/plan-feature-targeting",
+    "https://shopify.dev/changelog/estimated-local-currency-prices",
+    "https://shopify.dev/changelog/merchant-email-now-available-on-the-themesale-object-in-the-partners-api",
+    "https://shopify.dev/changelog/introducing-theme-app-add-ons-build-and-bundle-apps-with-your-themes",
+    "https://shopify.dev/changelog/app-events-in-analytics",
     "https://shopify.dev/changelog/store-and-app-install-details-in-the-dev-dashboard",
     "https://shopify.dev/changelog/manage-partner-payouts-billing-and-settings-from-organization-settings",
     "https://shopify.dev/changelog/analytics-queryable-capability-is-configurable-in-shopify-app-toml-for-metaobject-definitions",
