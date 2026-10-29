@@ -1180,6 +1180,7 @@
     "http://php.net/releases/8_2_35.php"
   ],
   "Shopify Changelog": [
+    "https://shopify.dev/changelog/shop-sdk-lead-capture-now-supports-rich-authorization-requests",
     "https://shopify.dev/changelog/start-sidekick-conversations-from-your-app",
     "https://shopify.dev/changelog/editions-fall-2026",
     "https://shopify.dev/changelog/app-events-send-events-from-checkout-and-customer-account-ui-extensions",
