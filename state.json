@@ -1192,6 +1192,7 @@
     "http://php.net/releases/8_2_35.php"
   ],
   "Shopify Changelog": [
+    "https://shopify.dev/changelog/new-trusted-vault-origin-signal-in-payments-apps-api",
     "https://shopify.dev/changelog/shop-sdk-lead-capture-now-supports-rich-authorization-requests",
     "https://shopify.dev/changelog/start-sidekick-conversations-from-your-app",
     "https://shopify.dev/changelog/editions-fall-2026",
