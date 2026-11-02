@@ -24,8 +24,28 @@ async function dispatch(env) {
     // GitHub's error body is safe to log: it never echoes the token.
     const hint = res.status === 401 ? " (token invalid, expired or revoked: create a new one and re-save the GH_TOKEN secret)"
       : res.status === 403 || res.status === 404 ? " (token needs Actions: Read and write on this repo)" : "";
-    throw new Error(`dispatch failed: HTTP ${res.status}${hint} ${(await res.text()).slice(0, 300)}`);
+    const err = new Error(`dispatch failed: HTTP ${res.status}${hint} ${(await res.text()).slice(0, 300)}`);
+    err.status = res.status;
+    throw err;
   }
+}
+
+// A GitHub 5xx or a network blip should not raise an alarm: try once more after a short pause.
+// Auth and permission errors (401/403/404) are real problems and are reported straight away.
+async function dispatchWithRetry(env, pauseMs = 2000) {
+  try {
+    await dispatch(env);
+  } catch (err) {
+    const transient = err.status === undefined || err.status >= 500;
+    if (!transient) throw err;
+    await new Promise((resolve) => setTimeout(resolve, pauseMs));
+    await dispatch(env);
+  }
+}
+
+// Names (never values) of required settings that are not set.
+function missingSettings(env) {
+  return ["GH_TOKEN", "REPO", "WORKFLOW"].filter((name) => !String(env[name] || "").trim());
 }
 
 async function chat(env, text) {
@@ -72,7 +92,9 @@ export default {
       (async () => {
         let failure = null;
         try {
-          await dispatch(env);
+          const missing = missingSettings(env);
+          if (missing.length) throw new Error(`missing settings: ${missing.join(", ")}`);
+          await dispatchWithRetry(env);
         } catch (err) {
           console.error(err.message);
           failure = err;
@@ -83,17 +105,26 @@ export default {
     );
   },
 
-  // Opening the Worker's URL only reports its settings. It does not trigger anything.
-  async fetch(_request, env) {
-    const ok = Boolean(env.GH_TOKEN && env.REPO && env.WORKFLOW);
-    const left = daysLeft(env, Date.now());
-    return new Response(
-      `feed-alerts-trigger\nrepo: ${env.REPO}\nworkflow: ${env.WORKFLOW}\nref: ${env.REF || "main"}\ntoken set: ${Boolean(env.GH_TOKEN)}\n` +
-        `failure alerts to Chat: ${Boolean(env.GCHAT_WEBHOOK_ALERTS || env.GCHAT_WEBHOOK_URL)}\n` +
-        `token expiry: ${left === null ? "not set (add TOKEN_EXPIRES in wrangler.jsonc)" : `${left} days left`}\n${ok ? "ready" : "MISSING SETTINGS"}\n`,
-      { status: ok ? 200 : 500, headers: { "content-type": "text/plain" } },
-    );
+  // The public URL only says whether the Worker is configured. It never shows the repo, the token state
+  // or the expiry date, and it triggers nothing. Details are in the Worker's logs.
+  async fetch(request, env) {
+    const headers = {
+      "content-type": "text/plain; charset=utf-8",
+      "cache-control": "no-store",
+      "x-content-type-options": "nosniff",
+      "x-robots-tag": "noindex",
+      "referrer-policy": "no-referrer",
+      "content-security-policy": "default-src 'none'",
+    };
+    if (request.method !== "GET" && request.method !== "HEAD") {
+      return new Response("method not allowed\n", { status: 405, headers: { ...headers, allow: "GET, HEAD" } });
+    }
+    const ok = missingSettings(env).length === 0;
+    return new Response(ok ? "feed-alerts-trigger: ok\n" : "feed-alerts-trigger: not configured\n", {
+      status: ok ? 200 : 503,
+      headers,
+    });
   },
 };
 
-export { dispatch, notify, daysLeft };
+export { dispatch, dispatchWithRetry, notify, daysLeft, missingSettings };

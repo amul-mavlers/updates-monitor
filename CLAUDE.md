@@ -8,7 +8,7 @@ Feed alerts bot: polls status pages and news feeds and posts new items to Google
 - Status pages (GitHub, Cloudflare, Shopify) are read from the Statuspage JSON API (`"api"` in `FEEDS`), not RSS. News uses RSS/Atom (`"url"`) through feedparser.
 - Every source is normalised into feed-like entries, keyed by `entry_key()`, and compared with `state.json`. Only unseen keys are posted. Per-feed flow is in `process_feed()`.
 - Incidents go to the alerts webhook, news to the default one (`is_urgent()`); a news feed with `"urgent": True` goes to alerts; a feed with `"space": "wp_php"` goes to the WordPress/PHP space (`GCHAT_WEBHOOK_WP_PHP`) with its security items also copied to alerts (`destinations()`). Incident updates share a Chat thread (`thread_key()`). Feeds are fetched in parallel by `fetch_all()`, then processed one by one.
-- The Worker also posts to the alerts space (at most hourly) when it cannot start the workflow, and reminds the team before `TOKEN_EXPIRES`.
+- The Worker also posts to the alerts space (at most hourly) when it cannot start the workflow, and reminds the team before `TOKEN_EXPIRES`. It retries a transient GitHub error once first. Its public URL only returns `ok` / `not configured` with hardening headers: never add the repo name, token state or expiry to that response (the repo is public, so disclosure helps attackers).
 
 ## Commands
 
@@ -28,9 +28,13 @@ On Windows set `PYTHONIOENCODING=utf-8` if the console cannot print emoji.
 - Changing the key format in `entry_key()` makes every item look new. Delete `state.json` only when you want a fresh seed run; the first run posts nothing except open incidents.
 - State is saved after every feed (`save_state`), so one feed failing must never stop the others. Keep `process_feed` exceptions caught in `main()`.
 - Feed text is untrusted. Keep `safe()` on titles and summaries, and only allow http(s) links.
-- Failed posts must not be recorded as seen, so they retry on the next run.
+- Failed posts must not be recorded as seen, so they retry on the next run. The one exception is an item Chat permanently rejects (HTTP 400/413/422), which `send()` skips after `GIVE_UP_AFTER` tries. Never give up on 5xx, 429 or timeouts: a Chat outage must not drop alerts.
+- A corrupt `state.json` stops `main()` with exit code 2 and changes nothing. Do not treat it as empty: that would re-seed and silently skip items.
+- Titles are capped at `TITLE_LEN` so messages stay under Chat's 4,096-character limit.
+- CI runs `ruff check .` and both test suites; keep them green. Lint rules are in `ruff.toml`.
 - `MENTION_ALL` (@all on major/critical incidents) is opt-in. Do not turn it on by default.
-- Keep dependencies pinned in `requirements.txt`, and GitHub Actions pinned to commit SHAs.
+- `requirements.txt` and `requirements-dev.txt` are generated lock files with hashes, installed with `pip install --require-hashes`. Never edit them by hand. Change `requirements.in` or `requirements-dev.in`, then run `pip-compile --generate-hashes --allow-unsafe --strip-extras --output-file requirements.txt requirements.in` (and the same for the dev file). Dependabot opens weekly update pull requests.
+- Keep GitHub Actions pinned to commit SHAs. The `feed-alerts.yml` checkout uses `persist-credentials: false`; only the "Save state" step receives the repo token. Do not give the script or pip step the token.
 
 ## Adding or changing things
 

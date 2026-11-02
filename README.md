@@ -41,6 +41,12 @@ pytest
 - A broken feed is logged and skipped; after 4 failed runs in a row the alerts space gets one warning.
 - Posts are spaced about 1.1s apart and retried on 429/5xx.
 - GitHub pauses scheduled workflows after 60 days without repo activity. Re-enable from the Actions tab if that happens.
+- If `state.json` is corrupt (for example a merge conflict), the run stops without changing anything and the job fails. Restore the file from git history (`git log -- state.json`), or delete it to re-seed.
+- The "workflow failed" notice is limited to the first 5 minutes of each hour, so a lasting problem does not post every 5 minutes.
+- Titles are cut to 200 characters (Chat rejects messages over 4,096). An item Chat permanently rejects (HTTP 400 and similar) is skipped after 3 tries. A Chat outage never drops an alert: those are retried on every run.
+- CI (`.github/workflows/ci.yml`) runs ruff, the Python tests and the Worker tests on every push and pull request.
+- Dependencies are locked with hashes (`requirements.txt`, generated from `requirements.in`) and installed with `--require-hashes`, so a tampered or swapped package is refused. To update: edit `requirements.in`, then run `pip-compile --generate-hashes --allow-unsafe --strip-extras --output-file requirements.txt requirements.in`. Dependabot also opens weekly update pull requests (`.github/dependabot.yml`).
+- The repo token is only available to the "Save state" step, which pulls and pushes `state.json`. The step that installs packages and the script that reads feeds run without it.
 
 ## Reliable 5-minute trigger (Cloudflare Worker)
 
@@ -49,7 +55,8 @@ GitHub's `schedule:` is best-effort and can run hours late. `worker/index.js` is
 1. Create a fine-grained GitHub token (Settings > Developer settings > Fine-grained tokens): this repo only, permission **Actions: Read and write**.
 2. In Cloudflare: Workers > updates-monitor > Settings > Variables and Secrets > add a **Secret** named `GH_TOKEN` with that token.
 3. In the Worker's Settings > Build > Build watch paths, include only `worker/**` and `wrangler.jsonc`, so the bot's `state.json` commits don't trigger a redeploy each time.
-4. Check: Workers > updates-monitor > Logs, or open the Worker URL for a status page. A new "Manually run" entry appears in the Actions tab every 5 minutes.
+4. Check: Workers > updates-monitor > Logs. A new "Manually run" entry appears in the Actions tab every 5 minutes. The Worker's public URL only answers `ok` or `not configured` (it deliberately shows no repo name, token state or expiry date); a missing setting is named in the Logs and in the Chat warning.
+   The Worker retries a transient GitHub error (5xx or network) once before it warns; a 401, 403 or 404 is reported straight away.
 
 5. Optional but recommended: in the Worker, add a **Secret** named `GCHAT_WEBHOOK_ALERTS` (the same Downtime-space webhook). If the Worker cannot start the workflow, for example because the token expired, it then posts a warning to Chat at most once an hour. Without it the failure is only visible in the Worker's logs.
 6. Optional: set `"TOKEN_EXPIRES": "YYYY-MM-DD"` in `wrangler.jsonc` to the token's expiry date. The Worker then posts a daily reminder during the last 14 days.

@@ -490,3 +490,81 @@ def test_announce_posts_to_both_and_copy_failure_does_not_block(monkeypatch):
 def test_feeds_list_puts_wordpress_and_php_in_the_wp_php_space():
     spaced = {x["name"] for x in f.FEEDS if x.get("space") == "wp_php"}
     assert spaced == {"WordPress News", "PHP News", "PHP Releases"}
+
+
+# --- hardening: corrupt state, title cap, poison items ---
+
+def test_corrupt_state_stops_the_run_without_touching_the_file(monkeypatch, tmp_path, capsys):
+    state_file = tmp_path / "state.json"
+    state_file.write_text("<<<<<<< HEAD\n{}", encoding="utf-8")
+    monkeypatch.setattr(f, "DRY_RUN", False)
+    monkeypatch.setattr(f, "WEBHOOK", "http://d")
+    monkeypatch.setattr(f, "STATE_FILE", state_file)
+    posts = []
+    monkeypatch.setattr(f, "post", lambda *a, **k: posts.append(a) or True)
+    monkeypatch.setattr(f, "fetch_entries", lambda feed: [{"id": "1", "title": "t"}])
+    assert f.main() == 2
+    assert state_file.read_text(encoding="utf-8") == "<<<<<<< HEAD\n{}"   # untouched
+    assert posts == []
+    assert "restore it from git history" in capsys.readouterr().err
+    state_file.write_text("[1, 2]", encoding="utf-8")                      # valid JSON, wrong shape
+    assert f.main() == 2
+
+
+def test_long_titles_are_capped_so_chat_accepts_the_message():
+    msg = f.build_message(NEWS, {"title": "A " * 3000, "summary": "S " * 3000, "link": "https://x"})
+    assert len(msg) < 1000
+    assert len(msg.split("\n")[1]) <= f.TITLE_LEN + 5
+
+
+def feed_with_one_item(monkeypatch, tmp_path, post_result):
+    monkeypatch.setattr(f, "DRY_RUN", False)
+    monkeypatch.setattr(f, "WEBHOOK", "http://d")
+    monkeypatch.setattr(f, "WEBHOOK_ALERTS", "http://a")
+    monkeypatch.setattr(f, "WEBHOOK_WP_PHP", "http://d")
+    monkeypatch.setattr(f, "STATE_FILE", tmp_path / "state.json")
+    feed = {"name": "N", "kind": "news", "url": "u"}
+    monkeypatch.setattr(f, "FEEDS", [feed])
+    data = [[{"id": "seed", "title": "seed"}]]
+    monkeypatch.setattr(f, "fetch_entries", lambda fd: data[0])
+    attempts = []
+
+    def fake_post(text, url, thread=None):
+        attempts.append(text)
+        f._last_rejected = post_result["rejected"]
+        return post_result["ok"]
+
+    monkeypatch.setattr(f, "post", fake_post)
+    f.main()   # seed
+    data[0] = [{"id": "bad", "title": "Bad item"}] + data[0]
+    return attempts
+
+
+def test_item_chat_permanently_rejects_is_given_up_after_three_tries(monkeypatch, tmp_path):
+    attempts = feed_with_one_item(monkeypatch, tmp_path, {"ok": False, "rejected": True})
+    for _ in range(6):
+        f.main()
+    assert len(attempts) == f.GIVE_UP_AFTER       # tried 3 times, then marked seen: no endless retries
+    state = json.loads((tmp_path / "state.json").read_text(encoding="utf-8"))
+    assert "bad" in state["N"] and state["_failed"] == {}
+
+
+def test_chat_outage_never_drops_an_alert(monkeypatch, tmp_path):
+    attempts = feed_with_one_item(monkeypatch, tmp_path, {"ok": False, "rejected": False})   # 5xx / timeouts
+    for _ in range(8):
+        f.main()
+    assert len(attempts) == 8                      # retried on every run, never given up
+    state = json.loads((tmp_path / "state.json").read_text(encoding="utf-8"))
+    assert "bad" not in state["N"]
+
+
+def test_post_marks_permanent_rejections(monkeypatch):
+    monkeypatch.setattr(f, "DRY_RUN", False)
+    monkeypatch.setattr(f.time, "sleep", lambda s: None)
+    monkeypatch.setattr(f, "POST_GAP", 0)
+    monkeypatch.setattr(f.requests, "post", lambda *a, **k: Resp(400))
+    assert f.post("hi", "http://x") is False and f._last_rejected is True
+    monkeypatch.setattr(f.requests, "post", lambda *a, **k: Resp(403))
+    assert f.post("hi", "http://x") is False and f._last_rejected is False
+    monkeypatch.setattr(f.requests, "post", lambda *a, **k: Resp(200))
+    assert f.post("hi", "http://x") is True and f._last_rejected is False

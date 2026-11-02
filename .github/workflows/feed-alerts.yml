@@ -27,11 +27,13 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false   # the repo token is not left in .git/config for pip packages or the script to read
       - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
           python-version: "3.12"
           cache: pip
-      - run: pip install -r requirements.txt
+      - run: pip install --require-hashes -r requirements.txt   # every package, including indirect ones, must match its hash
       - name: Check feeds and post to Google Chat
         env:
           GCHAT_WEBHOOK_URL: ${{ secrets.GCHAT_WEBHOOK_URL }}
@@ -44,6 +46,10 @@ jobs:
         run: python feed_to_gchat.py
       - name: Save state
         if: always()   # keep progress even if a later feed crashed, so posted items aren't reposted
+        env:
+          # Only this step sees the repo token, and only for the pull and push. Earlier steps (pip, the
+          # script) ran without it, so a compromised package cannot use it to rewrite the repository.
+          GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name "feed-bot"
           git config user.email "feed-bot@users.noreply.github.com"
@@ -51,9 +57,12 @@ jobs:
           git add state.json
           git diff --staged --quiet && exit 0
           git commit -m "Update feed state"
-          # another push (or a slow run) may have moved main: rebase on top of it and retry
+          AUTH="$(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)"
+          echo "::add-mask::$AUTH"
+          gitx() { git -c "http.https://github.com/.extraheader=AUTHORIZATION: basic $AUTH" "$@"; }
+          # another push (or a slow run) may have moved the branch: rebase on top of it and retry
           for i in 1 2 3; do
-            git pull --rebase --autostash && git push && exit 0
+            gitx pull --rebase --autostash origin "$GITHUB_REF_NAME" && gitx push origin "HEAD:$GITHUB_REF_NAME" && exit 0
             sleep $((i * 5))
           done
           echo "could not push state.json" >&2; exit 1
@@ -63,5 +72,7 @@ jobs:
           URL: ${{ secrets.GCHAT_WEBHOOK_ALERTS || secrets.GCHAT_WEBHOOK_URL }}
           RUN: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: |
+          # Only in the first 5 minutes of an hour: a persistent failure would otherwise post on every run.
+          [ "$(date -u +%-M)" -lt 5 ] || { echo "failure notice skipped (hourly limit)"; exit 0; }
           [ -n "$URL" ] && curl -sS -X POST -H 'Content-Type: application/json' \
             -d "{\"text\": \"⚠️ Feed bot workflow failed: $RUN\"}" "$URL" || true

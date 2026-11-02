@@ -1,6 +1,9 @@
 // Run with: node worker/test.mjs
 import assert from "node:assert/strict";
-import worker, { dispatch, notify, daysLeft } from "./index.js";
+import worker, { dispatch, daysLeft, missingSettings } from "./index.js";
+
+// no real waiting in the retry pause
+globalThis.setTimeout = (fn) => { fn(); return 0; };
 
 const env = { GH_TOKEN: "tok", REPO: "o/r", WORKFLOW: "w.yml", REF: "main" };
 const calls = [];
@@ -72,11 +75,54 @@ calls.length = 0;
 await runScheduled({ ...alerts, TOKEN_EXPIRES: "2026-10-20" }, at("2026-10-26T04:02:00Z"));
 assert.match(JSON.parse(chatCalls()[0].init.body).text, /has expired/);
 
-// status page: never prints the token, 500 when settings are missing
-const page = await worker.fetch(new Request("https://x/"), alerts);
+// status page: only "ok / not configured", nothing about the repo, token or webhooks; safe headers
+const page = await worker.fetch(new Request("https://x/"), { ...soon, GH_TOKEN: "secret-token-value" });
 assert.equal(page.status, 200);
 const text = await page.text();
-assert.ok(!text.includes("tok\n") && !text.includes("chat.example"), "status page must not print secrets");
-assert.equal((await worker.fetch(new Request("https://x/"), { REPO: "o/r" })).status, 500);
+assert.equal(text, "feed-alerts-trigger: ok\n");
+for (const leak of ["secret-token-value", "o/r", "w.yml", "chat.example", "2026-11-02", "days"]) {
+  assert.ok(!text.includes(leak), `status page must not reveal ${leak}`);
+}
+assert.equal(page.headers.get("x-content-type-options"), "nosniff");
+assert.equal(page.headers.get("cache-control"), "no-store");
+assert.equal(page.headers.get("x-robots-tag"), "noindex");
+assert.match(page.headers.get("content-security-policy"), /default-src 'none'/);
+const bare = await worker.fetch(new Request("https://x/"), { REPO: "o/r" });
+assert.equal(bare.status, 503);
+assert.equal(await bare.text(), "feed-alerts-trigger: not configured\n");
+assert.equal((await worker.fetch(new Request("https://x/", { method: "HEAD" }), alerts)).status, 200);
+const post405 = await worker.fetch(new Request("https://x/", { method: "POST" }), alerts);
+assert.equal(post405.status, 405);
+assert.equal(post405.headers.get("allow"), "GET, HEAD");
+
+// missing settings are named (never their values) in the log and the alert
+assert.deepEqual(missingSettings({ REPO: "o/r" }), ["GH_TOKEN", "WORKFLOW"]);
+calls.length = 0;
+await assert.rejects(runScheduled({ ...alerts, GH_TOKEN: "" }, at("2026-10-26T13:01:00Z")), /missing settings: GH_TOKEN/);
+assert.equal(calls.filter((c) => String(c.url).startsWith("https://api.github.com")).length, 0);
+assert.match(JSON.parse(chatCalls()[0].init.body).text, /missing settings: GH_TOKEN/);
+
+// retry: a transient GitHub error is retried once and raises no alarm; real errors are not retried
+const statuses = [502, 204];
+globalThis.fetch = async (url, init) => {
+  calls.push({ url, init });
+  if (String(url).startsWith("https://api.github.com")) return new Response(null, { status: statuses.shift() ?? 204 });
+  return new Response("ok", { status: 200 });
+};
+calls.length = 0;
+await runScheduled(alerts, at("2026-10-26T14:01:00Z"));
+assert.equal(calls.filter((c) => String(c.url).startsWith("https://api.github.com")).length, 2, "retried once");
+assert.equal(chatCalls().length, 0, "a recovered blip raises no alarm");
+
+statuses.push(502, 502);
+calls.length = 0;
+await assert.rejects(runScheduled(alerts, at("2026-10-26T15:01:00Z")), /HTTP 502/);
+assert.equal(calls.filter((c) => String(c.url).startsWith("https://api.github.com")).length, 2, "gives up after one retry");
+assert.equal(chatCalls().length, 1, "persistent failure is reported");
+
+statuses.push(401);
+calls.length = 0;
+await assert.rejects(runScheduled(alerts, at("2026-10-26T16:01:00Z")), /HTTP 401/);
+assert.equal(calls.filter((c) => String(c.url).startsWith("https://api.github.com")).length, 1, "401 is not retried");
 
 console.log("worker tests passed");

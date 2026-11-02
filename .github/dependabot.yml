@@ -1,0 +1,14 @@
+version: 2
+updates:
+  # Keeps the pinned Python packages (and their hashes) and the SHA-pinned actions current.
+  # Each update arrives as a pull request, so CI runs before anything reaches main.
+  - package-ecosystem: pip
+    directory: /
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5

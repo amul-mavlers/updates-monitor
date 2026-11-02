@@ -30,6 +30,9 @@ MAX_AGE_DAYS = 30      # never post items older than this, even if they look new
 HEALTH_FAIL_RUNS = 4   # consecutive failed runs (~1h) before a feed health warning is posted
 POST_GAP = 1.1         # seconds between posts; Chat webhooks allow ~1 request/second per space
 DEDUPE_KEEP = 500
+TITLE_LEN = 200        # Chat rejects messages over 4096 characters; feed titles are untrusted and unbounded
+GIVE_UP_AFTER = 3      # an item Chat permanently rejects (HTTP 400/413/422) is skipped after this many tries
+PERMANENT_ERRORS = {400, 413, 422}
 # Opt in with MENTION_ALL=1: major/critical incidents start with an @all mention in Chat.
 MENTION_ALL = os.environ.get("MENTION_ALL") == "1"
 MENTION_IMPACTS = {"major", "critical"}
@@ -240,7 +243,7 @@ def incident_age(e) -> float | None:
 
 
 def build_message(feed: dict, e) -> str:
-    title = safe(clean(e.get("title", "(no title)")))
+    title = safe(shorten(clean(e.get("title", "(no title)")), TITLE_LEN))
     link = e.get("link", "")
     raw = e.get("summary") or e.get("description") or ""
     prefix = ""
@@ -328,10 +331,12 @@ def dedupe_title(title: str) -> str:
 
 
 _last_post = 0.0
+_last_rejected = False   # True when the latest post() failed with a permanent HTTP error (retrying is pointless)
 
 
 def post(text: str, url: str, thread: str | None = None) -> bool:
-    global _last_post
+    global _last_post, _last_rejected
+    _last_rejected = False
     if DRY_RUN:
         space = ("alerts" if url == WEBHOOK_ALERTS != WEBHOOK
                  else "wp-php" if url == WEBHOOK_WP_PHP != WEBHOOK else "default")
@@ -367,6 +372,7 @@ def post(text: str, url: str, thread: str | None = None) -> bool:
             time.sleep(delay)
             continue
         if r.status_code >= 400:
+            _last_rejected = r.status_code in PERMANENT_ERRORS
             print(f"  post failed: HTTP {r.status_code}", file=sys.stderr)
             return False
         return True
@@ -415,9 +421,23 @@ def announce(feed: dict, e, state: dict) -> bool:
 
 
 def send(feed: dict, e, state: dict, key: str) -> bool:
-    """announce() and, on success, remember the key so it isn't posted again."""
+    """announce() and, on success, remember the key so it isn't posted again.
+
+    Chat being down must never drop an alert, so failures are retried every run. The exception is an
+    item Chat permanently rejects (HTTP 400 and similar): after GIVE_UP_AFTER tries it is marked seen,
+    otherwise it would be retried, and fail, on every run forever."""
+    failed = state.setdefault("_failed", {})
+    fkey = f"{feed['name']}|{key}"
     if not announce(feed, e, state):
+        if _last_rejected:
+            failed[fkey] = failed.get(fkey, 0) + 1
+            if failed[fkey] >= GIVE_UP_AFTER:
+                print(f"[{feed['name']}] giving up on an item Chat keeps rejecting: {clean(e.get('title', ''))[:80]}",
+                      file=sys.stderr)
+                failed.pop(fkey, None)
+                state[feed["name"]].insert(0, key)
         return False
+    failed.pop(fkey, None)
     state[feed["name"]].insert(0, key)
     return True
 
@@ -523,7 +543,17 @@ def main() -> int:
             print("GCHAT_WEBHOOK_WP_PHP is not set: WordPress and PHP news will go to the default space")
         return 0 if all(results) else 1
 
-    state = json.loads(STATE_FILE.read_text(encoding="utf-8")) if STATE_FILE.exists() else {}
+    try:
+        state = json.loads(STATE_FILE.read_text(encoding="utf-8")) if STATE_FILE.exists() else {}
+        if not isinstance(state, dict):
+            raise ValueError("expected a JSON object")
+    except ValueError as ex:
+        # Do not guess: treating it as empty would re-seed and silently skip items that arrived meanwhile.
+        # Stop, leave the file untouched, and fail the job so the (throttled) failure notice goes out.
+        print(f"state.json is unreadable ({type(ex).__name__}: {ex}). Run stopped without changing anything.\n"
+              "Fix: restore it from git history (git log -- state.json), or delete it to re-seed from scratch.",
+              file=sys.stderr)
+        return 2
 
     for feed, fetched in zip(FEEDS, fetch_all(FEEDS)):
         name = feed["name"]
