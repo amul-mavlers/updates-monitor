@@ -224,7 +224,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Shopify Changelog* · Changelog\n*New trusted vault origin signal in Payments Apps API*\n🕒 30 Oct 2026, 21:30 IST\nThe Payments Apps API 2027-01 release candidate adds payment_method.data.trusted_vault_origin to credit card payment and verification requests. Payment app developers can use this optional Boolean to handle missing CVV…\n<https://shopify.dev/changelog/new-trusted-vault-origin-signal-in-payments-apps-api|Read more>"
+   "text": "🆕 *Shopify Changelog* · Changelog\n*Gift Card line_item_id will become read-only in REST Admin API version 2027-01*\n🕒 30 Oct 2026, 21:30 IST\nIn REST Admin API version 2027-01 and later, the line_item_id property on the Gift Card resource is read-only. Shopify ignores the property in create and update requests. Remove it from those requests before you…\n<https://shopify.dev/changelog/rest-gift-card-line_item_id-will-become-read-only-in-api-version-2027-01|Read more>"
   },
   {
    "cat": "news",
