@@ -6,7 +6,8 @@
   "vars": {
     "REPO": "amul-mavlers/updates-monitor",
     "WORKFLOW": "feed-alerts.yml",
-    "REF": "main"
+    "REF": "main",
+    "TOKEN_EXPIRES": ""
   },
   "workers_dev": true,
   "preview_urls": false,

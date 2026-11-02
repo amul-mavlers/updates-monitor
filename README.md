@@ -9,6 +9,7 @@ Posts new incidents (GitHub, Cloudflare, Shopify status) and release news (WordP
 3. Repo > Settings > Secrets and variables > Actions, add:
    - `GCHAT_WEBHOOK_URL`: default space (news, maintenance).
    - `GCHAT_WEBHOOK_ALERTS`: outages and security news. Optional; if unset, everything goes to the default space.
+   - `GCHAT_WEBHOOK_WP_PHP`: a separate space for WordPress News, PHP News and PHP Releases. Optional; if unset they go to the default space. Their security items are also copied to the alerts space.
 4. Actions tab > "Feed alerts to Google Chat" > Run workflow once. This first run records what each feed already has and posts only incidents that are still open.
 
 ## What gets posted where
@@ -50,4 +51,13 @@ GitHub's `schedule:` is best-effort and can run hours late. `worker/index.js` is
 3. In the Worker's Settings > Build > Build watch paths, include only `worker/**` and `wrangler.jsonc`, so the bot's `state.json` commits don't trigger a redeploy each time.
 4. Check: Workers > updates-monitor > Logs, or open the Worker URL for a status page. A new "Manually run" entry appears in the Actions tab every 5 minutes.
 
+5. Optional but recommended: in the Worker, add a **Secret** named `GCHAT_WEBHOOK_ALERTS` (the same Downtime-space webhook). If the Worker cannot start the workflow, for example because the token expired, it then posts a warning to Chat at most once an hour. Without it the failure is only visible in the Worker's logs.
+6. Optional: set `"TOKEN_EXPIRES": "YYYY-MM-DD"` in `wrangler.jsonc` to the token's expiry date. The Worker then posts a daily reminder during the last 14 days.
+
 Test locally with `node worker/test.mjs`.
+
+## Message extras
+
+- Incidents show GitHub's severity (`Minor impact`, `Major impact`, `Critical impact`), the affected components, and `Resolved after 2 h 14 min` when they close.
+- Set `MENTION_ALL=1` (uncomment it in the workflow) to start major and critical incident messages with an @all mention. It is off by default so nobody is paged by accident.
+- Feeds are fetched in parallel, so a run takes a few seconds.

@@ -8,6 +8,7 @@ import os
 import re
 import sys
 import time
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -17,6 +18,7 @@ import requests
 
 WEBHOOK = os.environ.get("GCHAT_WEBHOOK_URL", "")                    # default space (news)
 WEBHOOK_ALERTS = os.environ.get("GCHAT_WEBHOOK_ALERTS") or WEBHOOK   # outages + security; optional
+WEBHOOK_WP_PHP = os.environ.get("GCHAT_WEBHOOK_WP_PHP") or WEBHOOK   # WordPress + PHP feeds; optional
 DRY_RUN = os.environ.get("DRY_RUN") == "1"          # print instead of posting, no state changes
 STATE_FILE = Path(__file__).with_name("state.json")
 MAX_PER_FEED = 5       # safety cap per run, avoids floods
@@ -28,6 +30,9 @@ MAX_AGE_DAYS = 30      # never post items older than this, even if they look new
 HEALTH_FAIL_RUNS = 4   # consecutive failed runs (~1h) before a feed health warning is posted
 POST_GAP = 1.1         # seconds between posts; Chat webhooks allow ~1 request/second per space
 DEDUPE_KEEP = 500
+# Opt in with MENTION_ALL=1: major/critical incidents start with an @all mention in Chat.
+MENTION_ALL = os.environ.get("MENTION_ALL") == "1"
+MENTION_IMPACTS = {"major", "critical"}
 # News items matching this go to the alerts space instead of the default one.
 URGENT_RE = re.compile(
     r"(?<![\w-])(CVE-\d{4}-\d+|security|critical|vulnerabilit\w*|zero-day|remote code execution)(?![\w-])",
@@ -38,6 +43,10 @@ URGENT_RE = re.compile(
 # kind="news":   release/news feeds from "url". Message shows the `label`.
 # "dedupe":      feeds sharing a group don't post the same story twice (matched by title).
 # "maintenance": also post scheduled maintenance; "maintenance_match" limits it by title regex.
+# "urgent":      post every item of this news feed to the alerts space.
+# "space":       "wp_php" sends this feed to its own space (GCHAT_WEBHOOK_WP_PHP). Its security items
+#                are also copied to the alerts space. Without the secret it falls back to the default.
+# "track_updates": a news item is posted again when the feed marks it as updated (live incidents).
 FEEDS = [
     {"name": "GitHub Status",     "api": "https://www.githubstatus.com/api/v2",     "kind": "status"},
     {"name": "Cloudflare Status", "api": "https://www.cloudflarestatus.com/api/v2", "kind": "status",
@@ -46,13 +55,21 @@ FEEDS = [
      "maintenance_match": r"\((?:Ahmedabad|Mumbai|Delhi|Chennai|Bangalore|Bengaluru|Hyderabad|Kolkata|"
                           r"Kathmandu|Dhaka|Colombo|Singapore)\b"},
     {"name": "Shopify Status",    "api": "https://www.shopifystatus.com/api/v2",    "kind": "status"},
-    {"name": "WordPress News",    "url": "https://wordpress.org/news/feed/",        "kind": "news", "label": "New post"},
+    {"name": "WordPress News",    "url": "https://wordpress.org/news/feed/",        "kind": "news", "label": "New post",
+     "space": "wp_php"},
     {"name": "PHP News",          "url": "https://www.php.net/feed.atom",           "kind": "news", "label": "News",
-     "dedupe": "php"},
+     "dedupe": "php", "space": "wp_php"},
     {"name": "PHP Releases",      "url": "https://www.php.net/releases/feed.php",   "kind": "news", "label": "New release",
-     "dedupe": "php"},
+     "dedupe": "php", "space": "wp_php"},
     {"name": "Shopify Changelog", "url": "https://shopify.dev/changelog/feed.xml",  "kind": "news", "label": "Changelog"},
-    # Add more here, e.g. WooCommerce, Laravel News, Node.js, Patchstack...
+    {"name": "WooCommerce Dev",    "url": "https://developer.woocommerce.com/feed/", "kind": "news", "label": "WooCommerce"},
+    {"name": "Laravel News",      "url": "https://laravel-news.com/feed",           "kind": "news", "label": "Laravel"},
+    {"name": "Node.js Blog",      "url": "https://nodejs.org/en/feed/blog.xml",     "kind": "news", "label": "Node.js"},
+    {"name": "Patchstack",        "url": "https://patchstack.com/feed/",            "kind": "news", "label": "Security blog"},
+    {"name": "Google Workspace Status", "url": "https://www.google.com/appsstatus/dashboard/feed.atom",
+     "kind": "news", "label": "Incident", "urgent": True, "track_updates": True},
+    # More that work: npm status {"api": "https://status.npmjs.org/api/v2", "kind": "status"},
+    # Atlassian status {"api": "https://status.atlassian.com/api/v2", "kind": "status"}.
 ]
 
 STATUS_STYLE = {
@@ -102,6 +119,9 @@ def api_entries(data: dict, feed: dict | None = None, limit: int = 25) -> list:
             "updated": up["created_at"],
             "status": status,
             "maintenance": is_maint,
+            "impact": (inc.get("impact") or "").lower(),
+            "started": inc.get("started_at") or inc.get("created_at") or "",
+            "components": [c["name"] for c in inc.get("components") or [] if c.get("name")],
             "summary": up.get("body", ""),
         }
         if is_maint:
@@ -136,7 +156,8 @@ def fetch_entries(feed: dict) -> list:
         return api_entries(data, feed)
     resp = requests.get(feed["url"], timeout=20, headers=headers)
     resp.raise_for_status()
-    entries = feedparser.parse(resp.content).entries
+    # content-location lets feedparser turn relative links (e.g. Node.js) into absolute ones
+    entries = feedparser.parse(resp.content, response_headers={"content-location": getattr(resp, "url", feed["url"])}).entries
     # newest first, whatever order the feed uses (stable: undated entries keep their order)
     return sorted(entries, key=lambda e: calendar.timegm(e.get("published_parsed") or e.get("updated_parsed") or time.gmtime(0)),
                   reverse=True)
@@ -155,7 +176,7 @@ def entry_key(feed: dict, e) -> str:
     base = e.get("id") or e.get("link") or e.get("title") or ""
     if not base:  # nothing identifying: hash the content so entries don't collapse into one key
         base = hashlib.sha1((e.get("summary") or e.get("description") or "").encode()).hexdigest()
-    if feed["kind"] == "status":  # incident updates change `updated`, so re-alert
+    if feed["kind"] == "status" or feed.get("track_updates"):  # incident updates change `updated`, so re-alert
         return f"{base}|{e.get('updated', '')}"
     return base
 
@@ -196,6 +217,28 @@ def safe(text: str) -> str:
     return text.replace("<", "‹").replace(">", "›").translate({ord("*"): None, ord("~"): None, ord("`"): None})
 
 
+def format_duration(seconds: float) -> str:
+    minutes = int(seconds // 60)
+    if minutes < 1:
+        return "under a minute"
+    days, rem = divmod(minutes, 1440)
+    hours, mins = divmod(rem, 60)
+    if days:
+        return f"{days} d {hours} h"
+    return f"{hours} h {mins} min" if hours else f"{mins} min"
+
+
+def incident_age(e) -> float | None:
+    """Seconds from the incident's start to its newest update, for 'Resolved after ...'."""
+    try:
+        start = datetime.fromisoformat(e["started"].replace("Z", "+00:00"))
+        end = datetime.fromisoformat(e["updated"].replace("Z", "+00:00"))
+    except (KeyError, ValueError, AttributeError):
+        return None
+    seconds = (end - start).total_seconds()
+    return seconds if seconds >= 0 else None
+
+
 def build_message(feed: dict, e) -> str:
     title = safe(clean(e.get("title", "(no title)")))
     link = e.get("link", "")
@@ -210,6 +253,11 @@ def build_message(feed: dict, e) -> str:
             summary = clean(raw)
             if e.get("maintenance") and status == "scheduled":
                 prefix = "Starts "
+            if not e.get("maintenance"):
+                if status == "resolved" and (age := incident_age(e)) is not None:
+                    label = f"Resolved after {format_duration(age)}"
+                if e.get("impact") in ("minor", "major", "critical"):
+                    label += f" · {e['impact'].title()} impact"
         else:  # plain RSS status feed
             m = STATUS_RE.search(raw)
             if m:
@@ -220,10 +268,18 @@ def build_message(feed: dict, e) -> str:
     else:
         emoji, label, summary = "🆕", feed.get("label", "Update"), clean(raw)
 
-    lines = [f"{emoji} *{feed['name']}* · {label}", f"*{title}*"]
+    mention = ""
+    if (MENTION_ALL and feed["kind"] == "status" and not e.get("maintenance")
+            and e.get("impact") in MENTION_IMPACTS and e.get("status") == "investigating"):
+        mention = "<users/all> "   # only on the first, 'investigating' message of a big incident
+    lines = [f"{mention}{emoji} *{feed['name']}* · {label}", f"*{title}*"]
     when = entry_time(feed, e)
     if when:
         lines.append(f"🕒 {prefix}{format_time(when)}")
+    comps = e.get("components") or []
+    if comps:
+        more = f" +{len(comps) - 4}" if len(comps) > 4 else ""
+        lines.append(safe(f"Affected: {', '.join(comps[:4])}{more}"))
     if summary:
         lines.append(safe(shorten(summary)))
     if link.startswith(("http://", "https://")):
@@ -235,7 +291,23 @@ def is_urgent(feed: dict, e) -> bool:
     """Outages and security news go to the alerts space; maintenance and other news don't."""
     if feed["kind"] == "status":
         return not e.get("maintenance")
+    if feed.get("urgent"):
+        return True
     return bool(URGENT_RE.search(clean(e.get("title", "")) + " " + clean(e.get("summary") or "")))
+
+
+def destinations(feed: dict, e) -> list:
+    """Webhook URLs for one entry, first = main destination. Duplicates (unset secrets fall back to the
+    same URL) are removed so nothing is posted twice to one space."""
+    urgent = is_urgent(feed, e)
+    base = WEBHOOK_WP_PHP if feed.get("space") == "wp_php" else WEBHOOK
+    if feed["kind"] == "status":
+        urls = [WEBHOOK_ALERTS] if urgent else [WEBHOOK]
+    elif feed.get("space") and urgent:
+        urls = [base, WEBHOOK_ALERTS]    # the feed's own space gets everything; security is copied to alerts
+    else:
+        urls = [WEBHOOK_ALERTS if urgent else base]
+    return list(dict.fromkeys(urls))
 
 
 def is_open_incident(feed: dict, e) -> bool:
@@ -261,7 +333,8 @@ _last_post = 0.0
 def post(text: str, url: str, thread: str | None = None) -> bool:
     global _last_post
     if DRY_RUN:
-        space = "alerts" if url == WEBHOOK_ALERTS != WEBHOOK else "default"
+        space = ("alerts" if url == WEBHOOK_ALERTS != WEBHOOK
+                 else "wp-php" if url == WEBHOOK_WP_PHP != WEBHOOK else "default")
         tag = f", thread {thread}" if thread else ""
         print(f"--- DRY RUN ({space}{tag}) ---\n{text}\n")
         return True
@@ -328,9 +401,13 @@ def announce(feed: dict, e, state: dict) -> bool:
         norm = dedupe_title(e.get("title", ""))
         if norm in titles:
             return True
-    url = WEBHOOK_ALERTS if is_urgent(feed, e) else WEBHOOK
-    if not post(build_message(feed, e), url, thread_key(feed, e)):
+    text, thread = build_message(feed, e), thread_key(feed, e)
+    urls = destinations(feed, e)
+    if not post(text, urls[0], thread):
         return False
+    for extra in urls[1:]:   # copies are best effort: a failure here must not cause a repost in the main space
+        if not post(text, extra, thread):
+            print(f"[{feed['name']}] copy to second space failed", file=sys.stderr)
     if group:
         titles.insert(0, norm)
         del titles[DEDUPE_KEEP:]
@@ -354,13 +431,19 @@ def post_overflow(feed: dict, items: list) -> bool:
         lines.append(f"• <{link}|{title}>" if link.startswith(("http://", "https://")) else f"• {title}")
     if len(items) > 10:
         lines.append(f"…and {len(items) - 10} older")
-    url = WEBHOOK_ALERTS if any(is_urgent(feed, e) for _, e in items) else WEBHOOK
-    return post("\n".join(lines), url)
+    base = WEBHOOK_WP_PHP if feed.get("space") == "wp_php" else WEBHOOK
+    urgent = any(is_urgent(feed, e) for _, e in items)
+    urls = list(dict.fromkeys([base, WEBHOOK_ALERTS] if feed.get("space") and urgent
+                              else [WEBHOOK_ALERTS if urgent else base]))
+    text = "\n".join(lines)
+    ok = post(text, urls[0])
+    for extra in urls[1:]:
+        post(text, extra)
+    return ok
 
 
-def process_feed(feed: dict, state: dict) -> None:
+def process_feed(feed: dict, state: dict, entries: list) -> None:
     name = feed["name"]
-    entries = fetch_entries(feed)
     if not entries:
         raise LookupError("no entries found (check URL)")
 
@@ -408,6 +491,17 @@ def process_feed(feed: dict, state: dict) -> None:
     state[name] = state[name][:keep]
 
 
+def fetch_all(feeds: list) -> list:
+    """Fetch every feed at once (network wait dominates); each result is entries or the exception."""
+    def one(feed):
+        try:
+            return fetch_entries(feed)
+        except Exception as ex:   # reported per feed in main(), never raised across threads
+            return ex
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        return list(pool.map(one, feeds))
+
+
 def main() -> int:
     if hasattr(sys.stdout, "reconfigure"):   # emoji in messages break cp1252 consoles
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -417,19 +511,26 @@ def main() -> int:
         return 1
 
     if os.environ.get("TEST_MESSAGE") == "1":   # "Run workflow" > send test message: checks both webhooks
-        targets = {"default space": WEBHOOK, "alerts space": WEBHOOK_ALERTS}
-        results = [post(f"✅ *Feed bot* · test message to the {label}. Webhook works.", url)
-                   for label, url in targets.items() if url]
+        targets = {"default space": WEBHOOK, "alerts space": WEBHOOK_ALERTS, "WordPress and PHP space": WEBHOOK_WP_PHP}
+        sent: dict = {}
+        for label, url in targets.items():
+            if url and url not in sent:
+                sent[url] = post(f"✅ *Feed bot* · test message to the {label}. Webhook works.", url)
+        results = list(sent.values())
         if WEBHOOK_ALERTS == WEBHOOK:
             print("GCHAT_WEBHOOK_ALERTS is not set: alerts will go to the default space")
+        if WEBHOOK_WP_PHP == WEBHOOK:
+            print("GCHAT_WEBHOOK_WP_PHP is not set: WordPress and PHP news will go to the default space")
         return 0 if all(results) else 1
 
     state = json.loads(STATE_FILE.read_text(encoding="utf-8")) if STATE_FILE.exists() else {}
 
-    for feed in FEEDS:
+    for feed, fetched in zip(FEEDS, fetch_all(FEEDS)):
         name = feed["name"]
         try:
-            process_feed(feed, state)
+            if isinstance(fetched, Exception):
+                raise fetched
+            process_feed(feed, state, fetched)
         except Exception as ex:  # one broken feed or record must not stop the others
             print(f"[{name}] failed: {type(ex).__name__}: {ex}", file=sys.stderr)
             record_health(state, name, False)
