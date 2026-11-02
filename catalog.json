@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Investigating · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Cloudflare Gateway DNS-over-TLS Connectivity Issues over IPv4*\n🕒 3 Nov 2026, 03:42 IST\nAffected: Gateway\nCloudflare is investigating an issue affecting Cloudflare Gateway DNS-over-TLS (DoT) connections over IPv4. Affected customers may experience connection timeouts and failed DNS resolution. This issue is limited to DoT…\n<https://www.cloudflarestatus.com/incidents/3bv9locsg7ln|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 48 min · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 48 min · Minor impact\n*Worker Deployments Delayed*\n🕒 2 Nov 2026, 23:00 IST\nAffected: Workers\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/7he1pmetw77p|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 16 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 16 min · Minor impact\n*Cache purge delays in Qingdao Shandong, China*\n🕒 31 Oct 2026, 12:27 IST\nAffected: CDN Cache Purge\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/5tlm9r9j9rpo|Read more>"
   },
   {
    "cat": "incidents",
@@ -543,6 +543,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-02T18:24:23Z",
+ "updated": "2026-11-02T22:12:39Z",
  "version": 1
 }
