@@ -21,6 +21,7 @@ WEBHOOK_ALERTS = os.environ.get("GCHAT_WEBHOOK_ALERTS") or WEBHOOK   # outages +
 WEBHOOK_WP_PHP = os.environ.get("GCHAT_WEBHOOK_WP_PHP") or WEBHOOK   # WordPress + PHP feeds; optional
 DRY_RUN = os.environ.get("DRY_RUN") == "1"          # print instead of posting, no state changes
 STATE_FILE = Path(__file__).with_name("state.json")
+CATALOG_FILE = Path(__file__).with_name("catalog.json")   # read by the Cloudflare Worker's landing page
 MAX_PER_FEED = 5       # safety cap per run, avoids floods
 SUMMARY_LEN = 220
 TZ_NAME = os.environ.get("FEED_TZ", "Asia/Kolkata")   # timezone shown in messages
@@ -299,18 +300,24 @@ def is_urgent(feed: dict, e) -> bool:
     return bool(URGENT_RE.search(clean(e.get("title", "")) + " " + clean(e.get("summary") or "")))
 
 
+def route(feed: dict, urgent: bool) -> list:
+    """Logical spaces ("default", "alerts", "wp_php") an item goes to, main one first."""
+    base = "wp_php" if feed.get("space") == "wp_php" else "default"
+    if feed["kind"] == "status":
+        return ["alerts"] if urgent else ["default"]
+    if feed.get("space") and urgent:
+        return [base, "alerts"]    # the feed's own space gets everything; security is copied to alerts
+    return ["alerts" if urgent else base]
+
+
+def webhook_for(space: str) -> str:
+    return {"default": WEBHOOK, "alerts": WEBHOOK_ALERTS, "wp_php": WEBHOOK_WP_PHP}[space]
+
+
 def destinations(feed: dict, e) -> list:
     """Webhook URLs for one entry, first = main destination. Duplicates (unset secrets fall back to the
     same URL) are removed so nothing is posted twice to one space."""
-    urgent = is_urgent(feed, e)
-    base = WEBHOOK_WP_PHP if feed.get("space") == "wp_php" else WEBHOOK
-    if feed["kind"] == "status":
-        urls = [WEBHOOK_ALERTS] if urgent else [WEBHOOK]
-    elif feed.get("space") and urgent:
-        urls = [base, WEBHOOK_ALERTS]    # the feed's own space gets everything; security is copied to alerts
-    else:
-        urls = [WEBHOOK_ALERTS if urgent else base]
-    return list(dict.fromkeys(urls))
+    return list(dict.fromkeys(webhook_for(sp) for sp in route(feed, is_urgent(feed, e))))
 
 
 def is_open_incident(feed: dict, e) -> bool:
@@ -379,6 +386,11 @@ def post(text: str, url: str, thread: str | None = None) -> bool:
     return False
 
 
+def health_text(name: str) -> str:
+    return (f"⚠️ *Feed bot* · {name} has returned no data for {HEALTH_FAIL_RUNS} runs in a row. "
+            "Check the feed URL or whether the source is down.")
+
+
 def record_health(state: dict, name: str, ok: bool) -> None:
     """Warn the alerts space once when a feed has failed HEALTH_FAIL_RUNS runs in a row."""
     health = state.setdefault("_health", {})
@@ -387,8 +399,7 @@ def record_health(state: dict, name: str, ok: bool) -> None:
         return
     health[name] = health.get(name, 0) + 1
     if health[name] == HEALTH_FAIL_RUNS:
-        post(f"⚠️ *Feed bot* · {name} has returned no data for {HEALTH_FAIL_RUNS} runs in a row. "
-             "Check the feed URL or whether the source is down.", WEBHOOK_ALERTS)
+        post(health_text(name), WEBHOOK_ALERTS)
 
 
 def save_state(state: dict) -> None:
@@ -442,8 +453,7 @@ def send(feed: dict, e, state: dict, key: str) -> bool:
     return True
 
 
-def post_overflow(feed: dict, items: list) -> bool:
-    """One summary message for items beyond MAX_PER_FEED, so none is dropped silently."""
+def overflow_text(feed: dict, items: list) -> str:
     lines = [f"➕ *{feed['name']}* · {len(items)} more updates (too many to post one by one)"]
     for _, e in items[-10:]:
         title = safe(clean(e.get("title", "(no title)")))
@@ -451,11 +461,14 @@ def post_overflow(feed: dict, items: list) -> bool:
         lines.append(f"• <{link}|{title}>" if link.startswith(("http://", "https://")) else f"• {title}")
     if len(items) > 10:
         lines.append(f"…and {len(items) - 10} older")
-    base = WEBHOOK_WP_PHP if feed.get("space") == "wp_php" else WEBHOOK
+    return "\n".join(lines)
+
+
+def post_overflow(feed: dict, items: list) -> bool:
+    """One summary message for items beyond MAX_PER_FEED, so none is dropped silently."""
     urgent = any(is_urgent(feed, e) for _, e in items)
-    urls = list(dict.fromkeys([base, WEBHOOK_ALERTS] if feed.get("space") and urgent
-                              else [WEBHOOK_ALERTS if urgent else base]))
-    text = "\n".join(lines)
+    urls = list(dict.fromkeys(webhook_for(sp) for sp in route(feed, urgent)))
+    text = overflow_text(feed, items)
     ok = post(text, urls[0])
     for extra in urls[1:]:
         post(text, extra)
@@ -555,7 +568,8 @@ def main() -> int:
               file=sys.stderr)
         return 2
 
-    for feed, fetched in zip(FEEDS, fetch_all(FEEDS)):
+    fetched_all = fetch_all(FEEDS)
+    for feed, fetched in zip(FEEDS, fetched_all):
         name = feed["name"]
         try:
             if isinstance(fetched, Exception):
@@ -567,6 +581,12 @@ def main() -> int:
         else:
             record_health(state, name, True)
         save_state(state)   # after every feed, so a later crash can't cause reposts
+    if not DRY_RUN:
+        try:   # the public landing page is a nicety: it must never fail or delay the alerts
+            import catalog
+            catalog.write(sys.modules[__name__], FEEDS, fetched_all, CATALOG_FILE)
+        except Exception as ex:
+            print(f"catalog.json not updated: {type(ex).__name__}: {ex}", file=sys.stderr)
     return 0
 
 

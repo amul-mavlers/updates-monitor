@@ -7,6 +7,8 @@
 // and reminds the team before the token expires. Both are stateless: they only fire on the first
 // 5-minute tick of an hour (failure) or of 04:00 UTC (reminder).
 
+import { renderLanding } from "./landing.js";
+
 async function dispatch(env) {
   const url = `https://api.github.com/repos/${env.REPO}/actions/workflows/${env.WORKFLOW}/dispatches`;
   const res = await fetch(url, {
@@ -105,26 +107,104 @@ export default {
     );
   },
 
-  // The public URL only says whether the Worker is configured. It never shows the repo, the token state
-  // or the expiry date, and it triggers nothing. Details are in the Worker's logs.
+  // Public URLs:
+  //   /        landing page: what each Chat space receives (data from catalog.json, written by the bot)
+  //   /health  "ok" or "not configured", nothing else
+  // Neither shows the repo, the token state, webhook names or the expiry date, and neither triggers anything.
+  // Details about the Worker itself are in its logs.
   async fetch(request, env) {
-    const headers = {
-      "content-type": "text/plain; charset=utf-8",
-      "cache-control": "no-store",
+    const common = {
       "x-content-type-options": "nosniff",
       "x-robots-tag": "noindex",
       "referrer-policy": "no-referrer",
-      "content-security-policy": "default-src 'none'",
+      "x-frame-options": "DENY",
     };
     if (request.method !== "GET" && request.method !== "HEAD") {
-      return new Response("method not allowed\n", { status: 405, headers: { ...headers, allow: "GET, HEAD" } });
+      return new Response("method not allowed\n", {
+        status: 405,
+        headers: { ...common, "content-type": "text/plain; charset=utf-8", allow: "GET, HEAD" },
+      });
     }
-    const ok = missingSettings(env).length === 0;
-    return new Response(ok ? "feed-alerts-trigger: ok\n" : "feed-alerts-trigger: not configured\n", {
-      status: ok ? 200 : 503,
-      headers,
-    });
+    const { pathname } = new URL(request.url);
+
+    if (pathname === "/health") {
+      const ok = missingSettings(env).length === 0;
+      return new Response(ok ? "feed-alerts-trigger: ok\n" : "feed-alerts-trigger: not configured\n", {
+        status: ok ? 200 : 503,
+        headers: {
+          ...common,
+          "content-type": "text/plain; charset=utf-8",
+          "cache-control": "no-store",
+          "content-security-policy": "default-src 'none'",
+        },
+      });
+    }
+
+    if (pathname === "/" || pathname === "/index.html") {
+      const nonce = makeNonce();
+      const html = renderLanding(await loadCatalog(env), nonce);
+      return new Response(html, {
+        headers: {
+          ...common,
+          "content-type": "text/html; charset=utf-8",
+          "cache-control": "public, max-age=300",
+          // Only our own inline script (by nonce) may run; nothing can be loaded from anywhere else.
+          "content-security-policy":
+            `default-src 'none'; script-src 'nonce-${nonce}'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'`,
+        },
+      });
+    }
+
+    return new Response("not found\n", { status: 404, headers: { ...common, "content-type": "text/plain; charset=utf-8" } });
   },
 };
 
-export { dispatch, dispatchWithRetry, notify, daysLeft, missingSettings };
+function makeNonce() {
+  const bytes = new Uint8Array(16);
+  crypto.getRandomValues(bytes);
+  return btoa(String.fromCharCode(...bytes));
+}
+
+const CATEGORIES = ["incidents", "maintenance", "security", "news", "system"];
+const SPACES = ["News", "Downtime", "WordPress & PHP"];
+const str = (v, max) => (typeof v === "string" ? v.slice(0, max) : "");
+
+// Keep only the fields the page uses, with sane types and sizes, whatever the file contains.
+function cleanCatalog(raw) {
+  const cards = (Array.isArray(raw?.cards) ? raw.cards : []).slice(0, 200).flatMap((c) =>
+    c && CATEGORIES.includes(c.cat)
+      ? [{
+          cat: c.cat,
+          source: str(c.source, 80),
+          kind: str(c.kind, 120),
+          spaces: (Array.isArray(c.spaces) ? c.spaces : []).filter((s) => SPACES.includes(s)),
+          text: str(c.text, 2000),
+          live: c.live === true,
+          note: str(c.note, 300),
+        }]
+      : [],
+  );
+  const routing = (Array.isArray(raw?.routing) ? raw.routing : []).slice(0, 60).map((r) => ({
+    source: str(r?.source, 80),
+    how: str(r?.how, 60),
+    space: str(r?.space, 60),
+    extra: str(r?.extra, 120),
+  }));
+  return { cards, routing, updated: str(raw?.updated, 40) };
+}
+
+// The bot writes catalog.json to the repository. If it cannot be read, the page still loads, with a notice.
+async function loadCatalog(env) {
+  const empty = { cards: [], routing: [], updated: "" };
+  if (!env.CATALOG_URL) return empty;
+  try {
+    const res = await fetch(env.CATALOG_URL, { cf: { cacheTtl: 300, cacheEverything: true } });
+    if (!res.ok) return empty;
+    const text = await res.text();
+    return text.length > 500000 ? empty : cleanCatalog(JSON.parse(text));
+  } catch {
+    return empty;
+  }
+}
+
+export { dispatch, dispatchWithRetry, notify, daysLeft, missingSettings, cleanCatalog, loadCatalog };

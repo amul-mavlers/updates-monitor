@@ -4,7 +4,8 @@ on:
   push:
     branches: [main]
     paths-ignore:
-      - "state.json"   # the bot commits this every time it finds something; nothing to test
+      - "state.json"     # the bot commits these every time it finds something; nothing to test
+      - "catalog.json"
       - "**.md"
   pull_request:
 
@@ -30,7 +31,7 @@ jobs:
           cache-dependency-path: requirements-dev.txt
       - run: pip install --require-hashes -r requirements-dev.txt
       - run: ruff check .
-      - run: python -m pytest -q test_feed_to_gchat.py
+      - run: python -m pytest -q
 
   worker:
     runs-on: ubuntu-24.04

@@ -63,6 +63,15 @@ GitHub's `schedule:` is best-effort and can run hours late. `worker/index.js` is
 
 Test locally with `node worker/test.mjs`.
 
+## Landing page (Worker URL)
+
+The Worker's public URL (`https://updates-monitor.<account>.workers.dev/`) is a landing page that shows what each Chat space receives. It opens on the WordPress & PHP space, with tabs for News, Downtime and All spaces, and a table of where each source goes.
+
+- The bot writes `catalog.json` on every run, from the feeds it just fetched and with the same message code that posts to Chat, and the workflow commits it when it changes. The Worker reads it from `CATALOG_URL` (set in `wrangler.jsonc`) and caches it for 5 minutes.
+- Cards marked Live are real recent items. Cards marked Example cover messages that only appear during an outage or a bot problem, and use a fixed date so the file does not change on every run.
+- `/health` returns only `ok` or `not configured`.
+- The page loads nothing from other sites and is served with a strict Content-Security-Policy (inline script by per-request nonce only). It never shows the repo, tokens, webhook names or the token expiry. If `catalog.json` cannot be read, the page still loads and says the samples are unavailable.
+
 ## Message extras
 
 - Incidents show GitHub's severity (`Minor impact`, `Major impact`, `Critical impact`), the affected components, and `Resolved after 2 h 14 min` when they close.
