@@ -153,7 +153,10 @@ const nonce = /script-src 'nonce-([^']+)'/.exec(csp)[1];
 assert.ok(homeHtml.includes(`<script nonce="${nonce}">`), "script carries the CSP nonce");
 assert.match(csp, /default-src 'none'/);
 assert.match(csp, /frame-ancestors 'none'/);
-assert.doesNotMatch(csp, /unsafe-eval|script-src[^;]*unsafe-inline/);
+assert.doesNotMatch(csp, /unsafe-eval|unsafe-inline/);
+assert.match(csp, new RegExp(`style-src 'nonce-${nonce.replace(/[+/=]/g, '.')}'`));
+assert.ok(homeHtml.includes(`<style nonce="${nonce}">`), "stylesheet carries the CSP nonce");
+assert.ok(!/ style=/.test(homeHtml.slice(0, homeHtml.indexOf('<script'))), "no inline style attributes");
 assert.equal(home.headers.get("x-frame-options"), "DENY");
 assert.equal(home.headers.get("x-content-type-options"), "nosniff");
 assert.ok(homeHtml.includes("WooCommerce Dev"), "catalog data is on the page");
@@ -178,7 +181,7 @@ for (const broken of [
   catalogResponse = broken;
   const fallback = await worker.fetch(new Request("https://x/"), site);
   assert.equal(fallback.status, 200, "page still loads when the catalog is unavailable");
-  assert.ok((await fallback.text()).includes("const DATA={"), "page still has its data stub");
+  assert.ok((await fallback.text()).includes("const DATA = {"), "page still has its data stub");
 }
 catalogResponse = () => new Response(JSON.stringify(goodCatalog), { status: 200 });
 const noUrl = await worker.fetch(new Request("https://x/"), alerts);

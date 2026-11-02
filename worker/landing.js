@@ -1,165 +1,454 @@
-// Landing page for the Worker's public URL. Generated from the design in the repo history; edit freely.
-// Shows what each Chat space receives, using data from catalog.json (written by the bot).
-// No external resources: the page is served with a strict Content-Security-Policy.
+// Landing page for the Worker's public URL: what each Chat space receives, using data from catalog.json
+// (written by the bot). Everything is inline and the page is served with a strict Content-Security-Policy,
+// so it loads nothing from other sites. Elements are built with the DOM (textContent), never innerHTML,
+// so feed text cannot inject markup. Keep it that way, and keep apostrophes out of single-quoted strings.
 export const TEMPLATE = String.raw`<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex">
+<meta name="color-scheme" content="light dark">
 <title>Feed Alerts</title>
-<style>
-/* Layout: a calm catalogue. Header, a sticky filter bar, then one section per message family; each message is a Chat-style card. */
+<style nonce="__NONCE__">
 :root{
-  --bg:#f3f5f7;--card:#ffffff;--ink:#16202a;--mute:#566574;--line:#d9e0e6;--chip:#e7ecf0;
+  --bg:#f3f5f8;--card:#ffffff;--ink:#132029;--mute:#546472;--line:#d9e0e7;--chip:#e8edf2;--hover:#eef2f6;
+  --shadow:0 1px 2px rgba(15,30,45,.06),0 6px 18px rgba(15,30,45,.05);
   --inc:#c42b38;--maint:#a8650f;--sec:#6a44bd;--news:#1d6aae;--sys:#46586a;--wp:#0b7f82;
-  --font:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;--mono:ui-monospace,'SF Mono','Cascadia Mono',Consolas,monospace;
+  --bad:#c42b38;--warn:#bf5f00;--mon:#8a6d00;--ok:#1b7a4a;--neutral:#546472;
+  --font:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono",Consolas,monospace;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --bg:#0d1319;--card:#151e27;--ink:#e6edf3;--mute:#93a3b3;--line:#25313d;--chip:#1e2a35;
-  --inc:#ff7b86;--maint:#e8a84f;--sec:#b49bff;--news:#6fb3ef;--sys:#9db0c2;--wp:#4fd0d2;color-scheme:dark}}
+  --bg:#0c1218;--card:#141d26;--ink:#e7eef4;--mute:#92a3b3;--line:#24303c;--chip:#1d2934;--hover:#1a2530;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 6px 18px rgba(0,0,0,.25);
+  --inc:#ff7b86;--maint:#e8a84f;--sec:#b49bff;--news:#6fb3ef;--sys:#9db0c2;--wp:#4fd0d2;
+  --bad:#ff7b86;--warn:#f0a050;--mon:#e3c34a;--ok:#5fd394;--neutral:#92a3b3;color-scheme:dark}}
 :root[data-theme="dark"]{
-  --bg:#0d1319;--card:#151e27;--ink:#e6edf3;--mute:#93a3b3;--line:#25313d;--chip:#1e2a35;
-  --inc:#ff7b86;--maint:#e8a84f;--sec:#b49bff;--news:#6fb3ef;--sys:#9db0c2;--wp:#4fd0d2;color-scheme:dark}
-body{background:var(--bg);color:var(--ink);font-family:var(--font);font-size:15px;line-height:1.55;
-  padding-block:0 56px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
-.wrap{max-width:1180px;margin:0 auto}
-header{padding-block:36px 20px}
-h1{font-size:clamp(28px,4.4vw,40px);line-height:1.1;font-weight:700;letter-spacing:-.02em;margin:0 0 10px;text-wrap:balance}
-.lede{max-width:64ch;color:var(--mute);margin:0 0 20px}
-.stats{display:flex;flex-wrap:wrap;gap:10px 28px;font-family:var(--mono);font-size:12px;color:var(--mute)}
-.stats b{display:block;font-family:var(--font);font-size:26px;font-weight:700;color:var(--ink);letter-spacing:-.02em}
-.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:12px;border-bottom:1px solid var(--line)}
-.chips{display:flex;flex-wrap:wrap;gap:8px}
-.chip{font:inherit;font-size:13.5px;font-weight:500;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:6px 13px;border-radius:99px;cursor:pointer;display:inline-flex;gap:8px;align-items:center}
+  --bg:#0c1218;--card:#141d26;--ink:#e7eef4;--mute:#92a3b3;--line:#24303c;--chip:#1d2934;--hover:#1a2530;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 6px 18px rgba(0,0,0,.25);
+  --inc:#ff7b86;--maint:#e8a84f;--sec:#b49bff;--news:#6fb3ef;--sys:#9db0c2;--wp:#4fd0d2;
+  --bad:#ff7b86;--warn:#f0a050;--mon:#e3c34a;--ok:#5fd394;--neutral:#92a3b3;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:15px;line-height:1.55;
+  padding-block:0 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  -webkit-text-size-adjust:100%}
+.wrap{max-width:1160px;margin:0 auto}
+button,input{font:inherit;color:inherit}
+a{color:var(--news)}
+:focus-visible{outline:2px solid var(--news);outline-offset:2px;border-radius:6px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding-block:16px 0}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:-.01em}
+.logo{width:22px;height:22px;border-radius:7px;background:conic-gradient(from 200deg,var(--wp),var(--news),var(--inc),var(--wp))}
+.ghost{background:transparent;border:1px solid var(--line);border-radius:99px;padding:5px 13px;font-size:13px;cursor:pointer;color:var(--mute)}
+.ghost:hover{background:var(--hover);color:var(--ink)}
+header{padding-block:34px 8px}
+h1{font-size:clamp(28px,4.6vw,42px);line-height:1.08;font-weight:750;letter-spacing:-.025em;margin:0 0 12px;text-wrap:balance}
+.lede{max-width:62ch;color:var(--mute);margin:0 0 22px;font-size:16px}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+.steps li{display:flex;gap:12px;align-items:flex-start;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+.steps b{flex:none;width:24px;height:24px;border-radius:50%;background:var(--ink);color:var(--bg);display:grid;place-items:center;font-size:12px}
+.steps span{font-size:13.5px;color:var(--mute)}
+.steps strong{display:block;color:var(--ink);font-size:14.5px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:14px;margin-top:26px}
+.tile{text-align:left;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px;cursor:pointer;box-shadow:var(--shadow);
+  display:flex;flex-direction:column;gap:6px;transition:border-color .15s,transform .15s}
+.tile:hover{border-color:var(--c)}
+.tile[aria-pressed="true"]{border-color:var(--c);box-shadow:0 0 0 2px var(--c),var(--shadow)}
+.tile .tn{display:flex;align-items:center;gap:9px;font-weight:700;font-size:17px}
+.tile .tc{font-size:30px;font-weight:750;letter-spacing:-.02em;line-height:1}
+.tile .tc small{font-size:13px;font-weight:500;color:var(--mute);margin-left:6px;letter-spacing:0}
+.tile .td{font-size:13.5px;color:var(--mute)}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--c);flex:none}
+.s-wp{--c:var(--wp)}.s-news{--c:var(--news)}.s-down{--c:var(--inc)}
+.f-inc{--c:var(--inc)}.f-maint{--c:var(--maint)}.f-sec{--c:var(--sec)}.f-news{--c:var(--news)}.f-sys{--c:var(--sys)}
+.tools{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);margin-top:22px;padding-block:12px;border-bottom:1px solid var(--line);
+  display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center}
+.search{flex:1 1 220px;min-width:0;max-width:340px;background:var(--card);border:1px solid var(--line);border-radius:99px;padding:7px 14px}
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+.chip{background:var(--card);border:1px solid var(--line);border-radius:99px;padding:5px 12px;font-size:13px;font-weight:500;cursor:pointer;display:inline-flex;gap:7px;align-items:center}
 .chip i{font-style:normal;font-family:var(--mono);font-size:11px;color:var(--mute)}
-.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.chip:hover{background:var(--hover)}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
 .chip[aria-pressed="true"] i{color:var(--bg);opacity:.7}
-.chip:focus-visible,a:focus-visible{outline:2px solid var(--news);outline-offset:2px}
-.legend{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:10px;font-size:12.5px;color:var(--mute)}
-.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;vertical-align:-1px}
-section{padding-top:34px}
-section[hidden]{display:none}
+.toggle{display:inline-flex;align-items:center;gap:7px;font-size:13px;color:var(--mute);cursor:pointer;margin-left:auto}
+section.fam{padding-top:32px}
 .sh{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px;margin-bottom:14px}
-h2{font-size:20px;font-weight:700;letter-spacing:-.01em;margin:0}
-.sd{color:var(--mute);font-size:14px;max-width:70ch}
+.sh h2{font-size:19px;font-weight:700;letter-spacing:-.01em;margin:0;color:var(--c)}
+.sh p{margin:0;color:var(--mute);font-size:14px;max-width:72ch}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:16px;align-items:start}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px 14px;min-width:0}
-.top{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap}
-.tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;padding:2px 7px;border-radius:5px;border:1px solid var(--line);color:var(--mute)}
-.tag.live{color:var(--ink);border-color:var(--ink)}
-.spaces{display:flex;gap:6px;flex-wrap:wrap}
-.sp{font-size:11.5px;font-weight:600;padding:2px 8px;border-radius:99px;background:var(--chip);color:var(--ink);white-space:nowrap}
-.msg{display:flex;gap:10px}
-.av{flex:none;width:30px;height:30px;border-radius:50%;background:var(--ink);color:var(--bg);display:grid;place-items:center;font-size:11px;font-weight:700;letter-spacing:.02em}
-.body{min-width:0;font-size:14.5px;overflow-wrap:anywhere}
-.who{font-size:12px;color:var(--mute);margin-bottom:3px}
-.who b{color:var(--ink)}
-.body a{color:var(--news)}
-.at{background:color-mix(in srgb,var(--news) 18%,transparent);color:var(--news);border-radius:4px;padding:0 4px;font-weight:600}
-.note{margin:12px 0 0;padding-top:10px;border-top:1px dashed var(--line);font-size:12.5px;color:var(--mute)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px;min-width:0;box-shadow:var(--shadow)}
+.card.thread{grid-column:1/-1}
+@media (min-width:760px){.card.thread{grid-column:span 2}}
+.ch{display:flex;align-items:center;gap:10px}
+.av{flex:none;width:34px;height:34px;border-radius:50%;background:color-mix(in srgb,var(--c) 16%,var(--card));border:1px solid color-mix(in srgb,var(--c) 40%,transparent);display:grid;place-items:center;font-size:16px}
+.ct{min-width:0;flex:1}
+.src{font-size:13px;font-weight:650;line-height:1.25}
+.src small{display:block;font-weight:400;color:var(--mute);font-size:12px}
+.pills{display:flex;flex-wrap:wrap;gap:5px;margin-top:4px}
+.pill{--c:var(--neutral);font-size:11.5px;font-weight:650;padding:1px 8px;border-radius:99px;color:var(--c);
+  background:color-mix(in srgb,var(--c) 13%,transparent);border:1px solid color-mix(in srgb,var(--c) 34%,transparent)}
+.pill.bad{--c:var(--bad)}.pill.warn{--c:var(--warn)}.pill.mon{--c:var(--mon)}.pill.ok{--c:var(--ok)}.pill.maint{--c:var(--maint)}
+.tag{font-family:var(--mono);font-size:10px;letter-spacing:.07em;text-transform:uppercase;padding:2px 7px;border-radius:5px;border:1px solid var(--line);color:var(--mute);white-space:nowrap}
+.tag.live{color:var(--ok);border-color:color-mix(in srgb,var(--ok) 50%,transparent)}
+.copy{background:transparent;border:1px solid var(--line);border-radius:7px;font-size:11.5px;padding:2px 8px;color:var(--mute);cursor:pointer}
+.copy:hover{background:var(--hover);color:var(--ink)}
+.title{font-size:15.5px;font-weight:650;line-height:1.35;margin:12px 0 0;overflow-wrap:anywhere}
+.meta{display:flex;flex-wrap:wrap;gap:3px 14px;margin-top:6px;font-size:12.5px;color:var(--mute)}
+.meta span{font-family:var(--mono);font-size:12px}
+.sum{margin:8px 0 0;font-size:14px;overflow-wrap:anywhere}
+.more{display:inline-block;margin-top:10px;font-size:13px;font-weight:600;text-decoration:none;border:1px solid var(--line);border-radius:8px;padding:3px 10px}
+.more:hover{background:var(--hover)}
+.raw{margin:12px 0 0;font-size:14px;overflow-wrap:anywhere}
+.at{background:color-mix(in srgb,var(--news) 18%,transparent);color:var(--news);border-radius:4px;padding:0 4px;font-weight:650}
+.cf{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:12px;padding-top:10px;border-top:1px solid var(--line);font-size:12px;color:var(--mute)}
+.sp{display:inline-flex;align-items:center;gap:6px;background:var(--chip);color:var(--ink);border-radius:99px;padding:2px 9px;font-size:11.5px;font-weight:600}
+.sp .dot{width:8px;height:8px}
+.note{flex:1 1 100%;margin:2px 0 0}
+.tl{margin:14px 0 0;padding:0;list-style:none}
+.tl li{position:relative;padding:0 0 16px 26px}
+.tl li:last-child{padding-bottom:0}
+.tl li::before{content:"";position:absolute;left:5px;top:16px;bottom:0;width:2px;background:var(--line)}
+.tl li:last-child::before{display:none}
+.tl li::after{content:"";position:absolute;left:0;top:5px;width:12px;height:12px;border-radius:50%;background:var(--c,var(--neutral));border:2px solid var(--card)}
+.tl .pill{margin-right:6px}
+.tl .t{font-family:var(--mono);font-size:12px;color:var(--mute)}
+.tl p{margin:4px 0 0;font-size:14px;overflow-wrap:anywhere}
+.tl li.bad{--c:var(--bad)}.tl li.warn{--c:var(--warn)}.tl li.mon{--c:var(--mon)}.tl li.ok{--c:var(--ok)}.tl li.maint{--c:var(--maint)}
+.empty{padding:40px 0;color:var(--mute);text-align:center}
+details.routing{margin-top:40px;background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow)}
+details.routing summary{cursor:pointer;padding:14px 18px;font-weight:650;font-size:16px}
+.tw{overflow-x:auto;padding:0 6px 8px}
 table{width:100%;border-collapse:collapse;font-size:14px}
-th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
-th{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--mute);font-weight:500}
-.tw{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:14px}
-.panel{margin-top:26px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
-.panel h2{display:flex;align-items:center;gap:10px}
-.panel p{margin:8px 0 0;color:var(--mute);max-width:75ch}
-.meta{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:14px;font-size:13px}
-.meta span{color:var(--mute)}
-.meta b{color:var(--ink);font-weight:600}
-.meta code{font-family:var(--mono);font-size:12px;background:var(--chip);padding:2px 7px;border-radius:5px;color:var(--ink)}
-.chip .dot{margin:0}
-.foot{margin-top:40px;color:var(--mute);font-size:13px}
+th,td{text-align:left;padding:9px 12px;border-top:1px solid var(--line);vertical-align:top}
+th{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--mute);font-weight:500;border-top:0}
+.foot{margin:28px 0 0;color:var(--mute);font-size:13px}
+.stats{margin:14px 0 0;color:var(--mute);font-size:13px;font-family:var(--mono)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
 <body>
 <div class="wrap">
-<header>
-  <h1>Feed Alerts</h1>
-  <p class="lede">What each Google Chat space receives from the bot. Pick a space to see its messages. Cards marked <b>Live</b> come from today's feeds; <b>Example</b> cards show messages that only appear during an outage, a maintenance window or a problem with the bot itself.</p>
-  <div class="stats" id="stats"></div>
-</header>
-<div class="bar">
-  <div class="chips" id="chips" role="group" aria-label="Choose a Chat space"></div>
-</div>
-<div id="panel"></div>
-<main id="out"></main>
-<section id="routing">
-  <div class="sh"><h2>Where each source goes</h2><span class="sd">Twelve sources, checked every 5 minutes.</span></div>
-  <div class="tw"><table><thead><tr><th>Source</th><th>Read as</th><th>Posts to</th><th>Also</th></tr></thead><tbody id="rt"></tbody></table></div>
-</section>
-<p class="foot" id="foot"></p>
+  <div class="topbar">
+    <div class="brand"><span class="logo" aria-hidden="true"></span>Feed Alerts</div>
+    <button id="theme" class="ghost" type="button" aria-label="Switch between light and dark">Light / Dark</button>
+  </div>
+  <header>
+    <h1>What lands in each Chat space</h1>
+    <p class="lede">A bot watches status pages and release feeds and posts only what is new. Pick a space to see exactly what it receives. Cards marked Live are real recent items; Example cards show messages that only appear during an outage or a problem with the bot.</p>
+    <ol class="steps">
+      <li><b>1</b><span><strong>Timer</strong>Wakes the bot every 5 minutes.</span></li>
+      <li><b>2</b><span><strong>Check</strong>Reads status pages and feeds, keeps only new items.</span></li>
+      <li><b>3</b><span><strong>Post</strong>Sends each item to the right Chat space.</span></li>
+    </ol>
+    <p class="stats" id="stats"></p>
+  </header>
+  <noscript><p class="empty">This page needs JavaScript to show the messages.</p></noscript>
+  <nav class="tiles" id="tiles" aria-label="Chat spaces"></nav>
+  <div class="tools">
+    <input class="search" id="q" type="search" placeholder="Search messages" aria-label="Search messages" autocomplete="off">
+    <div class="chips" id="chips" role="group" aria-label="Filter by kind of message"></div>
+    <label class="toggle"><input type="checkbox" id="live"> Live only</label>
+  </div>
+  <main id="out"></main>
+  <details class="routing" id="routing">
+    <summary>Where each source goes</summary>
+    <div class="tw"><table><thead><tr><th>Source</th><th>Read as</th><th>Posts to</th><th>Also</th></tr></thead><tbody id="rt"></tbody></table></div>
+  </details>
+  <p class="foot" id="foot"></p>
 </div>
 <script nonce="__NONCE__">
-const DATA=__DATA__;
-const FAMILIES=[
- {id:'incidents',name:'Incidents',color:'--inc',desc:'Outages on GitHub, Cloudflare, Shopify and Google Workspace. Every update to one incident lands in the same Chat thread, with severity, affected parts and time to resolve.'},
- {id:'maintenance',name:'Maintenance',color:'--maint',desc:'Planned work. Cloudflare lists every datacenter, so only nearby ones are posted.'},
- {id:'security',name:'Security and urgent',color:'--sec',desc:'News that mentions a CVE, a security release or a critical flaw. It goes to Downtime, and WordPress and PHP items are also kept in their own space.'},
- {id:'news',name:'News and releases',color:'--news',desc:'Release notes and posts from WordPress, PHP, Shopify, WooCommerce, Laravel and Node.js.'},
- {id:'system',name:'Bot health',color:'--sys',desc:'Messages the bot and its timer send about themselves, so a silent failure does not go unnoticed.'}
+const DATA = __DATA__;
+const FAMILIES = [
+  {id: "incidents", name: "Incidents", cls: "f-inc", desc: "Outages on GitHub, Cloudflare, Shopify and Google Workspace. Every update to one incident lands in the same Chat thread."},
+  {id: "maintenance", name: "Maintenance", cls: "f-maint", desc: "Planned work. Cloudflare lists every datacenter, so only nearby ones are posted."},
+  {id: "security", name: "Security and urgent", cls: "f-sec", desc: "News that mentions a CVE, a security release or a critical flaw. It goes to Downtime, and WordPress and PHP items are also kept in their own space."},
+  {id: "news", name: "News and releases", cls: "f-news", desc: "Release notes and posts from WordPress, PHP, Shopify, WooCommerce, Laravel and Node.js."},
+  {id: "system", name: "Bot health", cls: "f-sys", desc: "Messages the bot and its timer send about themselves, so a silent failure does not go unnoticed."}
 ];
-const esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-function render(text){
-  const keep=[];
-  const hold=html=>{keep.push(html);return '\u0000'+(keep.length-1)+'\u0000'};
-  let t=text.replace(/<users\/all>/g,()=>hold('<span class="at">@all</span>'));
-  t=t.replace(/<(https?:\/\/[^|>]+)\|([^>]+)>/g,(m,u,l)=>hold('<a href="'+esc(u)+'" target="_blank" rel="noopener">'+esc(l)+'</a>'));
-  t=t.replace(/https?:\/\/[^\s\u0000]+/g,u=>hold('<a href="'+esc(u)+'" target="_blank" rel="noopener">'+esc(u)+'</a>'));
-  let h=esc(t).replace(/(^|[\s(])\*([^*\n]+)\*/g,'$1<strong>$2</strong>').replace(/\n/g,'<br>');
-  return h.replace(/\u0000(\d+)\u0000/g,(m,i)=>keep[+i]);
-}
-const spColor=n=>n==='Downtime'?'--inc':n==='News'?'--news':'--wp';
-function card(c){
-  const sp=c.spaces.map(n=>'<span class="sp"><span class="dot" style="background:var('+spColor(n)+')"></span>'+esc(n)+'</span>').join('');
-  return '<article class="card"><div class="top"><span class="tag'+(c.live?' live':'')+'">'+(c.live?'Live':'Example')+'</span><span class="spaces">'+sp+'</span></div>'+
-   '<div class="msg"><div class="av" aria-hidden="true">FB</div><div class="body"><div class="who"><b>Feed bot</b> · '+esc(c.source)+'</div>'+render(c.text)+'</div></div>'+
-   (c.note?'<p class="note">'+esc(c.note)+'</p>':'')+'</article>';
-}
-const SPACES=[
- {id:'wp-php',name:'WordPress & PHP',color:'--wp',
-  desc:'Everything from WordPress News, PHP News and PHP Releases. Items about security are also copied to Downtime, so they are not missed during an outage.',
-  sources:'WordPress News, PHP News, PHP Releases'},
- {id:'news',name:'News',color:'--news',
-  desc:'The default space. Release notes and posts from Shopify, WooCommerce, Laravel and Node.js, plus Cloudflare maintenance in nearby regions.',
-  sources:'Shopify Changelog, WooCommerce Dev, Laravel News, Node.js Blog, Cloudflare maintenance'},
- {id:'downtime',name:'Downtime',color:'--inc',
-  desc:'Outages from GitHub, Cloudflare, Shopify and Google Workspace, security news, and the bot\'s own health messages.',
-  sources:'GitHub, Cloudflare, Shopify and Google Workspace status, Patchstack, security items from every feed'}
+const SPACES = [
+  {id: "wp-php", name: "WordPress & PHP", cls: "s-wp", desc: "WordPress News, PHP News and PHP Releases. Security items are also copied to Downtime."},
+  {id: "news", name: "News", cls: "s-news", desc: "The default space: Shopify, WooCommerce, Laravel and Node.js, plus nearby Cloudflare maintenance."},
+  {id: "downtime", name: "Downtime", cls: "s-down", desc: "Outages, security news and the bot own health messages."}
 ];
-const DEFAULT_SPACE='wp-php';
-let current=(location.hash||'').slice(1);
-if(current!=='all'&&!SPACES.some(x=>x.id===current))current=DEFAULT_SPACE;
-const inSpace=(c,sp)=>sp.id==='all'||c.spaces.indexOf(sp.name)>-1;
-function draw(){
-  const all={id:'all',name:'All spaces'};
-  document.getElementById('chips').innerHTML=SPACES.concat([all]).map(x=>{
-    const n=x.id==='all'?DATA.cards.length:DATA.cards.filter(c=>inSpace(c,x)).length;
-    return '<button class="chip" data-f="'+x.id+'" aria-pressed="'+(x.id===current)+'">'+(x.color?'<span class="dot" style="background:var('+x.color+')"></span>':'')+esc(x.name)+'<i>'+n+'</i></button>';
-  }).join('');
-  const sp=SPACES.find(x=>x.id===current)||all;
-  const cards=DATA.cards.filter(c=>inSpace(c,sp));
-  document.getElementById('panel').innerHTML=sp.id==='all'
-   ?'<div class="panel"><h2>All spaces</h2><p>Every message the bot can post, across the three spaces. Each card shows where it goes.</p></div>'
-   :'<div class="panel"><h2><span class="dot" style="background:var('+sp.color+');width:12px;height:12px;margin:0"></span>'+esc(sp.name)+' space</h2><p>'+esc(sp.desc)+'</p>'+
-    '<div class="meta"><span>Sources <b>'+esc(sp.sources)+'</b></span><span>Messages shown <b>'+cards.length+'</b></span></div></div>';
-  document.getElementById('out').innerHTML=FAMILIES.map(f=>{
-    const items=cards.filter(c=>c.cat===f.id);
-    if(!items.length)return '';
-    return '<section><div class="sh"><h2 style="color:var('+f.color+')">'+f.name+'</h2><span class="sd">'+esc(f.desc)+'</span></div><div class="grid">'+items.map(card).join('')+'</div></section>';
-  }).join('')||'<section><p class="sd">'+(DATA.cards.length?'No messages in this space yet.':'Samples are loading from the latest run. Try again in a few minutes.')+'</p></section>';
+const SPACE_CLASS = {"WordPress & PHP": "s-wp", "News": "s-news", "Downtime": "s-down"};
+const state = {space: "wp-php", family: "all", q: "", live: false};
+
+function $(id) { return document.getElementById(id); }
+function h(tag, attrs, kids) {
+  const e = document.createElement(tag);
+  const a = attrs || {};
+  for (const k in a) {
+    const v = a[k];
+    if (v === false || v === null || v === undefined) continue;
+    if (k === "class") e.className = v;
+    else if (k === "text") e.textContent = v;
+    else if (k.slice(0, 2) === "on") e.addEventListener(k.slice(2), v);
+    else e.setAttribute(k, v === true ? "" : String(v));
+  }
+  (kids || []).forEach(function (c) {
+    if (c === null || c === undefined || c === false) return;
+    e.appendChild(typeof c === "string" ? document.createTextNode(c) : c);
+  });
+  return e;
 }
-const kinds=new Set(DATA.cards.map(c=>c.kind.replace(/Resolved after .*?(?= ·|$)/,'Resolved')));
-document.getElementById('stats').innerHTML=
- '<div><b>'+DATA.routing.length+'</b>sources</div><div><b>3</b>Chat spaces</div><div><b>'+kinds.size+'</b>kinds of message</div><div><b>'+DATA.cards.filter(c=>c.live).length+'</b>live right now</div>';
-document.getElementById('routing').hidden=!DATA.routing.length;
-document.getElementById('rt').innerHTML=DATA.routing.map(r=>'<tr><td><b>'+esc(r.source)+'</b></td><td>'+esc(r.how)+'</td><td>'+esc(r.space)+'</td><td>'+esc(r.extra||'—')+'</td></tr>').join('');
-const when=DATA.updated?new Date(DATA.updated).toLocaleString('en-GB',{timeZone:'Asia/Kolkata',day:'numeric',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit'}):'';
-document.getElementById('foot').textContent=(DATA.cards.length
-  ?'Live cards come from the latest check of the real feeds'+(when?'; the newest item shown is from '+when+' IST':'')+'. Times inside messages are shown in IST, as the bot posts them.'
-  :'The live samples are temporarily unavailable. They return after the next check.');
-document.getElementById('chips').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;current=b.dataset.f;try{history.replaceState(null,'','#'+current)}catch(_){}draw()});
+function safeLink(href, label, cls) {
+  if (!/^https?:\/\//.test(href)) return document.createTextNode(label);
+  return h("a", {href: href, target: "_blank", rel: "noopener noreferrer", class: cls || false, text: label});
+}
+function inline(text) {
+  const frag = document.createDocumentFragment();
+  const re = /<users\/all>|<(https?:\/\/[^|>]+)\|([^>]+)>|(https?:\/\/[^\s<]+)|\*([^*\n]+)\*/g;
+  let last = 0, m;
+  while ((m = re.exec(text)) !== null) {
+    if (m.index > last) frag.appendChild(document.createTextNode(text.slice(last, m.index)));
+    if (m[0] === "<users/all>") frag.appendChild(h("span", {class: "at", text: "@all"}));
+    else if (m[1]) frag.appendChild(safeLink(m[1], m[2]));
+    else if (m[3]) frag.appendChild(safeLink(m[3], m[3]));
+    else frag.appendChild(h("strong", {text: m[4]}));
+    last = re.lastIndex;
+  }
+  if (last < text.length) frag.appendChild(document.createTextNode(text.slice(last)));
+  return frag;
+}
+function multiline(text) {
+  const frag = document.createDocumentFragment();
+  text.split("\n").forEach(function (line, i) {
+    if (i) frag.appendChild(document.createElement("br"));
+    frag.appendChild(inline(line));
+  });
+  return frag;
+}
+function statusClass(label) {
+  const w = label.toLowerCase();
+  if (w.indexOf("completed") > -1 || w.indexOf("resolved") === 0) return "ok";
+  if (w.indexOf("investigating") === 0) return "bad";
+  if (w.indexOf("identified") === 0) return "warn";
+  if (w.indexOf("monitoring") === 0 || w.indexOf("verifying") === 0) return "mon";
+  if (w.indexOf("scheduled") === 0 || w.indexOf("maintenance") === 0) return "maint";
+  return "";
+}
+function impactClass(word) { return word === "critical" ? "bad" : word === "major" ? "warn" : "mon"; }
+// Turns the bot's Chat text into parts. Returns null for free-form messages (the bot health ones).
+function parse(text) {
+  const lines = text.split("\n");
+  let head = lines[0], mention = false;
+  if (head.indexOf("<users/all> ") === 0) { mention = true; head = head.slice(12); }
+  const hm = /^(\S+) \*(.+?)\* · (.+)$/.exec(head);
+  const tm = lines[1] ? /^\*(.+)\*$/.exec(lines[1]) : null;
+  if (!hm || !tm) return null;
+  const parts = hm[3].split(" · ");
+  const out = {emoji: hm[1], source: hm[2], status: parts[0], impact: "", title: tm[1], time: "", affected: "", summary: "", href: "", mention: mention};
+  const sum = [];
+  for (let i = 2; i < lines.length; i++) {
+    const l = lines[i];
+    const lm = /^<(https?:\/\/[^|>]+)\|[^>]+>$/.exec(l);
+    if (l.indexOf("🕒 ") === 0) out.time = l.slice(3);
+    else if (l.indexOf("Affected: ") === 0) out.affected = l.slice(10);
+    else if (lm) out.href = lm[1];
+    else sum.push(l);
+  }
+  out.summary = sum.join(" ");
+  const im = /^(minor|major|critical) impact$/i.exec(parts[1] || "");
+  if (im) out.impact = im[1].toLowerCase();
+  return out;
+}
+function copyText(text, btn) {
+  const done = function () { const old = btn.textContent; btn.textContent = "Copied"; setTimeout(function () { btn.textContent = old; }, 1200); };
+  if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(done, function () {});
+}
+function spacePills(c) {
+  return c.spaces.map(function (n) { return h("span", {class: "sp " + (SPACE_CLASS[n] || "")}, [h("span", {class: "dot"}), n]); });
+}
+function pillsFor(p) {
+  const out = [];
+  if (p.status) out.push(h("span", {class: "pill " + statusClass(p.status), text: p.status}));
+  if (p.impact) out.push(h("span", {class: "pill " + impactClass(p.impact), text: p.impact + " impact"}));
+  if (p.mention) out.push(h("span", {class: "at", text: "@all"}));
+  return out;
+}
+function famClass(c) {
+  const f = FAMILIES.filter(function (x) { return x.id === c.cat; })[0];
+  return f ? f.cls : "";
+}
+function card(c) {
+  const p = parse(c.text);
+  const copy = h("button", {type: "button", class: "copy", "aria-label": "Copy message text", text: "Copy", onclick: function (ev) { copyText(c.text, ev.currentTarget); }});
+  const top = h("div", {class: "ch"}, [
+    h("div", {class: "av", "aria-hidden": "true", text: p ? p.emoji : "💬"}),
+    h("div", {class: "ct"}, [
+      h("div", {class: "src"}, [p ? p.source : c.source, p ? null : h("small", {text: c.kind})]),
+      p ? h("div", {class: "pills"}, pillsFor(p)) : null
+    ]),
+    h("span", {class: "tag" + (c.live ? " live" : ""), text: c.live ? "Live" : "Example"}),
+    copy
+  ]);
+  const body = [];
+  if (p) {
+    body.push(h("h3", {class: "title", text: p.title}));
+    const meta = [];
+    if (p.time) meta.push(h("span", {text: p.time}));
+    if (p.affected) meta.push(h("div", {text: "Affected: " + p.affected}));
+    if (meta.length) body.push(h("div", {class: "meta"}, meta));
+    if (p.summary) body.push(h("p", {class: "sum"}, [inline(p.summary)]));
+    if (p.href) body.push(safeLink(p.href, "Read more", "more"));
+  } else {
+    body.push(h("p", {class: "raw"}, [multiline(c.text)]));
+  }
+  const foot = h("div", {class: "cf"}, [].concat(spacePills(c), c.note ? [h("p", {class: "note", text: c.note})] : []));
+  return h("article", {class: "card " + famClass(c)}, [top].concat(body, [foot]));
+}
+// Example messages that belong to one incident or one maintenance window read as a single Chat thread.
+function threadCard(items) {
+  const first = items[0];
+  const p0 = parse(first.text);
+  const list = h("ol", {class: "tl"}, items.map(function (c) {
+    const p = parse(c.text);
+    if (!p) return h("li", {}, [multiline(c.text)]);
+    const kids = [h("span", {class: "pill " + statusClass(p.status), text: p.status})];
+    if (p.impact) kids.push(h("span", {class: "pill " + impactClass(p.impact), text: p.impact + " impact"}));
+    if (p.mention) kids.push(h("span", {class: "at", text: "@all"}));
+    if (p.time) kids.push(h("span", {class: "t", text: p.time}));
+    const li = [h("div", {}, kids)];
+    if (p.summary) li.push(h("p", {}, [inline(p.summary)]));
+    return h("li", {class: statusClass(p.status)}, li);
+  }));
+  const title = p0 ? p0.title : first.source;
+  return h("article", {class: "card thread " + famClass(first)}, [
+    h("div", {class: "ch"}, [
+      h("div", {class: "av", "aria-hidden": "true", text: "🧵"}),
+      h("div", {class: "ct"}, [h("div", {class: "src"}, [first.source, h("small", {text: "One thread, " + items.length + " updates"})])]),
+      h("span", {class: "tag", text: "Example"})
+    ]),
+    h("h3", {class: "title", text: title}),
+    list,
+    h("div", {class: "cf"}, [].concat(spacePills(first), first.note ? [h("p", {class: "note", text: first.note})] : []))
+  ]);
+}
+function groupThreads(cards) {
+  const buckets = {}, order = [];
+  cards.forEach(function (c) {
+    const key = !c.live && (c.cat === "incidents" || c.cat === "maintenance") ? c.source + "|" + c.cat + "|" + (c.text.split("\n")[1] || "") : null;
+    if (key === null) { order.push({single: c}); return; }
+    if (!buckets[key]) { buckets[key] = []; order.push({key: key}); }
+    buckets[key].push(c);
+  });
+  return order.map(function (o) {
+    if (o.single) return card(o.single);
+    const items = buckets[o.key];
+    return items.length > 1 ? threadCard(items) : card(items[0]);
+  });
+}
+function inSpace(c, sp) { return sp.id === "all" || c.spaces.indexOf(sp.name) > -1; }
+function currentSpace() {
+  return SPACES.filter(function (x) { return x.id === state.space; })[0] || {id: "all", name: "All spaces"};
+}
+function matchesQuery(c) {
+  if (!state.q) return true;
+  return (c.text + " " + c.source + " " + c.kind).toLowerCase().indexOf(state.q) > -1;
+}
+function drawTiles() {
+  const nav = $("tiles");
+  nav.textContent = "";
+  SPACES.forEach(function (sp) {
+    const cards = DATA.cards.filter(function (c) { return inSpace(c, sp); });
+    const sources = {};
+    cards.forEach(function (c) { sources[c.source] = 1; });
+    nav.appendChild(h("button", {type: "button", class: "tile " + sp.cls, "aria-pressed": String(state.space === sp.id), onclick: function () { pick(sp.id); }}, [
+      h("span", {class: "tn"}, [h("span", {class: "dot"}), sp.name]),
+      h("span", {class: "tc"}, [String(cards.length), h("small", {text: "messages from " + Object.keys(sources).length + " sources"})]),
+      h("span", {class: "td", text: sp.desc})
+    ]));
+  });
+}
+function drawChips() {
+  const sp = currentSpace();
+  const base = DATA.cards.filter(function (c) { return inSpace(c, sp); });
+  const box = $("chips");
+  box.textContent = "";
+  const all = [{id: "all", name: "Everything"}].concat(FAMILIES.filter(function (f) { return base.some(function (c) { return c.cat === f.id; }); }));
+  all.forEach(function (f) {
+    const n = f.id === "all" ? base.length : base.filter(function (c) { return c.cat === f.id; }).length;
+    box.appendChild(h("button", {type: "button", class: "chip", "aria-pressed": String(state.family === f.id), onclick: function () { state.family = f.id; draw(); }}, [f.name, h("i", {text: String(n)})]));
+  });
+  const link = h("button", {type: "button", class: "chip", "aria-pressed": String(state.space === "all"), onclick: function () { pick("all"); }}, ["All spaces", h("i", {text: String(DATA.cards.length)})]);
+  box.appendChild(link);
+}
+function drawList() {
+  const sp = currentSpace();
+  const out = $("out");
+  out.textContent = "";
+  if (!DATA.cards.length) {
+    out.appendChild(h("p", {class: "empty", text: "The live samples are loading from the latest bot run. Try again in a few minutes."}));
+    return;
+  }
+  const cards = DATA.cards.filter(function (c) {
+    return inSpace(c, sp) && (state.family === "all" || c.cat === state.family) && (!state.live || c.live) && matchesQuery(c);
+  });
+  let shown = 0;
+  FAMILIES.forEach(function (f) {
+    const items = cards.filter(function (c) { return c.cat === f.id; });
+    if (!items.length) return;
+    shown += items.length;
+    out.appendChild(h("section", {class: "fam " + f.cls}, [
+      h("div", {class: "sh"}, [h("h2", {text: f.name}), h("p", {text: f.desc})]),
+      h("div", {class: "grid"}, groupThreads(items))
+    ]));
+  });
+  if (!shown) out.appendChild(h("p", {class: "empty", text: "No messages match. Clear the search or the filters."}));
+}
+function draw() { drawTiles(); drawChips(); drawList(); }
+function pick(id) {
+  state.space = id;
+  state.family = "all";
+  try { history.replaceState(null, "", "#" + id); } catch (e) {}
+  draw();
+}
+function readHash() {
+  const id = (location.hash || "").slice(1);
+  state.space = id === "all" || SPACES.some(function (x) { return x.id === id; }) ? id : "wp-php";
+}
+function drawStatic() {
+  const live = DATA.cards.filter(function (c) { return c.live; }).length;
+  $("stats").textContent = DATA.routing.length + " sources  ·  3 Chat spaces  ·  " + live + " live items shown";
+  const rt = $("rt");
+  rt.textContent = "";
+  DATA.routing.forEach(function (r) {
+    rt.appendChild(h("tr", {}, [
+      h("td", {}, [h("strong", {text: r.source})]),
+      h("td", {text: r.how}),
+      h("td", {}, [h("span", {class: "sp " + (SPACE_CLASS[r.space] || "")}, [h("span", {class: "dot"}), r.space])]),
+      h("td", {text: r.extra || "-"})
+    ]));
+  });
+  $("routing").hidden = !DATA.routing.length;
+  let when = "";
+  if (DATA.updated) {
+    try { when = new Date(DATA.updated).toLocaleString("en-GB", {timeZone: "Asia/Kolkata", day: "numeric", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit"}); } catch (e) {}
+  }
+  $("foot").textContent = DATA.cards.length
+    ? "Live cards come from the latest check of the real feeds" + (when ? "; the newest item shown is from " + when + " IST" : "") + ". Times inside messages are shown in IST, as the bot posts them."
+    : "The live samples are temporarily unavailable. They return after the next check.";
+}
+function initTheme() {
+  let saved = null;
+  try { saved = localStorage.getItem("theme"); } catch (e) {}
+  if (saved === "light" || saved === "dark") document.documentElement.setAttribute("data-theme", saved);
+  $("theme").addEventListener("click", function () {
+    const root = document.documentElement;
+    const prefersDark = !!(window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches);
+    const dark = root.getAttribute("data-theme") === "dark" || (!root.getAttribute("data-theme") && prefersDark);
+    const next = dark ? "light" : "dark";
+    root.setAttribute("data-theme", next);
+    try { localStorage.setItem("theme", next); } catch (e) {}
+  });
+}
+readHash();
+initTheme();
+drawStatic();
+$("q").addEventListener("input", function (ev) { state.q = ev.target.value.trim().toLowerCase(); drawList(); });
+$("live").addEventListener("change", function (ev) { state.live = ev.target.checked; drawList(); });
+window.addEventListener("hashchange", function () { readHash(); state.family = "all"; draw(); });
 draw();
 </script>
 </body>
@@ -177,5 +466,5 @@ function scriptJson(data) {
 }
 
 export function renderLanding(data, nonce) {
-  return TEMPLATE.replace("__NONCE__", nonce).replace("__DATA__", () => scriptJson(data));
+  return TEMPLATE.split("__NONCE__").join(nonce).replace("__DATA__", () => scriptJson(data));
 }

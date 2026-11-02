@@ -148,9 +148,9 @@ export default {
           ...common,
           "content-type": "text/html; charset=utf-8",
           "cache-control": "public, max-age=300",
-          // Only our own inline script (by nonce) may run; nothing can be loaded from anywhere else.
+          // Only our own inline script and stylesheet (by nonce) may run; nothing can be loaded from anywhere else.
           "content-security-policy":
-            `default-src 'none'; script-src 'nonce-${nonce}'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'`,
+            `default-src 'none'; script-src 'nonce-${nonce}'; style-src 'nonce-${nonce}'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'`,
         },
       });
     }

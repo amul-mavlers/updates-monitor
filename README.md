@@ -69,6 +69,7 @@ The Worker's public URL (`https://updates-monitor.<account>.workers.dev/`) is a 
 
 - The bot writes `catalog.json` on every run, from the feeds it just fetched and with the same message code that posts to Chat, and the workflow commits it when it changes. The Worker reads it from `CATALOG_URL` (set in `wrangler.jsonc`) and caches it for 5 minutes.
 - Cards marked Live are real recent items. Cards marked Example cover messages that only appear during an outage or a bot problem, and use a fixed date so the file does not change on every run.
+- Features: clickable space tiles with counts, search, a filter by kind of message, a Live only switch, an incident or maintenance example shown as one Chat thread, status and severity pills, a copy button per message, and a light or dark theme switch (remembered in the browser).
 - `/health` returns only `ok` or `not configured`.
 - The page loads nothing from other sites and is served with a strict Content-Security-Policy (inline script by per-request nonce only). It never shows the repo, tokens, webhook names or the token expiry. If `catalog.json` cannot be read, the page still loads and says the samples are unavailable.
 
