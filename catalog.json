@@ -213,7 +213,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Shopify Changelog* · Changelog\n*UI extensions now support a larger number of locales*\n🕒 30 Oct 2026, 23:30 IST\nUI extensions no longer have a 256 KB limit on the combined size of their locale files . As of October 30, 2026, you can add more languages to an extension without hitting a combined size limit at deploy. This applies…\n<https://shopify.dev/changelog/ui-extensions-now-support-a-larger-number-of-locales|Read more>"
+   "text": "🆕 *Shopify Changelog* · Changelog\n*currententrychange now returns the previous page in event.from for customer account full-page extensions*\n🕒 31 Oct 2026, 21:30 IST\nStarting in API version 2027-01 , in customer account full-page extensions the Navigation API currententrychange event sets event.from to the page the customer navigated away from, instead of the page they navigated…\n<https://shopify.dev/changelog/currententrychange-now-returns-the-previous-page-in-event-from-for-customer-account-full-page-extensions|Read more>"
   },
   {
    "cat": "news",
@@ -224,7 +224,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Shopify Changelog* · Changelog\n*Gift Card line_item_id will become read-only in REST Admin API version 2027-01*\n🕒 30 Oct 2026, 21:30 IST\nIn REST Admin API version 2027-01 and later, the line_item_id property on the Gift Card resource is read-only. Shopify ignores the property in create and update requests. Remove it from those requests before you…\n<https://shopify.dev/changelog/rest-gift-card-line_item_id-will-become-read-only-in-api-version-2027-01|Read more>"
+   "text": "🆕 *Shopify Changelog* · Changelog\n*UI extensions now support a larger number of locales*\n🕒 30 Oct 2026, 23:30 IST\nUI extensions no longer have a 256 KB limit on the combined size of their locale files . As of October 30, 2026, you can add more languages to an extension without hitting a combined size limit at deploy. This applies…\n<https://shopify.dev/changelog/ui-extensions-now-support-a-larger-number-of-locales|Read more>"
   },
   {
    "cat": "news",
