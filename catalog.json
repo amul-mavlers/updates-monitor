@@ -9,7 +9,7 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*Elevated errors on GPT-5.4 Nano*\n🕒 2 Nov 2026, 23:16 IST\nAffected: Copilot AI Model Providers\nWe are investigating reports of elevated errors on GPT-5.4 Nano\n<https://stspg.io/ns6pj9qy9glb|Read more>"
+   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*Elevated errors on GPT-5.4 Nano*\n🕒 2 Nov 2026, 23:28 IST\nAffected: Copilot AI Model Providers\nWe are experiencing degraded availability for the GPT-5.4 Nano model in Copilot products and IDE surfaces. This is due to an issue with an upstream model provider.\n<https://stspg.io/ns6pj9qy9glb|Read more>"
   },
   {
    "cat": "incidents",
@@ -543,6 +543,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-02T17:46:34Z",
+ "updated": "2026-11-02T17:58:33Z",
  "version": 1
 }
