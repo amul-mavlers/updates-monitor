@@ -122,6 +122,18 @@
     "WordPress & PHP",
     "Downtime"
    ],
+   "text": "🆕 *PHP News* · News\n*Updated PHP Windows builds for Brotli security fix*\n🕒 26 Oct 2026, 17:27 IST\nThe PHP team announces updated Windows builds: PHP 8.5.12-1, 8.4.27-1, 8.3.36-1 and 8.2.35-1 . These builds include Brotli 1.2.1, which fixes CVE-2026-111497 , an out-of-bounds write vulnerability in Brotli…\n<https://www.php.net/index.php#2026-10-26-1|Read more>"
+  },
+  {
+   "cat": "security",
+   "kind": "News",
+   "live": true,
+   "note": "",
+   "source": "PHP News",
+   "spaces": [
+    "WordPress & PHP",
+    "Downtime"
+   ],
    "text": "🆕 *PHP News* · News\n*Informational advisory: Session upload progress*\n🕒 23 Oct 2026, 15:42 IST\nWe suggest you set session.upload_progress.enabled=0 until the next regular bugfix release, to fully protect from an unlikely RCE vector. This setting was already listed as a mitigation in the GHSA-6wmf-4rv5-p3rp…\n<https://www.php.net/index.php#2026-10-23-1|Read more>"
   },
   {
@@ -147,18 +159,6 @@
     "Downtime"
    ],
    "text": "🆕 *PHP News* · News\n*Security advisory: Critical remote code execution vulnerabilities, update now*\n🕒 21 Oct 2026, 06:05 IST\nPHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35 fix two critical vulnerabilities that can allow unauthenticated remote code execution. All PHP users are strongly encouraged to update immediately. Who is at risk: all PHP…\n<https://www.php.net/index.php#2026-10-21-5|Read more>"
-  },
-  {
-   "cat": "security",
-   "kind": "News",
-   "live": true,
-   "note": "",
-   "source": "PHP News",
-   "spaces": [
-    "WordPress & PHP",
-    "Downtime"
-   ],
-   "text": "🆕 *PHP News* · News\n*PHP 8.5.12 Released!*\n🕒 21 Oct 2026, 05:54 IST\nThe PHP development team announces the immediate availability of PHP 8.5.12. This is a security release fixing two critical vulnerabilities (CVE-2026-109618, CVE-2026-109619) that can allow unauthenticated remote code…\n<https://www.php.net/index.php#2026-10-21-4|Read more>"
   },
   {
    "cat": "news",
@@ -227,15 +227,15 @@
    "text": "🆕 *Shopify Changelog* · Changelog\n*UI extensions now support a larger number of locales*\n🕒 30 Oct 2026, 23:30 IST\nUI extensions no longer have a 256 KB limit on the combined size of their locale files . As of October 30, 2026, you can add more languages to an extension without hitting a combined size limit at deploy. This applies…\n<https://shopify.dev/changelog/ui-extensions-now-support-a-larger-number-of-locales|Read more>"
   },
   {
-   "cat": "news",
+   "cat": "security",
    "kind": "WooCommerce",
    "live": true,
    "note": "",
    "source": "WooCommerce Dev",
    "spaces": [
-    "News"
+    "Downtime"
    ],
-   "text": "🆕 *WooCommerce Dev* · WooCommerce\n*Automated PHP stubs for Woo extensions*\n🕒 3 Nov 2026, 21:06 IST\nWooCommerce introduces woocommerce/php-stubs to auto-generate PHP stubs for extensions, allowing PHPStan to verify integrations effectively, avoiding unverified class calls and enhancing compatibility checks. The post…\n<https://developer.woocommerce.com/2026/11/03/php-stubs-for-extensions/|Read more>"
+   "text": "🆕 *WooCommerce Dev* · WooCommerce\n*Security update for WooPayments*\n🕒 3 Nov 2026, 21:55 IST\nA subscriptions function security update is now available for WooPayments. If you run the WooPayments plugin, please check your version and update to the fix version listed. The post Security update for WooPayments…\n<https://developer.woocommerce.com/2026/11/03/security-update-for-woopayments/|Read more>"
   },
   {
    "cat": "news",
@@ -246,7 +246,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *WooCommerce Dev* · WooCommerce\n*Declaring parent-child cart item relationships in WooCommerce 11.3*\n🕒 28 Oct 2026, 02:56 IST\nWooCommerce 11.3 introduces a filter for tracking product relationships in the cart, enhancing accurate \"N in cart\" counts for bundled items and extensions. The post Declaring parent-child cart item relationships in…\n<https://developer.woocommerce.com/2026/10/27/cart-item-children/|Read more>"
+   "text": "🆕 *WooCommerce Dev* · WooCommerce\n*Automated PHP stubs for Woo extensions*\n🕒 3 Nov 2026, 21:06 IST\nWooCommerce introduces woocommerce/php-stubs to auto-generate PHP stubs for extensions, allowing PHPStan to verify integrations effectively, avoiding unverified class calls and enhancing compatibility checks. The post…\n<https://developer.woocommerce.com/2026/11/03/php-stubs-for-extensions/|Read more>"
   },
   {
    "cat": "security",
@@ -543,6 +543,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-03T16:13:24Z",
+ "updated": "2026-11-03T16:25:00Z",
  "version": 1
 }
