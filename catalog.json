@@ -67,6 +67,17 @@
    "text": "🟢 *Shopify Status* · Resolved after 33 min · Minor impact\n*Shop Pay unavailable*\n🕒 25 Jun 2025, 05:00 IST\nAffected: Checkout\nThis incident has been resolved.\n<https://stspg.io/1nx1vcvd553l|Read more>"
   },
   {
+   "cat": "news",
+   "kind": "New post",
+   "live": true,
+   "note": "",
+   "source": "WordPress News",
+   "spaces": [
+    "WordPress & PHP"
+   ],
+   "text": "🆕 *WordPress News* · New post\n*WordPress 7.2 Beta 4*\n🕒 3 Nov 2026, 21:15 IST\nWordPress 7.2 Beta 4 is ready for download and testing! This beta release is intended for testing and development only. Please do not install, run, or test this version of WordPress on production or mission-critical…\n<https://wordpress.org/news/2026/11/wordpress-7-2-beta-4/|Read more>"
+  },
+  {
    "cat": "security",
    "kind": "New post",
    "live": true,
@@ -100,17 +111,6 @@
     "Downtime"
    ],
    "text": "🆕 *WordPress News* · New post\n*Critical PHP Security Release*\n🕒 21 Oct 2026, 19:14 IST\nThe PHP project has announced a security release that fixes two critical security vulnerabilities discovered in PHP. Due to the critical severity of the issues, site owners are encouraged to immediately update their…\n<https://wordpress.org/news/2026/10/critical-php-security-release/|Read more>"
-  },
-  {
-   "cat": "news",
-   "kind": "New post",
-   "live": true,
-   "note": "",
-   "source": "WordPress News",
-   "spaces": [
-    "WordPress & PHP"
-   ],
-   "text": "🆕 *WordPress News* · New post\n*WordPress 7.2 Beta 1 is Ready for Download and Testing*\n🕒 20 Oct 2026, 21:32 IST\nThis beta release is intended for testing and development only. Please do not install, run, or test this version of WordPress on production or mission-critical websites. Instead, use a test environment or local site to…\n<https://wordpress.org/news/2026/10/wordpress-7-2-beta-1-is-ready-for-download-and-testing/|Read more>"
   },
   {
    "cat": "security",
@@ -543,6 +543,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-03T15:38:17Z",
+ "updated": "2026-11-03T15:45:29Z",
  "version": 1
 }
