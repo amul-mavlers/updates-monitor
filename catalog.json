@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Monitoring · Minor impact",
+   "kind": "Resolved after 1 h 12 min · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Network Performance Issues in APJC*\n🕒 3 Nov 2026, 11:19 IST\nAffected: Network\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/j25w3rpv45gs|Read more>"
+   "text": "🟢 *Cloudflare Status* · Resolved after 1 h 12 min · Minor impact\n*Network Performance Issues in APJC*\n🕒 3 Nov 2026, 11:26 IST\nAffected: Network\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/j25w3rpv45gs|Read more>"
   },
   {
    "cat": "incidents",
@@ -543,6 +543,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-03T05:49:27Z",
+ "updated": "2026-11-03T05:56:29Z",
  "version": 1
 }
