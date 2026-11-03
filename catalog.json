@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Investigating · Minor impact",
+   "kind": "Identified · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Network Performance Issues in APJC*\n🕒 3 Nov 2026, 10:14 IST\nAffected: Network\nCloudflare is investigating issues with Network Performance in the APJC region. We are working to analyze and mitigate this problem. More updates to follow shortly.\n<https://www.cloudflarestatus.com/incidents/j25w3rpv45gs|Read more>"
+   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Network Performance Issues in APJC*\n🕒 3 Nov 2026, 10:23 IST\nAffected: Network\nThe issue has been identified and a fix is being implemented.\n<https://www.cloudflarestatus.com/incidents/j25w3rpv45gs|Read more>"
   },
   {
    "cat": "incidents",
@@ -543,6 +543,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-03T04:44:12Z",
+ "updated": "2026-11-03T04:53:37Z",
  "version": 1
 }
