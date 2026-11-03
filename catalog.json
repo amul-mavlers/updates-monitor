@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Investigating · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Increased Durable Object Errors in the Dallas, TX US region*\n🕒 3 Nov 2026, 21:08 IST\nAffected: Durable Objects\nCloudflare is aware of and investigating an increased number of errors from Durable Objects in Dallas, Texas, USA. More updates to follow.\n<https://www.cloudflarestatus.com/incidents/7gixemnw9oei|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Identified · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Cloudflare Workers and Pages build errors*\n🕒 3 Nov 2026, 20:45 IST\nAffected: Workers Builds\nCustomers may experience increased queue times for Workers Builders\n<https://www.cloudflarestatus.com/incidents/nbyxn84kvb6o|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 1 h 4 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 1 h 4 min · Minor impact\n*Elevated number of 5xx errors in HKG*\n🕒 3 Nov 2026, 12:54 IST\nAffected: Network, Cloud Network Interconnect (CNI), Hong Kong - (HKG)\nBetween 06:20-6:32 UTC customers reaching Hong Kong may have experienced an elevated number of 5xx errors or CNI timeouts due to congestion.\n<https://www.cloudflarestatus.com/incidents/6c4ak19xodyt|Read more>"
   },
   {
    "cat": "incidents",
@@ -235,7 +235,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *WooCommerce Dev* · WooCommerce\n*Declaring parent-child cart item relationships in WooCommerce 11.3*\n🕒 28 Oct 2026, 02:56 IST\nWooCommerce 11.3 introduces a filter for tracking product relationships in the cart, enhancing accurate \"N in cart\" counts for bundled items and extensions. The post Declaring parent-child cart item relationships in…\n<https://developer.woocommerce.com/2026/10/27/cart-item-children/|Read more>"
+   "text": "🆕 *WooCommerce Dev* · WooCommerce\n*Automated PHP stubs for Woo extensions*\n🕒 3 Nov 2026, 21:06 IST\nWooCommerce introduces woocommerce/php-stubs to auto-generate PHP stubs for extensions, allowing PHPStan to verify integrations effectively, avoiding unverified class calls and enhancing compatibility checks. The post…\n<https://developer.woocommerce.com/2026/11/03/php-stubs-for-extensions/|Read more>"
   },
   {
    "cat": "news",
@@ -246,7 +246,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *WooCommerce Dev* · WooCommerce\n*WooCommerce 11.3: What’s coming for developers*\n🕒 27 Oct 2026, 02:19 IST\nWooCommerce 11.3 beta is now available for testing, featuring enhanced styling controls, On-Sale Badge improvements, mobile gallery updates, and improvements to MCP. The post WooCommerce 11.3: What’s coming for…\n<https://developer.woocommerce.com/2026/10/26/woocommerce-11-3-pre-release/|Read more>"
+   "text": "🆕 *WooCommerce Dev* · WooCommerce\n*Declaring parent-child cart item relationships in WooCommerce 11.3*\n🕒 28 Oct 2026, 02:56 IST\nWooCommerce 11.3 introduces a filter for tracking product relationships in the cart, enhancing accurate \"N in cart\" counts for bundled items and extensions. The post Declaring parent-child cart item relationships in…\n<https://developer.woocommerce.com/2026/10/27/cart-item-children/|Read more>"
   },
   {
    "cat": "security",
@@ -543,6 +543,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-03T15:15:31Z",
+ "updated": "2026-11-03T15:38:17Z",
  "version": 1
 }
