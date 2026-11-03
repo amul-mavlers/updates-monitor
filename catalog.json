@@ -249,15 +249,15 @@
    "text": "🆕 *WooCommerce Dev* · WooCommerce\n*WooCommerce 11.3: What’s coming for developers*\n🕒 27 Oct 2026, 02:19 IST\nWooCommerce 11.3 beta is now available for testing, featuring enhanced styling controls, On-Sale Badge improvements, mobile gallery updates, and improvements to MCP. The post WooCommerce 11.3: What’s coming for…\n<https://developer.woocommerce.com/2026/10/26/woocommerce-11-3-pre-release/|Read more>"
   },
   {
-   "cat": "news",
+   "cat": "security",
    "kind": "Laravel",
    "live": true,
    "note": "",
    "source": "Laravel News",
    "spaces": [
-    "News"
+    "Downtime"
    ],
-   "text": "🆕 *Laravel News* · Laravel\n*Email Sending and Testing for Laravel in One Account*\n🕒 2 Nov 2026, 19:57 IST\nSend real mail from Laravel and catch test emails in one Maileroo account: SMTP sink, spam and dark-mode checks, and automated tests in CI. The post Email Sending and Testing for Laravel in One Account appeared first…\n<https://laravel-news.com/maileroo-laravel-email-testing?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
+   "text": "🆕 *Laravel News* · Laravel\n*Cooldown Dependency Policy now in Composer 2.11*\n🕒 3 Nov 2026, 08:50 IST\nComposer 2.11 can hold back newly published package versions for a set period before installing them. It also ships six security fixes and faster resolution. The post Cooldown Dependency Policy now in Composer 2.11…\n<https://laravel-news.com/composer-2-11?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
   },
   {
    "cat": "news",
@@ -268,7 +268,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Laravel News* · Laravel\n*PIE 1.5 Changes PHP Extension Installs in CI*\n🕒 2 Nov 2026, 06:12 IST\nPIE 1.5 requires explicit extension package choices in CI. See how to update a Laravel project's Redis install and skip development extensions. The post PIE 1.5 Changes PHP Extension Installs in CI appeared first on…\n<https://laravel-news.com/pie-1-5?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
+   "text": "🆕 *Laravel News* · Laravel\n*Live Props for Real-Time Updates in Inertia.js v3.11*\n🕒 3 Nov 2026, 08:49 IST\nInertia.js v3.11 adds live props, which reload a page prop when a broadcast event arrives, with Laravel Echo, Reverb, Pusher, and Action Cable transports. The post Live Props for Real-Time Updates in Inertia.js v3.11…\n<https://laravel-news.com/inertia-3-11-0?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
   },
   {
    "cat": "news",
