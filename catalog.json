@@ -2,14 +2,14 @@
  "cards": [
   {
    "cat": "incidents",
-   "kind": "Investigating · Minor impact",
+   "kind": "Monitoring · Minor impact",
    "live": true,
    "note": "",
    "source": "GitHub Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*Incident with Git Operations*\n🕒 4 Nov 2026, 03:35 IST\nAffected: Git Operations\nOur mitigation is rolled out and customers should start seeing improvements to Git Operations. We will continue to provide updates on mitigation status.\n<https://stspg.io/n478rfsspcmr|Read more>"
+   "text": "🟡 *GitHub Status* · Monitoring · Minor impact\n*Incident with Git Operations*\n🕒 4 Nov 2026, 04:07 IST\nAffected: Git Operations\nThe degradation affecting Git Operations has been mitigated. We are monitoring to ensure stability.\n<https://stspg.io/n478rfsspcmr|Read more>"
   },
   {
    "cat": "incidents",
@@ -543,6 +543,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-03T22:05:09Z",
+ "updated": "2026-11-03T22:37:36Z",
  "version": 1
 }
