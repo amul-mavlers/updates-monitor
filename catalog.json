@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Monitoring · Minor impact",
+   "kind": "Resolved after 2 h 21 min · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Cloudflare Gateway DNS-over-TLS Connectivity Issues over IPv4*\n🕒 3 Nov 2026, 05:53 IST\nAffected: Gateway\nOur team has been able to identify and apply an effective fix for this issue. We are currently monitoring the results.\n<https://www.cloudflarestatus.com/incidents/3bv9locsg7ln|Read more>"
+   "text": "🟢 *Cloudflare Status* · Resolved after 2 h 21 min · Minor impact\n*Cloudflare Gateway DNS-over-TLS Connectivity Issues over IPv4*\n🕒 3 Nov 2026, 06:04 IST\nAffected: Gateway\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/3bv9locsg7ln|Read more>"
   },
   {
    "cat": "incidents",
@@ -543,6 +543,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-03T00:23:00Z",
+ "updated": "2026-11-03T00:34:13Z",
  "version": 1
 }
