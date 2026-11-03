@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Resolved after 1 h 4 min · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🟢 *Cloudflare Status* · Resolved after 1 h 4 min · Minor impact\n*Elevated number of 5xx errors in HKG*\n🕒 3 Nov 2026, 12:54 IST\nAffected: Network, Cloud Network Interconnect (CNI), Hong Kong - (HKG)\nBetween 06:20-6:32 UTC customers reaching Hong Kong may have experienced an elevated number of 5xx errors or CNI timeouts due to congestion.\n<https://www.cloudflarestatus.com/incidents/6c4ak19xodyt|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 1 h 12 min · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 1 h 12 min · Minor impact\n*Network Performance Issues in APJC*\n🕒 3 Nov 2026, 11:26 IST\nAffected: Network\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/j25w3rpv45gs|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 1 h 10 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 1 h 10 min · Minor impact\n*Cloudflare Container Issues*\n🕒 3 Nov 2026, 10:53 IST\nAffected: Containers\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/n5mvqjs26jg9|Read more>"
   },
   {
    "cat": "incidents",
@@ -543,6 +543,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-03T05:56:29Z",
+ "updated": "2026-11-03T07:24:51Z",
  "version": 1
 }
