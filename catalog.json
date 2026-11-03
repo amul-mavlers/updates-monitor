@@ -9,7 +9,7 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*Incident with Git Operations*\n🕒 4 Nov 2026, 02:27 IST\nAffected: Git Operations\nWe are investigating reports of degraded performance for Git Operations\n<https://stspg.io/n478rfsspcmr|Read more>"
+   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*Incident with Git Operations*\n🕒 4 Nov 2026, 03:07 IST\nAffected: Git Operations\nWe have identified the issue impacting Git Operations and are beginning to roll out a mitigation. We will follow up with another update when we begin to see recovery.\n<https://stspg.io/n478rfsspcmr|Read more>"
   },
   {
    "cat": "incidents",
@@ -543,6 +543,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-03T20:57:14Z",
+ "updated": "2026-11-03T21:37:34Z",
  "version": 1
 }
