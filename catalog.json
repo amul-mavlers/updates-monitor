@@ -2,6 +2,17 @@
  "cards": [
   {
    "cat": "incidents",
+   "kind": "Investigating · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "GitHub Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*Incident with API, Git, and Copilot requests*\n🕒 3 Nov 2026, 18:55 IST\nAffected: Copilot\nWe are investigating reports of degraded performance for Copilot\n<https://stspg.io/h1xqhrcn5gqn|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 38 min · Minor impact",
    "live": true,
    "note": "",
@@ -10,17 +21,6 @@
     "Downtime"
    ],
    "text": "🟢 *GitHub Status* · Resolved after 38 min · Minor impact\n*Elevated errors on GPT-5.4 Nano*\n🕒 2 Nov 2026, 23:54 IST\nAffected: Copilot AI Model Providers\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/ns6pj9qy9glb|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 2 h 29 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "GitHub Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *GitHub Status* · Resolved after 2 h 29 min · Minor impact\n*Incident with Dependabot*\n🕒 31 Oct 2026, 04:59 IST\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/5bh6qnzn76tk|Read more>"
   },
   {
    "cat": "incidents",
@@ -543,6 +543,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-03T07:24:51Z",
+ "updated": "2026-11-03T13:25:19Z",
  "version": 1
 }
