@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Monitoring · Minor impact",
+   "kind": "Resolved after 1 h 10 min · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Cloudflare Container Issues*\n🕒 3 Nov 2026, 10:42 IST\nAffected: Containers\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/n5mvqjs26jg9|Read more>"
+   "text": "🟢 *Cloudflare Status* · Resolved after 1 h 10 min · Minor impact\n*Cloudflare Container Issues*\n🕒 3 Nov 2026, 10:53 IST\nAffected: Containers\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/n5mvqjs26jg9|Read more>"
   },
   {
    "cat": "incidents",
@@ -543,6 +543,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-03T05:12:23Z",
+ "updated": "2026-11-03T05:23:01Z",
  "version": 1
 }
