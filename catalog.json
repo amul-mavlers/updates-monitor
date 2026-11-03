@@ -31,18 +31,18 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Cloudflare Container Issues*\n🕒 3 Nov 2026, 09:42 IST\nAffected: Containers\nCloudflare is investigating an increased level of errors for Containers failing to start. We are working to analyse and mitigate this problem. More updates to follow shortly.\n<https://www.cloudflarestatus.com/incidents/n5mvqjs26jg9|Read more>"
+   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Network Performance Issues in APJC*\n🕒 3 Nov 2026, 10:14 IST\nAffected: Network\nCloudflare is investigating issues with Network Performance in the APJC region. We are working to analyze and mitigate this problem. More updates to follow shortly.\n<https://www.cloudflarestatus.com/incidents/j25w3rpv45gs|Read more>"
   },
   {
    "cat": "incidents",
-   "kind": "Resolved after 2 h 21 min · Minor impact",
+   "kind": "Investigating · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 2 h 21 min · Minor impact\n*Cloudflare Gateway DNS-over-TLS Connectivity Issues over IPv4*\n🕒 3 Nov 2026, 06:04 IST\nAffected: Gateway\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/3bv9locsg7ln|Read more>"
+   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Cloudflare Container Issues*\n🕒 3 Nov 2026, 09:42 IST\nAffected: Containers\nCloudflare is investigating an increased level of errors for Containers failing to start. We are working to analyse and mitigate this problem. More updates to follow shortly.\n<https://www.cloudflarestatus.com/incidents/n5mvqjs26jg9|Read more>"
   },
   {
    "cat": "incidents",
@@ -543,6 +543,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-03T04:12:18Z",
+ "updated": "2026-11-03T04:44:12Z",
  "version": 1
 }
