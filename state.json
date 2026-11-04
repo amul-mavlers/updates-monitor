@@ -1281,6 +1281,7 @@
     "http://php.net/releases/8_2_35.php"
   ],
   "Shopify Changelog": [
+    "https://shopify.dev/changelog/test-app-network-access-configuration-on-dev-stores",
     "https://shopify.dev/changelog/currententrychange-now-returns-the-previous-page-in-event-from-for-customer-account-full-page-extensions",
     "https://shopify.dev/changelog/rest-gift-card-line_item_id-will-become-read-only-in-api-version-2027-01",
     "https://shopify.dev/changelog/ui-extensions-now-support-a-larger-number-of-locales",

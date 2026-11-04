@@ -213,7 +213,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Shopify Changelog* · Changelog\n*currententrychange now returns the previous page in event.from for customer account full-page extensions*\n🕒 31 Oct 2026, 21:30 IST\nStarting in API version 2027-01 , in customer account full-page extensions the Navigation API currententrychange event sets event.from to the page the customer navigated away from, instead of the page they navigated…\n<https://shopify.dev/changelog/currententrychange-now-returns-the-previous-page-in-event-from-for-customer-account-full-page-extensions|Read more>"
+   "text": "🆕 *Shopify Changelog* · Changelog\n*Test app network access configuration on dev stores*\n🕒 4 Nov 2026, 23:30 IST\nYou can now test your app's [network_access] settings on a dev store with the new network access testing feature preview . The preview helps you confirm you have the right networks listed, and find hosts and servers…\n<https://shopify.dev/changelog/test-app-network-access-configuration-on-dev-stores|Read more>"
   },
   {
    "cat": "news",
@@ -224,7 +224,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Shopify Changelog* · Changelog\n*UI extensions now support a larger number of locales*\n🕒 30 Oct 2026, 23:30 IST\nUI extensions no longer have a 256 KB limit on the combined size of their locale files . As of October 30, 2026, you can add more languages to an extension without hitting a combined size limit at deploy. This applies…\n<https://shopify.dev/changelog/ui-extensions-now-support-a-larger-number-of-locales|Read more>"
+   "text": "🆕 *Shopify Changelog* · Changelog\n*currententrychange now returns the previous page in event.from for customer account full-page extensions*\n🕒 31 Oct 2026, 21:30 IST\nStarting in API version 2027-01 , in customer account full-page extensions the Navigation API currententrychange event sets event.from to the page the customer navigated away from, instead of the page they navigated…\n<https://shopify.dev/changelog/currententrychange-now-returns-the-previous-page-in-event-from-for-customer-account-full-page-extensions|Read more>"
   },
   {
    "cat": "security",
