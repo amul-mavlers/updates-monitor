@@ -2,6 +2,17 @@
  "cards": [
   {
    "cat": "incidents",
+   "kind": "Investigating · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "GitHub Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*Incident with Actions and Pages*\n🕒 4 Nov 2026, 21:35 IST\nAffected: Actions, Pages\nWe are investigating reports of degraded performance for Actions and Pages\n<https://stspg.io/pjgptg3cfc6n|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 2 h 0 min · Major impact",
    "live": true,
    "note": "",
@@ -10,17 +21,6 @@
     "Downtime"
    ],
    "text": "🟢 *GitHub Status* · Resolved after 2 h 0 min · Major impact\n*Incident with Pull Requests, Git Operations and Issues*\n🕒 4 Nov 2026, 17:20 IST\nAffected: Git Operations, API Requests, Issues, Pull Requests +1\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/18blsgwnbyy6|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 1 h 16 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "GitHub Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *GitHub Status* · Resolved after 1 h 16 min · Minor impact\n*Increased task-related errors for Copilot Mission Control*\n🕒 4 Nov 2026, 15:31 IST\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/hj74883wgn0t|Read more>"
   },
   {
    "cat": "incidents",
@@ -543,6 +543,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-04T15:33:09Z",
+ "updated": "2026-11-04T16:05:31Z",
  "version": 1
 }
