@@ -2,6 +2,17 @@
  "cards": [
   {
    "cat": "incidents",
+   "kind": "Resolved after 1 h 16 min · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "GitHub Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🟢 *GitHub Status* · Resolved after 1 h 16 min · Minor impact\n*Increased task-related errors for Copilot Mission Control*\n🕒 4 Nov 2026, 15:31 IST\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/hj74883wgn0t|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Investigating · Major impact",
    "live": true,
    "note": "",
@@ -10,17 +21,6 @@
     "Downtime"
    ],
    "text": "🔴 *GitHub Status* · Investigating · Major impact\n*Incident with Pull Requests, Git Operations and Issues*\n🕒 4 Nov 2026, 15:23 IST\nAffected: Git Operations, Issues, Pull Requests, Actions\nPull Requests is experiencing degraded availability. We are continuing to investigate.\n<https://stspg.io/18blsgwnbyy6|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Investigating · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "GitHub Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*Increased task-related errors for Copilot Mission Control*\n🕒 4 Nov 2026, 15:20 IST\nWe're continuing to see recovery as rollout continues\n<https://stspg.io/hj74883wgn0t|Read more>"
   },
   {
    "cat": "incidents",
@@ -543,6 +543,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-04T09:53:38Z",
+ "updated": "2026-11-04T10:01:44Z",
  "version": 1
 }
