@@ -2,6 +2,17 @@
  "cards": [
   {
    "cat": "incidents",
+   "kind": "Investigating · Major impact",
+   "live": true,
+   "note": "",
+   "source": "GitHub Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🔴 *GitHub Status* · Investigating · Major impact\n*Incident with Actions*\n🕒 4 Nov 2026, 23:10 IST\nAffected: Actions\nWe are investigating reports of degraded availability for Actions\n<https://stspg.io/7pwv28hvkmz8|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 55 min · Major impact",
    "live": true,
    "note": "",
@@ -10,17 +21,6 @@
     "Downtime"
    ],
    "text": "🟢 *GitHub Status* · Resolved after 55 min · Major impact\n*Incident with Actions and Pages*\n🕒 4 Nov 2026, 22:31 IST\nAffected: Webhooks, Actions, Pages\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/pjgptg3cfc6n|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 2 h 0 min · Major impact",
-   "live": true,
-   "note": "",
-   "source": "GitHub Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *GitHub Status* · Resolved after 2 h 0 min · Major impact\n*Incident with Pull Requests, Git Operations and Issues*\n🕒 4 Nov 2026, 17:20 IST\nAffected: Git Operations, API Requests, Issues, Pull Requests +1\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/18blsgwnbyy6|Read more>"
   },
   {
    "cat": "incidents",
@@ -543,6 +543,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-04T17:01:11Z",
+ "updated": "2026-11-04T17:40:33Z",
  "version": 1
 }
