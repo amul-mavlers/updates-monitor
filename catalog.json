@@ -235,18 +235,18 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🆕 *WooCommerce Dev* · WooCommerce\n*Security update for WooPayments*\n🕒 3 Nov 2026, 21:55 IST\nA subscriptions function security update is now available for WooPayments. If you run the WooPayments plugin, please check your version and update to the fix version listed. The post Security update for WooPayments…\n<https://developer.woocommerce.com/2026/11/03/security-update-for-woopayments/|Read more>"
+   "text": "🆕 *WooCommerce Dev* · WooCommerce\n*WooCommerce 11.2.2: Release notes*\n🕒 5 Nov 2026, 02:59 IST\nWooCommerce 11.2.2 has been released with a number of updates focused on security. We strongly recommend updating to the latest release. The post WooCommerce 11.2.2: Release notes appeared first on The WooCommerce…\n<https://developer.woocommerce.com/2026/11/04/woocommerce-11-2-2-release-notes/|Read more>"
   },
   {
-   "cat": "news",
+   "cat": "security",
    "kind": "WooCommerce",
    "live": true,
    "note": "",
    "source": "WooCommerce Dev",
    "spaces": [
-    "News"
+    "Downtime"
    ],
-   "text": "🆕 *WooCommerce Dev* · WooCommerce\n*Automated PHP stubs for Woo extensions*\n🕒 3 Nov 2026, 21:06 IST\nWooCommerce introduces woocommerce/php-stubs to auto-generate PHP stubs for extensions, allowing PHPStan to verify integrations effectively, avoiding unverified class calls and enhancing compatibility checks. The post…\n<https://developer.woocommerce.com/2026/11/03/php-stubs-for-extensions/|Read more>"
+   "text": "🆕 *WooCommerce Dev* · WooCommerce\n*Security update for WooPayments*\n🕒 3 Nov 2026, 21:55 IST\nA subscriptions function security update is now available for WooPayments. If you run the WooPayments plugin, please check your version and update to the fix version listed. The post Security update for WooPayments…\n<https://developer.woocommerce.com/2026/11/03/security-update-for-woopayments/|Read more>"
   },
   {
    "cat": "news",
@@ -543,6 +543,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-04T18:16:08Z",
+ "updated": "2026-11-04T21:29:42Z",
  "version": 1
 }
