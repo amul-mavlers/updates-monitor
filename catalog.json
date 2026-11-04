@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Investigating · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Network latency issues in NRT*\n🕒 4 Nov 2026, 19:09 IST\nAffected: Network, Tokyo, Japan - (NRT)\nWe are currently investigating a network latency issue in NRT\n<https://www.cloudflarestatus.com/incidents/nbnize4e990z|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 9 d 7 h · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 9 d 7 h · Minor impact\n*Cloudflare Pages Upload Issue*\n🕒 4 Nov 2026, 12:41 IST\nAffected: Dashboard, Pages\nBetween 2026/10/26 - 2026/11/4, some customers trying to upload static Pages assets from the Cloudflare Dashboard may have experienced issues creating a Pages project.\n<https://www.cloudflarestatus.com/incidents/me060q7dbayp|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 4 h 51 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 4 h 51 min · Minor impact\n*Cloudflare Workers and Pages build errors*\n🕒 4 Nov 2026, 01:08 IST\nAffected: Workers Builds\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/nbyxn84kvb6o|Read more>"
   },
   {
    "cat": "incidents",
@@ -543,6 +543,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-04T11:50:06Z",
+ "updated": "2026-11-04T13:39:26Z",
  "version": 1
 }
