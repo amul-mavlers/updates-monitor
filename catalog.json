@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Identified · Minor impact",
+   "kind": "Monitoring · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Network latency issues in NRT*\n🕒 4 Nov 2026, 20:28 IST\nAffected: Network, Tokyo, Japan - (NRT)\nThe issue has been identified and a fix is being implemented.\n<https://www.cloudflarestatus.com/incidents/nbnize4e990z|Read more>"
+   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Network latency issues in NRT*\n🕒 4 Nov 2026, 20:49 IST\nAffected: Network, Tokyo, Japan - (NRT)\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/nbnize4e990z|Read more>"
   },
   {
    "cat": "incidents",
@@ -543,6 +543,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-04T14:58:43Z",
+ "updated": "2026-11-04T15:19:51Z",
  "version": 1
 }
