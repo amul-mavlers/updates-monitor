@@ -2,14 +2,14 @@
  "cards": [
   {
    "cat": "incidents",
-   "kind": "Investigating · Major impact",
+   "kind": "Monitoring · Major impact",
    "live": true,
    "note": "",
    "source": "GitHub Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *GitHub Status* · Investigating · Major impact\n*Incident with Actions and Pages*\n🕒 4 Nov 2026, 22:04 IST\nAffected: Webhooks, Actions, Pages\nWe have identified an issue with events that might trigger Actions. We have applied mitigations and are monitoring for recovery at this point. Customers may observe delayed status updates for their jobs.\n<https://stspg.io/pjgptg3cfc6n|Read more>"
+   "text": "🟡 *GitHub Status* · Monitoring · Major impact\n*Incident with Actions and Pages*\n🕒 4 Nov 2026, 22:19 IST\nAffected: Webhooks, Actions, Pages\nThe degradation has been mitigated. We are monitoring to ensure stability.\n<https://stspg.io/pjgptg3cfc6n|Read more>"
   },
   {
    "cat": "incidents",
@@ -543,6 +543,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-04T16:34:45Z",
+ "updated": "2026-11-04T16:49:27Z",
  "version": 1
 }
