@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Identified · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Network latency issues in NRT*\n🕒 4 Nov 2026, 20:28 IST\nAffected: Network, Tokyo, Japan - (NRT)\nThe issue has been identified and a fix is being implemented.\n<https://www.cloudflarestatus.com/incidents/nbnize4e990z|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 1 d 1 h · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 1 d 1 h · Minor impact\n*Increased Latency and Errors for R2 and Downstream Services in Western North America (WNAM)*\n🕒 4 Nov 2026, 20:13 IST\nAffected: Stream, Pipelines, R2\nCloudflare has resolved an issue affecting R2 and downstream services in the Western North America region. Some customers may have seen elevated latency and errors between approximately 13:00 and 22:15 UTC on November…\n<https://www.cloudflarestatus.com/incidents/dr9s0uvzwk6n|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Investigating · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Network latency issues in NRT*\n🕒 4 Nov 2026, 19:09 IST\nAffected: Network, Tokyo, Japan - (NRT)\nWe are currently investigating a network latency issue in NRT\n<https://www.cloudflarestatus.com/incidents/nbnize4e990z|Read more>"
   },
   {
    "cat": "incidents",
@@ -543,6 +543,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-04T14:43:39Z",
+ "updated": "2026-11-04T14:58:43Z",
  "version": 1
 }
