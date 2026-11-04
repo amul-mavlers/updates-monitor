@@ -9,7 +9,7 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *GitHub Status* · Investigating · Major impact\n*Incident with Pull Requests, Git Operations and Issues*\n🕒 4 Nov 2026, 16:08 IST\nAffected: Git Operations, Issues, Pull Requests, Actions\nWe're investigating elevated errors and intermittent failures affecting GitHub including Pull Requests, Git Operations, and Issues. We'll continue to keep users updated as we work toward mitigation.\n<https://stspg.io/18blsgwnbyy6|Read more>"
+   "text": "🔴 *GitHub Status* · Investigating · Major impact\n*Incident with Pull Requests, Git Operations and Issues*\n🕒 4 Nov 2026, 16:41 IST\nAffected: Git Operations, API Requests, Issues, Pull Requests +1\nAPI Requests is experiencing degraded performance. We are continuing to investigate.\n<https://stspg.io/18blsgwnbyy6|Read more>"
   },
   {
    "cat": "incidents",
@@ -543,6 +543,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-04T10:38:49Z",
+ "updated": "2026-11-04T11:11:30Z",
  "version": 1
 }
