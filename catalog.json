@@ -2,14 +2,14 @@
  "cards": [
   {
    "cat": "incidents",
-   "kind": "Investigating · Major impact",
+   "kind": "Monitoring · Major impact",
    "live": true,
    "note": "",
    "source": "GitHub Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *GitHub Status* · Investigating · Major impact\n*Incident with Actions*\n🕒 4 Nov 2026, 23:23 IST\nAffected: Actions\nWe have identified an issue with events that might trigger Actions. We have applied mitigations and are monitoring for recovery at this point. Customers may observe delayed status updates for their jobs.\n<https://stspg.io/7pwv28hvkmz8|Read more>"
+   "text": "🟡 *GitHub Status* · Monitoring · Major impact\n*Incident with Actions*\n🕒 4 Nov 2026, 23:37 IST\nAffected: Actions\nThe degradation affecting Actions has been mitigated. We are monitoring to ensure stability.\n<https://stspg.io/7pwv28hvkmz8|Read more>"
   },
   {
    "cat": "incidents",
@@ -543,6 +543,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-04T17:53:11Z",
+ "updated": "2026-11-04T18:07:51Z",
  "version": 1
 }
