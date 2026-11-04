@@ -9,7 +9,7 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *GitHub Status* · Investigating · Major impact\n*Incident with Actions and Pages*\n🕒 4 Nov 2026, 21:47 IST\nAffected: Webhooks, Actions, Pages\nActions is experiencing degraded availability. We are continuing to investigate.\n<https://stspg.io/pjgptg3cfc6n|Read more>"
+   "text": "🔴 *GitHub Status* · Investigating · Major impact\n*Incident with Actions and Pages*\n🕒 4 Nov 2026, 22:04 IST\nAffected: Webhooks, Actions, Pages\nWe have identified an issue with events that might trigger Actions. We have applied mitigations and are monitoring for recovery at this point. Customers may observe delayed status updates for their jobs.\n<https://stspg.io/pjgptg3cfc6n|Read more>"
   },
   {
    "cat": "incidents",
@@ -543,6 +543,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-04T16:17:29Z",
+ "updated": "2026-11-04T16:34:45Z",
  "version": 1
 }
