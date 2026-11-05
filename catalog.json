@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Monitoring · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Increased Errors for Durable Objects in Western Europe*\n🕒 5 Nov 2026, 18:53 IST\nAffected: Durable Objects\nCloudflare investigated an issue that caused an increase of errors for Durable Objects in Western Europe. The issue has been resolved and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/oy8gxjb38yse|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 1 h 1 min",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 1 h 1 min\n*Increased Errors for Durable Objects and Downstream Services in Eastern North America (ENAM)*\n🕒 5 Nov 2026, 03:51 IST\nAffected: R2\nCloudflare has resolved an issue affecting Durable Objects and downstream services in the Eastern North America (ENAM) region. Some customers may have seen elevated errors between approximately 21:20 and 21:22 UTC on…\n<https://www.cloudflarestatus.com/incidents/c3pjgxk8xnzn|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 1 h 53 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 1 h 53 min · Minor impact\n*Network latency issues in NRT*\n🕒 4 Nov 2026, 21:03 IST\nAffected: Network, Tokyo, Japan - (NRT)\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/nbnize4e990z|Read more>"
   },
   {
    "cat": "incidents",
@@ -543,6 +543,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-04T22:21:26Z",
+ "updated": "2026-11-05T13:23:55Z",
  "version": 1
 }
