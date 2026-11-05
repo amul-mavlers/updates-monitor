@@ -1290,6 +1290,7 @@
     "http://php.net/releases/8_2_35.php"
   ],
   "Shopify Changelog": [
+    "https://shopify.dev/changelog/order-routing-functions-can-now-apply-one-location-ranking-to-multiple-fulfillment-groups",
     "https://shopify.dev/changelog/app-security-updates-ip-allowlist-is-now-required",
     "https://shopify.dev/changelog/ip-allowlists-are-now-required-for-public-apps",
     "https://shopify.dev/changelog/app-ip-allowlists-now-support-apps-with-serverless-hosting",
