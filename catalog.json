@@ -2,14 +2,14 @@
  "cards": [
   {
    "cat": "incidents",
-   "kind": "Investigating · Minor impact",
+   "kind": "Monitoring · Minor impact",
    "live": true,
    "note": "",
    "source": "GitHub Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*Incident with Actions*\n🕒 5 Nov 2026, 22:22 IST\nAffected: Actions\nSome GitHub Actions workflow runs may experience delays or errors when starting. We’re investigating and preparing a mitigation.\n<https://stspg.io/lv4q3xm9r0rk|Read more>"
+   "text": "🟡 *GitHub Status* · Monitoring · Minor impact\n*Incident with Actions*\n🕒 5 Nov 2026, 22:34 IST\nAffected: Actions\nThe degradation affecting Actions has been mitigated. We are monitoring to ensure stability.\n<https://stspg.io/lv4q3xm9r0rk|Read more>"
   },
   {
    "cat": "incidents",
@@ -543,6 +543,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-05T16:52:52Z",
+ "updated": "2026-11-05T17:04:46Z",
  "version": 1
 }
