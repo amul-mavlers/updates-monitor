@@ -1283,6 +1283,7 @@
     "http://php.net/releases/8_2_35.php"
   ],
   "Shopify Changelog": [
+    "https://shopify.dev/changelog/retry_declined-added-to-customerpaymentmethodrevocationreason",
     "https://shopify.dev/changelog/fulfillment-order-destination-province-code",
     "https://shopify.dev/changelog/test-app-network-access-configuration-on-dev-stores",
     "https://shopify.dev/changelog/currententrychange-now-returns-the-previous-page-in-event-from-for-customer-account-full-page-extensions",
