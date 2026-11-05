@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Monitoring · Minor impact",
+   "kind": "Resolved after 28 min · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Workers Builds Issues*\n🕒 6 Nov 2026, 01:25 IST\nAffected: Workers Builds\nBuilds are being processed and we're working through backlog\n<https://www.cloudflarestatus.com/incidents/yaa0witbl2me|Read more>"
+   "text": "🟢 *Cloudflare Status* · Resolved after 28 min · Minor impact\n*Workers Builds Issues*\n🕒 6 Nov 2026, 01:50 IST\nAffected: Workers Builds\nQueue times have returned to normal.\n<https://www.cloudflarestatus.com/incidents/yaa0witbl2me|Read more>"
   },
   {
    "cat": "incidents",
@@ -543,6 +543,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-05T19:55:51Z",
+ "updated": "2026-11-05T20:20:10Z",
  "version": 1
 }
