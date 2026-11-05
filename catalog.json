@@ -205,6 +205,28 @@
    "text": "🆕 *PHP Releases* · New release\n*PHP 8.2.35 released!*\n🕒 21 Oct 2026, 05:30 IST\nThere is a new PHP release in town!\n<http://php.net/releases/8_2_35.php|Read more>"
   },
   {
+   "cat": "news",
+   "kind": "Changelog",
+   "live": true,
+   "note": "",
+   "source": "Shopify Changelog",
+   "spaces": [
+    "News"
+   ],
+   "text": "🆕 *Shopify Changelog* · Changelog\n*Order routing functions can now rank locations across multiple fulfillment groups in the unstable Function APIs.*\n🕒 5 Nov 2026, 22:30 IST\n<https://shopify.dev/changelog/order-routing-functions-can-now-apply-one-location-ranking-to-multiple-fulfillment-groups|Read more>"
+  },
+  {
+   "cat": "security",
+   "kind": "Changelog",
+   "live": true,
+   "note": "",
+   "source": "Shopify Changelog",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🆕 *Shopify Changelog* · Changelog\n*App security updates: IP allowlist is now required*\n🕒 5 Nov 2026, 21:29 IST\nOn Oct 27 we recommended the IP allowlist . It is now required for every public app by November 20, or November 12 if you use bulk ops. An IP allowlist means a leaked token can't be used anywhere but your own servers.…\n<https://shopify.dev/changelog/app-security-updates-ip-allowlist-is-now-required|Read more>"
+  },
+  {
    "cat": "security",
    "kind": "WooCommerce",
    "live": true,
