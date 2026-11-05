@@ -124,6 +124,18 @@ th,td{text-align:left;padding:9px 12px;border-top:1px solid var(--line);vertical
 th{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--mute);font-weight:500;border-top:0}
 .foot{margin:28px 0 0;color:var(--mute);font-size:13px}
 .stats{margin:14px 0 0;color:var(--mute);font-size:13px;font-family:var(--mono)}
+.act{list-style:none;margin:0;padding:0;background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);overflow:hidden}
+.act li{display:grid;grid-template-columns:118px minmax(0,1fr) auto;gap:4px 14px;align-items:center;padding:11px 16px;border-top:1px solid var(--line)}
+.act li:first-child{border-top:0}
+.act .when{font-family:var(--mono);font-size:12px;color:var(--mute)}
+.act .what{min-width:0;overflow-wrap:anywhere}
+.act .what b{font-weight:650;margin-right:8px}
+.act .what .pill{margin-right:8px}
+.act .what a{color:var(--ink);text-decoration:none}
+.act .what a:hover{text-decoration:underline}
+.act .where{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.moreact{margin-top:12px}
+@media (max-width:640px){.act li{grid-template-columns:1fr}.act .where{justify-content:flex-start}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
@@ -150,6 +162,7 @@ th{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacin
     <div class="chips" id="chips" role="group" aria-label="Filter by kind of message"></div>
     <label class="toggle"><input type="checkbox" id="live"> Live only</label>
   </div>
+  <section class="fam f-news" id="activity" hidden></section>
   <main id="out"></main>
   <details class="routing" id="routing">
     <summary>Where each source goes</summary>
@@ -397,10 +410,50 @@ function drawList() {
   });
   if (!shown) out.appendChild(h("p", {class: "empty", text: "No messages match. Clear the search or the filters."}));
 }
-function draw() { drawTiles(); drawChips(); drawList(); }
+// Messages the bot really posted, newest first. Saved by the bot in Cloudflare D1; hidden if there is none yet.
+let activityShown = 8;
+function drawActivity() {
+  const sec = $("activity");
+  const all = DATA.history || [];
+  sec.textContent = "";
+  sec.hidden = !all.length;
+  if (!all.length) return;
+  const sp = currentSpace();
+  const rows = all.filter(function (r) {
+    const text = (r.title + " " + r.source + " " + r.kind).toLowerCase();
+    return inSpace(r, sp) && (state.family === "all" || r.category === state.family) && (!state.q || text.indexOf(state.q) > -1);
+  });
+  sec.appendChild(h("div", {class: "sh"}, [h("h2", {text: "Recent activity"}), h("p", {text: "The last messages the bot really posted, newest first."})]));
+  if (!rows.length) {
+    sec.appendChild(h("p", {class: "empty", text: "No recent messages match."}));
+    return;
+  }
+  const items = rows.slice(0, activityShown).map(function (r) {
+    let when = r.posted_at;
+    try { when = new Date(r.posted_at).toLocaleString("en-GB", {timeZone: "Asia/Kolkata", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit"}); } catch (e) {}
+    const status = r.kind.split(" · ")[0];
+    const sc = statusClass(status);
+    return h("li", {}, [
+      h("span", {class: "when", text: when + " IST"}),
+      h("span", {class: "what"}, [
+        h("b", {text: r.source}),
+        sc ? h("span", {class: "pill " + sc, text: status}) : null,
+        r.link ? safeLink(r.link, r.title) : document.createTextNode(r.title)
+      ]),
+      h("span", {class: "where"}, spacePills({spaces: r.spaces}))
+    ]);
+  });
+  sec.appendChild(h("ul", {class: "act"}, items));
+  if (rows.length > activityShown) {
+    sec.appendChild(h("button", {type: "button", class: "chip moreact", text: "Show more (" + (rows.length - activityShown) + ")", onclick: function () { activityShown += 8; drawActivity(); }}));
+  }
+}
+function draw() { drawTiles(); drawChips(); drawActivity(); drawList(); }
+function redraw() { drawActivity(); drawList(); }
 function pick(id) {
   state.space = id;
   state.family = "all";
+  activityShown = 8;
   try { history.replaceState(null, "", "#" + id); } catch (e) {}
   draw();
 }
@@ -446,9 +499,9 @@ function initTheme() {
 readHash();
 initTheme();
 drawStatic();
-$("q").addEventListener("input", function (ev) { state.q = ev.target.value.trim().toLowerCase(); drawList(); });
+$("q").addEventListener("input", function (ev) { state.q = ev.target.value.trim().toLowerCase(); activityShown = 8; redraw(); });
 $("live").addEventListener("change", function (ev) { state.live = ev.target.checked; drawList(); });
-window.addEventListener("hashchange", function () { readHash(); state.family = "all"; draw(); });
+window.addEventListener("hashchange", function () { readHash(); state.family = "all"; activityShown = 8; draw(); });
 draw();
 </script>
 </body>

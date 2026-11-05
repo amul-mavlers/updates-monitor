@@ -11,7 +11,6 @@ import json
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-SPACE_NAMES = {"default": "News", "alerts": "Downtime", "wp_php": "WordPress & PHP"}
 EXAMPLE_NOW = datetime(2026, 1, 15, 12, 0, tzinfo=timezone.utc)   # fixed on purpose: see module docstring
 
 
@@ -19,22 +18,14 @@ def _iso(minutes_ago: float) -> str:
     return (EXAMPLE_NOW - timedelta(minutes=minutes_ago)).strftime("%Y-%m-%dT%H:%M:%S.000Z")
 
 
-def _category(bot, feed: dict, e) -> str:
-    if feed["kind"] == "status":
-        return "maintenance" if e.get("maintenance") else "incidents"
-    if feed["name"] == "Google Workspace Status":
-        return "incidents"
-    return "security" if bot.is_urgent(feed, e) else "news"
-
-
 def _card(bot, feed: dict, e, live: bool, note: str = "") -> dict:
     text = bot.build_message(feed, e)
     head = text.split("\n")[0]
     return {
-        "cat": _category(bot, feed, e),
+        "cat": bot.category(feed, e),
         "source": feed["name"],
         "kind": head.split("·", 1)[1].strip() if "·" in head else head,
-        "spaces": [SPACE_NAMES[sp] for sp in bot.route(feed, bot.is_urgent(feed, e))],
+        "spaces": [bot.SPACE_NAMES[sp] for sp in bot.route(feed, bot.is_urgent(feed, e))],
         "text": text,
         "live": live,
         "note": note,

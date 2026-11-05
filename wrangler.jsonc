@@ -10,6 +10,17 @@
     "TOKEN_EXPIRES": "",
     "CATALOG_URL": "https://raw.githubusercontent.com/amul-mavlers/updates-monitor/main/catalog.json"
   },
+  // D1 database for the saved message history. The id is an identifier, not a secret: it only works
+  // from a Worker in this Cloudflare account. Create the table once: npx wrangler d1 migrations apply uptime --remote
+  // The Worker also needs a secret named INGEST_TOKEN (see README, "Saved history").
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "uptime",
+      "database_id": "a41b7b98-9d8e-43ae-884d-087c600c839c",
+      "migrations_dir": "migrations"
+    }
+  ],
   "workers_dev": true,
   "preview_urls": false,
   "observability": { "enabled": true }

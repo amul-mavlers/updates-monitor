@@ -102,6 +102,7 @@ export default {
           failure = err;
         }
         await notify(event, env, failure);
+        await pruneHistory(event, env);
         if (failure) throw failure; // marks the invocation as failed in the dashboard
       })(),
     );
@@ -119,13 +120,15 @@ export default {
       "referrer-policy": "no-referrer",
       "x-frame-options": "DENY",
     };
+    const { pathname } = new URL(request.url);
+    // The bot posts the messages it sends to Chat here, to be saved in D1. Needs the shared INGEST_TOKEN.
+    if (pathname === "/api/events") return ingest(request, env, common);
     if (request.method !== "GET" && request.method !== "HEAD") {
       return new Response("method not allowed\n", {
         status: 405,
         headers: { ...common, "content-type": "text/plain; charset=utf-8", allow: "GET, HEAD" },
       });
     }
-    const { pathname } = new URL(request.url);
 
     if (pathname === "/health") {
       const ok = missingSettings(env).length === 0;
@@ -142,7 +145,8 @@ export default {
 
     if (pathname === "/" || pathname === "/index.html") {
       const nonce = makeNonce();
-      const html = renderLanding(await loadCatalog(env), nonce);
+      const [catalog, history] = await Promise.all([loadCatalog(env), loadHistory(env)]);
+      const html = renderLanding({ ...catalog, history }, nonce);
       return new Response(html, {
         headers: {
           ...common,
@@ -207,4 +211,118 @@ async function loadCatalog(env) {
   }
 }
 
-export { dispatch, dispatchWithRetry, notify, daysLeft, missingSettings, cleanCatalog, loadCatalog };
+// ---- Message history in D1 (binding DB, table posted_messages: see migrations/) ----
+const MAX_BODY = 262144;
+const MAX_EVENTS = 100;
+const RETENTION_DAYS = 90;
+const isHttp = (v) => typeof v === "string" && /^https?:\/\//.test(v);
+
+async function sha256(text) {
+  return new Uint8Array(await crypto.subtle.digest("SHA-256", new TextEncoder().encode(text)));
+}
+
+// Compare secrets without leaking where they differ: hash both, then compare every byte.
+async function sameSecret(a, b) {
+  const [x, y] = await Promise.all([sha256(a), sha256(b)]);
+  let diff = 0;
+  for (let i = 0; i < x.length; i++) diff |= x[i] ^ y[i];
+  return diff === 0;
+}
+
+// Keep only well-formed events with sane sizes; anything else is dropped, never stored.
+function cleanEvents(raw, now = Date.now()) {
+  if (!Array.isArray(raw)) return [];
+  return raw.slice(0, MAX_EVENTS).flatMap((e) => {
+    if (!e || typeof e.key !== "string" || !e.key || !CATEGORIES.includes(e.category)) return [];
+    const t = Date.parse(e.posted_at);
+    if (Number.isNaN(t) || t > now + 86400000) return [];
+    return [{
+      key: e.key.slice(0, 300),
+      posted_at: new Date(t).toISOString(),
+      source: str(e.source, 80),
+      kind: str(e.kind, 120),
+      category: e.category,
+      title: str(e.title, 300),
+      spaces: (Array.isArray(e.spaces) ? e.spaces : []).filter((s) => SPACES.includes(s)).join(","),
+      text: str(e.text, 2000),
+      link: isHttp(e.link) ? e.link.slice(0, 500) : "",
+    }];
+  });
+}
+
+async function ingest(request, env, common) {
+  const reply = (obj, status, extra = {}) =>
+    new Response(JSON.stringify(obj), {
+      status,
+      headers: { ...common, "content-type": "application/json", "cache-control": "no-store", ...extra },
+    });
+  if (request.method !== "POST") return reply({ error: "method not allowed" }, 405, { allow: "POST" });
+  if (!env.INGEST_TOKEN || !env.DB) return reply({ error: "not configured" }, 503);
+  if (!(await sameSecret(request.headers.get("authorization") || "", `Bearer ${env.INGEST_TOKEN}`))) {
+    return reply({ error: "unauthorized" }, 401);
+  }
+  let body;
+  try {
+    const text = await request.text();
+    if (text.length > MAX_BODY) return reply({ error: "too large" }, 413);
+    body = JSON.parse(text);
+  } catch {
+    return reply({ error: "bad request" }, 400);
+  }
+  const events = cleanEvents(body?.events);
+  if (!events.length) return reply({ stored: 0, received: 0 }, 200);
+  try {
+    // INSERT OR IGNORE on the unique item_key: a batch sent twice (a lost reply) never duplicates rows.
+    const insert = env.DB.prepare(
+      "INSERT OR IGNORE INTO posted_messages (item_key, posted_at, source, kind, category, title, spaces, text, link) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
+    );
+    const results = await env.DB.batch(
+      events.map((e) => insert.bind(e.key, e.posted_at, e.source, e.kind, e.category, e.title, e.spaces, e.text, e.link)),
+    );
+    const stored = results.reduce((n, r) => n + (r?.meta?.changes ?? 0), 0);
+    return reply({ stored, received: events.length }, 200);
+  } catch (err) {
+    console.error(`ingest failed: ${err.message}`);
+    return reply({ error: "storage error" }, 503); // the bot keeps these events and sends them again
+  }
+}
+
+// The latest posted messages, for the landing page. Any problem (no database, missing table) gives an empty list.
+async function loadHistory(env, limit = 60) {
+  if (!env.DB) return [];
+  try {
+    const { results } = await env.DB
+      .prepare("SELECT posted_at, source, kind, category, title, spaces, link FROM posted_messages ORDER BY posted_at DESC, id DESC LIMIT ?")
+      .bind(limit)
+      .all();
+    return (results || []).map((r) => ({
+      posted_at: str(r.posted_at, 30),
+      source: str(r.source, 80),
+      kind: str(r.kind, 120),
+      category: CATEGORIES.includes(r.category) ? r.category : "news",
+      title: str(r.title, 300),
+      spaces: str(r.spaces, 100).split(",").filter((s) => SPACES.includes(s)),
+      link: isHttp(r.link) ? str(r.link, 500) : "",
+    }));
+  } catch (err) {
+    console.error(`history read failed: ${err.message}`);
+    return [];
+  }
+}
+
+// Once a day (first tick after 03:00 UTC) drop history older than RETENTION_DAYS.
+async function pruneHistory(event, env) {
+  const when = new Date(event.scheduledTime ?? Date.now());
+  if (!env.DB || when.getUTCHours() !== 3 || when.getUTCMinutes() >= 5) return;
+  try {
+    const cutoff = new Date(when.getTime() - RETENTION_DAYS * 86400000).toISOString();
+    await env.DB.prepare("DELETE FROM posted_messages WHERE posted_at < ?").bind(cutoff).run();
+  } catch (err) {
+    console.error(`history prune failed: ${err.message}`);
+  }
+}
+
+export {
+  dispatch, dispatchWithRetry, notify, daysLeft, missingSettings, cleanCatalog, loadCatalog,
+  cleanEvents, loadHistory, pruneHistory, sameSecret,
+};

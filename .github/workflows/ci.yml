@@ -44,3 +44,4 @@ jobs:
         with:
           node-version: "22"
       - run: node worker/test.mjs
+      - run: node worker/history.test.mjs

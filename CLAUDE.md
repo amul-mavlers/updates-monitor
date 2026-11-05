@@ -16,6 +16,7 @@ Feed alerts bot: polls status pages and news feeds and posts new items to Google
 pip install -r requirements-dev.txt
 py -m pytest -q test_feed_to_gchat.py     # Python tests (use `python` on Linux/macOS)
 node worker/test.mjs                      # Worker tests
+node worker/history.test.mjs              # D1 history tests
 DRY_RUN=1 python feed_to_gchat.py         # prints messages, posts nothing, saves no state
 ```
 
@@ -33,6 +34,7 @@ On Windows set `PYTHONIOENCODING=utf-8` if the console cannot print emoji.
 - Titles are capped at `TITLE_LEN` so messages stay under Chat's 4,096-character limit.
 - CI runs `ruff check .` and both test suites; keep them green. Lint rules are in `ruff.toml`.
 - The Worker serves a public landing page at `/` (`worker/landing.js`, data from `catalog.json`) and `/health`. `catalog.py` builds `catalog.json` from the entries already fetched; `route()` in `feed_to_gchat.py` is the single source of routing for posting and for the page. Keep `catalog.json` deterministic (fixed example dates, no timestamp of its own) or the bot will commit it every run. The page must stay free of secrets, repo names, webhook names and external resources; keep the nonce CSP and the tests in `worker/test.mjs` that enforce this. Edit JS strings in `landing.js` without apostrophes inside single-quoted strings.
+- Saved history: the bot (GitHub Actions) cannot use the D1 binding, so `record_event()` queues each posted message in `state["_outbox"]` and `flush_outbox()` POSTs it to the Worker's `/api/events` (`INGEST_URL` + `INGEST_TOKEN`); the Worker writes to D1 table `posted_messages` (`migrations/`). History must never affect alerts: failures are caught, events stay queued, 400-class rejections drop the batch, the outbox is capped, and logs show error types only (never the URL or token). The endpoint must keep: constant-time token check, size and count limits, field validation, `INSERT OR IGNORE`. `INGEST_TOKEN` is a shared secret, never a Cloudflare API token. The landing page shows only title, source, status, time and spaces from D1, never full message text.
 - `MENTION_ALL` (@all on major/critical incidents) is opt-in. Do not turn it on by default.
 - `requirements.txt` and `requirements-dev.txt` are generated lock files with hashes, installed with `pip install --require-hashes`. Never edit them by hand. Change `requirements.in` or `requirements-dev.in`, then run `pip-compile --generate-hashes --allow-unsafe --strip-extras --output-file requirements.txt requirements.in` (and the same for the dev file). Dependabot opens weekly update pull requests.
 - Keep GitHub Actions pinned to commit SHAs. The `feed-alerts.yml` checkout uses `persist-credentials: false`; only the "Save state" step receives the repo token. Do not give the script or pip step the token.

@@ -22,6 +22,13 @@ WEBHOOK_WP_PHP = os.environ.get("GCHAT_WEBHOOK_WP_PHP") or WEBHOOK   # WordPress
 DRY_RUN = os.environ.get("DRY_RUN") == "1"          # print instead of posting, no state changes
 STATE_FILE = Path(__file__).with_name("state.json")
 CATALOG_FILE = Path(__file__).with_name("catalog.json")   # read by the Cloudflare Worker's landing page
+# Optional history in Cloudflare D1, through the Worker (the bot runs on GitHub, where a D1 binding does not exist).
+# Both must be set to enable it. The token only lets the Worker accept events; it is not a Cloudflare API token.
+INGEST_URL = os.environ.get("INGEST_URL", "")
+INGEST_TOKEN = os.environ.get("INGEST_TOKEN", "")
+OUTBOX_MAX = 500       # unsent history events kept in state.json; the oldest are dropped beyond this
+INGEST_BATCH = 50
+SPACE_NAMES = {"default": "News", "alerts": "Downtime", "wp_php": "WordPress & PHP"}
 MAX_PER_FEED = 5       # safety cap per run, avoids floods
 SUMMARY_LEN = 220
 TZ_NAME = os.environ.get("FEED_TZ", "Asia/Kolkata")   # timezone shown in messages
@@ -320,6 +327,15 @@ def destinations(feed: dict, e) -> list:
     return list(dict.fromkeys(webhook_for(sp) for sp in route(feed, is_urgent(feed, e))))
 
 
+def category(feed: dict, e) -> str:
+    """Kind of message, used by the landing page and the saved history."""
+    if feed["kind"] == "status":
+        return "maintenance" if e.get("maintenance") else "incidents"
+    if feed["name"] == "Google Workspace Status":
+        return "incidents"
+    return "security" if is_urgent(feed, e) else "news"
+
+
 def is_open_incident(feed: dict, e) -> bool:
     return feed["kind"] == "status" and not e.get("maintenance") and e.get("status") in OPEN_STATUSES
 
@@ -410,7 +426,53 @@ def save_state(state: dict) -> None:
     tmp.replace(STATE_FILE)
 
 
-def announce(feed: dict, e, state: dict) -> bool:
+def record_event(state: dict, feed: dict, e, text: str, key: str) -> None:
+    """Queue a posted message for the D1 history. Kept in state.json until the Worker accepts it."""
+    if not (INGEST_URL and INGEST_TOKEN) or DRY_RUN:
+        return
+    head = text.split("\n")[0]
+    link = e.get("link", "")
+    outbox = state.setdefault("_outbox", [])
+    outbox.append({
+        "key": f"{feed['name']}|{key}"[:300],
+        "posted_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "source": feed["name"],
+        "kind": head.split(" · ", 1)[1] if " · " in head else head,
+        "category": category(feed, e),
+        "title": shorten(clean(e.get("title", "")), 300),
+        "spaces": [SPACE_NAMES[sp] for sp in route(feed, is_urgent(feed, e))],
+        "text": text[:2000],
+        "link": link if link.startswith(("http://", "https://")) else "",
+    })
+    del outbox[:-OUTBOX_MAX]
+
+
+def flush_outbox(state: dict) -> None:
+    """Send queued history events to the Worker. Never raises: history must not affect the alerts."""
+    outbox = state.get("_outbox")
+    if not outbox or not (INGEST_URL and INGEST_TOKEN) or DRY_RUN:
+        return
+    for _ in range(5):                      # at most 250 events per run; the rest go next run
+        batch = outbox[:INGEST_BATCH]
+        if not batch:
+            break
+        try:
+            r = requests.post(INGEST_URL, json={"events": batch}, timeout=15,
+                              headers={"Authorization": f"Bearer {INGEST_TOKEN}", "User-Agent": "dev-team-feed-bot/1.0"})
+        except requests.RequestException as ex:
+            print(f"history not sent yet ({type(ex).__name__}); will retry", file=sys.stderr)   # type only: no URL in logs
+            return
+        if r.status_code in PERMANENT_ERRORS:   # the Worker will never accept this batch: drop it, do not loop forever
+            print(f"history batch rejected (HTTP {r.status_code}); dropped", file=sys.stderr)
+        elif r.status_code >= 300:
+            print(f"history not sent yet (HTTP {r.status_code}); will retry", file=sys.stderr)
+            return
+        del outbox[:len(batch)]
+    if not outbox:
+        state.pop("_outbox", None)
+
+
+def announce(feed: dict, e, state: dict, key: str | None = None) -> bool:
     """Post one entry unless a sibling feed already posted the same story. True = handled."""
     group = feed.get("dedupe")
     if group:
@@ -425,6 +487,7 @@ def announce(feed: dict, e, state: dict) -> bool:
     for extra in urls[1:]:   # copies are best effort: a failure here must not cause a repost in the main space
         if not post(text, extra, thread):
             print(f"[{feed['name']}] copy to second space failed", file=sys.stderr)
+    record_event(state, feed, e, text, key or entry_key(feed, e))
     if group:
         titles.insert(0, norm)
         del titles[DEDUPE_KEEP:]
@@ -439,7 +502,7 @@ def send(feed: dict, e, state: dict, key: str) -> bool:
     otherwise it would be retried, and fail, on every run forever."""
     failed = state.setdefault("_failed", {})
     fkey = f"{feed['name']}|{key}"
-    if not announce(feed, e, state):
+    if not announce(feed, e, state, key):
         if _last_rejected:
             failed[fkey] = failed.get(fkey, 0) + 1
             if failed[fkey] >= GIVE_UP_AFTER:
@@ -581,6 +644,11 @@ def main() -> int:
         else:
             record_health(state, name, True)
         save_state(state)   # after every feed, so a later crash can't cause reposts
+    try:   # saved history is a nicety: whatever goes wrong here must not affect the alerts or the state
+        flush_outbox(state)
+    except Exception as ex:
+        print(f"history not sent: {type(ex).__name__}", file=sys.stderr)
+    save_state(state)
     if not DRY_RUN:
         try:   # the public landing page is a nicety: it must never fail or delay the alerts
             import catalog

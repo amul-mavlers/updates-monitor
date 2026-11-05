@@ -73,6 +73,26 @@ The Worker's public URL (`https://updates-monitor.<account>.workers.dev/`) is a 
 - `/health` returns only `ok` or `not configured`.
 - The page loads nothing from other sites and is served with a strict Content-Security-Policy (inline script by per-request nonce only). It never shows the repo, tokens, webhook names or the token expiry. If `catalog.json` cannot be read, the page still loads and says the samples are unavailable.
 
+## Saved history (Cloudflare D1)
+
+Every message the bot posts to Chat can also be saved in the D1 database `uptime` (table `posted_messages`), and the landing page then shows it under **Recent activity**. The bot runs on GitHub, where a D1 binding does not exist, so it sends events to the Worker (`/api/events`), which stores them. This is optional: without the two GitHub secrets below the bot works exactly as before.
+
+One-time setup:
+
+1. **Create the table.** Either run `npx wrangler d1 migrations apply uptime --remote` in a terminal on your machine (needs `wrangler login`), or open the Cloudflare dashboard, go to the `uptime` database, open its **Console** tab and run the two statements from `migrations/0001_create_posted_messages.sql` (one at a time, without the `--` comment lines). The console only accepts SQL, not shell commands. Both routes are safe to repeat, because the statements use `IF NOT EXISTS`.
+2. **Make a shared secret**, for example `openssl rand -hex 32` (or in PowerShell: `-join ((48..57)+(97..102) | Get-Random -Count 48 | % {[char]$_})`). It only lets the Worker accept events. It is not a Cloudflare API token.
+3. **Cloudflare:** Workers > updates-monitor > Settings > Variables and Secrets > add a **Secret** named `INGEST_TOKEN` with that value. The D1 binding itself is already in `wrangler.jsonc`.
+4. **GitHub:** repo secrets `INGEST_TOKEN` (the same value) and `INGEST_URL` (`https://<your-worker>.workers.dev/api/events`).
+5. Push. New posts appear under Recent activity within a few minutes.
+
+How it behaves:
+
+- Events wait in a small outbox inside `state.json` until the Worker confirms them, so a Cloudflare or D1 outage never delays or loses an alert, and history catches up on the next run. The outbox is capped at 500 events.
+- Resending is harmless: rows are unique per message, so duplicates are ignored.
+- The Worker keeps 90 days of history and deletes older rows once a day.
+- If D1 is empty, missing or down, the landing page simply hides Recent activity.
+- The endpoint answers only POSTs with the right `Authorization: Bearer` token (compared in constant time), accepts at most 100 events and 256 KB per request, and stores only well-formed fields. The page never shows the full message text, only the title, source, status, time and spaces.
+
 ## Message extras
 
 - Incidents show GitHub's severity (`Minor impact`, `Major impact`, `Critical impact`), the affected components, and `Resolved after 2 h 14 min` when they close.
