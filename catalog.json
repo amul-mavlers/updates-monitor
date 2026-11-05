@@ -2,6 +2,17 @@
  "cards": [
   {
    "cat": "incidents",
+   "kind": "Investigating · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "GitHub Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*Degraded performance for multiple GitHub services*\n🕒 6 Nov 2026, 05:06 IST\nAffected: Actions, Pages\nWe're investigating degraded performance and errors affecting several GitHub services, including Git operations, Issues, Actions, and API access. Some users may see failed requests or slow responses. We'll post another…\n<https://stspg.io/s5bs6jn41fwh|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 52 min · Minor impact",
    "live": true,
    "note": "",
@@ -10,17 +21,6 @@
     "Downtime"
    ],
    "text": "🟢 *GitHub Status* · Resolved after 52 min · Minor impact\n*Incident with Actions*\n🕒 5 Nov 2026, 23:12 IST\nAffected: Actions\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/lv4q3xm9r0rk|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 35 min · Major impact",
-   "live": true,
-   "note": "",
-   "source": "GitHub Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *GitHub Status* · Resolved after 35 min · Major impact\n*Incident with Actions*\n🕒 4 Nov 2026, 23:46 IST\nAffected: Actions\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/7pwv28hvkmz8|Read more>"
   },
   {
    "cat": "incidents",
@@ -543,6 +543,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-05T20:20:10Z",
+ "updated": "2026-11-05T23:36:51Z",
  "version": 1
 }
