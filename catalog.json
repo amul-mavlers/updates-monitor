@@ -122,43 +122,43 @@
     "WordPress & PHP",
     "Downtime"
    ],
+   "text": "🆕 *PHP News* · News\n*Updated PHP Windows builds for Brotli security fix*\n🕒 26 Oct 2026, 17:27 IST\nThe PHP team announces updated Windows builds: PHP 8.5.12-1, 8.4.27-1, 8.3.36-1 and 8.2.35-1 . These builds include Brotli 1.2.1, which fixes CVE-2026-111497 , an out-of-bounds write vulnerability in Brotli…\n<https://www.php.net/index.php#2026-10-26-1|Read more>"
+  },
+  {
+   "cat": "security",
+   "kind": "News",
+   "live": true,
+   "note": "",
+   "source": "PHP News",
+   "spaces": [
+    "WordPress & PHP",
+    "Downtime"
+   ],
+   "text": "🆕 *PHP News* · News\n*Informational advisory: Session upload progress*\n🕒 23 Oct 2026, 15:42 IST\nWe suggest you set session.upload_progress.enabled=0 until the next regular bugfix release, to fully protect from an unlikely RCE vector. This setting was already listed as a mitigation in the GHSA-6wmf-4rv5-p3rp…\n<https://www.php.net/index.php#2026-10-23-1|Read more>"
+  },
+  {
+   "cat": "security",
+   "kind": "News",
+   "live": true,
+   "note": "",
+   "source": "PHP News",
+   "spaces": [
+    "WordPress & PHP",
+    "Downtime"
+   ],
+   "text": "🆕 *PHP News* · News\n*PHP 8.6.0 RC4 available for testing*\n🕒 21 Oct 2026, 21:11 IST\nThe PHP team is pleased to announce the third release candidate of PHP 8.6.0, RC4. This continues the PHP 8.6 release cycle, whose rough outline is specified in the PHP Wiki . Source downloads of PHP 8.6.0 RC4 are…\n<https://www.php.net/index.php#2026-10-21-6|Read more>"
+  },
+  {
+   "cat": "security",
+   "kind": "News",
+   "live": true,
+   "note": "",
+   "source": "PHP News",
+   "spaces": [
+    "WordPress & PHP",
+    "Downtime"
+   ],
    "text": "🆕 *PHP News* · News\n*Security advisory: Critical remote code execution vulnerabilities, update now*\n🕒 21 Oct 2026, 06:05 IST\nPHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35 fix two critical vulnerabilities that can allow unauthenticated remote code execution. All PHP users are strongly encouraged to update immediately. Who is at risk: all PHP…\n<https://www.php.net/index.php#2026-10-21-5|Read more>"
-  },
-  {
-   "cat": "security",
-   "kind": "News",
-   "live": true,
-   "note": "",
-   "source": "PHP News",
-   "spaces": [
-    "WordPress & PHP",
-    "Downtime"
-   ],
-   "text": "🆕 *PHP News* · News\n*PHP 8.5.12 Released!*\n🕒 21 Oct 2026, 05:54 IST\nThe PHP development team announces the immediate availability of PHP 8.5.12. This is a security release fixing two critical vulnerabilities (CVE-2026-109618, CVE-2026-109619) that can allow unauthenticated remote code…\n<https://www.php.net/index.php#2026-10-21-4|Read more>"
-  },
-  {
-   "cat": "security",
-   "kind": "News",
-   "live": true,
-   "note": "",
-   "source": "PHP News",
-   "spaces": [
-    "WordPress & PHP",
-    "Downtime"
-   ],
-   "text": "🆕 *PHP News* · News\n*PHP 8.4.27 Released!*\n🕒 21 Oct 2026, 05:50 IST\nThe PHP development team announces the immediate availability of PHP 8.4.27. This is a security release fixing two critical vulnerabilities (CVE-2026-109618, CVE-2026-109619) that can allow unauthenticated remote code…\n<https://www.php.net/index.php#2026-10-21-3|Read more>"
-  },
-  {
-   "cat": "security",
-   "kind": "News",
-   "live": true,
-   "note": "",
-   "source": "PHP News",
-   "spaces": [
-    "WordPress & PHP",
-    "Downtime"
-   ],
-   "text": "🆕 *PHP News* · News\n*PHP 8.3.36 Released!*\n🕒 21 Oct 2026, 05:44 IST\nThe PHP development team announces the immediate availability of PHP 8.3.36. This is a security release fixing two critical vulnerabilities (CVE-2026-109618, CVE-2026-109619) that can allow unauthenticated remote code…\n<https://www.php.net/index.php#2026-10-21-2|Read more>"
   },
   {
    "cat": "news",
@@ -290,7 +290,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Node.js Blog* · Node.js\n*Node.js 27.0.0-alpha.0.0.0 (Alpha)*\n🕒 30 Oct 2026, 01:22 IST\n<https://nodejs.org/en/blog/release/v27.0.0-alpha.0.0.0|Read more>"
+   "text": "🆕 *Node.js Blog* · Node.js\n*Notable V8 changes from Node.js 26 to 27 (Alpha)*\n🕒 2 Nov 2026, 17:30 IST\n<https://nodejs.org/en/blog/announcements/notable-v8-changes-from-node-js-26-to-27-alpha|Read more>"
   },
   {
    "cat": "security",
