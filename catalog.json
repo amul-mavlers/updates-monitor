@@ -31,7 +31,7 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Elevated errors for R2 in Asia Pacific*\n🕒 5 Nov 2026, 20:35 IST\nAffected: R2\nSome users may experience elevated errors in Cloudflare R2 in Asia Pacific region\n<https://www.cloudflarestatus.com/incidents/1i6fnludjh1m|Read more>"
+   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Network disruption across multiple colocations in India*\n🕒 5 Nov 2026, 20:35 IST\nAffected: R2\nNetwork disruption across multiple colocations in India, impacting Cloudflare services in region\n<https://www.cloudflarestatus.com/incidents/1i6fnludjh1m|Read more>"
   },
   {
    "cat": "incidents",
