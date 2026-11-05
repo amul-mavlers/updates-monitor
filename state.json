@@ -1286,6 +1286,9 @@
     "http://php.net/releases/8_2_35.php"
   ],
   "Shopify Changelog": [
+    "https://shopify.dev/changelog/app-security-updates-ip-allowlist-is-now-required",
+    "https://shopify.dev/changelog/ip-allowlists-are-now-required-for-public-apps",
+    "https://shopify.dev/changelog/app-ip-allowlists-now-support-apps-with-serverless-hosting",
     "https://shopify.dev/changelog/retry_declined-added-to-customerpaymentmethodrevocationreason",
     "https://shopify.dev/changelog/fulfillment-order-destination-province-code",
     "https://shopify.dev/changelog/test-app-network-access-configuration-on-dev-stores",

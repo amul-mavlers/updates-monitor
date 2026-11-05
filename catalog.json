@@ -205,15 +205,15 @@
    "text": "🆕 *PHP Releases* · New release\n*PHP 8.2.35 released!*\n🕒 21 Oct 2026, 05:30 IST\nThere is a new PHP release in town!\n<http://php.net/releases/8_2_35.php|Read more>"
   },
   {
-   "cat": "news",
+   "cat": "security",
    "kind": "Changelog",
    "live": true,
    "note": "",
    "source": "Shopify Changelog",
    "spaces": [
-    "News"
+    "Downtime"
    ],
-   "text": "🆕 *Shopify Changelog* · Changelog\n*Test app network access configuration on dev stores*\n🕒 4 Nov 2026, 23:30 IST\nYou can now test your app's [network_access] settings on a dev store with the new network access testing feature preview . The preview helps you confirm you have the right networks listed, and find hosts and servers…\n<https://shopify.dev/changelog/test-app-network-access-configuration-on-dev-stores|Read more>"
+   "text": "🆕 *Shopify Changelog* · Changelog\n*App security updates: IP allowlist is now required*\n🕒 5 Nov 2026, 21:29 IST\nOn Oct 27 we recommended the IP allowlist . It is now required for every public app by November 20, or November 12 if you use bulk ops. An IP allowlist means a leaked token can't be used anywhere but your own servers.…\n<https://shopify.dev/changelog/app-security-updates-ip-allowlist-is-now-required|Read more>"
   },
   {
    "cat": "news",
@@ -224,7 +224,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Shopify Changelog* · Changelog\n*RETRY_DECLINED added to CustomerPaymentMethodRevocationReason*\n🕒 4 Nov 2026, 22:30 IST\nAs of GraphQL Admin API version 2027-01 , CustomerPaymentMethod.revokedReason can return a new value: RETRY_DECLINED . Shopify uses this value when a subscription payment method is revoked because the payment processor…\n<https://shopify.dev/changelog/retry_declined-added-to-customerpaymentmethodrevocationreason|Read more>"
+   "text": "🆕 *Shopify Changelog* · Changelog\n*IP allowlists are now required for public apps*\n🕒 5 Nov 2026, 21:29 IST\nWe're enhancing protection of merchants by adding IP allowlist configuration as a requirement for public apps. All public apps using bulk operations must configure an allowlist by November 12, 2026 , and all other…\n<https://shopify.dev/changelog/ip-allowlists-are-now-required-for-public-apps|Read more>"
   },
   {
    "cat": "security",
@@ -543,6 +543,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-05T15:37:35Z",
+ "updated": "2026-11-05T15:59:00Z",
  "version": 1
 }
