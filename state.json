@@ -127,6 +127,7 @@
   ],
   "_health": {},
   "Cloudflare Status": [
+    "1i6fnludjh1m|2026-11-05T15:37:35.046Z",
     "1i6fnludjh1m|2026-11-05T15:05:13.791Z",
     "oy8gxjb38yse|2026-11-05T13:23:55.346Z",
     "c3pjgxk8xnzn|2026-11-04T22:21:26.035Z",
@@ -2127,6 +2128,9 @@
     "https://developer.woocommerce.com/?p=8771533"
   ],
   "Laravel News": [
+    "https://laravel-news.com/laravel-herd-2",
+    "https://laravel-news.com/laravel-strict-request-input",
+    "https://laravel-news.com/laravel-storage-dedupler",
     "https://laravel-news.com/flock-laravel-local-development",
     "https://laravel-news.com/laravel-13-40-0",
     "https://laravel-news.com/composer-2-11",

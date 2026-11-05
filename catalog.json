@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Investigating · Minor impact",
+   "kind": "Identified · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Network disruption across multiple colocations in India*\n🕒 5 Nov 2026, 20:35 IST\nNetwork disruption across multiple colocations in India, impacting Cloudflare services in region\n<https://www.cloudflarestatus.com/incidents/1i6fnludjh1m|Read more>"
+   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Network disruption across multiple colocations in India*\n🕒 5 Nov 2026, 21:07 IST\nWe have identified 9 impacted colocations, all in India, and have removed them from our network. We are working on identifying the underlying issues and bringing them back online.\n<https://www.cloudflarestatus.com/incidents/1i6fnludjh1m|Read more>"
   },
   {
    "cat": "incidents",
@@ -257,7 +257,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Laravel News* · Laravel\n*Flock: A Free, Native Herd Alternative for Laravel*\n🕒 4 Nov 2026, 05:25 IST\nFlock is a free, open source local dev app for Laravel that runs PHP, Node, databases, mail, and HTTPS natively on macOS, Windows, and Linux. The post Flock: A Free, Native Herd Alternative for Laravel appeared first…\n<https://laravel-news.com/flock-laravel-local-development?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
+   "text": "🆕 *Laravel News* · Laravel\n*Laravel Herd 2: Coding Agents, Workspaces, and Cloud Deploys*\n🕒 5 Nov 2026, 19:35 IST\nLaravel Herd 2.0 adds Herd Studio for running coding agents on local sites, git workspaces for parallel work, and Laravel Cloud deploys. The post Laravel Herd 2: Coding Agents, Workspaces, and Cloud Deploys appeared…\n<https://laravel-news.com/laravel-herd-2?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
   },
   {
    "cat": "news",
@@ -268,7 +268,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Laravel News* · Laravel\n*Slow Job Alerts and Replica Commit IDs in Laravel 13.40*\n🕒 4 Nov 2026, 05:23 IST\nLaravel 13.40 adds callbacks for slow queue jobs and scheduled tasks, commit IDs to check read replica lag, and insertBefore() and insertAfter() for middleware. The post Slow Job Alerts and Replica Commit IDs in…\n<https://laravel-news.com/laravel-13-40-0?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
+   "text": "🆕 *Laravel News* · Laravel\n*Strict Request Input Casting in Laravel*\n🕒 5 Nov 2026, 06:48 IST\nLaravel 13.40 adds a strict flag to the request integer(), boolean(), float(), and string() helpers, so bad input returns your default instead of 0 or an error. The post Strict Request Input Casting in Laravel appeared…\n<https://laravel-news.com/laravel-strict-request-input?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
   },
   {
    "cat": "news",
@@ -543,6 +543,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-05T15:05:13Z",
+ "updated": "2026-11-05T15:37:35Z",
  "version": 1
 }
