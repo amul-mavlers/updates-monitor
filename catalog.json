@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Identified · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Workers Builds Issues*\n🕒 6 Nov 2026, 01:21 IST\nAffected: Workers Builds\nCloudflare is aware of and investigating an issue with Cloudflare Workers Builds which potentially impacts multiple customers. Further detail will be provided as more information becomes available.\n<https://www.cloudflarestatus.com/incidents/yaa0witbl2me|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 1 h 11 min · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 1 h 11 min · Minor impact\n*Network disruption across multiple colocations in India*\n🕒 5 Nov 2026, 21:46 IST\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/1i6fnludjh1m|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Monitoring · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Increased Errors for Durable Objects in Western Europe*\n🕒 5 Nov 2026, 18:53 IST\nAffected: Durable Objects\nCloudflare investigated an issue that caused an increase of errors for Durable Objects in Western Europe. The issue has been resolved and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/oy8gxjb38yse|Read more>"
   },
   {
    "cat": "incidents",
@@ -543,6 +543,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-05T17:42:35Z",
+ "updated": "2026-11-05T19:51:39Z",
  "version": 1
 }
