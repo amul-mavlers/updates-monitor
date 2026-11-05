@@ -2,14 +2,14 @@
  "cards": [
   {
    "cat": "incidents",
-   "kind": "Monitoring · Minor impact",
+   "kind": "Resolved after 52 min · Minor impact",
    "live": true,
    "note": "",
    "source": "GitHub Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟡 *GitHub Status* · Monitoring · Minor impact\n*Incident with Actions*\n🕒 5 Nov 2026, 22:34 IST\nAffected: Actions\nThe degradation affecting Actions has been mitigated. We are monitoring to ensure stability.\n<https://stspg.io/lv4q3xm9r0rk|Read more>"
+   "text": "🟢 *GitHub Status* · Resolved after 52 min · Minor impact\n*Incident with Actions*\n🕒 5 Nov 2026, 23:12 IST\nAffected: Actions\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/lv4q3xm9r0rk|Read more>"
   },
   {
    "cat": "incidents",
@@ -543,6 +543,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-05T17:04:46Z",
+ "updated": "2026-11-05T17:42:35Z",
  "version": 1
 }
