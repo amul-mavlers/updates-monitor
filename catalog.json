@@ -2,47 +2,47 @@
  "cards": [
   {
    "cat": "incidents",
-   "kind": "Resolved after 38 min · Minor impact",
+   "kind": "Resolved after 35 min · Major impact",
    "live": true,
    "note": "",
    "source": "GitHub Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟢 *GitHub Status* · Resolved after 38 min · Minor impact\n*Elevated errors on GPT-5.4 Nano*\n🕒 2 Nov 2026, 23:54 IST\nAffected: Copilot AI Model Providers\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/ns6pj9qy9glb|Read more>"
+   "text": "🟢 *GitHub Status* · Resolved after 35 min · Major impact\n*Incident with Actions*\n🕒 4 Nov 2026, 23:46 IST\nAffected: Actions\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/7pwv28hvkmz8|Read more>"
   },
   {
    "cat": "incidents",
-   "kind": "Resolved after 2 h 29 min · Minor impact",
+   "kind": "Resolved after 55 min · Major impact",
    "live": true,
    "note": "",
    "source": "GitHub Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟢 *GitHub Status* · Resolved after 2 h 29 min · Minor impact\n*Incident with Dependabot*\n🕒 31 Oct 2026, 04:59 IST\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/5bh6qnzn76tk|Read more>"
+   "text": "🟢 *GitHub Status* · Resolved after 55 min · Major impact\n*Incident with Actions and Pages*\n🕒 4 Nov 2026, 22:31 IST\nAffected: Webhooks, Actions, Pages\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/pjgptg3cfc6n|Read more>"
   },
   {
    "cat": "incidents",
-   "kind": "Resolved after 48 min · Minor impact",
+   "kind": "Investigating · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 48 min · Minor impact\n*Worker Deployments Delayed*\n🕒 2 Nov 2026, 23:00 IST\nAffected: Workers\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/7he1pmetw77p|Read more>"
+   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Elevated errors for R2 in Asia Pacific*\n🕒 5 Nov 2026, 20:35 IST\nAffected: R2\nSome users may experience elevated errors in Cloudflare R2 in Asia Pacific region\n<https://www.cloudflarestatus.com/incidents/1i6fnludjh1m|Read more>"
   },
   {
    "cat": "incidents",
-   "kind": "Resolved after 16 min · Minor impact",
+   "kind": "Monitoring · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 16 min · Minor impact\n*Cache purge delays in Qingdao Shandong, China*\n🕒 31 Oct 2026, 12:27 IST\nAffected: CDN Cache Purge\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/5tlm9r9j9rpo|Read more>"
+   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Increased Errors for Durable Objects in Western Europe*\n🕒 5 Nov 2026, 18:53 IST\nAffected: Durable Objects\nCloudflare investigated an issue that caused an increase of errors for Durable Objects in Western Europe. The issue has been resolved and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/oy8gxjb38yse|Read more>"
   },
   {
    "cat": "incidents",
@@ -65,6 +65,17 @@
     "Downtime"
    ],
    "text": "🟢 *Shopify Status* · Resolved after 33 min · Minor impact\n*Shop Pay unavailable*\n🕒 25 Jun 2025, 05:00 IST\nAffected: Checkout\nThis incident has been resolved.\n<https://stspg.io/1nx1vcvd553l|Read more>"
+  },
+  {
+   "cat": "news",
+   "kind": "New post",
+   "live": true,
+   "note": "",
+   "source": "WordPress News",
+   "spaces": [
+    "WordPress & PHP"
+   ],
+   "text": "🆕 *WordPress News* · New post\n*WordPress 7.2 Beta 4*\n🕒 3 Nov 2026, 21:15 IST\nWordPress 7.2 Beta 4 is ready for download and testing! This beta release is intended for testing and development only. Please do not install, run, or test this version of WordPress on production or mission-critical…\n<https://wordpress.org/news/2026/11/wordpress-7-2-beta-4/|Read more>"
   },
   {
    "cat": "security",
@@ -102,15 +113,16 @@
    "text": "🆕 *WordPress News* · New post\n*Critical PHP Security Release*\n🕒 21 Oct 2026, 19:14 IST\nThe PHP project has announced a security release that fixes two critical security vulnerabilities discovered in PHP. Due to the critical severity of the issues, site owners are encouraged to immediately update their…\n<https://wordpress.org/news/2026/10/critical-php-security-release/|Read more>"
   },
   {
-   "cat": "news",
-   "kind": "New post",
+   "cat": "security",
+   "kind": "News",
    "live": true,
    "note": "",
-   "source": "WordPress News",
+   "source": "PHP News",
    "spaces": [
-    "WordPress & PHP"
+    "WordPress & PHP",
+    "Downtime"
    ],
-   "text": "🆕 *WordPress News* · New post\n*WordPress 7.2 Beta 1 is Ready for Download and Testing*\n🕒 20 Oct 2026, 21:32 IST\nThis beta release is intended for testing and development only. Please do not install, run, or test this version of WordPress on production or mission-critical websites. Instead, use a test environment or local site to…\n<https://wordpress.org/news/2026/10/wordpress-7-2-beta-1-is-ready-for-download-and-testing/|Read more>"
+   "text": "🆕 *PHP News* · News\n*Updated PHP Windows builds for Brotli security fix*\n🕒 26 Oct 2026, 17:27 IST\nThe PHP team announces updated Windows builds: PHP 8.5.12-1, 8.4.27-1, 8.3.36-1 and 8.2.35-1 . These builds include Brotli 1.2.1, which fixes CVE-2026-111497 , an out-of-bounds write vulnerability in Brotli…\n<https://www.php.net/index.php#2026-10-26-1|Read more>"
   },
   {
    "cat": "security",
@@ -147,18 +159,6 @@
     "Downtime"
    ],
    "text": "🆕 *PHP News* · News\n*Security advisory: Critical remote code execution vulnerabilities, update now*\n🕒 21 Oct 2026, 06:05 IST\nPHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35 fix two critical vulnerabilities that can allow unauthenticated remote code execution. All PHP users are strongly encouraged to update immediately. Who is at risk: all PHP…\n<https://www.php.net/index.php#2026-10-21-5|Read more>"
-  },
-  {
-   "cat": "security",
-   "kind": "News",
-   "live": true,
-   "note": "",
-   "source": "PHP News",
-   "spaces": [
-    "WordPress & PHP",
-    "Downtime"
-   ],
-   "text": "🆕 *PHP News* · News\n*PHP 8.5.12 Released!*\n🕒 21 Oct 2026, 05:54 IST\nThe PHP development team announces the immediate availability of PHP 8.5.12. This is a security release fixing two critical vulnerabilities (CVE-2026-109618, CVE-2026-109619) that can allow unauthenticated remote code…\n<https://www.php.net/index.php#2026-10-21-4|Read more>"
   },
   {
    "cat": "news",
@@ -213,7 +213,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Shopify Changelog* · Changelog\n*UI extensions now support a larger number of locales*\n🕒 30 Oct 2026, 23:30 IST\nUI extensions no longer have a 256 KB limit on the combined size of their locale files . As of October 30, 2026, you can add more languages to an extension without hitting a combined size limit at deploy. This applies…\n<https://shopify.dev/changelog/ui-extensions-now-support-a-larger-number-of-locales|Read more>"
+   "text": "🆕 *Shopify Changelog* · Changelog\n*Test app network access configuration on dev stores*\n🕒 4 Nov 2026, 23:30 IST\nYou can now test your app's [network_access] settings on a dev store with the new network access testing feature preview . The preview helps you confirm you have the right networks listed, and find hosts and servers…\n<https://shopify.dev/changelog/test-app-network-access-configuration-on-dev-stores|Read more>"
   },
   {
    "cat": "news",
@@ -224,29 +224,29 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Shopify Changelog* · Changelog\n*New trusted vault origin signal in Payments Apps API*\n🕒 30 Oct 2026, 21:30 IST\nThe Payments Apps API 2027-01 release candidate adds payment_method.data.trusted_vault_origin to credit card payment and verification requests. Payment app developers can use this optional Boolean to handle missing CVV…\n<https://shopify.dev/changelog/new-trusted-vault-origin-signal-in-payments-apps-api|Read more>"
+   "text": "🆕 *Shopify Changelog* · Changelog\n*RETRY_DECLINED added to CustomerPaymentMethodRevocationReason*\n🕒 4 Nov 2026, 22:30 IST\nAs of GraphQL Admin API version 2027-01 , CustomerPaymentMethod.revokedReason can return a new value: RETRY_DECLINED . Shopify uses this value when a subscription payment method is revoked because the payment processor…\n<https://shopify.dev/changelog/retry_declined-added-to-customerpaymentmethodrevocationreason|Read more>"
   },
   {
-   "cat": "news",
+   "cat": "security",
    "kind": "WooCommerce",
    "live": true,
    "note": "",
    "source": "WooCommerce Dev",
    "spaces": [
-    "News"
+    "Downtime"
    ],
-   "text": "🆕 *WooCommerce Dev* · WooCommerce\n*Declaring parent-child cart item relationships in WooCommerce 11.3*\n🕒 28 Oct 2026, 02:56 IST\nWooCommerce 11.3 introduces a filter for tracking product relationships in the cart, enhancing accurate \"N in cart\" counts for bundled items and extensions. The post Declaring parent-child cart item relationships in…\n<https://developer.woocommerce.com/2026/10/27/cart-item-children/|Read more>"
+   "text": "🆕 *WooCommerce Dev* · WooCommerce\n*WooCommerce 11.2.2: Release notes*\n🕒 5 Nov 2026, 02:59 IST\nWooCommerce 11.2.2 has been released with a number of updates focused on security. We strongly recommend updating to the latest release. The post WooCommerce 11.2.2: Release notes appeared first on The WooCommerce…\n<https://developer.woocommerce.com/2026/11/04/woocommerce-11-2-2-release-notes/|Read more>"
   },
   {
-   "cat": "news",
+   "cat": "security",
    "kind": "WooCommerce",
    "live": true,
    "note": "",
    "source": "WooCommerce Dev",
    "spaces": [
-    "News"
+    "Downtime"
    ],
-   "text": "🆕 *WooCommerce Dev* · WooCommerce\n*WooCommerce 11.3: What’s coming for developers*\n🕒 27 Oct 2026, 02:19 IST\nWooCommerce 11.3 beta is now available for testing, featuring enhanced styling controls, On-Sale Badge improvements, mobile gallery updates, and improvements to MCP. The post WooCommerce 11.3: What’s coming for…\n<https://developer.woocommerce.com/2026/10/26/woocommerce-11-3-pre-release/|Read more>"
+   "text": "🆕 *WooCommerce Dev* · WooCommerce\n*Security update for WooPayments*\n🕒 3 Nov 2026, 21:55 IST\nA subscriptions function security update is now available for WooPayments. If you run the WooPayments plugin, please check your version and update to the fix version listed. The post Security update for WooPayments…\n<https://developer.woocommerce.com/2026/11/03/security-update-for-woopayments/|Read more>"
   },
   {
    "cat": "news",
@@ -257,7 +257,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Laravel News* · Laravel\n*Email Sending and Testing for Laravel in One Account*\n🕒 2 Nov 2026, 19:57 IST\nSend real mail from Laravel and catch test emails in one Maileroo account: SMTP sink, spam and dark-mode checks, and automated tests in CI. The post Email Sending and Testing for Laravel in One Account appeared first…\n<https://laravel-news.com/maileroo-laravel-email-testing?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
+   "text": "🆕 *Laravel News* · Laravel\n*Flock: A Free, Native Herd Alternative for Laravel*\n🕒 4 Nov 2026, 05:25 IST\nFlock is a free, open source local dev app for Laravel that runs PHP, Node, databases, mail, and HTTPS natively on macOS, Windows, and Linux. The post Flock: A Free, Native Herd Alternative for Laravel appeared first…\n<https://laravel-news.com/flock-laravel-local-development?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
   },
   {
    "cat": "news",
@@ -268,7 +268,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Laravel News* · Laravel\n*PIE 1.5 Changes PHP Extension Installs in CI*\n🕒 2 Nov 2026, 06:12 IST\nPIE 1.5 requires explicit extension package choices in CI. See how to update a Laravel project's Redis install and skip development extensions. The post PIE 1.5 Changes PHP Extension Installs in CI appeared first on…\n<https://laravel-news.com/pie-1-5?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
+   "text": "🆕 *Laravel News* · Laravel\n*Slow Job Alerts and Replica Commit IDs in Laravel 13.40*\n🕒 4 Nov 2026, 05:23 IST\nLaravel 13.40 adds callbacks for slow queue jobs and scheduled tasks, commit IDs to check read replica lag, and insertBefore() and insertAfter() for middleware. The post Slow Job Alerts and Replica Commit IDs in…\n<https://laravel-news.com/laravel-13-40-0?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
   },
   {
    "cat": "news",
@@ -279,18 +279,18 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Node.js Blog* · Node.js\n*Node.js 27.0.0-alpha.0.0.0 (Alpha)*\n🕒 30 Oct 2026, 01:22 IST\n<https://nodejs.org/en/blog/release/v27.0.0-alpha.0.0.0|Read more>"
+   "text": "🆕 *Node.js Blog* · Node.js\n*Notable V8 changes from Node.js 26 to 27 (Alpha)*\n🕒 5 Nov 2026, 17:30 IST\n<https://nodejs.org/en/blog/announcements/notable-v8-changes-from-node-js-26-to-27-alpha|Read more>"
   },
   {
-   "cat": "news",
+   "cat": "security",
    "kind": "Node.js",
    "live": true,
    "note": "",
    "source": "Node.js Blog",
    "spaces": [
-    "News"
+    "Downtime"
    ],
-   "text": "🆕 *Node.js Blog* · Node.js\n*Node.js 24.22.2 (LTS)*\n🕒 29 Oct 2026, 00:10 IST\n<https://nodejs.org/en/blog/release/v24.22.2|Read more>"
+   "text": "🆕 *Node.js Blog* · Node.js\n*Wednesday, November 11, 2026 Security Releases*\n🕒 4 Nov 2026, 04:30 IST\n<https://nodejs.org/en/blog/vulnerability/november-2026-security-releases|Read more>"
   },
   {
    "cat": "security",
@@ -543,6 +543,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-02T18:24:23Z",
+ "updated": "2026-11-05T15:05:13Z",
  "version": 1
 }
