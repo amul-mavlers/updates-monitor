@@ -2,6 +2,17 @@
  "cards": [
   {
    "cat": "incidents",
+   "kind": "Investigating · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "GitHub Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*Incident with Actions*\n🕒 5 Nov 2026, 22:22 IST\nAffected: Actions\nSome GitHub Actions workflow runs may experience delays or errors when starting. We’re investigating and preparing a mitigation.\n<https://stspg.io/lv4q3xm9r0rk|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 35 min · Major impact",
    "live": true,
    "note": "",
@@ -10,17 +21,6 @@
     "Downtime"
    ],
    "text": "🟢 *GitHub Status* · Resolved after 35 min · Major impact\n*Incident with Actions*\n🕒 4 Nov 2026, 23:46 IST\nAffected: Actions\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/7pwv28hvkmz8|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 55 min · Major impact",
-   "live": true,
-   "note": "",
-   "source": "GitHub Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *GitHub Status* · Resolved after 55 min · Major impact\n*Incident with Actions and Pages*\n🕒 4 Nov 2026, 22:31 IST\nAffected: Webhooks, Actions, Pages\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/pjgptg3cfc6n|Read more>"
   },
   {
    "cat": "incidents",
@@ -543,6 +543,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-05T16:16:48Z",
+ "updated": "2026-11-05T16:52:52Z",
  "version": 1
 }
