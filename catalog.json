@@ -271,6 +271,17 @@
    "text": "🆕 *Laravel News* · Laravel\n*Slow Job Alerts and Replica Commit IDs in Laravel 13.40*\n🕒 4 Nov 2026, 05:23 IST\nLaravel 13.40 adds callbacks for slow queue jobs and scheduled tasks, commit IDs to check read replica lag, and insertBefore() and insertAfter() for middleware. The post Slow Job Alerts and Replica Commit IDs in…\n<https://laravel-news.com/laravel-13-40-0?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
   },
   {
+   "cat": "news",
+   "kind": "Node.js",
+   "live": true,
+   "note": "",
+   "source": "Node.js Blog",
+   "spaces": [
+    "News"
+   ],
+   "text": "🆕 *Node.js Blog* · Node.js\n*Notable V8 changes from Node.js 26 to 27 (Alpha)*\n🕒 5 Nov 2026, 17:30 IST\n<https://nodejs.org/en/blog/announcements/notable-v8-changes-from-node-js-26-to-27-alpha|Read more>"
+  },
+  {
    "cat": "security",
    "kind": "Node.js",
    "live": true,
@@ -280,17 +291,6 @@
     "Downtime"
    ],
    "text": "🆕 *Node.js Blog* · Node.js\n*Wednesday, November 11, 2026 Security Releases*\n🕒 4 Nov 2026, 04:30 IST\n<https://nodejs.org/en/blog/vulnerability/november-2026-security-releases|Read more>"
-  },
-  {
-   "cat": "news",
-   "kind": "Node.js",
-   "live": true,
-   "note": "",
-   "source": "Node.js Blog",
-   "spaces": [
-    "News"
-   ],
-   "text": "🆕 *Node.js Blog* · Node.js\n*Notable V8 changes from Node.js 26 to 27 (Alpha)*\n🕒 2 Nov 2026, 17:30 IST\n<https://nodejs.org/en/blog/announcements/notable-v8-changes-from-node-js-26-to-27-alpha|Read more>"
   },
   {
    "cat": "security",
