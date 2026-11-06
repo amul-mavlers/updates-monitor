@@ -9,7 +9,7 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*Degraded performance for multiple GitHub services*\n🕒 6 Nov 2026, 05:06 IST\nAffected: Actions, Pages\nWe're investigating degraded performance and errors affecting several GitHub services, including Git operations, Issues, Actions, and API access. Some users may see failed requests or slow responses. We'll post another…\n<https://stspg.io/s5bs6jn41fwh|Read more>"
+   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*Degraded performance for multiple GitHub services*\n🕒 6 Nov 2026, 05:28 IST\nAffected: Issues, Actions, Pages\nIssues is experiencing degraded performance. We are continuing to investigate.\n<https://stspg.io/s5bs6jn41fwh|Read more>"
   },
   {
    "cat": "incidents",
@@ -543,6 +543,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-05T23:36:51Z",
+ "updated": "2026-11-05T23:58:28Z",
  "version": 1
 }
