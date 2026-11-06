@@ -2,14 +2,14 @@
  "cards": [
   {
    "cat": "incidents",
-   "kind": "Investigating · Minor impact",
+   "kind": "Resolved after 44 min · Minor impact",
    "live": true,
    "note": "",
    "source": "GitHub Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*Degraded performance for multiple GitHub services*\n🕒 6 Nov 2026, 05:49 IST\nAffected: Git Operations, Issues, Actions, Pages\nGit Operations is operating normally.\n<https://stspg.io/s5bs6jn41fwh|Read more>"
+   "text": "🟢 *GitHub Status* · Resolved after 44 min · Minor impact\n*Degraded performance for multiple GitHub services*\n🕒 6 Nov 2026, 05:50 IST\nAffected: Git Operations, Issues, Actions, Pages\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/s5bs6jn41fwh|Read more>"
   },
   {
    "cat": "incidents",
@@ -543,6 +543,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-06T00:19:21Z",
+ "updated": "2026-11-06T00:20:49Z",
  "version": 1
 }
