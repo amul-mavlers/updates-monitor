@@ -1308,6 +1308,7 @@
     "http://php.net/releases/8_2_35.php"
   ],
   "Shopify Changelog": [
+    "https://shopify.dev/changelog/apps-must-enable-bulk-operations-before-use",
     "https://shopify.dev/changelog/merchant-notes-on-store-credit-transactions",
     "https://shopify.dev/changelog/order-routing-functions-can-now-apply-one-location-ranking-to-multiple-fulfillment-groups",
     "https://shopify.dev/changelog/app-security-updates-ip-allowlist-is-now-required",
