@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Identified · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Wrangler Deployment Failures*\n🕒 6 Nov 2026, 15:17 IST\nAffected: Wrangler\nCloudflare is investigating an issue with Wrangler deployments, users may suffer from failed uploads. We are working to analyse and mitigate this problem. More updates to follow shortly.\n<https://www.cloudflarestatus.com/incidents/wtsd415cavkc|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Monitoring · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Network Performance Issues in Singapore*\n🕒 6 Nov 2026, 15:02 IST\nAffected: Singapore, Singapore - (SIN)\nWe are continuing to monitor for any further issues.\n<https://www.cloudflarestatus.com/incidents/3ehw20ozwlkr|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 19 h 41 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 19 h 41 min · Minor impact\n*Increased Errors for Durable Objects in Western Europe*\n🕒 6 Nov 2026, 14:35 IST\nAffected: Durable Objects\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/oy8gxjb38yse|Read more>"
   },
   {
    "cat": "incidents",
@@ -543,6 +543,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-06T09:32:12Z",
+ "updated": "2026-11-06T09:47:17Z",
  "version": 1
 }
