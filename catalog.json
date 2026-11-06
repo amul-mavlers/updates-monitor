@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Investigating · Minor impact",
+   "kind": "Identified · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Fedramp Customers have Delayed Purges*\n🕒 6 Nov 2026, 23:17 IST\nAffected: CDN Cache Purge\nCloudflare has identified a bug with our purge pipeline impacting fedramp customers. Stale content may be served until expired. Non-fedramp customers are not impacted.\n<https://www.cloudflarestatus.com/incidents/wp49bp8bqo6c|Read more>"
+   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Fedramp Customers have Delayed Purges*\n🕒 6 Nov 2026, 23:29 IST\nAffected: CDN Cache Purge\nWe are continuing to work on a fix for the issue.\n<https://www.cloudflarestatus.com/incidents/wp49bp8bqo6c|Read more>"
   },
   {
    "cat": "incidents",
@@ -543,6 +543,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-06T17:47:15Z",
+ "updated": "2026-11-06T17:59:13Z",
  "version": 1
 }
