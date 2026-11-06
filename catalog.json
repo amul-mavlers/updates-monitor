@@ -257,7 +257,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Laravel News* · Laravel\n*Insert Middleware Before or After Existing Laravel Middleware*\n🕒 6 Nov 2026, 10:49 IST\nLaravel 13.40 adds insertBefore() and insertAfter() to place middleware next to built-in ones like TrustProxies and StartSession without redefining the stack. The post Insert Middleware Before or After Existing Laravel…\n<https://laravel-news.com/laravel-middleware-insert-before-after?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
+   "text": "🆕 *Laravel News* · Laravel\n*PhpStorm 2026.3 Adds an Agent Workspace and PHP 8.6 Support*\n🕒 6 Nov 2026, 22:35 IST\nPhpStorm 2026.3 adds PHP 8.6 support, new Laravel inspections, a Processes tab for queue workers, and Air, a workspace for coding agents. The post PhpStorm 2026.3 Adds an Agent Workspace and PHP 8.6 Support appeared…\n<https://laravel-news.com/phpstorm-2026-3?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
   },
   {
    "cat": "news",
@@ -268,7 +268,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Laravel News* · Laravel\n*Laravel Herd 2: Coding Agents, Workspaces, and Cloud Deploys*\n🕒 5 Nov 2026, 19:35 IST\nLaravel Herd 2.0 adds Herd Studio for running coding agents on local sites, git workspaces for parallel work, and Laravel Cloud deploys. The post Laravel Herd 2: Coding Agents, Workspaces, and Cloud Deploys appeared…\n<https://laravel-news.com/laravel-herd-2?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
+   "text": "🆕 *Laravel News* · Laravel\n*Insert Middleware Before or After Existing Laravel Middleware*\n🕒 6 Nov 2026, 10:49 IST\nLaravel 13.40 adds insertBefore() and insertAfter() to place middleware next to built-in ones like TrustProxies and StartSession without redefining the stack. The post Insert Middleware Before or After Existing Laravel…\n<https://laravel-news.com/laravel-middleware-insert-before-after?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
   },
   {
    "cat": "news",
@@ -543,6 +543,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-06T15:43:00Z",
+ "updated": "2026-11-06T17:05:13Z",
  "version": 1
 }
