@@ -227,28 +227,6 @@
    "text": "🆕 *Shopify Changelog* · Changelog\n*App security updates: IP allowlist is now required*\n🕒 5 Nov 2026, 21:29 IST\nOn Oct 27 we recommended the IP allowlist . It is now required for every public app by November 20, or November 12 if you use bulk ops. An IP allowlist means a leaked token can't be used anywhere but your own servers.…\n<https://shopify.dev/changelog/app-security-updates-ip-allowlist-is-now-required|Read more>"
   },
   {
-   "cat": "security",
-   "kind": "WooCommerce",
-   "live": true,
-   "note": "",
-   "source": "WooCommerce Dev",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🆕 *WooCommerce Dev* · WooCommerce\n*WooCommerce 11.2.2: Release notes*\n🕒 5 Nov 2026, 02:59 IST\nWooCommerce 11.2.2 has been released with a number of updates focused on security. We strongly recommend updating to the latest release. The post WooCommerce 11.2.2: Release notes appeared first on The WooCommerce…\n<https://developer.woocommerce.com/2026/11/04/woocommerce-11-2-2-release-notes/|Read more>"
-  },
-  {
-   "cat": "security",
-   "kind": "WooCommerce",
-   "live": true,
-   "note": "",
-   "source": "WooCommerce Dev",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🆕 *WooCommerce Dev* · WooCommerce\n*Security update for WooPayments*\n🕒 3 Nov 2026, 21:55 IST\nA subscriptions function security update is now available for WooPayments. If you run the WooPayments plugin, please check your version and update to the fix version listed. The post Security update for WooPayments…\n<https://developer.woocommerce.com/2026/11/03/security-update-for-woopayments/|Read more>"
-  },
-  {
    "cat": "news",
    "kind": "Laravel",
    "live": true,
