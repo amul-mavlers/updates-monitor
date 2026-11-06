@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Monitoring · Minor impact",
+   "kind": "Resolved after 21 min · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Wrangler Deployments, Pages, and Workers Builds failures*\n🕒 6 Nov 2026, 15:23 IST\nAffected: Pages, Workers Builds, Wrangler\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/wtsd415cavkc|Read more>"
+   "text": "🟢 *Cloudflare Status* · Resolved after 21 min · Minor impact\n*Wrangler Deployments, Pages, and Workers Builds failures*\n🕒 6 Nov 2026, 15:38 IST\nAffected: Pages, Workers Builds, Wrangler\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/wtsd415cavkc|Read more>"
   },
   {
    "cat": "incidents",
@@ -543,6 +543,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-06T09:53:44Z",
+ "updated": "2026-11-06T10:08:30Z",
  "version": 1
 }
