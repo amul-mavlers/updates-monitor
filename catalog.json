@@ -235,7 +235,7 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🆕 *WooCommerce Dev* · WooCommerce\n*WooCommerce 11.2.2: Release notes*\n🕒 5 Nov 2026, 02:59 IST\nWooCommerce 11.2.2 has been released with a number of updates focused on security. We strongly recommend updating to the latest release. The post WooCommerce 11.2.2: Release notes appeared first on The WooCommerce…\n<https://developer.woocommerce.com/2026/11/04/woocommerce-11-2-2-release-notes/|Read more>"
+   "text": "🆕 *WooCommerce Dev* · WooCommerce\n*We went looking: what Woo has done about security since June*\n🕒 6 Nov 2026, 21:13 IST\nWhy so many WooCommerce security updates lately? Well, we went looking. Here’s what we found, what we changed, and what store owners and devs can do now to be a part of the security conversation and take action. The…\n<https://developer.woocommerce.com/2026/11/06/woo-latest-security/|Read more>"
   },
   {
    "cat": "security",
@@ -246,7 +246,7 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🆕 *WooCommerce Dev* · WooCommerce\n*Security update for WooPayments*\n🕒 3 Nov 2026, 21:55 IST\nA subscriptions function security update is now available for WooPayments. If you run the WooPayments plugin, please check your version and update to the fix version listed. The post Security update for WooPayments…\n<https://developer.woocommerce.com/2026/11/03/security-update-for-woopayments/|Read more>"
+   "text": "🆕 *WooCommerce Dev* · WooCommerce\n*WooCommerce 11.2.2: Release notes*\n🕒 5 Nov 2026, 02:59 IST\nWooCommerce 11.2.2 has been released with a number of updates focused on security. We strongly recommend updating to the latest release. The post WooCommerce 11.2.2: Release notes appeared first on The WooCommerce…\n<https://developer.woocommerce.com/2026/11/04/woocommerce-11-2-2-release-notes/|Read more>"
   },
   {
    "cat": "news",
@@ -543,6 +543,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-06T10:43:38Z",
+ "updated": "2026-11-06T15:43:00Z",
  "version": 1
 }
