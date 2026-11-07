@@ -46,17 +46,6 @@
   },
   {
    "cat": "incidents",
-   "kind": "Resolved after 38 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Shopify Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Shopify Status* · Resolved after 38 min · Minor impact\n*Some merchants encountering error messages within their admins or on checkout pages*\n🕒 7 Nov 2026, 07:10 IST\nAffected: Admin, Checkout, Storefront, Point of Sale\nBetween 00:38 and 01:05 UTC, we experienced some intermittent issues with Admin, Storefront, Checkout Cart pages and Point of Sale. A fix was implemented at 01:05 UTC which resolved the issue. The monitoring period for…\n<https://stspg.io/8hym31g1zvr5|Read more>"
-  },
-  {
-   "cat": "incidents",
    "kind": "Resolved after 42 min",
    "live": true,
    "note": "",
@@ -65,6 +54,17 @@
     "Downtime"
    ],
    "text": "🟢 *Shopify Status* · Resolved after 42 min\n*Some merchants encountering error messages within their admins*\n🕒 29 Oct 2026, 14:30 IST\nBetween 07:53 - 8:45 UTC on October 29, 2026, we experienced errors affecting the Admin, including in the Shopify mobile app. A fix was implemented at 08:30 UTC which resolved the issue. The monitoring period for this…\n<https://stspg.io/ymmjdbrb4wlc|Read more>"
+  },
+  {
+   "cat": "incidents",
+   "kind": "Resolved after 33 min · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Shopify Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🟢 *Shopify Status* · Resolved after 33 min · Minor impact\n*Shop Pay unavailable*\n🕒 25 Jun 2025, 05:00 IST\nAffected: Checkout\nThis incident has been resolved.\n<https://stspg.io/1nx1vcvd553l|Read more>"
   },
   {
    "cat": "news",
