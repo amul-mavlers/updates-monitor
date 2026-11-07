@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Resolved after 39 min · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🟢 *Cloudflare Status* · Resolved after 39 min · Minor impact\n*Network Performance Issues in Chicago*\n🕒 7 Nov 2026, 11:04 IST\nAffected: Network, Chicago, United States - (ORD)\nBetween 04:55-05:12 UTC 7th Dec Cloudflare experienced issues with network performance in Chicago.\n<https://www.cloudflarestatus.com/incidents/x9orajjmvvwa|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Monitoring · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Spectrum Availability Issue in Phoenix*\n🕒 7 Nov 2026, 08:21 IST\nAffected: Spectrum\nWe are continuing to monitor for any further issues.\n<https://www.cloudflarestatus.com/incidents/c60k3g4vsoc1|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Identified · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Fedramp Customers have Delayed Purges*\n🕒 6 Nov 2026, 23:29 IST\nAffected: CDN Cache Purge\nWe are continuing to work on a fix for the issue.\n<https://www.cloudflarestatus.com/incidents/wp49bp8bqo6c|Read more>"
   },
   {
    "cat": "incidents",
@@ -542,6 +542,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-07T02:51:59Z",
+ "updated": "2026-11-07T05:34:24Z",
  "version": 1
 }
