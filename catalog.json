@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Investigating · Minor impact",
+   "kind": "Monitoring · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Spectrum Availability Issue in Phoenix*\n🕒 7 Nov 2026, 06:29 IST\nAffected: Spectrum\nCloudflare is investigating issues with Spectrum in Phoenix. This may be impacting the availability of existing Spectrum applications. We are working to understand the full impact and mitigate this problem. More…\n<https://www.cloudflarestatus.com/incidents/c60k3g4vsoc1|Read more>"
+   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Spectrum Availability Issue in Phoenix*\n🕒 7 Nov 2026, 08:21 IST\nAffected: Spectrum\nWe are continuing to monitor for any further issues.\n<https://www.cloudflarestatus.com/incidents/c60k3g4vsoc1|Read more>"
   },
   {
    "cat": "incidents",
@@ -543,6 +543,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-07T00:59:31Z",
+ "updated": "2026-11-07T02:51:59Z",
  "version": 1
 }
