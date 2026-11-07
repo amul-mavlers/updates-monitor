@@ -46,14 +46,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Investigating · Minor impact",
+   "kind": "Identified · Minor impact",
    "live": true,
    "note": "",
    "source": "Shopify Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *Shopify Status* · Investigating · Minor impact\n*Some merchants encountering error messages within their admins or on checkout pages*\n🕒 7 Nov 2026, 06:32 IST\nAffected: Admin, Checkout, Storefront, Point of Sale\nMerchants may experience issues when trying to access the Shopify Checkout, Cart, Admin and Storefronts intermittently.\n<https://stspg.io/8hym31g1zvr5|Read more>"
+   "text": "🟠 *Shopify Status* · Identified · Minor impact\n*Some merchants encountering error messages within their admins or on checkout pages*\n🕒 7 Nov 2026, 06:45 IST\nAffected: Admin, Checkout, Storefront, Point of Sale\nWe've identified the problem causing intermittent issues impacting storefront, admins and some checkout pages and we're working on a solution.\n<https://stspg.io/8hym31g1zvr5|Read more>"
   },
   {
    "cat": "incidents",
@@ -113,17 +113,6 @@
    "text": "🆕 *WordPress News* · New post\n*Critical PHP Security Release*\n🕒 21 Oct 2026, 19:14 IST\nThe PHP project has announced a security release that fixes two critical security vulnerabilities discovered in PHP. Due to the critical severity of the issues, site owners are encouraged to immediately update their…\n<https://wordpress.org/news/2026/10/critical-php-security-release/|Read more>"
   },
   {
-   "cat": "news",
-   "kind": "News",
-   "live": true,
-   "note": "",
-   "source": "PHP News",
-   "spaces": [
-    "WordPress & PHP"
-   ],
-   "text": "🆕 *PHP News* · News\n*PHP 8.6.0 RC5 available for testing*\n🕒 6 Nov 2026, 02:42 IST\nThe PHP team is pleased to announce the fourth release candidate of PHP 8.6.0, RC5. This continues the PHP 8.6 release cycle, whose rough outline is specified in the PHP Wiki . Source downloads of PHP 8.6.0 RC5 are…\n<https://www.php.net/index.php#2026-11-05-1|Read more>"
-  },
-  {
    "cat": "security",
    "kind": "News",
    "live": true,
@@ -158,6 +147,18 @@
     "Downtime"
    ],
    "text": "🆕 *PHP News* · News\n*PHP 8.6.0 RC4 available for testing*\n🕒 21 Oct 2026, 21:11 IST\nThe PHP team is pleased to announce the third release candidate of PHP 8.6.0, RC4. This continues the PHP 8.6 release cycle, whose rough outline is specified in the PHP Wiki . Source downloads of PHP 8.6.0 RC4 are…\n<https://www.php.net/index.php#2026-10-21-6|Read more>"
+  },
+  {
+   "cat": "security",
+   "kind": "News",
+   "live": true,
+   "note": "",
+   "source": "PHP News",
+   "spaces": [
+    "WordPress & PHP",
+    "Downtime"
+   ],
+   "text": "🆕 *PHP News* · News\n*Security advisory: Critical remote code execution vulnerabilities, update now*\n🕒 21 Oct 2026, 06:05 IST\nPHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35 fix two critical vulnerabilities that can allow unauthenticated remote code execution. All PHP users are strongly encouraged to update immediately. Who is at risk: all PHP…\n<https://www.php.net/index.php#2026-10-21-5|Read more>"
   },
   {
    "cat": "news",
