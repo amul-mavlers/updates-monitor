@@ -53,7 +53,7 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *Shopify Status* · Investigating · Minor impact\n*Some merchants encountering error messages within their admins or on checkout pages*\n🕒 7 Nov 2026, 06:32 IST\nAffected: Admin, Checkout\nMerchants may experience issues when trying to access the Shopify admin or seeing intermittent storefront and checkout errors.\n<https://stspg.io/8hym31g1zvr5|Read more>"
+   "text": "🔴 *Shopify Status* · Investigating · Minor impact\n*Some merchants encountering error messages within their admins or on checkout pages*\n🕒 7 Nov 2026, 06:32 IST\nAffected: Admin, Checkout, Storefront, Point of Sale\nMerchants may experience issues when trying to access the Shopify Checkout, Cart, Admin and Storefronts intermittently.\n<https://stspg.io/8hym31g1zvr5|Read more>"
   },
   {
    "cat": "incidents",
