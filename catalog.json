@@ -9,7 +9,7 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*Increase in timeouts for some unauthenticated users*\n🕒 8 Nov 2026, 16:06 IST\nWe are investigating reports of impacted performance for some GitHub services.\n<https://stspg.io/5yt31mfmyc6p|Read more>"
+   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*Increase in timeouts for some unauthenticated users*\n🕒 8 Nov 2026, 16:46 IST\nWe are continuing to investigate degraded performance primarily for unauthenticated users.\n<https://stspg.io/5yt31mfmyc6p|Read more>"
   },
   {
    "cat": "incidents",
@@ -542,6 +542,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-08T10:36:05Z",
+ "updated": "2026-11-08T11:16:19Z",
  "version": 1
 }
