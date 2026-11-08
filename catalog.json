@@ -113,6 +113,98 @@
    "text": "🆕 *WordPress News* · New post\n*Critical PHP Security Release*\n🕒 21 Oct 2026, 19:14 IST\nThe PHP project has announced a security release that fixes two critical security vulnerabilities discovered in PHP. Due to the critical severity of the issues, site owners are encouraged to immediately update their…\n<https://wordpress.org/news/2026/10/critical-php-security-release/|Read more>"
   },
   {
+   "cat": "security",
+   "kind": "News",
+   "live": true,
+   "note": "",
+   "source": "PHP News",
+   "spaces": [
+    "WordPress & PHP",
+    "Downtime"
+   ],
+   "text": "🆕 *PHP News* · News\n*Updated PHP Windows builds for Brotli security fix*\n🕒 26 Oct 2026, 17:27 IST\nThe PHP team announces updated Windows builds: PHP 8.5.12-1, 8.4.27-1, 8.3.36-1 and 8.2.35-1 . These builds include Brotli 1.2.1, which fixes CVE-2026-111497 , an out-of-bounds write vulnerability in Brotli…\n<https://www.php.net/index.php#2026-10-26-1|Read more>"
+  },
+  {
+   "cat": "security",
+   "kind": "News",
+   "live": true,
+   "note": "",
+   "source": "PHP News",
+   "spaces": [
+    "WordPress & PHP",
+    "Downtime"
+   ],
+   "text": "🆕 *PHP News* · News\n*Informational advisory: Session upload progress*\n🕒 23 Oct 2026, 15:42 IST\nWe suggest you set session.upload_progress.enabled=0 until the next regular bugfix release, to fully protect from an unlikely RCE vector. This setting was already listed as a mitigation in the GHSA-6wmf-4rv5-p3rp…\n<https://www.php.net/index.php#2026-10-23-1|Read more>"
+  },
+  {
+   "cat": "security",
+   "kind": "News",
+   "live": true,
+   "note": "",
+   "source": "PHP News",
+   "spaces": [
+    "WordPress & PHP",
+    "Downtime"
+   ],
+   "text": "🆕 *PHP News* · News\n*PHP 8.6.0 RC4 available for testing*\n🕒 21 Oct 2026, 21:11 IST\nThe PHP team is pleased to announce the third release candidate of PHP 8.6.0, RC4. This continues the PHP 8.6 release cycle, whose rough outline is specified in the PHP Wiki . Source downloads of PHP 8.6.0 RC4 are…\n<https://www.php.net/index.php#2026-10-21-6|Read more>"
+  },
+  {
+   "cat": "security",
+   "kind": "News",
+   "live": true,
+   "note": "",
+   "source": "PHP News",
+   "spaces": [
+    "WordPress & PHP",
+    "Downtime"
+   ],
+   "text": "🆕 *PHP News* · News\n*Security advisory: Critical remote code execution vulnerabilities, update now*\n🕒 21 Oct 2026, 06:05 IST\nPHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35 fix two critical vulnerabilities that can allow unauthenticated remote code execution. All PHP users are strongly encouraged to update immediately. Who is at risk: all PHP…\n<https://www.php.net/index.php#2026-10-21-5|Read more>"
+  },
+  {
+   "cat": "news",
+   "kind": "New release",
+   "live": true,
+   "note": "",
+   "source": "PHP Releases",
+   "spaces": [
+    "WordPress & PHP"
+   ],
+   "text": "🆕 *PHP Releases* · New release\n*PHP 8.5.12 released!*\n🕒 21 Oct 2026, 05:30 IST\nThere is a new PHP release in town!\n<http://php.net/releases/8_5_12.php|Read more>"
+  },
+  {
+   "cat": "news",
+   "kind": "New release",
+   "live": true,
+   "note": "",
+   "source": "PHP Releases",
+   "spaces": [
+    "WordPress & PHP"
+   ],
+   "text": "🆕 *PHP Releases* · New release\n*PHP 8.4.27 released!*\n🕒 21 Oct 2026, 05:30 IST\nThere is a new PHP release in town!\n<http://php.net/releases/8_4_27.php|Read more>"
+  },
+  {
+   "cat": "news",
+   "kind": "New release",
+   "live": true,
+   "note": "",
+   "source": "PHP Releases",
+   "spaces": [
+    "WordPress & PHP"
+   ],
+   "text": "🆕 *PHP Releases* · New release\n*PHP 8.3.36 released!*\n🕒 21 Oct 2026, 05:30 IST\nThere is a new PHP release in town!\n<http://php.net/releases/8_3_36.php|Read more>"
+  },
+  {
+   "cat": "news",
+   "kind": "New release",
+   "live": true,
+   "note": "",
+   "source": "PHP Releases",
+   "spaces": [
+    "WordPress & PHP"
+   ],
+   "text": "🆕 *PHP Releases* · New release\n*PHP 8.2.35 released!*\n🕒 21 Oct 2026, 05:30 IST\nThere is a new PHP release in town!\n<http://php.net/releases/8_2_35.php|Read more>"
+  },
+  {
    "cat": "news",
    "kind": "Changelog",
    "live": true,
