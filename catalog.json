@@ -212,7 +212,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Shopify Changelog* · Changelog\n*Apps must enable bulk operations before use*\n🕒 7 Nov 2026, 00:45 IST\nStarting today, apps need access to bulk operations before they can run bulk queries or bulk mutations with the GraphQL Admin API. You can enable access for your app in the Partner Dashboard. What changed Bulk queries…\n<https://shopify.dev/changelog/apps-must-enable-bulk-operations-before-use|Read more>"
+   "text": "🆕 *Shopify Changelog* · Changelog\n*Partner apps must enable bulk operations before use*\n🕒 7 Nov 2026, 01:30 IST\nStarting today, apps need access to bulk operations before they can run bulk queries or bulk mutations with the GraphQL Admin API. You can enable access for your app in the Partner Dashboard. What changed Bulk queries…\n<https://shopify.dev/changelog/partner-apps-must-enable-bulk-operations-before-use|Read more>"
   },
   {
    "cat": "news",
@@ -223,7 +223,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Shopify Changelog* · Changelog\n*Merchant notes on store credit transactions*\n🕒 6 Nov 2026, 14:30 IST\nAs of GraphQL Admin API version 2027-01 , you can attach a merchant-only note when crediting or debiting a store credit account and read those notes on store credit transactions. Notes are optional, so existing…\n<https://shopify.dev/changelog/merchant-notes-on-store-credit-transactions|Read more>"
+   "text": "🆕 *Shopify Changelog* · Changelog\n*Apps must enable bulk operations before use*\n🕒 7 Nov 2026, 00:45 IST\nStarting today, apps need access to bulk operations before they can run bulk queries or bulk mutations with the GraphQL Admin API. You can enable access for your app in the Partner Dashboard. What changed Bulk queries…\n<https://shopify.dev/changelog/apps-must-enable-bulk-operations-before-use|Read more>"
   },
   {
    "cat": "security",
