@@ -9,7 +9,7 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*Increase in timeouts for some unauthenticated users*\n🕒 8 Nov 2026, 17:20 IST\nAffected: API Requests\nWe've identified a problematic component and are working to redeploy it.\n<https://stspg.io/5yt31mfmyc6p|Read more>"
+   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*Increase in timeouts for some unauthenticated users*\n🕒 8 Nov 2026, 17:26 IST\nAffected: API Requests\nThe degradation affecting API Requests has been mitigated. We are monitoring to ensure stability.\n<https://stspg.io/5yt31mfmyc6p|Read more>"
   },
   {
    "cat": "incidents",
@@ -542,6 +542,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-08T11:50:49Z",
+ "updated": "2026-11-08T11:56:20Z",
  "version": 1
 }
