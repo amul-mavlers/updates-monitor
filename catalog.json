@@ -113,6 +113,98 @@
    "text": "🆕 *WordPress News* · New post\n*Critical PHP Security Release*\n🕒 21 Oct 2026, 19:14 IST\nThe PHP project has announced a security release that fixes two critical security vulnerabilities discovered in PHP. Due to the critical severity of the issues, site owners are encouraged to immediately update their…\n<https://wordpress.org/news/2026/10/critical-php-security-release/|Read more>"
   },
   {
+   "cat": "security",
+   "kind": "News",
+   "live": true,
+   "note": "",
+   "source": "PHP News",
+   "spaces": [
+    "WordPress & PHP",
+    "Downtime"
+   ],
+   "text": "🆕 *PHP News* · News\n*Security advisory: Critical remote code execution vulnerabilities, update now*\n🕒 21 Oct 2026, 06:05 IST\nPHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35 fix two critical vulnerabilities that can allow unauthenticated remote code execution. All PHP users are strongly encouraged to update immediately. Who is at risk: all PHP…\n<https://www.php.net/index.php#2026-10-21-5|Read more>"
+  },
+  {
+   "cat": "security",
+   "kind": "News",
+   "live": true,
+   "note": "",
+   "source": "PHP News",
+   "spaces": [
+    "WordPress & PHP",
+    "Downtime"
+   ],
+   "text": "🆕 *PHP News* · News\n*PHP 8.5.12 Released!*\n🕒 21 Oct 2026, 05:54 IST\nThe PHP development team announces the immediate availability of PHP 8.5.12. This is a security release fixing two critical vulnerabilities (CVE-2026-109618, CVE-2026-109619) that can allow unauthenticated remote code…\n<https://www.php.net/index.php#2026-10-21-4|Read more>"
+  },
+  {
+   "cat": "security",
+   "kind": "News",
+   "live": true,
+   "note": "",
+   "source": "PHP News",
+   "spaces": [
+    "WordPress & PHP",
+    "Downtime"
+   ],
+   "text": "🆕 *PHP News* · News\n*PHP 8.4.27 Released!*\n🕒 21 Oct 2026, 05:50 IST\nThe PHP development team announces the immediate availability of PHP 8.4.27. This is a security release fixing two critical vulnerabilities (CVE-2026-109618, CVE-2026-109619) that can allow unauthenticated remote code…\n<https://www.php.net/index.php#2026-10-21-3|Read more>"
+  },
+  {
+   "cat": "security",
+   "kind": "News",
+   "live": true,
+   "note": "",
+   "source": "PHP News",
+   "spaces": [
+    "WordPress & PHP",
+    "Downtime"
+   ],
+   "text": "🆕 *PHP News* · News\n*PHP 8.3.36 Released!*\n🕒 21 Oct 2026, 05:44 IST\nThe PHP development team announces the immediate availability of PHP 8.3.36. This is a security release fixing two critical vulnerabilities (CVE-2026-109618, CVE-2026-109619) that can allow unauthenticated remote code…\n<https://www.php.net/index.php#2026-10-21-2|Read more>"
+  },
+  {
+   "cat": "news",
+   "kind": "New release",
+   "live": true,
+   "note": "",
+   "source": "PHP Releases",
+   "spaces": [
+    "WordPress & PHP"
+   ],
+   "text": "🆕 *PHP Releases* · New release\n*PHP 8.5.12 released!*\n🕒 21 Oct 2026, 05:30 IST\nThere is a new PHP release in town!\n<http://php.net/releases/8_5_12.php|Read more>"
+  },
+  {
+   "cat": "news",
+   "kind": "New release",
+   "live": true,
+   "note": "",
+   "source": "PHP Releases",
+   "spaces": [
+    "WordPress & PHP"
+   ],
+   "text": "🆕 *PHP Releases* · New release\n*PHP 8.4.27 released!*\n🕒 21 Oct 2026, 05:30 IST\nThere is a new PHP release in town!\n<http://php.net/releases/8_4_27.php|Read more>"
+  },
+  {
+   "cat": "news",
+   "kind": "New release",
+   "live": true,
+   "note": "",
+   "source": "PHP Releases",
+   "spaces": [
+    "WordPress & PHP"
+   ],
+   "text": "🆕 *PHP Releases* · New release\n*PHP 8.3.36 released!*\n🕒 21 Oct 2026, 05:30 IST\nThere is a new PHP release in town!\n<http://php.net/releases/8_3_36.php|Read more>"
+  },
+  {
+   "cat": "news",
+   "kind": "New release",
+   "live": true,
+   "note": "",
+   "source": "PHP Releases",
+   "spaces": [
+    "WordPress & PHP"
+   ],
+   "text": "🆕 *PHP Releases* · New release\n*PHP 8.2.35 released!*\n🕒 21 Oct 2026, 05:30 IST\nThere is a new PHP release in town!\n<http://php.net/releases/8_2_35.php|Read more>"
+  },
+  {
    "cat": "news",
    "kind": "Changelog",
    "live": true,
