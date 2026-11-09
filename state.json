@@ -159,6 +159,7 @@
   ],
   "_health": {},
   "Cloudflare Status": [
+    "c60k3g4vsoc1|2026-11-09T14:36:55.910Z",
     "x9orajjmvvwa|2026-11-07T05:34:24.281Z",
     "c60k3g4vsoc1|2026-11-07T02:51:59.805Z",
     "c60k3g4vsoc1|2026-11-07T00:59:31.548Z",
@@ -2190,6 +2191,7 @@
     "https://developer.woocommerce.com/?p=8771533"
   ],
   "Laravel News": [
+    "https://laravel-news.com/inertia-live-props-laravel-reverb",
     "https://laravel-news.com/phpstorm-2026-3",
     "https://laravel-news.com/laravel-middleware-insert-before-after",
     "https://laravel-news.com/laravel-herd-2",
