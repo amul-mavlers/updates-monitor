@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Identified · Minor impact",
+   "kind": "Monitoring · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Network Performance Issues in Eastern North America*\n🕒 9 Nov 2026, 22:26 IST\nAffected: Network\nWe are continuing to work on a fix for the issue.\n<https://www.cloudflarestatus.com/incidents/88hc76jnq2gn|Read more>"
+   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Network Performance Issues in Eastern North America*\n🕒 9 Nov 2026, 22:51 IST\nAffected: Network\nWe are continuing to monitor for any further issues.\n<https://www.cloudflarestatus.com/incidents/88hc76jnq2gn|Read more>"
   },
   {
    "cat": "incidents",
@@ -541,6 +541,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-09T16:56:39Z",
+ "updated": "2026-11-09T17:21:50Z",
  "version": 1
 }
