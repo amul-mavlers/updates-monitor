@@ -9,7 +9,7 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*Increased timeouts due to surge in anonymous users*\n🕒 9 Nov 2026, 13:46 IST\nWe are continuing to observe high rates of 504 errors for anonymous requests. We are continuing to work on mitigation. Logged-in users and authenticated requests are unaffected.\n<https://stspg.io/jztczfplj6yb|Read more>"
+   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*Increased timeouts due to surge in anonymous users*\n🕒 9 Nov 2026, 14:17 IST\nError rates have declined again, and we’re preparing targeted traffic controls while monitoring for a recurrence. Logged-in users and authenticated requests have not been affected.\n<https://stspg.io/jztczfplj6yb|Read more>"
   },
   {
    "cat": "incidents",
@@ -542,6 +542,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-09T08:16:25Z",
+ "updated": "2026-11-09T08:47:55Z",
  "version": 1
 }
