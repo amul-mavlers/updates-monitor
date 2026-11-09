@@ -9,7 +9,7 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *GitHub Status* · Investigating · Critical impact\n*Incident with Actions and Checks API*\n🕒 9 Nov 2026, 23:54 IST\nAffected: Webhooks, Actions\nWe're investigating elevated errors affecting GitHub Actions and the Checks API. We'll share another update as we learn more.\n<https://stspg.io/7yw63xl9ztrv|Read more>"
+   "text": "🔴 *GitHub Status* · Investigating · Critical impact\n*Incident with Actions and Checks API*\n🕒 10 Nov 2026, 00:00 IST\nAffected: Webhooks, Actions, Pages\nPages is experiencing degraded performance. We are continuing to investigate.\n<https://stspg.io/7yw63xl9ztrv|Read more>"
   },
   {
    "cat": "incidents",
@@ -541,6 +541,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-09T18:24:13Z",
+ "updated": "2026-11-09T18:30:17Z",
  "version": 1
 }
