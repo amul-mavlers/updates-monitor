@@ -2,6 +2,17 @@
  "cards": [
   {
    "cat": "incidents",
+   "kind": "Investigating · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "GitHub Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*Incident with Webhooks and Actions*\n🕒 9 Nov 2026, 15:30 IST\nAffected: Webhooks, Actions\nWe are investigating reports of degraded performance for Actions and Webhooks\n<https://stspg.io/4vdghm7tycm4|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 3 h 10 min · Minor impact",
    "live": true,
    "note": "",
@@ -10,17 +21,6 @@
     "Downtime"
    ],
    "text": "🟢 *GitHub Status* · Resolved after 3 h 10 min · Minor impact\n*Increased timeouts due to surge in anonymous users*\n🕒 9 Nov 2026, 14:39 IST\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/jztczfplj6yb|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 1 h 56 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "GitHub Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *GitHub Status* · Resolved after 1 h 56 min · Minor impact\n*Increase in timeouts for some unauthenticated users*\n🕒 8 Nov 2026, 18:02 IST\nAffected: API Requests\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/5yt31mfmyc6p|Read more>"
   },
   {
    "cat": "incidents",
@@ -542,6 +542,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-09T09:09:56Z",
+ "updated": "2026-11-09T10:00:35Z",
  "version": 1
 }
