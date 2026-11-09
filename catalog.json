@@ -2,14 +2,14 @@
  "cards": [
   {
    "cat": "incidents",
-   "kind": "Monitoring · Critical impact",
+   "kind": "Resolved after 46 min · Critical impact",
    "live": true,
    "note": "",
    "source": "GitHub Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟡 *GitHub Status* · Monitoring · Critical impact\n*Incident with Actions and Checks API*\n🕒 10 Nov 2026, 00:13 IST\nAffected: Webhooks, Actions, Pages\nThe degradation affecting Actions, Pages and Webhooks has been mitigated. We are monitoring to ensure stability.\n<https://stspg.io/7yw63xl9ztrv|Read more>"
+   "text": "🟢 *GitHub Status* · Resolved after 46 min · Critical impact\n*Incident with Actions and Checks API*\n🕒 10 Nov 2026, 00:29 IST\nAffected: Webhooks, Actions, Pages\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/7yw63xl9ztrv|Read more>"
   },
   {
    "cat": "incidents",
@@ -222,7 +222,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Shopify Changelog* · Changelog\n*Apps must enable bulk operations before use*\n🕒 7 Nov 2026, 00:45 IST\nStarting today, apps need access to bulk operations before they can run bulk queries or bulk mutations with the GraphQL Admin API. You can enable access for your app in the Partner Dashboard. What changed Bulk queries…\n<https://shopify.dev/changelog/apps-must-enable-bulk-operations-before-use|Read more>"
+   "text": "🆕 *Shopify Changelog* · Changelog\n*Merchant notes on store credit transactions*\n🕒 6 Nov 2026, 14:30 IST\nAs of GraphQL Admin API version 2027-01 , you can attach a merchant-only note when crediting or debiting a store credit account and read those notes on store credit transactions. Notes are optional, so existing…\n<https://shopify.dev/changelog/merchant-notes-on-store-credit-transactions|Read more>"
   },
   {
    "cat": "security",
@@ -541,6 +541,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-09T18:43:24Z",
+ "updated": "2026-11-09T18:59:32Z",
  "version": 1
 }
