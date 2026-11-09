@@ -2,14 +2,14 @@
  "cards": [
   {
    "cat": "incidents",
-   "kind": "Investigating · Minor impact",
+   "kind": "Investigating · Major impact",
    "live": true,
    "note": "",
    "source": "GitHub Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*Incident with Webhooks and Actions*\n🕒 9 Nov 2026, 16:36 IST\nAffected: Webhooks, Actions\nThe degradation affecting Actions has been mitigated. We are monitoring to ensure stability.\n<https://stspg.io/4vdghm7tycm4|Read more>"
+   "text": "🔴 *GitHub Status* · Investigating · Major impact\n*Incident with Webhooks and Actions*\n🕒 9 Nov 2026, 16:47 IST\nAffected: Webhooks, Actions\nWebhooks is experiencing degraded availability. We are continuing to investigate.\n<https://stspg.io/4vdghm7tycm4|Read more>"
   },
   {
    "cat": "incidents",
@@ -542,6 +542,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-09T11:06:35Z",
+ "updated": "2026-11-09T11:17:28Z",
  "version": 1
 }
