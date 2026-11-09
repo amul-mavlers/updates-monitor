@@ -24,17 +24,6 @@
   },
   {
    "cat": "incidents",
-   "kind": "Investigating · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Spectrum Availability issues*\n🕒 9 Nov 2026, 21:24 IST\nAffected: Spectrum\nCloudflare is investigating issues with Spectrum. This may be impacting the availability of existing Spectrum applications. We are working to understand the full impact and mitigate this problem. More updates to follow…\n<https://www.cloudflarestatus.com/incidents/olrago3ij4xy|Read more>"
-  },
-  {
-   "cat": "incidents",
    "kind": "Resolved after 2 d 13 h · Minor impact",
    "live": true,
    "note": "",
@@ -43,6 +32,17 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 2 d 13 h · Minor impact\n*Spectrum Availability Issue in Phoenix*\n🕒 9 Nov 2026, 20:06 IST\nAffected: Spectrum\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/c60k3g4vsoc1|Read more>"
+  },
+  {
+   "cat": "incidents",
+   "kind": "Resolved after 39 min · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🟢 *Cloudflare Status* · Resolved after 39 min · Minor impact\n*Network Performance Issues in Chicago*\n🕒 7 Nov 2026, 11:04 IST\nAffected: Network, Chicago, United States - (ORD)\nBetween 04:55-05:12 UTC 7th Dec Cloudflare experienced issues with network performance in Chicago.\n<https://www.cloudflarestatus.com/incidents/x9orajjmvvwa|Read more>"
   },
   {
    "cat": "incidents",
@@ -542,6 +542,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-09T15:54:02Z",
+ "updated": "2026-11-09T14:36:55Z",
  "version": 1
 }
