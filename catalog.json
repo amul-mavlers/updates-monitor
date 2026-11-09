@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Monitoring · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Changes made to Workers may be delayed or disrupted*\n🕒 9 Nov 2026, 22:05 IST\nAffected: Workers\nWe are continuing to monitor for any further issues.\n<https://www.cloudflarestatus.com/incidents/1x0tbxpmmttu|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Investigating · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Network Performance Issues in Eastern North America*\n🕒 9 Nov 2026, 22:04 IST\nAffected: Network\nCloudflare is investigating issues with network performance in Eastern North America. We are working to analyse and mitigate this problem. More updates to follow shortly.\n<https://www.cloudflarestatus.com/incidents/88hc76jnq2gn|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Identified · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Changes made to Workers may be delayed or disrupted*\n🕒 9 Nov 2026, 21:52 IST\nAffected: Workers\nWe are continuing to work on a fix for the issue.\n<https://www.cloudflarestatus.com/incidents/1x0tbxpmmttu|Read more>"
   },
   {
    "cat": "incidents",
@@ -541,6 +541,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-09T16:34:35Z",
+ "updated": "2026-11-09T16:35:55Z",
  "version": 1
 }
