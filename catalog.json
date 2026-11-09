@@ -2,14 +2,14 @@
  "cards": [
   {
    "cat": "incidents",
-   "kind": "Investigating · Major impact",
+   "kind": "Monitoring · Major impact",
    "live": true,
    "note": "",
    "source": "GitHub Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *GitHub Status* · Investigating · Major impact\n*Degraded availability for GPT-5.3 Codex and GPT-5.6 models in Copilot*\n🕒 10 Nov 2026, 04:52 IST\nAffected: Copilot, Copilot AI Model Providers\nCopilot is operating normally.\n<https://stspg.io/t5gqmprtrdf2|Read more>"
+   "text": "🟡 *GitHub Status* · Monitoring · Major impact\n*Degraded availability for GPT-5.3 Codex and GPT-5.6 models in Copilot*\n🕒 10 Nov 2026, 05:16 IST\nAffected: Copilot, Copilot AI Model Providers\nThe degradation affecting Copilot AI Model Providers has been mitigated. We are monitoring to ensure stability.\n<https://stspg.io/t5gqmprtrdf2|Read more>"
   },
   {
    "cat": "incidents",
@@ -541,6 +541,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-09T23:22:46Z",
+ "updated": "2026-11-09T23:46:35Z",
  "version": 1
 }
