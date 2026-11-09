@@ -2,14 +2,14 @@
  "cards": [
   {
    "cat": "incidents",
-   "kind": "Investigating · Minor impact",
+   "kind": "Monitoring · Minor impact",
    "live": true,
    "note": "",
    "source": "GitHub Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*Increased timeouts due to surge in anonymous users*\n🕒 9 Nov 2026, 12:00 IST\nWe are debugging a spike in anonymous traffic. Some users who are not logged in may see errors on the site. CI jobs and release downloads may fail with a 504 Gateway Timeout status if they make anonymous calls.\n<https://stspg.io/jztczfplj6yb|Read more>"
+   "text": "🟡 *GitHub Status* · Monitoring · Minor impact\n*Increased timeouts due to surge in anonymous users*\n🕒 9 Nov 2026, 12:21 IST\nThe degradation has been mitigated. We are monitoring to ensure stability.\n<https://stspg.io/jztczfplj6yb|Read more>"
   },
   {
    "cat": "incidents",
@@ -542,6 +542,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-09T06:30:44Z",
+ "updated": "2026-11-09T06:51:26Z",
  "version": 1
 }
