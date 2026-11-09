@@ -2,14 +2,14 @@
  "cards": [
   {
    "cat": "incidents",
-   "kind": "Investigating · Minor impact",
+   "kind": "Monitoring · Minor impact",
    "live": true,
    "note": "",
    "source": "GitHub Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*Increased timeouts due to surge in anonymous users*\n🕒 9 Nov 2026, 14:17 IST\nError rates have declined again, and we’re preparing targeted traffic controls while monitoring for a recurrence. Logged-in users and authenticated requests have not been affected.\n<https://stspg.io/jztczfplj6yb|Read more>"
+   "text": "🟡 *GitHub Status* · Monitoring · Minor impact\n*Increased timeouts due to surge in anonymous users*\n🕒 9 Nov 2026, 14:35 IST\nThe degradation has been mitigated. We are monitoring to ensure stability.\n<https://stspg.io/jztczfplj6yb|Read more>"
   },
   {
    "cat": "incidents",
@@ -542,6 +542,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-09T08:47:55Z",
+ "updated": "2026-11-09T09:05:46Z",
  "version": 1
 }
