@@ -9,7 +9,7 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*Incident with Webhooks and Actions*\n🕒 9 Nov 2026, 15:30 IST\nAffected: Webhooks, Actions\nWe are investigating reports of degraded performance for Actions and Webhooks\n<https://stspg.io/4vdghm7tycm4|Read more>"
+   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*Incident with Webhooks and Actions*\n🕒 9 Nov 2026, 15:58 IST\nAffected: Webhooks, Actions\nWe're investigating delays in Actions runs start times and webhook deliveries.\n<https://stspg.io/4vdghm7tycm4|Read more>"
   },
   {
    "cat": "incidents",
@@ -542,6 +542,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-09T10:00:35Z",
+ "updated": "2026-11-09T10:28:19Z",
  "version": 1
 }
