@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Investigating · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Changes made to Workers may be delayed or disrupted*\n🕒 9 Nov 2026, 21:45 IST\nAffected: Workers\nCloudflare is aware of and investigating issues related to creating, editing and deleting Workers. Impact is limited to changing Workers — Workers that are already deployed are unaffected.\n<https://www.cloudflarestatus.com/incidents/1x0tbxpmmttu|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 2 d 13 h · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 2 d 13 h · Minor impact\n*Spectrum Availability Issue in Phoenix*\n🕒 9 Nov 2026, 20:06 IST\nAffected: Spectrum\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/c60k3g4vsoc1|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 39 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 39 min · Minor impact\n*Network Performance Issues in Chicago*\n🕒 7 Nov 2026, 11:04 IST\nAffected: Network, Chicago, United States - (ORD)\nBetween 04:55-05:12 UTC 7th Dec Cloudflare experienced issues with network performance in Chicago.\n<https://www.cloudflarestatus.com/incidents/x9orajjmvvwa|Read more>"
   },
   {
    "cat": "incidents",
@@ -65,6 +65,17 @@
     "Downtime"
    ],
    "text": "🟢 *Shopify Status* · Resolved after 33 min · Minor impact\n*Shop Pay unavailable*\n🕒 25 Jun 2025, 05:00 IST\nAffected: Checkout\nThis incident has been resolved.\n<https://stspg.io/1nx1vcvd553l|Read more>"
+  },
+  {
+   "cat": "news",
+   "kind": "New post",
+   "live": true,
+   "note": "",
+   "source": "WordPress News",
+   "spaces": [
+    "WordPress & PHP"
+   ],
+   "text": "🆕 *WordPress News* · New post\n*WordPress Credits Welcomes More Than 50 Institutions*\n🕒 9 Nov 2026, 21:31 IST\nMore than 50 educational institutions have joined WordPress Credits, giving students worldwide a way to earn academic recognition for contributing to WordPress. The program had two participating institutions in…\n<https://wordpress.org/news/2026/11/wp-credits-reaches-50/|Read more>"
   },
   {
    "cat": "news",
@@ -99,18 +110,6 @@
     "WordPress & PHP"
    ],
    "text": "🆕 *WordPress News* · New post\n*WordPress 7.2 Beta 2*\n🕒 27 Oct 2026, 21:19 IST\nWordPress 7.2 Beta 2 is ready for download and testing! This beta release is intended for testing and development only. Please do not install, run, or test this version of WordPress on production or mission-critical…\n<https://wordpress.org/news/2026/10/wordpress-7-2-beta-2/|Read more>"
-  },
-  {
-   "cat": "security",
-   "kind": "New post",
-   "live": true,
-   "note": "",
-   "source": "WordPress News",
-   "spaces": [
-    "WordPress & PHP",
-    "Downtime"
-   ],
-   "text": "🆕 *WordPress News* · New post\n*Critical PHP Security Release*\n🕒 21 Oct 2026, 19:14 IST\nThe PHP project has announced a security release that fixes two critical security vulnerabilities discovered in PHP. Due to the critical severity of the issues, site owners are encouraged to immediately update their…\n<https://wordpress.org/news/2026/10/critical-php-security-release/|Read more>"
   },
   {
    "cat": "news",
@@ -542,6 +541,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-09T14:36:55Z",
+ "updated": "2026-11-09T16:15:26Z",
  "version": 1
 }
