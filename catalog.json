@@ -2,6 +2,17 @@
  "cards": [
   {
    "cat": "incidents",
+   "kind": "Investigating · Major impact",
+   "live": true,
+   "note": "",
+   "source": "GitHub Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🔴 *GitHub Status* · Investigating · Major impact\n*Degraded availability for GPT-5.3 Codex and GPT-5.6 models in Copilot*\n🕒 10 Nov 2026, 04:46 IST\nAffected: Copilot\nWe are experiencing degraded availability for GPT-5.3 Codex, GPT-5.6 Luna, and GPT-5.6 Sol in Copilot products and IDE surfaces due to an issue with an upstream model provider. We recommend choosing another model or…\n<https://stspg.io/t5gqmprtrdf2|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 46 min · Critical impact",
    "live": true,
    "note": "",
@@ -10,17 +21,6 @@
     "Downtime"
    ],
    "text": "🟢 *GitHub Status* · Resolved after 46 min · Critical impact\n*Incident with Actions and Checks API*\n🕒 10 Nov 2026, 00:29 IST\nAffected: Webhooks, Actions, Pages\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/7yw63xl9ztrv|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 1 h 50 min · Major impact",
-   "live": true,
-   "note": "",
-   "source": "GitHub Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *GitHub Status* · Resolved after 1 h 50 min · Major impact\n*Incident with Webhooks and Actions*\n🕒 9 Nov 2026, 17:20 IST\nAffected: Webhooks, Actions\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/4vdghm7tycm4|Read more>"
   },
   {
    "cat": "incidents",
@@ -541,6 +541,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-09T21:45:00Z",
+ "updated": "2026-11-09T23:16:47Z",
  "version": 1
 }
