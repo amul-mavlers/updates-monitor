@@ -161,50 +161,6 @@
   },
   {
    "cat": "news",
-   "kind": "New release",
-   "live": true,
-   "note": "",
-   "source": "PHP Releases",
-   "spaces": [
-    "WordPress & PHP"
-   ],
-   "text": "🆕 *PHP Releases* · New release\n*PHP 8.5.12 released!*\n🕒 21 Oct 2026, 05:30 IST\nThere is a new PHP release in town!\n<http://php.net/releases/8_5_12.php|Read more>"
-  },
-  {
-   "cat": "news",
-   "kind": "New release",
-   "live": true,
-   "note": "",
-   "source": "PHP Releases",
-   "spaces": [
-    "WordPress & PHP"
-   ],
-   "text": "🆕 *PHP Releases* · New release\n*PHP 8.4.27 released!*\n🕒 21 Oct 2026, 05:30 IST\nThere is a new PHP release in town!\n<http://php.net/releases/8_4_27.php|Read more>"
-  },
-  {
-   "cat": "news",
-   "kind": "New release",
-   "live": true,
-   "note": "",
-   "source": "PHP Releases",
-   "spaces": [
-    "WordPress & PHP"
-   ],
-   "text": "🆕 *PHP Releases* · New release\n*PHP 8.3.36 released!*\n🕒 21 Oct 2026, 05:30 IST\nThere is a new PHP release in town!\n<http://php.net/releases/8_3_36.php|Read more>"
-  },
-  {
-   "cat": "news",
-   "kind": "New release",
-   "live": true,
-   "note": "",
-   "source": "PHP Releases",
-   "spaces": [
-    "WordPress & PHP"
-   ],
-   "text": "🆕 *PHP Releases* · New release\n*PHP 8.2.35 released!*\n🕒 21 Oct 2026, 05:30 IST\nThere is a new PHP release in town!\n<http://php.net/releases/8_2_35.php|Read more>"
-  },
-  {
-   "cat": "news",
    "kind": "Changelog",
    "live": true,
    "note": "",
