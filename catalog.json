@@ -2,14 +2,14 @@
  "cards": [
   {
    "cat": "incidents",
-   "kind": "Investigating · Critical impact",
+   "kind": "Resolved after 1 h 44 min · Critical impact",
    "live": true,
    "note": "",
    "source": "GitHub Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *GitHub Status* · Investigating · Critical impact\n*Incident with Git Operations and Pull Requests*\n🕒 10 Nov 2026, 23:16 IST\nAffected: Pull Requests, Actions\nWe continue to investigate elevated response times for Git operations and pull requests. Actions workflows are recovering. Pull request processing has shown some improvement, but users continue to experience delays and…\n<https://stspg.io/16nsnk2th3rv|Read more>"
+   "text": "🟢 *GitHub Status* · Resolved after 1 h 44 min · Critical impact\n*Incident with Git Operations and Pull Requests*\n🕒 10 Nov 2026, 23:25 IST\nAffected: Pull Requests, Actions\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/16nsnk2th3rv|Read more>"
   },
   {
    "cat": "incidents",
@@ -541,6 +541,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-10T17:46:33Z",
+ "updated": "2026-11-10T17:55:03Z",
  "version": 1
 }
