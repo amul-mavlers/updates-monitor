@@ -255,7 +255,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Laravel News* · Laravel\n*Real-Time Inertia Props With Laravel Reverb*\n🕒 9 Nov 2026, 08:30 IST\nUpdate Inertia page props in real time with live props and Laravel Reverb. Broadcast an event, and every open page reloads the prop without polling. The post Real-Time Inertia Props With Laravel Reverb appeared first…\n<https://laravel-news.com/inertia-live-props-laravel-reverb?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
+   "text": "🆕 *Laravel News* · Laravel\n*Laravel Rest Api 3.0: Typed Fields, Metrics, and OpenAPI Docs*\n🕒 10 Nov 2026, 19:03 IST\nLaravel Rest Api 3.0 rebuilds the package around typed fields, adds metric endpoints and write confirmations, and documents your API with Scramble. The post Laravel Rest Api 3.0: Typed Fields, Metrics, and OpenAPI Docs…\n<https://laravel-news.com/laravel-rest-api-3?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
   },
   {
    "cat": "news",
@@ -266,7 +266,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Laravel News* · Laravel\n*PhpStorm 2026.3 Adds an Agent Workspace and PHP 8.6 Support*\n🕒 6 Nov 2026, 22:35 IST\nPhpStorm 2026.3 adds PHP 8.6 support, new Laravel inspections, a Processes tab for queue workers, and Air, a workspace for coding agents. The post PhpStorm 2026.3 Adds an Agent Workspace and PHP 8.6 Support appeared…\n<https://laravel-news.com/phpstorm-2026-3?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
+   "text": "🆕 *Laravel News* · Laravel\n*Search Polymorphic Relations and Filament Tables With Laravel Searchable*\n🕒 10 Nov 2026, 04:01 IST\nLaravel Searchable adds Eloquent search across polymorphic relations and separate database connections, with relevance ranking for Filament tables. The post Search Polymorphic Relations and Filament Tables With Laravel…\n<https://laravel-news.com/mozex-laravel-searchable?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
   },
   {
    "cat": "news",
@@ -541,6 +541,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-10T08:45:13Z",
+ "updated": "2026-11-10T13:33:18Z",
  "version": 1
 }
