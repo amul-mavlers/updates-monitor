@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Monitoring · Minor impact",
+   "kind": "Resolved after 42 min · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Account Analytics Filter Issue*\n🕒 10 Nov 2026, 13:55 IST\nAffected: Analytics\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/m644az5hr9xo|Read more>"
+   "text": "🟢 *Cloudflare Status* · Resolved after 42 min · Minor impact\n*Account Analytics Filter Issue*\n🕒 10 Nov 2026, 14:15 IST\nAffected: Analytics\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/m644az5hr9xo|Read more>"
   },
   {
    "cat": "incidents",
@@ -541,6 +541,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-10T08:25:49Z",
+ "updated": "2026-11-10T08:45:13Z",
  "version": 1
 }
