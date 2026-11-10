@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Investigating · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Prediction issue on OpenAI models via Replicate*\n🕒 11 Nov 2026, 00:05 IST\nAffected: Replicate\nCloudflare is aware of, and investigating, an issue affecting predictions on official OpenAI models via Replicate. Customers may see that some predictions are failing with a 401 token_invalidated error. We are working…\n<https://www.cloudflarestatus.com/incidents/3en9cdyjn2sq|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 42 min · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 42 min · Minor impact\n*Account Analytics Filter Issue*\n🕒 10 Nov 2026, 14:15 IST\nAffected: Analytics\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/m644az5hr9xo|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Investigating · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Changes to Cloudflare Workers are not producing Event Subscription events*\n🕒 10 Nov 2026, 07:23 IST\nAffected: Workers, Queues\nChanges to Cloudflare Workers are temporarily not producing Event Subscription events. We have intentionally disabled this feature due to an on-going issue. We are actively working to restore it, but this, regrettably,…\n<https://www.cloudflarestatus.com/incidents/0ocqieaifg7h|Read more>"
   },
   {
    "cat": "incidents",
@@ -541,6 +541,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-10T17:55:03Z",
+ "updated": "2026-11-10T18:35:39Z",
  "version": 1
 }
