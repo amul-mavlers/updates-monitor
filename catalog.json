@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Investigating · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Changes to Cloudflare Workers are not producing Event Subscription events*\n🕒 10 Nov 2026, 07:23 IST\nAffected: Workers, Queues\nChanges to Cloudflare Workers are temporarily not producing Event Subscription events. We have intentionally disabled this feature due to an on-going issue. We are actively working to restore it, but this, regrettably,…\n<https://www.cloudflarestatus.com/incidents/0ocqieaifg7h|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 9 h 31 min · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 9 h 31 min · Minor impact\n*Changes made to Workers may be delayed or disrupted*\n🕒 10 Nov 2026, 07:16 IST\nAffected: Workers\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/1x0tbxpmmttu|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 3 h 37 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 3 h 37 min · Minor impact\n*Network Performance Issues in Eastern North America*\n🕒 10 Nov 2026, 01:42 IST\nAffected: Network\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/88hc76jnq2gn|Read more>"
   },
   {
    "cat": "incidents",
@@ -541,6 +541,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-10T01:46:28Z",
+ "updated": "2026-11-10T01:53:58Z",
  "version": 1
 }
