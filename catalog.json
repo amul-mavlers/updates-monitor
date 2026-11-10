@@ -211,7 +211,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Shopify Changelog* · Changelog\n*Redesigned Partner Directory with profiles built on Shopify data*\n🕒 10 Nov 2026, 03:15 IST\nThe Shopify Partner Directory has been redesigned. We've made it easier for merchants to explore and evaluate Partners based on a definitive, Shopify-confirmed record of their work, while making profiles easier for…\n<https://shopify.dev/changelog/partner-directory-profiles-now-display-verified-collaboration-data|Read more>"
+   "text": "🆕 *Shopify Changelog* · Changelog\n*Shopify App Store submission requirements: build, grow, then expand*\n🕒 10 Nov 2026, 22:00 IST\nWe’re updating the Shopify App Store submission requirements so that the apps you list are apps merchants use. These changes apply to new app submissions, resubmissions of rejected apps, additional app listings, and…\n<https://shopify.dev/changelog/shopify-app-store-submission-requirements-build-grow-then-expand|Read more>"
   },
   {
    "cat": "news",
@@ -222,7 +222,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Shopify Changelog* · Changelog\n*Partner apps must enable bulk operations before use*\n🕒 7 Nov 2026, 01:30 IST\nStarting today, apps need access to bulk operations before they can run bulk queries or bulk mutations with the GraphQL Admin API. You can enable access for your app in the Partner Dashboard. What changed Bulk queries…\n<https://shopify.dev/changelog/partner-apps-must-enable-bulk-operations-before-use|Read more>"
+   "text": "🆕 *Shopify Changelog* · Changelog\n*Redesigned Partner Directory with profiles built on Shopify data*\n🕒 10 Nov 2026, 03:15 IST\nThe Shopify Partner Directory has been redesigned. We've made it easier for merchants to explore and evaluate Partners based on a definitive, Shopify-confirmed record of their work, while making profiles easier for…\n<https://shopify.dev/changelog/partner-directory-profiles-now-display-verified-collaboration-data|Read more>"
   },
   {
    "cat": "security",
