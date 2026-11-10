@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Monitoring · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Network Performance Issues in St. Louis, USA*\n🕒 11 Nov 2026, 04:20 IST\nAffected: St. Louis, United States - (STL)\nCloudflare has identified issues with network performance in St. Louis (STL), USA. A fix has been implemented and we're monitoring the results.\n<https://www.cloudflarestatus.com/incidents/1h9c85fz6bm3|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 31 min · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 31 min · Minor impact\n*Prediction issue on OpenAI models via Replicate*\n🕒 11 Nov 2026, 00:36 IST\nAffected: Replicate\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/3en9cdyjn2sq|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 42 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 42 min · Minor impact\n*Account Analytics Filter Issue*\n🕒 10 Nov 2026, 14:15 IST\nAffected: Analytics\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/m644az5hr9xo|Read more>"
   },
   {
    "cat": "incidents",
@@ -541,6 +541,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-10T19:06:59Z",
+ "updated": "2026-11-10T22:50:23Z",
  "version": 1
 }
