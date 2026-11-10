@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Investigating · Minor impact",
+   "kind": "Identified · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Prediction issue on OpenAI models via Replicate*\n🕒 11 Nov 2026, 00:05 IST\nAffected: Replicate\nCloudflare is aware of, and investigating, an issue affecting predictions on official OpenAI models via Replicate. Customers may see that some predictions are failing with a 401 token_invalidated error. We are working…\n<https://www.cloudflarestatus.com/incidents/3en9cdyjn2sq|Read more>"
+   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Prediction issue on OpenAI models via Replicate*\n🕒 11 Nov 2026, 00:13 IST\nAffected: Replicate\nThe issue has been identified and a fix is being implemented.\n<https://www.cloudflarestatus.com/incidents/3en9cdyjn2sq|Read more>"
   },
   {
    "cat": "incidents",
@@ -541,6 +541,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-10T18:35:39Z",
+ "updated": "2026-11-10T18:43:50Z",
  "version": 1
 }
