@@ -2,14 +2,14 @@
  "cards": [
   {
    "cat": "incidents",
-   "kind": "Investigating · Minor impact",
+   "kind": "Investigating · Critical impact",
    "live": true,
    "note": "",
    "source": "GitHub Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*Incident with Git Operations and Pull Requests*\n🕒 10 Nov 2026, 21:40 IST\nAffected: Pull Requests, Actions\nWe are investigating reports of degraded performance for Actions and Pull Requests\n<https://stspg.io/16nsnk2th3rv|Read more>"
+   "text": "🔴 *GitHub Status* · Investigating · Critical impact\n*Incident with Git Operations and Pull Requests*\n🕒 10 Nov 2026, 21:56 IST\nAffected: Pull Requests, Actions\nActions and Pull Requests are experiencing degraded availability. We are continuing to investigate.\n<https://stspg.io/16nsnk2th3rv|Read more>"
   },
   {
    "cat": "incidents",
@@ -541,6 +541,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-10T16:10:52Z",
+ "updated": "2026-11-10T16:26:37Z",
  "version": 1
 }
