@@ -1407,6 +1407,8 @@
     "http://php.net/releases/8_2_35.php"
   ],
   "Shopify Changelog": [
+    "https://shopify.dev/changelog/storefront-mcp-policies-and-faqs-tool-is-being-deprecated-in-favor-of-ucp-mcp-ask-tool",
+    "https://shopify.dev/changelog/updated-handling-of-customer-data-erasure-requests",
     "https://shopify.dev/changelog/ordercreate-line-items-support-custom-ids",
     "https://shopify.dev/changelog/shopify-app-store-submission-requirements-build-grow-then-expand",
     "https://shopify.dev/changelog/partner-directory-profiles-now-display-verified-collaboration-data",
@@ -2282,6 +2284,7 @@
     "https://laravel-news.com/pollora-wordpress-laravel"
   ],
   "Node.js Blog": [
+    "/blog/release/v22.23.5?1794415498310",
     "/blog/announcements/notable-v8-changes-from-node-js-26-to-27-alpha?1793880000000",
     "/blog/announcements/notable-v8-changes-from-node-js-26-to-27-alpha?1793620800000",
     "/blog/vulnerability/november-2026-security-releases?1793746800000",

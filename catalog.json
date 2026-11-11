@@ -210,7 +210,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Shopify Changelog* · Changelog\n*Shopify App Store submission requirements: build, grow, then expand*\n🕒 10 Nov 2026, 22:00 IST\nWe’re updating the Shopify App Store submission requirements so that the apps you list are apps merchants use. These changes apply to new app submissions, resubmissions of rejected apps, additional app listings, and…\n<https://shopify.dev/changelog/shopify-app-store-submission-requirements-build-grow-then-expand|Read more>"
+   "text": "🆕 *Shopify Changelog* · Changelog\n*Storefront MCP policies and FAQs tool is being deprecated in favor of UCP MCP Ask tool*\n🕒 11 Nov 2026, 22:30 IST\nStorefront MCP search_shop_policies_and_faqs is deprecated. Migrate to UCP MCP's ask_business tool by January 15, 2027. What's changing The search_shop_policies_and_faqs tool on the Storefront MCP server (…\n<https://shopify.dev/changelog/storefront-mcp-policies-and-faqs-tool-is-being-deprecated-in-favor-of-ucp-mcp-ask-tool|Read more>"
   },
   {
    "cat": "news",
@@ -221,7 +221,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Shopify Changelog* · Changelog\n*Redesigned Partner Directory with profiles built on Shopify data*\n🕒 10 Nov 2026, 03:15 IST\nThe Shopify Partner Directory has been redesigned. We've made it easier for merchants to explore and evaluate Partners based on a definitive, Shopify-confirmed record of their work, while making profiles easier for…\n<https://shopify.dev/changelog/partner-directory-profiles-now-display-verified-collaboration-data|Read more>"
+   "text": "🆕 *Shopify Changelog* · Changelog\n*Customer data erasure requests updated from 10 days to 5*\n🕒 11 Nov 2026, 22:30 IST\nAs of November 10, 2026, customer data erasure requests will no longer be held in a pending state for 10 days. Erasure requests will now be processed 5 days after the request was submitted, regardless of when the…\n<https://shopify.dev/changelog/updated-handling-of-customer-data-erasure-requests|Read more>"
   },
   {
    "cat": "security",
@@ -276,18 +276,18 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Node.js Blog* · Node.js\n*Notable V8 changes from Node.js 26 to 27 (Alpha)*\n🕒 5 Nov 2026, 17:30 IST\n<https://nodejs.org/en/blog/announcements/notable-v8-changes-from-node-js-26-to-27-alpha|Read more>"
+   "text": "🆕 *Node.js Blog* · Node.js\n*Node.js 22.23.5 (LTS)*\n🕒 11 Nov 2026, 22:14 IST\n<https://nodejs.org/en/blog/release/v22.23.5|Read more>"
   },
   {
-   "cat": "security",
+   "cat": "news",
    "kind": "Node.js",
    "live": true,
    "note": "",
    "source": "Node.js Blog",
    "spaces": [
-    "Downtime"
+    "News"
    ],
-   "text": "🆕 *Node.js Blog* · Node.js\n*Wednesday, November 11, 2026 Security Releases*\n🕒 4 Nov 2026, 04:30 IST\n<https://nodejs.org/en/blog/vulnerability/november-2026-security-releases|Read more>"
+   "text": "🆕 *Node.js Blog* · Node.js\n*Notable V8 changes from Node.js 26 to 27 (Alpha)*\n🕒 5 Nov 2026, 17:30 IST\n<https://nodejs.org/en/blog/announcements/notable-v8-changes-from-node-js-26-to-27-alpha|Read more>"
   },
   {
    "cat": "security",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-11T16:18:51Z",
+ "updated": "2026-11-11T17:00:00Z",
  "version": 1
 }
