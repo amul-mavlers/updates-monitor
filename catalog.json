@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Resolved after 22 min · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🟢 *Cloudflare Status* · Resolved after 22 min · Minor impact\n*Elevated number of 5xx errors in Hong Kong*\n🕒 11 Nov 2026, 13:22 IST\nBetween 07:30-07:45 UTC customers reaching Hong Kong, may have experienced an elevated number of 5xx errors.\n<https://www.cloudflarestatus.com/incidents/4qxszy04pdjw|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Investigating · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*SSL Certificate Provisioning Issue*\n🕒 11 Nov 2026, 13:15 IST\nAffected: SSL Certificate Provisioning\nCloudflare is investigating an issue deploying a subset of Custom certificates. Customers are advised to temporarily pause certificate redeployments until this incident is resolved SSL certificates already in…\n<https://www.cloudflarestatus.com/incidents/21vwp89eiyjx|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Identified · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Replicate Input Upload Issue*\n🕒 11 Nov 2026, 13:03 IST\nAffected: Replicate\nWe are continuing to work on a fix for the issue. Current impact: Input uploads are degraded. Model builds and pushes via r8.im are unavailable.\n<https://www.cloudflarestatus.com/incidents/yu63fhh2peb7|Read more>"
   },
   {
    "cat": "incidents",
@@ -541,6 +541,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-11T07:45:42Z",
+ "updated": "2026-11-11T07:52:21Z",
  "version": 1
 }
