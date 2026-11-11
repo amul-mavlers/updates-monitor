@@ -2,25 +2,25 @@
  "cards": [
   {
    "cat": "incidents",
-   "kind": "Resolved after 1 h 44 min · Critical impact",
+   "kind": "Investigating · Critical impact",
    "live": true,
    "note": "",
    "source": "GitHub Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟢 *GitHub Status* · Resolved after 1 h 44 min · Critical impact\n*Incident with Git Operations and Pull Requests*\n🕒 10 Nov 2026, 23:25 IST\nAffected: Pull Requests, Actions\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/16nsnk2th3rv|Read more>"
+   "text": "🔴 *GitHub Status* · Investigating · Critical impact\n*Incident with Webhooks*\n🕒 12 Nov 2026, 02:26 IST\nAffected: Webhooks, Actions, Pages\nWe’re investigating issues impacting multiple GitHub products including Actions, Pages, and Copilot products.\n<https://stspg.io/jdjlq5zjyl48|Read more>"
   },
   {
    "cat": "incidents",
-   "kind": "Resolved after 49 min · Major impact",
+   "kind": "Resolved after 4 min · Minor impact",
    "live": true,
    "note": "",
    "source": "GitHub Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟢 *GitHub Status* · Resolved after 49 min · Major impact\n*Degraded availability for GPT-5.3 Codex and GPT-5.6 models in Copilot*\n🕒 10 Nov 2026, 05:35 IST\nAffected: Copilot, Copilot AI Model Providers\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/t5gqmprtrdf2|Read more>"
+   "text": "🟢 *GitHub Status* · Resolved after 4 min · Minor impact\n*Incident with Webhooks*\n🕒 12 Nov 2026, 01:56 IST\nAffected: Webhooks\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/r0jrtx03yvll|Read more>"
   },
   {
    "cat": "incidents",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-11T19:27:26Z",
+ "updated": "2026-11-11T20:56:49Z",
  "version": 1
 }
