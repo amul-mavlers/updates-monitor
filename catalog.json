@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Investigating · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Network Performance Degraded*\n🕒 11 Nov 2026, 21:23 IST\nWe are aware of Network performance degradation near LAX and Western North America, we are working to resolve.\n<https://www.cloudflarestatus.com/incidents/804glbb3pq6t|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 27 min · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 27 min · Minor impact\n*Workers deployments errors with D1 bindings*\n🕒 11 Nov 2026, 18:39 IST\nAffected: Workers, D1\nCloudflare has identified and resolved an issue impacting Workers deployments with D1 bindings. Customers may have seen issues deploying their Workers between 12:42 UTC - 13:03 UTC 11th November 2026\n<https://www.cloudflarestatus.com/incidents/3ptyvdaljq9b|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 2 h 22 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 2 h 22 min · Minor impact\n*SSL Certificate Provisioning Issue*\n🕒 11 Nov 2026, 15:37 IST\nAffected: SSL Certificate Provisioning\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/21vwp89eiyjx|Read more>"
   },
   {
    "cat": "incidents",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-11T14:00:00Z",
+ "updated": "2026-11-11T15:53:19Z",
  "version": 1
 }
