@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Identified · Minor impact",
+   "kind": "Monitoring · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Network Performance Degraded*\n🕒 11 Nov 2026, 21:30 IST\nThe issue has been identified and a fix is being implemented.\n<https://www.cloudflarestatus.com/incidents/804glbb3pq6t|Read more>"
+   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Network Performance Degraded*\n🕒 11 Nov 2026, 21:40 IST\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/804glbb3pq6t|Read more>"
   },
   {
    "cat": "incidents",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-11T16:00:44Z",
+ "updated": "2026-11-11T16:10:02Z",
  "version": 1
 }
