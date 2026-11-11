@@ -210,7 +210,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Shopify Changelog* · Changelog\n*Storefront MCP policies and FAQs tool is being deprecated in favor of UCP MCP Ask tool*\n🕒 11 Nov 2026, 22:30 IST\nStorefront MCP search_shop_policies_and_faqs is deprecated. Migrate to UCP MCP's ask_business tool by January 15, 2027. What's changing The search_shop_policies_and_faqs tool on the Storefront MCP server (…\n<https://shopify.dev/changelog/storefront-mcp-policies-and-faqs-tool-is-being-deprecated-in-favor-of-ucp-mcp-ask-tool|Read more>"
+   "text": "🆕 *Shopify Changelog* · Changelog\n*IP allowlists are now required for custom apps installed outside your organization*\n🕒 12 Nov 2026, 03:30 IST\nWe're enhancing protection of merchants by requiring IP allowlists for custom apps, if those apps are installed on stores outside of the organization that owns them. Starting November 20, 2026 at 11:59 PM ET: Apps must…\n<https://shopify.dev/changelog/ip-allowlists-are-now-required-for-custom-apps-installed-outside-your-organization|Read more>"
   },
   {
    "cat": "news",
@@ -221,7 +221,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Shopify Changelog* · Changelog\n*Customer data erasure requests updated from 10 days to 5*\n🕒 11 Nov 2026, 22:30 IST\nAs of November 10, 2026, customer data erasure requests will no longer be held in a pending state for 10 days. Erasure requests will now be processed 5 days after the request was submitted, regardless of when the…\n<https://shopify.dev/changelog/updated-handling-of-customer-data-erasure-requests|Read more>"
+   "text": "🆕 *Shopify Changelog* · Changelog\n*App IP allowlists now support IP addresses and ASNs together, and up to 250 IPs*\n🕒 12 Nov 2026, 03:30 IST\nYour app's IP allowlist in the Dev Dashboard can now include IP addresses and autonomous system numbers (ASNs) in the same allowlist. This helps apps whose requests come from a mix of static and dynamic IP addresses.…\n<https://shopify.dev/changelog/app-ip-allowlists-now-support-ip-addresses-and-asns-together|Read more>"
   },
   {
    "cat": "security",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-11T21:21:39Z",
+ "updated": "2026-11-11T22:00:00Z",
  "version": 1
 }
