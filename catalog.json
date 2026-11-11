@@ -2,14 +2,14 @@
  "cards": [
   {
    "cat": "incidents",
-   "kind": "Investigating · Critical impact",
+   "kind": "Monitoring · Critical impact",
    "live": true,
    "note": "",
    "source": "GitHub Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *GitHub Status* · Investigating · Critical impact\n*Impact across multiple GitHub products including Actions, Pages, and Copilot products.*\n🕒 12 Nov 2026, 02:27 IST\nAffected: Webhooks, Actions, Pages, Copilot\nCopilot is experiencing degraded availability. We are continuing to investigate.\n<https://stspg.io/jdjlq5zjyl48|Read more>"
+   "text": "🟡 *GitHub Status* · Monitoring · Critical impact\n*Impact across multiple GitHub products including Actions, Pages, and Copilot products.*\n🕒 12 Nov 2026, 02:37 IST\nAffected: Webhooks, Actions, Pages, Copilot\nWe’re seeing recovery across all services and continuing to monitor. The backlog of Actions jobs are being processed. We’ll update when we see full recovery.\n<https://stspg.io/jdjlq5zjyl48|Read more>"
   },
   {
    "cat": "incidents",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-11T20:57:40Z",
+ "updated": "2026-11-11T21:07:26Z",
  "version": 1
 }
