@@ -224,6 +224,17 @@
    "text": "🆕 *Shopify Changelog* · Changelog\n*Customer data erasure requests updated from 10 days to 5*\n🕒 11 Nov 2026, 22:30 IST\nAs of November 10, 2026, customer data erasure requests will no longer be held in a pending state for 10 days. Erasure requests will now be processed 5 days after the request was submitted, regardless of when the…\n<https://shopify.dev/changelog/updated-handling-of-customer-data-erasure-requests|Read more>"
   },
   {
+   "cat": "security",
+   "kind": "WooCommerce",
+   "live": true,
+   "note": "",
+   "source": "WooCommerce Dev",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🆕 *WooCommerce Dev* · WooCommerce\n*Security fix for WooCommerce Stripe Gateway: update to 11.2.0 or 11.1.2*\n🕒 12 Nov 2026, 00:57 IST\nUpdate WooCommerce Stripe Gateway to 11.2.0 or 11.1.2 for an important security fix. The post Security fix for WooCommerce Stripe Gateway: update to 11.2.0 or 11.1.2 appeared first on The WooCommerce Developer Blog .\n<https://developer.woocommerce.com/2026/11/11/stripe-gateway-security-update/|Read more>"
+  },
+  {
    "cat": "news",
    "kind": "WooCommerce",
    "live": true,
@@ -233,17 +244,6 @@
     "News"
    ],
    "text": "🆕 *WooCommerce Dev* · WooCommerce\n*WooCommerce 11.3.0: Release notes*\n🕒 11 Nov 2026, 22:36 IST\nWooCommerce 11.3 gives store owners more control over how products and promotions appear, with new sale-badge options, expanded block styling, and more natural Product Gallery swipes on mobile. The post WooCommerce…\n<https://developer.woocommerce.com/2026/11/11/woocommerce-11-3-0-release-notes/|Read more>"
-  },
-  {
-   "cat": "security",
-   "kind": "WooCommerce",
-   "live": true,
-   "note": "",
-   "source": "WooCommerce Dev",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🆕 *WooCommerce Dev* · WooCommerce\n*We went looking: what Woo has done about security since June*\n🕒 6 Nov 2026, 21:13 IST\nWhy so many WooCommerce security updates lately? Well, we went looking. Here’s what we found, what we changed, and what store owners and devs can do now to be a part of the security conversation and take action. The…\n<https://developer.woocommerce.com/2026/11/06/woo-latest-security/|Read more>"
   },
   {
    "cat": "news",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-11T17:06:09Z",
+ "updated": "2026-11-11T19:27:26Z",
  "version": 1
 }
