@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Identified · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Replicate Input Upload Issue*\n🕒 11 Nov 2026, 13:03 IST\nAffected: Replicate\nWe are continuing to work on a fix for the issue. Current impact: Input uploads are degraded. Model builds and pushes via r8.im are unavailable.\n<https://www.cloudflarestatus.com/incidents/yu63fhh2peb7|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 12 min · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 12 min · Minor impact\n*Cloudflare Worker Builds Issue*\n🕒 11 Nov 2026, 12:11 IST\nAffected: Workers, Containers, Workers Builds\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/byzl30zyfc47|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Identified · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Replicate Input Upload Issue*\n🕒 11 Nov 2026, 10:41 IST\nAffected: Replicate\nThe issue has been identified and a fix is being implemented.\n<https://www.cloudflarestatus.com/incidents/yu63fhh2peb7|Read more>"
   },
   {
    "cat": "incidents",
@@ -541,6 +541,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-11T06:41:33Z",
+ "updated": "2026-11-11T07:33:53Z",
  "version": 1
 }
