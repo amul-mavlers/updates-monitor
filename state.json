@@ -1407,6 +1407,7 @@
     "http://php.net/releases/8_2_35.php"
   ],
   "Shopify Changelog": [
+    "https://shopify.dev/changelog/you-can-now-see-how-often-your-checkout-and-customer-account-ui-extensions-fail-to-load-because-of-your-app-and-on-which-stores-in-the-dev-dashboard",
     "https://shopify.dev/changelog/storefront-mcp-policies-and-faqs-tool-is-being-deprecated-in-favor-of-ucp-mcp-ask-tool",
     "https://shopify.dev/changelog/updated-handling-of-customer-data-erasure-requests",
     "https://shopify.dev/changelog/ordercreate-line-items-support-custom-ids",
