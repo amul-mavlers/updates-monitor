@@ -254,7 +254,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Laravel News* · Laravel\n*Laravel Rest Api 3.0: Typed Fields, Metrics, and OpenAPI Docs*\n🕒 10 Nov 2026, 19:03 IST\nLaravel Rest Api 3.0 rebuilds the package around typed fields, adds metric endpoints and write confirmations, and documents your API with Scramble. The post Laravel Rest Api 3.0: Typed Fields, Metrics, and OpenAPI Docs…\n<https://laravel-news.com/laravel-rest-api-3?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
+   "text": "🆕 *Laravel News* · Laravel\n*UUID Request Input and Migration Failure Events in Laravel 13.42*\n🕒 11 Nov 2026, 05:32 IST\nLaravel 13.42 adds uuid() and ulid() input helpers, a MigrationFailed event, skip reasons for scheduled tasks, and Uri::origin() for comparing URL origins. The post UUID Request Input and Migration Failure Events in…\n<https://laravel-news.com/laravel-13-42-0?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
   },
   {
    "cat": "news",
@@ -265,7 +265,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Laravel News* · Laravel\n*Search Polymorphic Relations and Filament Tables With Laravel Searchable*\n🕒 10 Nov 2026, 04:01 IST\nLaravel Searchable adds Eloquent search across polymorphic relations and separate database connections, with relevance ranking for Filament tables. The post Search Polymorphic Relations and Filament Tables With Laravel…\n<https://laravel-news.com/mozex-laravel-searchable?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
+   "text": "🆕 *Laravel News* · Laravel\n*Laravel Rest Api 3.0: Typed Fields, Metrics, and OpenAPI Docs*\n🕒 10 Nov 2026, 19:03 IST\nLaravel Rest Api 3.0 rebuilds the package around typed fields, adds metric endpoints and write confirmations, and documents your API with Scramble. The post Laravel Rest Api 3.0: Typed Fields, Metrics, and OpenAPI Docs…\n<https://laravel-news.com/laravel-rest-api-3?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
   },
   {
    "cat": "news",
