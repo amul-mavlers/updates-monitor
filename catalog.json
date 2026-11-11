@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Investigating · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Replicate Input Upload Issue*\n🕒 11 Nov 2026, 10:03 IST\nAffected: Replicate\nCloudflare is investigating issues with Replicate input uploads. We are working to understand the full impact and mitigate this problem. More updates to follow shortly\n<https://www.cloudflarestatus.com/incidents/yu63fhh2peb7|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 2 h 20 min · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 2 h 20 min · Minor impact\n*Network Performance Issues in St. Louis, USA*\n🕒 11 Nov 2026, 06:40 IST\nAffected: St. Louis, United States - (STL)\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/1h9c85fz6bm3|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 31 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 31 min · Minor impact\n*Prediction issue on OpenAI models via Replicate*\n🕒 11 Nov 2026, 00:36 IST\nAffected: Replicate\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/3en9cdyjn2sq|Read more>"
   },
   {
    "cat": "incidents",
@@ -541,6 +541,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-11T01:10:26Z",
+ "updated": "2026-11-11T04:33:19Z",
  "version": 1
 }
