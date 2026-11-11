@@ -75,6 +75,17 @@
    "spaces": [
     "WordPress & PHP"
    ],
+   "text": "🆕 *WordPress News* · New post\n*WordCamp Asia 2027 Is Coming to Penang*\n🕒 11 Nov 2026, 19:30 IST\nNext year, WordCamp Asia 2027 heads to Penang, Malaysia. From April 9 to 11, the WordPress community will gather at the Penang Waterfront Convention Centre for three days of contribution, learning, and connection.…\n<https://wordpress.org/news/2026/11/wc-asia-2027-penang/|Read more>"
+  },
+  {
+   "cat": "news",
+   "kind": "New post",
+   "live": true,
+   "note": "",
+   "source": "WordPress News",
+   "spaces": [
+    "WordPress & PHP"
+   ],
    "text": "🆕 *WordPress News* · New post\n*WordPress 7.2 Beta 5*\n🕒 10 Nov 2026, 22:29 IST\nWordPress 7.2 Beta 5 is ready for download and testing! This beta release is intended for testing and development only. Please do not install, run, or test this version of WordPress on production or mission-critical…\n<https://wordpress.org/news/2026/11/wordpress-7-2-beta-5/|Read more>"
   },
   {
@@ -98,18 +109,6 @@
     "WordPress & PHP"
    ],
    "text": "🆕 *WordPress News* · New post\n*WordPress 7.2 Beta 4*\n🕒 3 Nov 2026, 21:15 IST\nWordPress 7.2 Beta 4 is ready for download and testing! This beta release is intended for testing and development only. Please do not install, run, or test this version of WordPress on production or mission-critical…\n<https://wordpress.org/news/2026/11/wordpress-7-2-beta-4/|Read more>"
-  },
-  {
-   "cat": "security",
-   "kind": "New post",
-   "live": true,
-   "note": "",
-   "source": "WordPress News",
-   "spaces": [
-    "WordPress & PHP",
-    "Downtime"
-   ],
-   "text": "🆕 *WordPress News* · New post\n*WordPress 7.1.4*\n🕒 28 Oct 2026, 22:43 IST\nThis security release features fixes for multiple issues. Because this is a security release, it is recommended that you update your sites immediately. You can download WordPress 7.1.4 from WordPress.org, or visit your…\n<https://wordpress.org/news/2026/10/wordpress-7-1-4/|Read more>"
   },
   {
    "cat": "news",
@@ -541,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-11T13:09:04Z",
+ "updated": "2026-11-11T14:00:00Z",
  "version": 1
 }
