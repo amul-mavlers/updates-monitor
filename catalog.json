@@ -31,7 +31,7 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Replicate Website and Model Registry Unavailable*\n🕒 12 Nov 2026, 05:20 IST\nAffected: Replicate\nWe have temporarily restricted access to some Replicate services while we work to resolve an issue. Predictions via the Replicate API are not affected. Current impact: - Logging in to replicate[.]com and access to the…\n<https://www.cloudflarestatus.com/incidents/yu63fhh2peb7|Read more>"
+   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Replicate Model Registry Unavailable*\n🕒 12 Nov 2026, 05:20 IST\nAffected: Replicate\nWe are continuing to work on a fix for the issue. Current impact: Input uploads are degraded. Model builds and pushes via r8.im are unavailable.\n<https://www.cloudflarestatus.com/incidents/yu63fhh2peb7|Read more>"
   },
   {
    "cat": "incidents",
