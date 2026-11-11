@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Investigating · Minor impact",
+   "kind": "Identified · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Cloudflare Worker Builds Issue*\n🕒 11 Nov 2026, 11:59 IST\nAffected: Workers, Containers, Workers Builds\nCloudflare is aware of and investigating an issue with Cloudflare Worker Builds which potentially impacts multiple customers. Further detail will be provided as more information becomes available. Existing Workers and…\n<https://www.cloudflarestatus.com/incidents/byzl30zyfc47|Read more>"
+   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Cloudflare Worker Builds Issue*\n🕒 11 Nov 2026, 12:02 IST\nAffected: Workers, Containers, Workers Builds\nThe issue has been identified and a fix is being implemented.\n<https://www.cloudflarestatus.com/incidents/byzl30zyfc47|Read more>"
   },
   {
    "cat": "incidents",
@@ -541,6 +541,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-11T06:29:09Z",
+ "updated": "2026-11-11T06:32:26Z",
  "version": 1
 }
