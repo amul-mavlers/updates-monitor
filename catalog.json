@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Investigating · Minor impact",
+   "kind": "Identified · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Replicate Issue*\n🕒 12 Nov 2026, 14:00 IST\nAffected: Replicate\nCloudflare Replicate customers may see an increase of 500 errors for predictions. More updates to follow shortly.\n<https://www.cloudflarestatus.com/incidents/1na2mbfshgdh|Read more>"
+   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Replicate Issue*\n🕒 12 Nov 2026, 15:04 IST\nAffected: Replicate\nThe issue has been identified and a fix is being implemented.\n<https://www.cloudflarestatus.com/incidents/1na2mbfshgdh|Read more>"
   },
   {
    "cat": "incidents",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-12T08:30:17Z",
+ "updated": "2026-11-12T09:34:19Z",
  "version": 1
 }
