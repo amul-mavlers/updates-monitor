@@ -2,14 +2,14 @@
  "cards": [
   {
    "cat": "incidents",
-   "kind": "Monitoring · Minor impact",
+   "kind": "Resolved after 50 min · Minor impact",
    "live": true,
    "note": "",
    "source": "GitHub Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟡 *GitHub Status* · Monitoring · Minor impact\n*Incident with Webhooks API*\n🕒 13 Nov 2026, 00:50 IST\nAffected: Webhooks\nThe degradation affecting Webhooks has been mitigated. We are monitoring to ensure stability.\n<https://stspg.io/ns57pv7lmynl|Read more>"
+   "text": "🟢 *GitHub Status* · Resolved after 50 min · Minor impact\n*Incident with Webhooks API*\n🕒 13 Nov 2026, 01:03 IST\nAffected: Webhooks\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/ns57pv7lmynl|Read more>"
   },
   {
    "cat": "incidents",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-12T19:20:14Z",
+ "updated": "2026-11-12T19:33:54Z",
  "version": 1
 }
