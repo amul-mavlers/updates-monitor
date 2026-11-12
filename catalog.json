@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Resolved after 5 d 22 h · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🟢 *Cloudflare Status* · Resolved after 5 d 22 h · Minor impact\n*Fedramp Customers have Delayed Purges*\n🕒 12 Nov 2026, 22:06 IST\nAffected: CDN Cache Purge\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/wp49bp8bqo6c|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 3 h 3 min · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 3 h 3 min · Minor impact\n*Replicate Issue*\n🕒 12 Nov 2026, 17:04 IST\nAffected: Replicate\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/1na2mbfshgdh|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 33 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 33 min · Minor impact\n*DNSSEC Configuration Change Issues*\n🕒 12 Nov 2026, 10:56 IST\nAffected: DNSSEC Updates\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/8odt36zmvm36|Read more>"
   },
   {
    "cat": "incidents",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-12T16:10:50Z",
+ "updated": "2026-11-12T16:36:32Z",
  "version": 1
 }
