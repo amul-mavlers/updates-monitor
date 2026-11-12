@@ -2,6 +2,17 @@
  "cards": [
   {
    "cat": "incidents",
+   "kind": "Investigating · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "GitHub Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*Incident with Webhooks API*\n🕒 13 Nov 2026, 00:13 IST\nAffected: Webhooks\nWe are investigating reports of degraded performance for Webhooks\n<https://stspg.io/ns57pv7lmynl|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 33 min · Critical impact",
    "live": true,
    "note": "",
@@ -10,17 +21,6 @@
     "Downtime"
    ],
    "text": "🟢 *GitHub Status* · Resolved after 33 min · Critical impact\n*Impact across multiple GitHub products including Actions, Pages, and Copilot products.*\n🕒 12 Nov 2026, 02:51 IST\nAffected: Webhooks, Actions, Pages, Copilot\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/jdjlq5zjyl48|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 4 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "GitHub Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *GitHub Status* · Resolved after 4 min · Minor impact\n*Incident with Webhooks*\n🕒 12 Nov 2026, 01:56 IST\nAffected: Webhooks\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/r0jrtx03yvll|Read more>"
   },
   {
    "cat": "incidents",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-12T16:36:32Z",
+ "updated": "2026-11-12T18:43:13Z",
  "version": 1
 }
