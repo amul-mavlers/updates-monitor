@@ -3381,6 +3381,7 @@
     "/blog/video/welcome-to-the-node-blog"
   ],
   "Patchstack": [
+    "https://patchstack.com/articles/kinsta-now-protects-every-wordpress-site-it-hosts-with-patchstack/",
     "https://patchstack.com/articles/wordpress-doesnt-ship-brotli-its-still-exposed-to-cve-2026-111497/",
     "https://patchstack.com/articles/wordpress-7-1-4-security-release/",
     "https://patchstack.com/articles/php-major-vulnerability-alert-10-2026/",
