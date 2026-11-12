@@ -255,7 +255,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Laravel News* · Laravel\n*UUID Request Input and Migration Failure Events in Laravel 13.42*\n🕒 11 Nov 2026, 05:32 IST\nLaravel 13.42 adds uuid() and ulid() input helpers, a MigrationFailed event, skip reasons for scheduled tasks, and Uri::origin() for comparing URL origins. The post UUID Request Input and Migration Failure Events in…\n<https://laravel-news.com/laravel-13-42-0?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
+   "text": "🆕 *Laravel News* · Laravel\n*Laravel Read Replicas: Check if a Replica Has Caught Up*\n🕒 12 Nov 2026, 04:34 IST\nLaravel 13.40 adds commit IDs to MySQL, MariaDB, and PostgreSQL connections, so you can check whether a read replica has a write before you read from it. The post Laravel Read Replicas: Check if a Replica Has Caught Up…\n<https://laravel-news.com/laravel-read-replica-commit-ids?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
   },
   {
    "cat": "news",
@@ -266,7 +266,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Laravel News* · Laravel\n*Laravel Rest Api 3.0: Typed Fields, Metrics, and OpenAPI Docs*\n🕒 10 Nov 2026, 19:03 IST\nLaravel Rest Api 3.0 rebuilds the package around typed fields, adds metric endpoints and write confirmations, and documents your API with Scramble. The post Laravel Rest Api 3.0: Typed Fields, Metrics, and OpenAPI Docs…\n<https://laravel-news.com/laravel-rest-api-3?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
+   "text": "🆕 *Laravel News* · Laravel\n*UUID Request Input and Migration Failure Events in Laravel 13.42*\n🕒 11 Nov 2026, 05:32 IST\nLaravel 13.42 adds uuid() and ulid() input helpers, a MigrationFailed event, skip reasons for scheduled tasks, and Uri::origin() for comparing URL origins. The post UUID Request Input and Migration Failure Events in…\n<https://laravel-news.com/laravel-13-42-0?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
   },
   {
    "cat": "news",
