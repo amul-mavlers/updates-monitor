@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Investigating · Minor impact",
+   "kind": "Identified · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*DNSSEC Configuration Change Issues*\n🕒 12 Nov 2026, 10:23 IST\nAffected: Authoritative DNS\nCloudflare is investigating issues with enabling or disabling DNSSEC (Domain Name System Security Extensions) signing. We are working to understand the full impact and mitigate this problem. More updates to follow…\n<https://www.cloudflarestatus.com/incidents/8odt36zmvm36|Read more>"
+   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*DNSSEC Configuration Change Issues*\n🕒 12 Nov 2026, 10:33 IST\nAffected: DNSSEC Updates\nThe issue has been identified and a fix is being implemented.\n<https://www.cloudflarestatus.com/incidents/8odt36zmvm36|Read more>"
   },
   {
    "cat": "incidents",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-12T04:53:29Z",
+ "updated": "2026-11-12T05:03:22Z",
  "version": 1
 }
