@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Identified · Minor impact",
+   "kind": "Monitoring · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*DNSSEC Configuration Change Issues*\n🕒 12 Nov 2026, 10:33 IST\nAffected: DNSSEC Updates\nThe issue has been identified and a fix is being implemented.\n<https://www.cloudflarestatus.com/incidents/8odt36zmvm36|Read more>"
+   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*DNSSEC Configuration Change Issues*\n🕒 12 Nov 2026, 10:36 IST\nAffected: DNSSEC Updates\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/8odt36zmvm36|Read more>"
   },
   {
    "cat": "incidents",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-12T05:03:22Z",
+ "updated": "2026-11-12T05:06:46Z",
  "version": 1
 }
