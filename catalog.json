@@ -46,17 +46,6 @@
   },
   {
    "cat": "incidents",
-   "kind": "Resolved after 22 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Shopify Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Shopify Status* · Resolved after 22 min · Minor impact\n*Shopify Sidekick is unavailable*\n🕒 13 Nov 2026, 04:53 IST\nAffected: Admin, Support\nBetween 22:00 – 23:00 UTC, we experienced an issue with Shopify Sidekick which made the AI interface on Help Center, Canvas and Admin unavailable. A fix was implemented at 22:55 which resolved the issue. The monitoring…\n<https://stspg.io/qyvgqgjj0zpd|Read more>"
-  },
-  {
-   "cat": "incidents",
    "kind": "Resolved after 33 min · Minor impact",
    "live": true,
    "note": "",
@@ -65,6 +54,17 @@
     "Downtime"
    ],
    "text": "🟢 *Shopify Status* · Resolved after 33 min · Minor impact\n*Shop Pay unavailable*\n🕒 25 Jun 2025, 05:00 IST\nAffected: Checkout\nThis incident has been resolved.\n<https://stspg.io/1nx1vcvd553l|Read more>"
+  },
+  {
+   "cat": "incidents",
+   "kind": "Resolved after 3 h 5 min · Major impact",
+   "live": true,
+   "note": "",
+   "source": "Shopify Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🟢 *Shopify Status* · Resolved after 3 h 5 min · Major impact\n*Some POS transactions are not completing on iOS devices Actions*\n🕒 25 Jun 2025, 02:22 IST\nAffected: Point of Sale\nBetween 16:31 UTC and 19:48 UTC, we experienced an issue due to which some POS transactions could not be completed as expected. A fix was implemented at 17:44 UTC which resolved the issue. The monitoring period for…\n<https://stspg.io/tn2csdqxzfnn|Read more>"
   },
   {
    "cat": "news",
