@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Investigating · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*DNSSEC Configuration Change Issues*\n🕒 12 Nov 2026, 10:23 IST\nAffected: Authoritative DNS\nCloudflare is investigating issues with enabling or disabling DNSSEC (Domain Name System Security Extensions) signing. We are working to understand the full impact and mitigate this problem. More updates to follow…\n<https://www.cloudflarestatus.com/incidents/8odt36zmvm36|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Identified · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Replicate Model Registry Unavailable*\n🕒 12 Nov 2026, 05:20 IST\nAffected: Replicate\nWe are continuing to work on a fix for the issue. Current impact: Input uploads are degraded. Model builds and pushes via r8.im are unavailable.\n<https://www.cloudflarestatus.com/incidents/yu63fhh2peb7|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 25 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 25 min · Minor impact\n*Network Performance Degraded*\n🕒 11 Nov 2026, 21:48 IST\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/804glbb3pq6t|Read more>"
   },
   {
    "cat": "incidents",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-11T23:50:01Z",
+ "updated": "2026-11-12T04:53:29Z",
  "version": 1
 }
