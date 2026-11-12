@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Investigating · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Replicate Issue*\n🕒 12 Nov 2026, 14:00 IST\nAffected: Replicate\nCloudflare Replicate customers may see an increase of 500 errors for predictions. More updates to follow shortly.\n<https://www.cloudflarestatus.com/incidents/1na2mbfshgdh|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 33 min · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 33 min · Minor impact\n*DNSSEC Configuration Change Issues*\n🕒 12 Nov 2026, 10:56 IST\nAffected: DNSSEC Updates\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/8odt36zmvm36|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Identified · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Replicate Model Registry Unavailable*\n🕒 12 Nov 2026, 05:20 IST\nAffected: Replicate\nWe are continuing to work on a fix for the issue. Current impact: Input uploads are degraded. Model builds and pushes via r8.im are unavailable.\n<https://www.cloudflarestatus.com/incidents/yu63fhh2peb7|Read more>"
   },
   {
    "cat": "incidents",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-12T05:26:45Z",
+ "updated": "2026-11-12T08:30:17Z",
  "version": 1
 }
