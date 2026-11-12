@@ -210,7 +210,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Shopify Changelog* · Changelog\n*IP allowlists are now required for custom apps installed outside your organization*\n🕒 12 Nov 2026, 03:30 IST\nWe're enhancing protection of merchants by requiring IP allowlists for custom apps, if those apps are installed on stores outside of the organization that owns them. Starting November 20, 2026 at 11:59 PM ET: Apps must…\n<https://shopify.dev/changelog/ip-allowlists-are-now-required-for-custom-apps-installed-outside-your-organization|Read more>"
+   "text": "🆕 *Shopify Changelog* · Changelog\n*Remove your app from the Shopify App Store yourself*\n🕒 12 Nov 2026, 23:50 IST\nYou can now start sunsetting your app and remove it from the Shopify App Store yourself, from the Partner Dashboard. You no longer need to contact Shopify Support. What's new In the Partner Dashboard, go to Apps › your…\n<https://shopify.dev/changelog/remove-your-app-from-the-shopify-app-store-yourself|Read more>"
   },
   {
    "cat": "news",
@@ -221,7 +221,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Shopify Changelog* · Changelog\n*App IP allowlists now support IP addresses and ASNs together, and up to 250 IPs*\n🕒 12 Nov 2026, 03:30 IST\nYour app's IP allowlist in the Dev Dashboard can now include IP addresses and autonomous system numbers (ASNs) in the same allowlist. This helps apps whose requests come from a mix of static and dynamic IP addresses.…\n<https://shopify.dev/changelog/app-ip-allowlists-now-support-ip-addresses-and-asns-together|Read more>"
+   "text": "🆕 *Shopify Changelog* · Changelog\n*IP allowlists are now required for custom apps installed outside your organization*\n🕒 12 Nov 2026, 03:30 IST\nWe're enhancing protection of merchants by requiring IP allowlists for custom apps, if those apps are installed on stores outside of the organization that owns them. Starting November 20, 2026 at 11:59 PM ET: Apps must…\n<https://shopify.dev/changelog/ip-allowlists-are-now-required-for-custom-apps-installed-outside-your-organization|Read more>"
   },
   {
    "cat": "security",
