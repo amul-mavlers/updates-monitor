@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Identified · Minor impact",
+   "kind": "Resolved after 3 h 3 min · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Replicate Issue*\n🕒 12 Nov 2026, 15:04 IST\nAffected: Replicate\nThe issue has been identified and a fix is being implemented.\n<https://www.cloudflarestatus.com/incidents/1na2mbfshgdh|Read more>"
+   "text": "🟢 *Cloudflare Status* · Resolved after 3 h 3 min · Minor impact\n*Replicate Issue*\n🕒 12 Nov 2026, 17:04 IST\nAffected: Replicate\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/1na2mbfshgdh|Read more>"
   },
   {
    "cat": "incidents",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-12T09:34:19Z",
+ "updated": "2026-11-12T11:34:02Z",
  "version": 1
 }
