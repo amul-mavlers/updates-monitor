@@ -46,14 +46,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Investigating · Minor impact",
+   "kind": "Resolved after 22 min · Minor impact",
    "live": true,
    "note": "",
    "source": "Shopify Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *Shopify Status* · Investigating · Minor impact\n*Shopify Sidekick is unavailable*\n🕒 13 Nov 2026, 04:31 IST\nAffected: Admin, Support\nShopify Sidekick AI agent is currently unavailable, affecting Help Center and Admin requests. We are actively investigating the issue and will provide updates on recovery.\n<https://stspg.io/qyvgqgjj0zpd|Read more>"
+   "text": "🟢 *Shopify Status* · Resolved after 22 min · Minor impact\n*Shopify Sidekick is unavailable*\n🕒 13 Nov 2026, 04:53 IST\nAffected: Admin, Support\nBetween 22:00 – 23:00 UTC, we experienced an issue with Shopify Sidekick which made the AI interface on Help Center, Canvas and Admin unavailable. A fix was implemented at 22:55 which resolved the issue. The monitoring…\n<https://stspg.io/qyvgqgjj0zpd|Read more>"
   },
   {
    "cat": "incidents",
