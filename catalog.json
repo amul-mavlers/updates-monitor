@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Monitoring · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Durable Objects increased error rates in North America*\n🕒 13 Nov 2026, 04:09 IST\nAffected: Durable Objects\nDurable Objects saw an increased error rate in North American colos due to a sudden increase in traffic. Impact has subsided. We are now monitoring.\n<https://www.cloudflarestatus.com/incidents/9zxr2bkqoct7|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 5 d 22 h · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 5 d 22 h · Minor impact\n*Fedramp Customers have Delayed Purges*\n🕒 12 Nov 2026, 22:06 IST\nAffected: CDN Cache Purge\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/wp49bp8bqo6c|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 3 h 3 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 3 h 3 min · Minor impact\n*Replicate Issue*\n🕒 12 Nov 2026, 17:04 IST\nAffected: Replicate\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/1na2mbfshgdh|Read more>"
   },
   {
    "cat": "incidents",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-12T21:43:56Z",
+ "updated": "2026-11-12T22:39:40Z",
  "version": 1
 }
