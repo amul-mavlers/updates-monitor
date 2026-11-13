@@ -45,28 +45,6 @@
    "text": "🟢 *Cloudflare Status* · Resolved after 1 d 21 h · Minor impact\n*Replicate Model Registry Unavailable*\n🕒 13 Nov 2026, 07:14 IST\nAffected: Replicate\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/yu63fhh2peb7|Read more>"
   },
   {
-   "cat": "incidents",
-   "kind": "Resolved after 33 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Shopify Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Shopify Status* · Resolved after 33 min · Minor impact\n*Shop Pay unavailable*\n🕒 25 Jun 2025, 05:00 IST\nAffected: Checkout\nThis incident has been resolved.\n<https://stspg.io/1nx1vcvd553l|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 3 h 5 min · Major impact",
-   "live": true,
-   "note": "",
-   "source": "Shopify Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Shopify Status* · Resolved after 3 h 5 min · Major impact\n*Some POS transactions are not completing on iOS devices Actions*\n🕒 25 Jun 2025, 02:22 IST\nAffected: Point of Sale\nBetween 16:31 UTC and 19:48 UTC, we experienced an issue due to which some POS transactions could not be completed as expected. A fix was implemented at 17:44 UTC which resolved the issue. The monitoring period for…\n<https://stspg.io/tn2csdqxzfnn|Read more>"
-  },
-  {
    "cat": "news",
    "kind": "New post",
    "live": true,
