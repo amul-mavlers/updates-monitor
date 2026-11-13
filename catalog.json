@@ -75,6 +75,17 @@
    "spaces": [
     "WordPress & PHP"
    ],
+   "text": "🆕 *WordPress News* · New post\n*Copy Your WordPress Site with Reprint*\n🕒 13 Nov 2026, 17:30 IST\nReprint is a free, open-source, PHP-based tool that copies a WordPress site’s files and database. The plugin is available in the WordPress.org Plugin Directory, along with the command-line client used to copy the site.…\n<https://wordpress.org/news/2026/11/reprint-your-site/|Read more>"
+  },
+  {
+   "cat": "news",
+   "kind": "New post",
+   "live": true,
+   "note": "",
+   "source": "WordPress News",
+   "spaces": [
+    "WordPress & PHP"
+   ],
    "text": "🆕 *WordPress News* · New post\n*WordCamp Asia 2027 Is Coming to Penang*\n🕒 11 Nov 2026, 19:30 IST\nNext year, WordCamp Asia 2027 heads to Penang, Malaysia. From April 9 to 11, the WordPress community will gather at the Penang Waterfront Convention Centre for three days of contribution, learning, and connection.…\n<https://wordpress.org/news/2026/11/wc-asia-2027-penang/|Read more>"
   },
   {
@@ -98,17 +109,6 @@
     "WordPress & PHP"
    ],
    "text": "🆕 *WordPress News* · New post\n*WordPress Credits Welcomes More Than 50 Institutions*\n🕒 9 Nov 2026, 21:31 IST\nMore than 50 educational institutions have joined WordPress Credits, giving students worldwide a way to earn academic recognition for contributing to WordPress. The program had two participating institutions in…\n<https://wordpress.org/news/2026/11/wp-credits-reaches-50/|Read more>"
-  },
-  {
-   "cat": "news",
-   "kind": "New post",
-   "live": true,
-   "note": "",
-   "source": "WordPress News",
-   "spaces": [
-    "WordPress & PHP"
-   ],
-   "text": "🆕 *WordPress News* · New post\n*WordPress 7.2 Beta 4*\n🕒 3 Nov 2026, 21:15 IST\nWordPress 7.2 Beta 4 is ready for download and testing! This beta release is intended for testing and development only. Please do not install, run, or test this version of WordPress on production or mission-critical…\n<https://wordpress.org/news/2026/11/wordpress-7-2-beta-4/|Read more>"
   },
   {
    "cat": "news",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-13T03:44:49Z",
+ "updated": "2026-11-13T12:00:00Z",
  "version": 1
 }
