@@ -2,6 +2,17 @@
  "cards": [
   {
    "cat": "incidents",
+   "kind": "Investigating · Major impact",
+   "live": true,
+   "note": "",
+   "source": "GitHub Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🔴 *GitHub Status* · Investigating · Major impact\n*Incident with Pull Requests*\n🕒 13 Nov 2026, 21:19 IST\nAffected: Pull Requests\nWe’re investigating an issue with Pull Requests where some attempts to merge are timing out.\n<https://stspg.io/qzj7qjdcr8jc|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 2 h 7 min · Minor impact",
    "live": true,
    "note": "",
@@ -10,17 +21,6 @@
     "Downtime"
    ],
    "text": "🟢 *GitHub Status* · Resolved after 2 h 7 min · Minor impact\n*Disruption with Email Delivery*\n🕒 13 Nov 2026, 03:13 IST\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/lr8v4v8t7gs2|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 50 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "GitHub Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *GitHub Status* · Resolved after 50 min · Minor impact\n*Incident with Webhooks API*\n🕒 13 Nov 2026, 01:03 IST\nAffected: Webhooks\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/ns57pv7lmynl|Read more>"
   },
   {
    "cat": "incidents",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-13T15:42:43Z",
+ "updated": "2026-11-13T15:49:36Z",
  "version": 1
 }
