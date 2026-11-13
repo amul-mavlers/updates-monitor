@@ -9,7 +9,7 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*Copilot experiencing degraded model availability for some GPT models*\n🕒 14 Nov 2026, 02:17 IST\nAffected: Copilot AI Model Providers\nWe are in contact with the upstream provider and monitoring as they work towards resolution. For customers who are impacted we recommend choosing another model or selecting ‘Auto’ to continue using Copilot.\n<https://stspg.io/cppzsh0j19vy|Read more>"
+   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*Copilot experiencing degraded model availability for some GPT models*\n🕒 14 Nov 2026, 02:47 IST\nAffected: Copilot AI Model Providers\nThe upstream provider has made mitigations and we are seeing the affected models begin to recover.\n<https://stspg.io/cppzsh0j19vy|Read more>"
   },
   {
    "cat": "incidents",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-13T20:47:09Z",
+ "updated": "2026-11-13T21:17:48Z",
  "version": 1
 }
