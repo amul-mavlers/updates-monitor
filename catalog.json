@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Monitoring · Minor impact",
+   "kind": "Resolved after 1 d 21 h · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Replicate Model Registry Unavailable*\n🕒 13 Nov 2026, 04:25 IST\nAffected: Replicate\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/yu63fhh2peb7|Read more>"
+   "text": "🟢 *Cloudflare Status* · Resolved after 1 d 21 h · Minor impact\n*Replicate Model Registry Unavailable*\n🕒 13 Nov 2026, 07:14 IST\nAffected: Replicate\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/yu63fhh2peb7|Read more>"
   },
   {
    "cat": "incidents",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-12T22:55:17Z",
+ "updated": "2026-11-13T01:44:17Z",
  "version": 1
 }
