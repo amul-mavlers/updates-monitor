@@ -9,7 +9,7 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🟢 *GitHub Status* · Resolved after 1 h 14 min · Minor impact\n*Copilot experiencing degraded model availability for some GPT models*\n🕒 14 Nov 2026, 02:57 IST\nAffected: Copilot AI Model Providers\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/cppzsh0j19vy|Read more>"
+   "text": "🟢 *GitHub Status* · Resolved after 1 h 14 min · Minor impact\n*Copilot experiencing degraded model availability for some GPT models*\n🕒 14 Nov 2026, 02:57 IST\nAffected: Copilot AI Model Providers\nBetween 19:05 and 21:27 UTC on November 13, 2026, GitHub Copilot experienced degradation affecting GPT-6.1 Terra, GPT-5.6 Sol, and GPT-6 Luna models. Users encountered elevated error rates when using these models. The…\n<https://stspg.io/cppzsh0j19vy|Read more>"
   },
   {
    "cat": "incidents",
