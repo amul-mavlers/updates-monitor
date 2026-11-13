@@ -31,18 +31,18 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Elevated error rate for workers startup*\n🕒 13 Nov 2026, 19:24 IST\nAffected: Workers\nCloudflare is investigating an elevated error rate for workers startup, for workers that use large amounts of memory We have identified the issue and are working on a solution to fix the issue. More updates to follow…\n<https://www.cloudflarestatus.com/incidents/y03on2svrrxt|Read more>"
+   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Cloudflare is currently having an issue with the r8.im registry used for Replicate model publishing and builds is currently restricted*\n🕒 13 Nov 2026, 20:25 IST\nAffected: Replicate\nThe issue has been identified and a fix is being implemented.\n<https://www.cloudflarestatus.com/incidents/mc91s22odfvf|Read more>"
   },
   {
    "cat": "incidents",
-   "kind": "Resolved after 5 h 5 min · Minor impact",
+   "kind": "Identified · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 5 h 5 min · Minor impact\n*Durable Objects increased error rates in North America*\n🕒 13 Nov 2026, 09:14 IST\nAffected: Durable Objects\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/9zxr2bkqoct7|Read more>"
+   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Elevated error rate for workers startup*\n🕒 13 Nov 2026, 19:24 IST\nAffected: Workers\nCloudflare is investigating an elevated error rate for workers startup, for workers that use large amounts of memory We have identified the issue and are working on a solution to fix the issue. More updates to follow…\n<https://www.cloudflarestatus.com/incidents/y03on2svrrxt|Read more>"
   },
   {
    "cat": "incidents",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-13T13:54:01Z",
+ "updated": "2026-11-13T14:55:26Z",
  "version": 1
 }
