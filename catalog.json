@@ -2,6 +2,17 @@
  "cards": [
   {
    "cat": "incidents",
+   "kind": "Investigating · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "GitHub Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*Copilot experiencing degraded model availability for some GPT models*\n🕒 14 Nov 2026, 01:44 IST\nAffected: Copilot AI Model Providers\nWe are experiencing degraded availability for gpt-5.6-sol-fast, gpt-5.6-sol, gpt-6.1-terra, and gpt-6-luna in Copilot products and IDE surfaces. This is due to an issue with an upstream model provider. While we work…\n<https://stspg.io/cppzsh0j19vy|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 2 h 42 min · Major impact",
    "live": true,
    "note": "",
@@ -10,17 +21,6 @@
     "Downtime"
    ],
    "text": "🟢 *GitHub Status* · Resolved after 2 h 42 min · Major impact\n*Incident with Pull Requests*\n🕒 13 Nov 2026, 23:59 IST\nAffected: Pull Requests\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/qzj7qjdcr8jc|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 2 h 7 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "GitHub Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *GitHub Status* · Resolved after 2 h 7 min · Minor impact\n*Disruption with Email Delivery*\n🕒 13 Nov 2026, 03:13 IST\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/lr8v4v8t7gs2|Read more>"
   },
   {
    "cat": "incidents",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-13T18:29:31Z",
+ "updated": "2026-11-13T20:14:07Z",
  "version": 1
 }
