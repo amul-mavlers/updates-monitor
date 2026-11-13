@@ -9,7 +9,7 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*Copilot experiencing degraded model availability for some GPT models*\n🕒 14 Nov 2026, 01:44 IST\nAffected: Copilot AI Model Providers\nWe are experiencing degraded availability for gpt-5.6-sol-fast, gpt-5.6-sol, gpt-6.1-terra, and gpt-6-luna in Copilot products and IDE surfaces. This is due to an issue with an upstream model provider. While we work…\n<https://stspg.io/cppzsh0j19vy|Read more>"
+   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*Copilot experiencing degraded model availability for some GPT models*\n🕒 14 Nov 2026, 02:17 IST\nAffected: Copilot AI Model Providers\nWe are in contact with the upstream provider and monitoring as they work towards resolution. For customers who are impacted we recommend choosing another model or selecting ‘Auto’ to continue using Copilot.\n<https://stspg.io/cppzsh0j19vy|Read more>"
   },
   {
    "cat": "incidents",
@@ -111,16 +111,15 @@
    "text": "🆕 *WordPress News* · New post\n*WordPress Credits Welcomes More Than 50 Institutions*\n🕒 9 Nov 2026, 21:31 IST\nMore than 50 educational institutions have joined WordPress Credits, giving students worldwide a way to earn academic recognition for contributing to WordPress. The program had two participating institutions in…\n<https://wordpress.org/news/2026/11/wp-credits-reaches-50/|Read more>"
   },
   {
-   "cat": "security",
+   "cat": "news",
    "kind": "News",
    "live": true,
    "note": "",
    "source": "PHP News",
    "spaces": [
-    "WordPress & PHP",
-    "Downtime"
+    "WordPress & PHP"
    ],
-   "text": "🆕 *PHP News* · News\n*Security advisory: Critical remote code execution vulnerabilities, update now*\n🕒 21 Oct 2026, 06:05 IST\nPHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35 fix two critical vulnerabilities that can allow unauthenticated remote code execution. All PHP users are strongly encouraged to update immediately. Who is at risk: all PHP…\n<https://www.php.net/index.php#2026-10-21-5|Read more>"
+   "text": "🆕 *PHP News* · News\n*PHP 8.6.0 RC5 available for testing*\n🕒 6 Nov 2026, 02:42 IST\nThe PHP team is pleased to announce the fourth release candidate of PHP 8.6.0, RC5. This continues the PHP 8.6 release cycle, whose rough outline is specified in the PHP Wiki . Source downloads of PHP 8.6.0 RC5 are…\n<https://www.php.net/index.php#2026-11-05-1|Read more>"
   },
   {
    "cat": "security",
@@ -132,7 +131,7 @@
     "WordPress & PHP",
     "Downtime"
    ],
-   "text": "🆕 *PHP News* · News\n*PHP 8.5.12 Released!*\n🕒 21 Oct 2026, 05:54 IST\nThe PHP development team announces the immediate availability of PHP 8.5.12. This is a security release fixing two critical vulnerabilities (CVE-2026-109618, CVE-2026-109619) that can allow unauthenticated remote code…\n<https://www.php.net/index.php#2026-10-21-4|Read more>"
+   "text": "🆕 *PHP News* · News\n*Updated PHP Windows builds for Brotli security fix*\n🕒 26 Oct 2026, 17:27 IST\nThe PHP team announces updated Windows builds: PHP 8.5.12-1, 8.4.27-1, 8.3.36-1 and 8.2.35-1 . These builds include Brotli 1.2.1, which fixes CVE-2026-111497 , an out-of-bounds write vulnerability in Brotli…\n<https://www.php.net/index.php#2026-10-26-1|Read more>"
   },
   {
    "cat": "security",
@@ -144,7 +143,7 @@
     "WordPress & PHP",
     "Downtime"
    ],
-   "text": "🆕 *PHP News* · News\n*PHP 8.4.27 Released!*\n🕒 21 Oct 2026, 05:50 IST\nThe PHP development team announces the immediate availability of PHP 8.4.27. This is a security release fixing two critical vulnerabilities (CVE-2026-109618, CVE-2026-109619) that can allow unauthenticated remote code…\n<https://www.php.net/index.php#2026-10-21-3|Read more>"
+   "text": "🆕 *PHP News* · News\n*Informational advisory: Session upload progress*\n🕒 23 Oct 2026, 15:42 IST\nWe suggest you set session.upload_progress.enabled=0 until the next regular bugfix release, to fully protect from an unlikely RCE vector. This setting was already listed as a mitigation in the GHSA-6wmf-4rv5-p3rp…\n<https://www.php.net/index.php#2026-10-23-1|Read more>"
   },
   {
    "cat": "security",
@@ -156,7 +155,7 @@
     "WordPress & PHP",
     "Downtime"
    ],
-   "text": "🆕 *PHP News* · News\n*PHP 8.3.36 Released!*\n🕒 21 Oct 2026, 05:44 IST\nThe PHP development team announces the immediate availability of PHP 8.3.36. This is a security release fixing two critical vulnerabilities (CVE-2026-109618, CVE-2026-109619) that can allow unauthenticated remote code…\n<https://www.php.net/index.php#2026-10-21-2|Read more>"
+   "text": "🆕 *PHP News* · News\n*PHP 8.6.0 RC4 available for testing*\n🕒 21 Oct 2026, 21:11 IST\nThe PHP team is pleased to announce the third release candidate of PHP 8.6.0, RC4. This continues the PHP 8.6 release cycle, whose rough outline is specified in the PHP Wiki . Source downloads of PHP 8.6.0 RC4 are…\n<https://www.php.net/index.php#2026-10-21-6|Read more>"
   },
   {
    "cat": "news",
@@ -541,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-13T20:14:07Z",
+ "updated": "2026-11-13T20:47:09Z",
  "version": 1
 }
