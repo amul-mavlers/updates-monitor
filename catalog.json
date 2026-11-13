@@ -2,14 +2,14 @@
  "cards": [
   {
    "cat": "incidents",
-   "kind": "Investigating · Minor impact",
+   "kind": "Resolved after 1 h 14 min · Minor impact",
    "live": true,
    "note": "",
    "source": "GitHub Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*Copilot experiencing degraded model availability for some GPT models*\n🕒 14 Nov 2026, 02:47 IST\nAffected: Copilot AI Model Providers\nThe upstream provider has made mitigations and we are seeing the affected models begin to recover.\n<https://stspg.io/cppzsh0j19vy|Read more>"
+   "text": "🟢 *GitHub Status* · Resolved after 1 h 14 min · Minor impact\n*Copilot experiencing degraded model availability for some GPT models*\n🕒 14 Nov 2026, 02:57 IST\nAffected: Copilot AI Model Providers\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/cppzsh0j19vy|Read more>"
   },
   {
    "cat": "incidents",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-13T21:17:48Z",
+ "updated": "2026-11-13T21:27:59Z",
  "version": 1
 }
