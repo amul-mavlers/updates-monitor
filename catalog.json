@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Monitoring · Minor impact",
+   "kind": "Investigating · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Cloudflare is currently having an issue with the r8.im registry used for Replicate model publishing and builds is currently restricted*\n🕒 14 Nov 2026, 05:04 IST\nAffected: Replicate\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/mc91s22odfvf|Read more>"
+   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Issues with 1.1.1.1 public resolver in Canada*\n🕒 14 Nov 2026, 05:23 IST\nAffected: Recursive DNS\nCloudflare is aware of, and investigating, an issue which potentially impacts multiple users in Canada that use 1.1.1.1 public resolver. Further detail will be provided as more information becomes available.\n<https://www.cloudflarestatus.com/incidents/rikplz89rpml|Read more>"
   },
   {
    "cat": "incidents",
@@ -42,7 +42,7 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Cloudflare is seeing an issue with Workers API availability*\n🕒 13 Nov 2026, 21:12 IST\nAffected: Workers\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/e7ktq32gphhe|Read more>"
+   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Cloudflare is currently having an issue with the r8.im registry used for Replicate model publishing and builds is currently restricted*\n🕒 14 Nov 2026, 05:04 IST\nAffected: Replicate\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/mc91s22odfvf|Read more>"
   },
   {
    "cat": "incidents",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-13T23:34:56Z",
+ "updated": "2026-11-13T23:53:18Z",
  "version": 1
 }
