@@ -2,14 +2,14 @@
  "cards": [
   {
    "cat": "incidents",
-   "kind": "Investigating · Major impact",
+   "kind": "Monitoring · Major impact",
    "live": true,
    "note": "",
    "source": "GitHub Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *GitHub Status* · Investigating · Major impact\n*Incident with Pull Requests*\n🕒 13 Nov 2026, 22:22 IST\nAffected: Pull Requests\nWe’re continuing to investigate and monitor 1% of merge requests timing out.\n<https://stspg.io/qzj7qjdcr8jc|Read more>"
+   "text": "🟡 *GitHub Status* · Monitoring · Major impact\n*Incident with Pull Requests*\n🕒 13 Nov 2026, 22:58 IST\nAffected: Pull Requests\nThe degradation affecting Pull Requests has been mitigated. We are monitoring to ensure stability.\n<https://stspg.io/qzj7qjdcr8jc|Read more>"
   },
   {
    "cat": "incidents",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-13T17:00:00Z",
+ "updated": "2026-11-13T17:28:01Z",
  "version": 1
 }
