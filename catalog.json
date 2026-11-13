@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Identified · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Cloudflare Workers Issues*\n🕒 13 Nov 2026, 19:24 IST\nAffected: Workers\nCloudflare is investigating an elevated error rate for workers startup, for workers that use large amounts of memory We have identified the issue and are working on a solution to fix the issue. More updates to follow…\n<https://www.cloudflarestatus.com/incidents/y03on2svrrxt|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 5 h 5 min · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 5 h 5 min · Minor impact\n*Durable Objects increased error rates in North America*\n🕒 13 Nov 2026, 09:14 IST\nAffected: Durable Objects\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/9zxr2bkqoct7|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 1 d 21 h · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 1 d 21 h · Minor impact\n*Replicate Model Registry Unavailable*\n🕒 13 Nov 2026, 07:14 IST\nAffected: Replicate\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/yu63fhh2peb7|Read more>"
   },
   {
    "cat": "incidents",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-13T12:00:00Z",
+ "updated": "2026-11-13T13:54:01Z",
  "version": 1
 }
