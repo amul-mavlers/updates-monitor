@@ -31,18 +31,18 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Cloudflare is seeing an issue with Workers API availability*\n🕒 13 Nov 2026, 21:12 IST\nAffected: Workers\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/e7ktq32gphhe|Read more>"
+   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Cloudflare is currently having an issue with the r8.im registry used for Replicate model publishing and builds is currently restricted*\n🕒 14 Nov 2026, 05:04 IST\nAffected: Replicate\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/mc91s22odfvf|Read more>"
   },
   {
    "cat": "incidents",
-   "kind": "Resolved after 1 h 22 min · Minor impact",
+   "kind": "Monitoring · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 1 h 22 min · Minor impact\n*Elevated error rate for workers startup*\n🕒 13 Nov 2026, 20:46 IST\nAffected: Workers\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/y03on2svrrxt|Read more>"
+   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Cloudflare is seeing an issue with Workers API availability*\n🕒 13 Nov 2026, 21:12 IST\nAffected: Workers\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/e7ktq32gphhe|Read more>"
   },
   {
    "cat": "incidents",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-13T21:27:59Z",
+ "updated": "2026-11-13T23:34:56Z",
  "version": 1
 }
