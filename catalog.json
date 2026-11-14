@@ -202,15 +202,15 @@
    "text": "🆕 *PHP Releases* · New release\n*PHP 8.2.35 released!*\n🕒 21 Oct 2026, 05:30 IST\nThere is a new PHP release in town!\n<http://php.net/releases/8_2_35.php|Read more>"
   },
   {
-   "cat": "news",
+   "cat": "security",
    "kind": "Changelog",
    "live": true,
    "note": "",
    "source": "Shopify Changelog",
    "spaces": [
-    "News"
+    "Downtime"
    ],
-   "text": "🆕 *Shopify Changelog* · Changelog\n*Checkout Function cart.deliverableLine inputs now model cost and link to their relevant cart.line*\n🕒 13 Nov 2026, 22:30 IST\n<https://shopify.dev/changelog/checkout-function-cart-deliverableline-inputs-now-model-cost-and-link-to-their-relevant-cart-line|Read more>"
+   "text": "🆕 *Shopify Changelog* · Changelog\n*App security updates: Thank you, plus what's required next*\n🕒 14 Nov 2026, 05:30 IST\nThanks to you, we've already seen the vast majority of apps that run bulk operations adopt an IP allowlist. That's a big step toward keeping merchants protected heading into the busiest weeks of the year. Here's what's…\n<https://shopify.dev/changelog/app-security-updates-thank-you-plus-what-s-required-next|Read more>"
   },
   {
    "cat": "news",
@@ -221,7 +221,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Shopify Changelog* · Changelog\n*Market metafields break ties between equally specific markets by market handle*\n🕒 13 Nov 2026, 22:30 IST\nWhen a buyer matches two or more equally specific markets that set the same metafield, Market.metafield and Market.metafields now return the value from the market with the lowest handle, instead of the value that was…\n<https://shopify.dev/changelog/market-metafields-break-ties-between-equally-specific-markets-by-market-handle|Read more>"
+   "text": "🆕 *Shopify Changelog* · Changelog\n*Checkout Function cart.deliverableLine inputs now model cost and link to their relevant cart.line*\n🕒 13 Nov 2026, 22:30 IST\n<https://shopify.dev/changelog/checkout-function-cart-deliverableline-inputs-now-model-cost-and-link-to-their-relevant-cart-line|Read more>"
   },
   {
    "cat": "security",

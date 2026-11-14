@@ -1463,6 +1463,7 @@
     "http://php.net/releases/8_2_35.php"
   ],
   "Shopify Changelog": [
+    "https://shopify.dev/changelog/app-security-updates-thank-you-plus-what-s-required-next",
     "https://shopify.dev/changelog/checkout-function-cart-deliverableline-inputs-now-model-cost-and-link-to-their-relevant-cart-line",
     "https://shopify.dev/changelog/market-metafields-break-ties-between-equally-specific-markets-by-market-handle",
     "https://shopify.dev/changelog/market-metafields-matches-keys-in-any-case-as-of-storefront-api-version-2027-01",
