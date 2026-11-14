@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Investigating · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Increased Errors for R2 in Chicago*\n🕒 14 Nov 2026, 11:00 IST\nAffected: Chicago, United States - (ORD), R2\nCloudflare is aware of, and investigating an issue with R2. Customers in Chicago, IL, may see 503 errors when using R2. We are currently investigating this issue.\n<https://www.cloudflarestatus.com/incidents/a643zcsfc71q|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 1 h 7 min · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 1 h 7 min · Minor impact\n*Issues with 1.1.1.1 public resolver in Canada*\n🕒 14 Nov 2026, 06:31 IST\nAffected: Recursive DNS\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/rikplz89rpml|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 9 h 56 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 9 h 56 min · Minor impact\n*Cloudflare is currently having an issue with the r8.im registry used for Replicate model publishing and builds is currently restricted*\n🕒 14 Nov 2026, 06:21 IST\nAffected: Replicate\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/mc91s22odfvf|Read more>"
   },
   {
    "cat": "incidents",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-14T01:01:17Z",
+ "updated": "2026-11-14T05:30:35Z",
  "version": 1
 }
