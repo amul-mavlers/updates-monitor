@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Resolved after 37 min · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🟢 *Cloudflare Status* · Resolved after 37 min · Minor impact\n*Elevated error rates on R2 buckets in West North America*\n🕒 15 Nov 2026, 01:48 IST\nAffected: Durable Objects\nThere were elevated error rates for WNAM based buckets from 19:41Z to 20:03Z UTC\n<https://www.cloudflarestatus.com/incidents/dpao7idy3zei|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 22 h 6 min · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 22 h 6 min · Minor impact\n*Cloudflare is seeing an issue with Workers API availability*\n🕒 14 Nov 2026, 19:07 IST\nAffected: Workers\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/e7ktq32gphhe|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 1 h 15 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 1 h 15 min · Minor impact\n*Increased errors for R2 and Tiered Cache*\n🕒 14 Nov 2026, 12:15 IST\nAffected: Chicago, United States - (ORD), R2, Newark, United States - (EWR)\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/a643zcsfc71q|Read more>"
   },
   {
    "cat": "incidents",
@@ -119,6 +119,17 @@
    "spaces": [
     "WordPress & PHP"
    ],
+   "text": "🆕 *PHP News* · News\n*PHP 8.6.0RC7 available for testing*\n🕒 12 Nov 2026, 19:25 IST\nThe PHP team is pleased to announce the fifth release candidate of PHP 8.6.0, RC7. This continues the PHP 8.6 release cycle, whose rough outline is specified in the PHP Wiki . Source downloads of PHP 8.6.0 RC7 are…\n<https://www.php.net/index.php#2026-11-12-1|Read more>"
+  },
+  {
+   "cat": "news",
+   "kind": "News",
+   "live": true,
+   "note": "",
+   "source": "PHP News",
+   "spaces": [
+    "WordPress & PHP"
+   ],
    "text": "🆕 *PHP News* · News\n*PHP 8.6.0 RC5 available for testing*\n🕒 6 Nov 2026, 02:42 IST\nThe PHP team is pleased to announce the fourth release candidate of PHP 8.6.0, RC5. This continues the PHP 8.6 release cycle, whose rough outline is specified in the PHP Wiki . Source downloads of PHP 8.6.0 RC5 are…\n<https://www.php.net/index.php#2026-11-05-1|Read more>"
   },
   {
@@ -144,18 +155,6 @@
     "Downtime"
    ],
    "text": "🆕 *PHP News* · News\n*Informational advisory: Session upload progress*\n🕒 23 Oct 2026, 15:42 IST\nWe suggest you set session.upload_progress.enabled=0 until the next regular bugfix release, to fully protect from an unlikely RCE vector. This setting was already listed as a mitigation in the GHSA-6wmf-4rv5-p3rp…\n<https://www.php.net/index.php#2026-10-23-1|Read more>"
-  },
-  {
-   "cat": "security",
-   "kind": "News",
-   "live": true,
-   "note": "",
-   "source": "PHP News",
-   "spaces": [
-    "WordPress & PHP",
-    "Downtime"
-   ],
-   "text": "🆕 *PHP News* · News\n*PHP 8.6.0 RC4 available for testing*\n🕒 21 Oct 2026, 21:11 IST\nThe PHP team is pleased to announce the third release candidate of PHP 8.6.0, RC4. This continues the PHP 8.6 release cycle, whose rough outline is specified in the PHP Wiki . Source downloads of PHP 8.6.0 RC4 are…\n<https://www.php.net/index.php#2026-10-21-6|Read more>"
   },
   {
    "cat": "news",
@@ -540,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-14T13:37:40Z",
+ "updated": "2026-11-14T20:18:18Z",
  "version": 1
 }
