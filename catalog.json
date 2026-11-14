@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Investigating · Minor impact",
+   "kind": "Identified · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Issues with 1.1.1.1 public resolver in Canada*\n🕒 14 Nov 2026, 05:23 IST\nAffected: Recursive DNS\nCloudflare is aware of, and investigating, an issue which potentially impacts multiple users in Canada that use 1.1.1.1 public resolver. Further detail will be provided as more information becomes available.\n<https://www.cloudflarestatus.com/incidents/rikplz89rpml|Read more>"
+   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Issues with 1.1.1.1 public resolver in Canada*\n🕒 14 Nov 2026, 05:36 IST\nAffected: Recursive DNS\nWe have reached out to the network where we see an active hijack of 1.1.1.0/24. 1.0.0.1 and public resolver IPv6 prefixes are fully operational and reachable at this time.\n<https://www.cloudflarestatus.com/incidents/rikplz89rpml|Read more>"
   },
   {
    "cat": "incidents",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-13T23:53:18Z",
+ "updated": "2026-11-14T00:06:42Z",
  "version": 1
 }
