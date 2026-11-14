@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Monitoring · Minor impact",
+   "kind": "Resolved after 1 h 7 min · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Issues with 1.1.1.1 public resolver in Canada*\n🕒 14 Nov 2026, 06:22 IST\nAffected: Recursive DNS\nThe network with the offending route leak has fixed the issue on their end. We are currently monitoring the effect of this fix.\n<https://www.cloudflarestatus.com/incidents/rikplz89rpml|Read more>"
+   "text": "🟢 *Cloudflare Status* · Resolved after 1 h 7 min · Minor impact\n*Issues with 1.1.1.1 public resolver in Canada*\n🕒 14 Nov 2026, 06:31 IST\nAffected: Recursive DNS\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/rikplz89rpml|Read more>"
   },
   {
    "cat": "incidents",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-14T00:52:36Z",
+ "updated": "2026-11-14T01:01:17Z",
  "version": 1
 }
