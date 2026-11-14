@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Investigating · Minor impact",
+   "kind": "Monitoring · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Increased Errors for R2 in Chicago*\n🕒 14 Nov 2026, 11:00 IST\nAffected: Chicago, United States - (ORD), R2\nCloudflare is aware of, and investigating an issue with R2. Customers in Chicago, IL, may see 503 errors when using R2. We are currently investigating this issue.\n<https://www.cloudflarestatus.com/incidents/a643zcsfc71q|Read more>"
+   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Increased errors for R2 and Tiered Cache*\n🕒 14 Nov 2026, 11:13 IST\nAffected: Chicago, United States - (ORD), R2, Newark, United States - (EWR)\nStarting at 05:00 UTC, a network connectivity issue between several Cloudflare data centers caused a small percentage of requests to fail. R2 customers may have seen HTTP 500 errors, and requests for content served…\n<https://www.cloudflarestatus.com/incidents/a643zcsfc71q|Read more>"
   },
   {
    "cat": "incidents",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-14T05:30:35Z",
+ "updated": "2026-11-14T05:43:38Z",
  "version": 1
 }
