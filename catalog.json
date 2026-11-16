@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Identified · Minor impact",
+   "kind": "Monitoring · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Errors creating predictions for some models*\n🕒 16 Nov 2026, 21:00 IST\nAffected: Replicate\nThe issue has been identified and a fix is being implemented.\n<https://www.cloudflarestatus.com/incidents/69855o2zz6kl|Read more>"
+   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Errors creating predictions for some models*\n🕒 16 Nov 2026, 21:22 IST\nAffected: Replicate\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/69855o2zz6kl|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-16T15:46:44Z",
+ "updated": "2026-11-16T15:52:49Z",
  "version": 1
 }
