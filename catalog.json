@@ -2,14 +2,14 @@
  "cards": [
   {
    "cat": "incidents",
-   "kind": "Investigating · Minor impact",
+   "kind": "Monitoring · Minor impact",
    "live": true,
    "note": "",
    "source": "GitHub Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*Incident with Pull Requests*\n🕒 16 Nov 2026, 21:25 IST\nAffected: Pull Requests, Actions\nWe’re seeing early signs of improvement in pull request merge times & workflow start times, but recovery is not yet confirmed. Users may still have difficulty merging pull requests. We’re reducing load on affected…\n<https://stspg.io/ljtn69jlt087|Read more>"
+   "text": "🟡 *GitHub Status* · Monitoring · Minor impact\n*Incident with Pull Requests*\n🕒 16 Nov 2026, 21:37 IST\nAffected: Pull Requests, Actions\nThe degradation affecting Actions and Pull Requests has been mitigated. We are monitoring to ensure stability.\n<https://stspg.io/ljtn69jlt087|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-16T16:00:00Z",
+ "updated": "2026-11-16T16:07:32Z",
  "version": 1
 }
