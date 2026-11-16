@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Investigating · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Errors creating predictions for some models*\n🕒 16 Nov 2026, 20:00 IST\nAffected: Replicate\nWe are currently investigating this issue. Cloudflare is aware of, and investigating, an issue affecting prediction creation for some models on Replicate. Customers may see requests fail with the error \"Failed to…\n<https://www.cloudflarestatus.com/incidents/69855o2zz6kl|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 1 h 42 min · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 1 h 42 min · Minor impact\n*Elevated number of errors in Bogotá*\n🕒 15 Nov 2026, 08:42 IST\nAffected: Bogotá, Colombia - (BOG)\nBetween 01:30-03:00 UTC customers reaching Bogotá, CO may have experienced an elevated latency and a number of 4xx errors.\n<https://www.cloudflarestatus.com/incidents/sozoycnmog2m|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 39 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 39 min · Minor impact\n*Elevated error rates on R2 buckets in West North America*\n🕒 15 Nov 2026, 01:50 IST\nAffected: R2\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/dpao7idy3zei|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-16T14:06:43Z",
+ "updated": "2026-11-16T14:30:20Z",
  "version": 1
 }
