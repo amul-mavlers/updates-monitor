@@ -9,7 +9,7 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🟡 *GitHub Status* · Monitoring · Minor impact\n*Incident with Pull Requests*\n🕒 16 Nov 2026, 21:37 IST\nAffected: Pull Requests, Actions\nThe degradation affecting Actions and Pull Requests has been mitigated. We are monitoring to ensure stability.\n<https://stspg.io/ljtn69jlt087|Read more>"
+   "text": "🟡 *GitHub Status* · Monitoring · Minor impact\n*Incident with Pull Requests*\n🕒 16 Nov 2026, 21:46 IST\nAffected: Pull Requests, Actions\nWe’ve mitigated the issue affecting pull request merges and Actions workflow start times by reducing load on affected systems. Pull Requests and Actions have recovered, and we’re continuing to monitor their performance.\n<https://stspg.io/ljtn69jlt087|Read more>"
   },
   {
    "cat": "incidents",
@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Monitoring · Minor impact",
+   "kind": "Resolved after 1 h 48 min · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Errors creating predictions for some models*\n🕒 16 Nov 2026, 21:22 IST\nAffected: Replicate\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/69855o2zz6kl|Read more>"
+   "text": "🟢 *Cloudflare Status* · Resolved after 1 h 48 min · Minor impact\n*Errors creating predictions for some models*\n🕒 16 Nov 2026, 21:49 IST\nAffected: Replicate\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/69855o2zz6kl|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-16T16:07:32Z",
+ "updated": "2026-11-16T16:19:08Z",
  "version": 1
 }
