@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Investigating · Minor impact",
+   "kind": "Identified · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Errors creating predictions for some models*\n🕒 16 Nov 2026, 20:00 IST\nAffected: Replicate\nWe are currently investigating this issue. Cloudflare is aware of, and investigating, an issue affecting prediction creation for some models on Replicate. Customers may see requests fail with the error \"Failed to…\n<https://www.cloudflarestatus.com/incidents/69855o2zz6kl|Read more>"
+   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Errors creating predictions for some models*\n🕒 16 Nov 2026, 21:00 IST\nAffected: Replicate\nThe issue has been identified and a fix is being implemented.\n<https://www.cloudflarestatus.com/incidents/69855o2zz6kl|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-16T15:03:22Z",
+ "updated": "2026-11-16T15:30:10Z",
  "version": 1
 }
