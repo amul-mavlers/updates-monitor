@@ -253,7 +253,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Laravel News* · Laravel\n*Laravel AI SDK 1.4 Lets Agents Recover From Tool Failures*\n🕒 13 Nov 2026, 05:09 IST\nLaravel AI SDK 1.4 sends tool exceptions back to the model instead of ending the run, and lets agent fakes resume tool approvals in tests. The post Laravel AI SDK 1.4 Lets Agents Recover From Tool Failures appeared…\n<https://laravel-news.com/laravel-ai-sdk-1-4?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
+   "text": "🆕 *Laravel News* · Laravel\n*Session Replay for Laravel: Self-Hosted Browser Recordings*\n🕒 13 Nov 2026, 05:11 IST\nSession Replay records browser sessions in your Laravel app with rrweb, stores them on your own disk, and marks errors and failed Livewire requests. The post Session Replay for Laravel: Self-Hosted Browser Recordings…\n<https://laravel-news.com/laravel-session-replay?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
   },
   {
    "cat": "news",
@@ -264,7 +264,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Laravel News* · Laravel\n*Laravel Read Replicas: Check if a Replica Has Caught Up*\n🕒 12 Nov 2026, 04:34 IST\nLaravel 13.40 adds commit IDs to MySQL, MariaDB, and PostgreSQL connections, so you can check whether a read replica has a write before you read from it. The post Laravel Read Replicas: Check if a Replica Has Caught Up…\n<https://laravel-news.com/laravel-read-replica-commit-ids?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
+   "text": "🆕 *Laravel News* · Laravel\n*Laravel AI SDK 1.4 Lets Agents Recover From Tool Failures*\n🕒 13 Nov 2026, 05:09 IST\nLaravel AI SDK 1.4 sends tool exceptions back to the model instead of ending the run, and lets agent fakes resume tool approvals in tests. The post Laravel AI SDK 1.4 Lets Agents Recover From Tool Failures appeared…\n<https://laravel-news.com/laravel-ai-sdk-1-4?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
   },
   {
    "cat": "news",
