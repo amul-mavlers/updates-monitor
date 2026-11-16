@@ -9,7 +9,7 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*Incident with Pull Requests*\n🕒 16 Nov 2026, 17:29 IST\nAffected: Pull Requests\nWe are investigating reports of degraded performance for Pull Requests\n<https://stspg.io/ljtn69jlt087|Read more>"
+   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*Incident with Pull Requests*\n🕒 16 Nov 2026, 17:30 IST\nAffected: Pull Requests\nWe’re investigating elevated timeouts when merging pull requests. Some users may be unable to merge pull requests successfully; timeouts are occurring at a higher rate than usual. We’re working to identify the cause…\n<https://stspg.io/ljtn69jlt087|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-16T11:59:41Z",
+ "updated": "2026-11-16T12:00:25Z",
  "version": 1
 }
