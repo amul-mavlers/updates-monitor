@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Investigating · Minor impact",
+   "kind": "Identified · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Turnstile verification failures*\n🕒 17 Nov 2026, 15:54 IST\nAffected: Turnstile\nWe are investigating reports of Turnstile verification failures affecting some users with browser fingerprinting protection enabled, including Helium. We are assessing the impact and potential mitigations.\n<https://www.cloudflarestatus.com/incidents/5831aw44ia7i|Read more>"
+   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Turnstile verification failures*\n🕒 17 Nov 2026, 16:12 IST\nAffected: Turnstile\nThe issue has been identified and a fix is being implemented.\n<https://www.cloudflarestatus.com/incidents/5831aw44ia7i|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-17T10:24:59Z",
+ "updated": "2026-11-17T10:42:45Z",
  "version": 1
 }
