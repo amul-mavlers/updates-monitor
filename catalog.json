@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Investigating · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Turnstile verification failures*\n🕒 17 Nov 2026, 15:54 IST\nAffected: Turnstile\nWe are investigating reports of Turnstile verification failures affecting some users with browser fingerprinting protection enabled, including Helium. We are assessing the impact and potential mitigations.\n<https://www.cloudflarestatus.com/incidents/5831aw44ia7i|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 4 h 1 min · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 4 h 1 min · Minor impact\n*Elevated number of 52x origin connectivity errors in Seoul*\n🕒 17 Nov 2026, 14:21 IST\nBetween 04:50 - 05:50 UTC 17th November, customers in Seoul may have experienced an elevated number of 52x origin connectivity errors. This is now resolved.\n<https://www.cloudflarestatus.com/incidents/1nqok7v173qg|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 1 h 7 min",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 1 h 7 min\n*Network Performance Issues in Ashburn, US*\n🕒 17 Nov 2026, 07:18 IST\nAffected: Ashburn, United States - (IAD)\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/3l6q71x7a37k|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-17T08:51:03Z",
+ "updated": "2026-11-17T10:24:59Z",
  "version": 1
 }
