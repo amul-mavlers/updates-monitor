@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Identified · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Errors and stalled predictions on some models*\n🕒 17 Nov 2026, 22:02 IST\nAffected: Replicate\nThe issue has been identified and a fix is being implemented. Current impact: prediction requests for some models may return HTTP 500 errors, and some predictions may stay in a processing state. Customers using the API…\n<https://www.cloudflarestatus.com/incidents/sv9tnfpjiojf|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 1 h 55 min · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 1 h 55 min · Minor impact\n*Elevated number of 5xx and 499 errors*\n🕒 17 Nov 2026, 21:20 IST\nBetween 13:55-14:35 UTC customers reaching Minneapolis, MN and Saint Louis, MO would have experienced an elevated number of 499 and 5xx errors.\n<https://www.cloudflarestatus.com/incidents/1ip2m5rvk7vb|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Investigating · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Errors and stalled predictions on some models*\n🕒 17 Nov 2026, 20:32 IST\nAffected: Replicate\nWe are currently investigating this issue. Cloudflare is aware of, and investigating, an issue affecting predictions for some models on Replicate. Customers may see prediction requests return HTTP 500 errors, and some…\n<https://www.cloudflarestatus.com/incidents/sv9tnfpjiojf|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-17T16:04:13Z",
+ "updated": "2026-11-17T16:32:13Z",
  "version": 1
 }
