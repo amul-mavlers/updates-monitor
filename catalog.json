@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Identified · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Network Performance Issues in Ashburn, US*\n🕒 17 Nov 2026, 06:11 IST\nAffected: Ashburn, United States - (IAD)\nThe issue has been identified and a fix is being implemented.\n<https://www.cloudflarestatus.com/incidents/3l6q71x7a37k|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 1 h 26 min · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 1 h 26 min · Minor impact\n*Network Performance Issues in Montreal, Canada*\n🕒 17 Nov 2026, 03:06 IST\nAffected: Montréal, Canada - (YUL)\nCloudflare identified an issue that affected network performance in Montreal, Canada, between 20:10 and 20:40 UTC on November 16, 2026. During this time, customers may have experienced increased HTTP 499 errors and…\n<https://www.cloudflarestatus.com/incidents/wscmdyvmpb5d|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 1 h 48 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 1 h 48 min · Minor impact\n*Errors creating predictions for some models*\n🕒 16 Nov 2026, 21:49 IST\nAffected: Replicate\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/69855o2zz6kl|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-16T21:36:50Z",
+ "updated": "2026-11-17T00:41:12Z",
  "version": 1
 }
