@@ -209,7 +209,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Shopify Changelog* · Changelog\n*Updated B2B location access in the Customer Account API*\n🕒 17 Nov 2026, 22:30 IST\nWe've changed what B2B customers can read on all versions of the Customer Account API. Customers now read only the company data and the orders for companies that they belong to. Company location access The schema…\n<https://shopify.dev/changelog/updated-b2b-location-access-in-the-customer-account-api|Read more>"
+   "text": "🆕 *Shopify Changelog* · Changelog\n*Amazon EventBridge webhook payload size limit increased to 1 MB*\n🕒 17 Nov 2026, 22:30 IST\nYou can now receive webhook and Events payloads up to 1 MB (1,000,000 bytes) through Amazon EventBridge, up from 256 KB. This increase applies automatically across all API versions, and you don't need to update your…\n<https://shopify.dev/changelog/amazon-eventbridge-webhook-payload-size-limit-increased-to-1-mb|Read more>"
   },
   {
    "cat": "news",
@@ -220,7 +220,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Shopify Changelog* · Changelog\n*Opt in to Admin API token expiry in the Dev Dashboard*\n🕒 16 Nov 2026, 21:30 IST\nYou can now turn on Admin API token expiry from your app’s Settings page in the Dev Dashboard. This optional setting lets you test your migration to expiring Admin API tokens before enforcement begins for existing…\n<https://shopify.dev/changelog/opt-in-to-admin-api-token-expiry-in-the-dev-dashboard|Read more>"
+   "text": "🆕 *Shopify Changelog* · Changelog\n*Updated B2B location access in the Customer Account API*\n🕒 17 Nov 2026, 22:30 IST\nWe've changed what B2B customers can read on all versions of the Customer Account API. Customers now read only the company data and the orders for companies that they belong to. Company location access The schema…\n<https://shopify.dev/changelog/updated-b2b-location-access-in-the-customer-account-api|Read more>"
   },
   {
    "cat": "security",
