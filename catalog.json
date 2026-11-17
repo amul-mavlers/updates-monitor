@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Investigating · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*R2 elevated errors and timeouts for requests from South America*\n🕒 18 Nov 2026, 01:35 IST\nAffected: R2\nWe are investigating elevated errors and read timeouts affecting R2 requests originating from South America (impacting datacenters such as GRU, GIG, EZE, and SCL). Our team is actively working to identify and resolve…\n<https://www.cloudflarestatus.com/incidents/gcn9xop0f7zm|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 47 min · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 47 min · Minor impact\n*Network performance issues in Los Angeles (LAX) and Frankfurt (FRA) datacenters*\n🕒 17 Nov 2026, 23:30 IST\nAffected: Network\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/du63c25qjgjs|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 6 h 12 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 6 h 12 min · Minor impact\n*Turnstile verification failures*\n🕒 17 Nov 2026, 22:07 IST\nAffected: Turnstile\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/5831aw44ia7i|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-17T18:00:07Z",
+ "updated": "2026-11-17T20:05:29Z",
  "version": 1
 }
