@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Resolved after 4 h 1 min · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🟢 *Cloudflare Status* · Resolved after 4 h 1 min · Minor impact\n*Elevated number of 52x origin connectivity errors in Seoul*\n🕒 17 Nov 2026, 14:21 IST\nBetween 04:50 - 05:50 UTC 17th November, customers in Seoul may have experienced an elevated number of 52x origin connectivity errors. This is now resolved.\n<https://www.cloudflarestatus.com/incidents/1nqok7v173qg|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 1 h 7 min",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 1 h 7 min\n*Network Performance Issues in Ashburn, US*\n🕒 17 Nov 2026, 07:18 IST\nAffected: Ashburn, United States - (IAD)\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/3l6q71x7a37k|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 1 h 26 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 1 h 26 min · Minor impact\n*Network Performance Issues in Montreal, Canada*\n🕒 17 Nov 2026, 03:06 IST\nAffected: Montréal, Canada - (YUL)\nCloudflare identified an issue that affected network performance in Montreal, Canada, between 20:10 and 20:40 UTC on November 16, 2026. During this time, customers may have experienced increased HTTP 499 errors and…\n<https://www.cloudflarestatus.com/incidents/wscmdyvmpb5d|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-17T01:48:06Z",
+ "updated": "2026-11-17T08:51:03Z",
  "version": 1
 }
