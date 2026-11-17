@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Identified · Minor impact",
+   "kind": "Monitoring · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*R2 elevated errors and timeouts for requests from South America*\n🕒 18 Nov 2026, 01:43 IST\nAffected: R2\nThe issue has been identified and a fix is being implemented.\n<https://www.cloudflarestatus.com/incidents/gcn9xop0f7zm|Read more>"
+   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*R2 elevated errors and timeouts for requests from South America*\n🕒 18 Nov 2026, 02:23 IST\nAffected: R2\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/gcn9xop0f7zm|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-17T20:13:36Z",
+ "updated": "2026-11-17T20:53:20Z",
  "version": 1
 }
