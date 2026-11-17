@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Monitoring · Minor impact",
+   "kind": "Resolved after 1 h 2 min · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Cloudflare One Gateway traffic unable to connect to Cloudflare domains that are regionalized*\n🕒 17 Nov 2026, 20:13 IST\nAffected: Zero Trust, Data Localization Suite, Cloudflare One Client\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/tawn3zx7wh0z|Read more>"
+   "text": "🟢 *Cloudflare Status* · Resolved after 1 h 2 min · Minor impact\n*Cloudflare One Gateway traffic unable to connect to Cloudflare domains that are regionalized*\n🕒 17 Nov 2026, 20:26 IST\nAffected: Zero Trust, Data Localization Suite, Cloudflare One Client\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/tawn3zx7wh0z|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-17T14:43:52Z",
+ "updated": "2026-11-17T14:56:52Z",
  "version": 1
 }
