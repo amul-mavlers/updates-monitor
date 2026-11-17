@@ -217,6 +217,7 @@
   ],
   "_health": {},
   "Cloudflare Status": [
+    "t7rp8jaev5vm|2026-11-17T17:00:13.344Z",
     "5831aw44ia7i|2026-11-17T16:37:10.717Z",
     "sv9tnfpjiojf|2026-11-17T16:32:13.057Z",
     "1ip2m5rvk7vb|2026-11-17T15:50:54.167Z",
@@ -1508,6 +1509,7 @@
     "http://php.net/releases/8_2_35.php"
   ],
   "Shopify Changelog": [
+    "https://shopify.dev/changelog/updated-b2b-location-access-in-the-customer-account-api",
     "https://shopify.dev/changelog/opt-in-to-admin-api-token-expiry-in-the-dev-dashboard",
     "https://shopify.dev/changelog/app-security-updates-thank-you-plus-what-s-required-next",
     "https://shopify.dev/changelog/checkout-function-cart-deliverableline-inputs-now-model-cost-and-link-to-their-relevant-cart-line",

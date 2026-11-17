@@ -209,18 +209,18 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Shopify Changelog* · Changelog\n*Opt in to Admin API token expiry in the Dev Dashboard*\n🕒 16 Nov 2026, 21:30 IST\nYou can now turn on Admin API token expiry from your app’s Settings page in the Dev Dashboard. This optional setting lets you test your migration to expiring Admin API tokens before enforcement begins for existing…\n<https://shopify.dev/changelog/opt-in-to-admin-api-token-expiry-in-the-dev-dashboard|Read more>"
+   "text": "🆕 *Shopify Changelog* · Changelog\n*Updated B2B location access in the Customer Account API*\n🕒 17 Nov 2026, 22:30 IST\nWe've changed what B2B customers can read on all versions of the Customer Account API. Customers now read only the company data and the orders for companies that they belong to. Company location access The schema…\n<https://shopify.dev/changelog/updated-b2b-location-access-in-the-customer-account-api|Read more>"
   },
   {
-   "cat": "security",
+   "cat": "news",
    "kind": "Changelog",
    "live": true,
    "note": "",
    "source": "Shopify Changelog",
    "spaces": [
-    "Downtime"
+    "News"
    ],
-   "text": "🆕 *Shopify Changelog* · Changelog\n*App security updates: Thank you, plus what's required next*\n🕒 14 Nov 2026, 05:30 IST\nThanks to you, we've already seen the vast majority of apps that run bulk operations adopt an IP allowlist. That's a big step toward keeping merchants protected heading into the busiest weeks of the year. Here's what's…\n<https://shopify.dev/changelog/app-security-updates-thank-you-plus-what-s-required-next|Read more>"
+   "text": "🆕 *Shopify Changelog* · Changelog\n*Opt in to Admin API token expiry in the Dev Dashboard*\n🕒 16 Nov 2026, 21:30 IST\nYou can now turn on Admin API token expiry from your app’s Settings page in the Dev Dashboard. This optional setting lets you test your migration to expiring Admin API tokens before enforcement begins for existing…\n<https://shopify.dev/changelog/opt-in-to-admin-api-token-expiry-in-the-dev-dashboard|Read more>"
   },
   {
    "cat": "security",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-17T16:37:10Z",
+ "updated": "2026-11-17T17:00:00Z",
  "version": 1
 }
