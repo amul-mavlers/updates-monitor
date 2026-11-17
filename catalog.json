@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Identified · Minor impact",
+   "kind": "Resolved after 47 min · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Network performance issues in Los Angeles (LAX) and Frankfurt (FRA) datacenters*\n🕒 17 Nov 2026, 22:44 IST\nAffected: Network\nThe issue has been identified and a fix is being implemented.\n<https://www.cloudflarestatus.com/incidents/du63c25qjgjs|Read more>"
+   "text": "🟢 *Cloudflare Status* · Resolved after 47 min · Minor impact\n*Network performance issues in Los Angeles (LAX) and Frankfurt (FRA) datacenters*\n🕒 17 Nov 2026, 23:30 IST\nAffected: Network\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/du63c25qjgjs|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-17T17:14:16Z",
+ "updated": "2026-11-17T18:00:07Z",
  "version": 1
 }
