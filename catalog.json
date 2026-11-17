@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Investigating · Minor impact",
+   "kind": "Identified · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*R2 elevated errors and timeouts for requests from South America*\n🕒 18 Nov 2026, 01:35 IST\nAffected: R2\nWe are investigating elevated errors and read timeouts affecting R2 requests originating from South America (impacting datacenters such as GRU, GIG, EZE, and SCL). Our team is actively working to identify and resolve…\n<https://www.cloudflarestatus.com/incidents/gcn9xop0f7zm|Read more>"
+   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*R2 elevated errors and timeouts for requests from South America*\n🕒 18 Nov 2026, 01:43 IST\nAffected: R2\nThe issue has been identified and a fix is being implemented.\n<https://www.cloudflarestatus.com/incidents/gcn9xop0f7zm|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-17T20:05:29Z",
+ "updated": "2026-11-17T20:13:36Z",
  "version": 1
 }
