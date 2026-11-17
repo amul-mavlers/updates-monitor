@@ -217,6 +217,7 @@
   ],
   "_health": {},
   "Cloudflare Status": [
+    "1ip2m5rvk7vb|2026-11-17T15:50:54.167Z",
     "sv9tnfpjiojf|2026-11-17T15:02:47.698Z",
     "tawn3zx7wh0z|2026-11-17T14:56:52.677Z",
     "tawn3zx7wh0z|2026-11-17T14:43:52.271Z",
@@ -2372,6 +2373,7 @@
     "https://developer.woocommerce.com/?p=8771533"
   ],
   "Laravel News": [
+    "https://laravel-news.com/durable-workflow-laravel",
     "https://laravel-news.com/laravel-session-replay",
     "https://laravel-news.com/laravel-ai-sdk-1-4",
     "https://laravel-news.com/laravel-read-replica-commit-ids",

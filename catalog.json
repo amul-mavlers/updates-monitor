@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Resolved after 1 h 55 min · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🟢 *Cloudflare Status* · Resolved after 1 h 55 min · Minor impact\n*Elevated number of 5xx and 499 errors*\n🕒 17 Nov 2026, 21:20 IST\nBetween 13:55-14:35 UTC customers reaching Minneapolis, MN and Saint Louis, MO would have experienced an elevated number of 499 and 5xx errors.\n<https://www.cloudflarestatus.com/incidents/1ip2m5rvk7vb|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Investigating · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Errors and stalled predictions on some models*\n🕒 17 Nov 2026, 20:32 IST\nAffected: Replicate\nWe are currently investigating this issue. Cloudflare is aware of, and investigating, an issue affecting predictions for some models on Replicate. Customers may see prediction requests return HTTP 500 errors, and some…\n<https://www.cloudflarestatus.com/incidents/sv9tnfpjiojf|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 1 h 2 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 1 h 2 min · Minor impact\n*Cloudflare One Gateway traffic unable to connect to Cloudflare domains that are regionalized*\n🕒 17 Nov 2026, 20:26 IST\nAffected: Zero Trust, Data Localization Suite, Cloudflare One Client\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/tawn3zx7wh0z|Read more>"
   },
   {
    "cat": "incidents",
@@ -253,7 +253,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Laravel News* · Laravel\n*Session Replay for Laravel: Self-Hosted Browser Recordings*\n🕒 13 Nov 2026, 05:11 IST\nSession Replay records browser sessions in your Laravel app with rrweb, stores them on your own disk, and marks errors and failed Livewire requests. The post Session Replay for Laravel: Self-Hosted Browser Recordings…\n<https://laravel-news.com/laravel-session-replay?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
+   "text": "🆕 *Laravel News* · Laravel\n*Durable Workflow: Long-Running Workflows for Laravel*\n🕒 16 Nov 2026, 08:34 IST\nDurable Workflow runs long-running Laravel workflows on your own database, queues, and cache. Learn how it records progress and coordinates background work. The post Durable Workflow: Long-Running Workflows for Laravel…\n<https://laravel-news.com/durable-workflow-laravel?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
   },
   {
    "cat": "news",
@@ -264,7 +264,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Laravel News* · Laravel\n*Laravel AI SDK 1.4 Lets Agents Recover From Tool Failures*\n🕒 13 Nov 2026, 05:09 IST\nLaravel AI SDK 1.4 sends tool exceptions back to the model instead of ending the run, and lets agent fakes resume tool approvals in tests. The post Laravel AI SDK 1.4 Lets Agents Recover From Tool Failures appeared…\n<https://laravel-news.com/laravel-ai-sdk-1-4?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
+   "text": "🆕 *Laravel News* · Laravel\n*Session Replay for Laravel: Self-Hosted Browser Recordings*\n🕒 13 Nov 2026, 05:11 IST\nSession Replay records browser sessions in your Laravel app with rrweb, stores them on your own disk, and marks errors and failed Livewire requests. The post Session Replay for Laravel: Self-Hosted Browser Recordings…\n<https://laravel-news.com/laravel-session-replay?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
   },
   {
    "cat": "news",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-17T15:02:47Z",
+ "updated": "2026-11-17T15:50:54Z",
  "version": 1
 }
