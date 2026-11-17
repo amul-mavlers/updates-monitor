@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Investigating · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Issues with Durable Objects and Dependent Services*\n🕒 18 Nov 2026, 03:26 IST\nAffected: Durable Objects, Stream, Containers\nWe are investigating reports of elevated timeout rates and performance degradation affecting Durable Objects. This may impact dependent services, including Stream and Containers. Our team is actively investigating, and…\n<https://www.cloudflarestatus.com/incidents/ylj5po752g6h|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Identified · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Errors and stalled predictions on some models*\n🕒 18 Nov 2026, 03:23 IST\nAffected: Replicate\nThe issue has been identified and a fix is being implemented. Current impact: predictions on OpenAI models are back to normal. Predictions on other models may still return HTTP 500 errors or stay in a processing state…\n<https://www.cloudflarestatus.com/incidents/sv9tnfpjiojf|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Monitoring · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*R2 elevated errors and timeouts for requests from South America*\n🕒 18 Nov 2026, 02:23 IST\nAffected: R2\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/gcn9xop0f7zm|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-17T21:53:51Z",
+ "updated": "2026-11-17T21:56:07Z",
  "version": 1
 }
