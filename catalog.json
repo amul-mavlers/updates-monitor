@@ -201,15 +201,15 @@
    "text": "🆕 *PHP Releases* · New release\n*PHP 8.2.35 released!*\n🕒 21 Oct 2026, 05:30 IST\nThere is a new PHP release in town!\n<http://php.net/releases/8_2_35.php|Read more>"
   },
   {
-   "cat": "news",
+   "cat": "security",
    "kind": "Changelog",
    "live": true,
    "note": "",
    "source": "Shopify Changelog",
    "spaces": [
-    "News"
+    "Downtime"
    ],
-   "text": "🆕 *Shopify Changelog* · Changelog\n*Amazon EventBridge webhook payload size limit increased to 1 MB*\n🕒 17 Nov 2026, 22:30 IST\nYou can now receive webhook and Events payloads up to 1 MB (1,000,000 bytes) through Amazon EventBridge, up from 256 KB. This increase applies automatically across all API versions, and you don't need to update your…\n<https://shopify.dev/changelog/amazon-eventbridge-webhook-payload-size-limit-increased-to-1-mb|Read more>"
+   "text": "🆕 *Shopify Changelog* · Changelog\n*Admin-created custom apps now appear in the Dev Dashboard*\n🕒 18 Nov 2026, 02:45 IST\nCustom apps created in the Shopify admin are moving to the Dev Dashboard, where you can view their logs and set up an IP allowlist. Existing integrations keep working. What changed Custom apps that merchants or staff…\n<https://shopify.dev/changelog/admin-created-custom-apps-are-now-built-and-managed-in-the-dev-dashboard|Read more>"
   },
   {
    "cat": "news",
@@ -220,7 +220,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Shopify Changelog* · Changelog\n*Updated B2B location access in the Customer Account API*\n🕒 17 Nov 2026, 22:30 IST\nWe've changed what B2B customers can read on all versions of the Customer Account API. Customers now read only the company data and the orders for companies that they belong to. Company location access The schema…\n<https://shopify.dev/changelog/updated-b2b-location-access-in-the-customer-account-api|Read more>"
+   "text": "🆕 *Shopify Changelog* · Changelog\n*Amazon EventBridge webhook payload size limit increased to 1 MB*\n🕒 17 Nov 2026, 22:30 IST\nYou can now receive webhook and Events payloads up to 1 MB (1,000,000 bytes) through Amazon EventBridge, up from 256 KB. This increase applies automatically across all API versions, and you don't need to update your…\n<https://shopify.dev/changelog/amazon-eventbridge-webhook-payload-size-limit-increased-to-1-mb|Read more>"
   },
   {
    "cat": "security",

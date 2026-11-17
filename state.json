@@ -1520,6 +1520,7 @@
     "http://php.net/releases/8_2_35.php"
   ],
   "Shopify Changelog": [
+    "https://shopify.dev/changelog/admin-created-custom-apps-are-now-built-and-managed-in-the-dev-dashboard",
     "https://shopify.dev/changelog/amazon-eventbridge-webhook-payload-size-limit-increased-to-1-mb",
     "https://shopify.dev/changelog/updated-b2b-location-access-in-the-customer-account-api",
     "https://shopify.dev/changelog/opt-in-to-admin-api-token-expiry-in-the-dev-dashboard",
