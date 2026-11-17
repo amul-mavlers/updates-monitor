@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Identified · Minor impact",
+   "kind": "Monitoring · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Cloudflare One Gateway traffic unable to connect to Cloudflare domains that are regionalized*\n🕒 17 Nov 2026, 19:24 IST\nAffected: Zero Trust, Data Localization Suite, Cloudflare One Client\nWe are investigating reports of connection drops and TCP resets affecting requests routed through Cloudflare WARP and Gateway that aims for Cloudflare Regional Services hostnames and domains. Engineering has identified…\n<https://www.cloudflarestatus.com/incidents/tawn3zx7wh0z|Read more>"
+   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Cloudflare One Gateway traffic unable to connect to Cloudflare domains that are regionalized*\n🕒 17 Nov 2026, 20:13 IST\nAffected: Zero Trust, Data Localization Suite, Cloudflare One Client\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/tawn3zx7wh0z|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-17T13:54:19Z",
+ "updated": "2026-11-17T14:43:52Z",
  "version": 1
 }
