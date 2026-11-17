@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Investigating · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Errors and stalled predictions on some models*\n🕒 17 Nov 2026, 20:32 IST\nAffected: Replicate\nWe are currently investigating this issue. Cloudflare is aware of, and investigating, an issue affecting predictions for some models on Replicate. Customers may see prediction requests return HTTP 500 errors, and some…\n<https://www.cloudflarestatus.com/incidents/sv9tnfpjiojf|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 1 h 2 min · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 1 h 2 min · Minor impact\n*Cloudflare One Gateway traffic unable to connect to Cloudflare domains that are regionalized*\n🕒 17 Nov 2026, 20:26 IST\nAffected: Zero Trust, Data Localization Suite, Cloudflare One Client\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/tawn3zx7wh0z|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Identified · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Turnstile verification failures*\n🕒 17 Nov 2026, 16:12 IST\nAffected: Turnstile\nThe issue has been identified and a fix is being implemented.\n<https://www.cloudflarestatus.com/incidents/5831aw44ia7i|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-17T14:56:52Z",
+ "updated": "2026-11-17T15:02:47Z",
  "version": 1
 }
