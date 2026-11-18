@@ -31,7 +31,7 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Network Performance Issues in Paris*\n🕒 18 Nov 2026, 09:13 IST\nAffected: Network\nThe issue has been identified and a fix is being implemented.\n<https://www.cloudflarestatus.com/incidents/k3r9i5tbre4i|Read more>"
+   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Network Performance Issues in Paris*\n🕒 18 Nov 2026, 09:19 IST\nAffected: Network, Paris, France - (CDG)\nWe are continuing to work on a fix for the issue.\n<https://www.cloudflarestatus.com/incidents/k3r9i5tbre4i|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-18T03:43:02Z",
+ "updated": "2026-11-18T03:49:05Z",
  "version": 1
 }
