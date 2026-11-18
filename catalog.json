@@ -2,14 +2,14 @@
  "cards": [
   {
    "cat": "incidents",
-   "kind": "Investigating · Minor impact",
+   "kind": "Monitoring · Minor impact",
    "live": true,
    "note": "",
    "source": "GitHub Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*Degraded Availability for MAI Code 2 Flash in Copilot*\n🕒 18 Nov 2026, 14:30 IST\nAffected: Copilot AI Model Providers\nWe are experiencing degraded availability for the MAI Code 2 Flash model in Copilot products and IDE surfaces. This is due to an issue with an upstream model provider. While we work with them to resolve the issue, we…\n<https://stspg.io/3sbmvyy2ctyx|Read more>"
+   "text": "🟡 *GitHub Status* · Monitoring · Minor impact\n*Degraded Availability for MAI Code 2 Flash in Copilot*\n🕒 18 Nov 2026, 14:43 IST\nAffected: Copilot AI Model Providers\nThe degradation affecting Copilot AI Model Providers has been mitigated. We are monitoring to ensure stability.\n<https://stspg.io/3sbmvyy2ctyx|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-18T09:00:42Z",
+ "updated": "2026-11-18T09:13:22Z",
  "version": 1
 }
