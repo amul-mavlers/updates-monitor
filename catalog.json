@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Identified · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Degraded connectivity between Europe and Asia Pacific*\n🕒 19 Nov 2026, 05:18 IST\nAffected: Cache Reserve, D1, R2\nThe issue has been identified and a fix is being implemented.\n<https://www.cloudflarestatus.com/incidents/f33c51cw0ojd|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 2 h 47 min · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 2 h 47 min · Minor impact\n*Increased latency on Analytics API (GraphQL) queries*\n🕒 19 Nov 2026, 04:52 IST\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/9zpa7own49hb|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Investigating · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Elevated R2 and D1 error rates in EU and Asia Pacific region*\n🕒 19 Nov 2026, 03:56 IST\nAffected: D1, R2\nRequests to R2 and D1 from the EU and Asia Pacific regions may experience elevated error rates. We are investigating the issue and working to identify the cause. Further updates will be provided as more information…\n<https://www.cloudflarestatus.com/incidents/f33c51cw0ojd|Read more>"
   },
   {
    "cat": "incidents",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-18T23:22:32Z",
+ "updated": "2026-11-18T23:48:52Z",
  "version": 1
 }
