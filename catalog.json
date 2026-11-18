@@ -2,6 +2,17 @@
  "cards": [
   {
    "cat": "incidents",
+   "kind": "Investigating · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "GitHub Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*Degraded Availability for MAI Code 2 Flash in Copilot*\n🕒 18 Nov 2026, 14:30 IST\nAffected: Copilot AI Model Providers\nWe are experiencing degraded availability for the MAI Code 2 Flash model in Copilot products and IDE surfaces. This is due to an issue with an upstream model provider. While we work with them to resolve the issue, we…\n<https://stspg.io/3sbmvyy2ctyx|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 4 h 26 min · Minor impact",
    "live": true,
    "note": "",
@@ -10,17 +21,6 @@
     "Downtime"
    ],
    "text": "🟢 *GitHub Status* · Resolved after 4 h 26 min · Minor impact\n*Incident with Pull Requests*\n🕒 16 Nov 2026, 21:56 IST\nAffected: Pull Requests, Actions\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/ljtn69jlt087|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 1 h 14 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "GitHub Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *GitHub Status* · Resolved after 1 h 14 min · Minor impact\n*Copilot experiencing degraded model availability for some GPT models*\n🕒 14 Nov 2026, 02:57 IST\nAffected: Copilot AI Model Providers\nBetween 19:05 and 21:27 UTC on November 13, 2026, GitHub Copilot experienced degradation affecting GPT-6.1 Terra, GPT-5.6 Sol, and GPT-6 Luna models. Users encountered elevated error rates when using these models. The…\n<https://stspg.io/cppzsh0j19vy|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-18T08:46:42Z",
+ "updated": "2026-11-18T09:00:42Z",
  "version": 1
 }
