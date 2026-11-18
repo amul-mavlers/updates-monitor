@@ -298,7 +298,7 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🆕 *Patchstack* · Security blog\n*Kinsta now protects every WordPress site it hosts with Patchstack*\n🕒 12 Nov 2026, 21:40 IST\nEvery WordPress site on Kinsta is now protected by Patchstack, automatically and at no extra cost. In its first weeks, that protection blocked more than 1.5 million exploitation attempts across more than 68,000 Kinsta…\n<https://patchstack.com/articles/kinsta-now-protects-every-wordpress-site-it-hosts-with-patchstack/|Read more>"
+   "text": "🆕 *Patchstack* · Security blog\n*WordPress 7.1.5 Security Release*\n🕒 18 Nov 2026, 23:47 IST\nWordPress 7.1.5 landed on 18 November 2026. It is a security release with twenty fixes, eighteen of which we have added to the Patchstack database as vulnerabilities; the remaining two are hardening changes with no…\n<https://patchstack.com/articles/wordpress-7-1-5-security-release/|Read more>"
   },
   {
    "cat": "security",
@@ -309,7 +309,7 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🆕 *Patchstack* · Security blog\n*WordPress doesn’t ship Brotli. It’s still exposed to CVE-2026-111497*\n🕒 30 Oct 2026, 15:23 IST\nOne unauthenticated POST to xmlrpc.php can take down a PHP worker on a stock WordPress install, and there is nothing unusual about the request that does it. The attacker sends a pingback whose source URL points at a…\n<https://patchstack.com/articles/wordpress-doesnt-ship-brotli-its-still-exposed-to-cve-2026-111497/|Read more>"
+   "text": "🆕 *Patchstack* · Security blog\n*Kinsta now protects every WordPress site it hosts with Patchstack*\n🕒 12 Nov 2026, 21:40 IST\nEvery WordPress site on Kinsta is now protected by Patchstack, automatically and at no extra cost. In its first weeks, that protection blocked more than 1.5 million exploitation attempts across more than 68,000 Kinsta…\n<https://patchstack.com/articles/kinsta-now-protects-every-wordpress-site-it-hosts-with-patchstack/|Read more>"
   },
   {
    "cat": "incidents",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-18T17:08:59Z",
+ "updated": "2026-11-18T18:17:36Z",
  "version": 1
 }
