@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Monitoring · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Errors and stalled predictions on some models*\n🕒 18 Nov 2026, 08:26 IST\nAffected: Replicate\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/sv9tnfpjiojf|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 1 h 29 min · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 1 h 29 min · Minor impact\n*Cloudflare Access Issue*\n🕒 18 Nov 2026, 08:09 IST\nAffected: Access\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/0jozucwnpzy0|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 2 h 21 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 2 h 21 min · Minor impact\n*Issues with Durable Objects and Dependent Services*\n🕒 18 Nov 2026, 05:47 IST\nAffected: Durable Objects, Stream, Containers\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/ylj5po752g6h|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-18T02:39:55Z",
+ "updated": "2026-11-18T02:56:06Z",
  "version": 1
 }
