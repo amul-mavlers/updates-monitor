@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Resolved after 1 h 12 min · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🟢 *Cloudflare Status* · Resolved after 1 h 12 min · Minor impact\n*Network Performance Issues in Paris*\n🕒 18 Nov 2026, 10:21 IST\nAffected: Network, Cloud Network Interconnect (CNI), Paris, France - (CDG)\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/k3r9i5tbre4i|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 1 h 34 min · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 1 h 34 min · Minor impact\n*Elevated 5xx error rates and latency in Mumbai*\n🕒 18 Nov 2026, 09:35 IST\nAffected: Mumbai, India - (BOM)\nBetween 02:31-03:04 UTC on November 18, a subset of customers reaching Mumbai, IN, may have experienced an elevated number of 5xx errors and increased latency. This has been resolved.\n<https://www.cloudflarestatus.com/incidents/pi6wgeh78wsn|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Monitoring · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Network Performance Issues in Paris*\n🕒 18 Nov 2026, 09:27 IST\nAffected: Network, Cloud Network Interconnect (CNI), Paris, France - (CDG)\nA fix has been implemented and we are monitoring the results. This incident impacted Cloudflare Network Interconnect (CNI) only.\n<https://www.cloudflarestatus.com/incidents/k3r9i5tbre4i|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-18T04:05:37Z",
+ "updated": "2026-11-18T04:51:31Z",
  "version": 1
 }
