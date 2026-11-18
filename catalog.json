@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Resolved after 2 h 21 min · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🟢 *Cloudflare Status* · Resolved after 2 h 21 min · Minor impact\n*Issues with Durable Objects and Dependent Services*\n🕒 18 Nov 2026, 05:47 IST\nAffected: Durable Objects, Stream, Containers\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/ylj5po752g6h|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 2 h 3 min · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 2 h 3 min · Minor impact\n*R2 elevated errors and timeouts for requests from South America*\n🕒 18 Nov 2026, 03:38 IST\nAffected: R2\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/gcn9xop0f7zm|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Investigating · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Issues with Durable Objects and Dependent Services*\n🕒 18 Nov 2026, 03:26 IST\nAffected: Durable Objects, Stream, Containers\nWe are investigating reports of elevated timeout rates and performance degradation affecting Durable Objects. This may impact dependent services, including Stream and Containers. Our team is actively investigating, and…\n<https://www.cloudflarestatus.com/incidents/ylj5po752g6h|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-17T22:08:34Z",
+ "updated": "2026-11-18T00:17:28Z",
  "version": 1
 }
