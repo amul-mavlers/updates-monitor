@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Identified · Minor impact",
+   "kind": "Monitoring · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Increased latency on Analytics API (GraphQL) queries*\n🕒 19 Nov 2026, 02:05 IST\nCloudflare has identified an issue where some customers may experience latency querying the GraphQL API. We are working to analyze and mitigate this problem. More updates to follow shortly.\n<https://www.cloudflarestatus.com/incidents/9zpa7own49hb|Read more>"
+   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Increased latency on Analytics API (GraphQL) queries*\n🕒 19 Nov 2026, 02:10 IST\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/9zpa7own49hb|Read more>"
   },
   {
    "cat": "incidents",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-18T20:35:12Z",
+ "updated": "2026-11-18T20:40:40Z",
  "version": 1
 }
