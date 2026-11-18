@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Identified · Minor impact",
+   "kind": "Monitoring · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Network disruption across multiple colocations in India*\n🕒 18 Nov 2026, 13:52 IST\nAffected: Ahmedabad, India - (AMD), Hyderabad, India - (HYD), Kanpur, India - (KNU), Mumbai, India - (BOM) +3\nThe issue has been identified and a fix is being implemented.\n<https://www.cloudflarestatus.com/incidents/njt9j3k2zdfw|Read more>"
+   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Network disruption across multiple colocations in India*\n🕒 18 Nov 2026, 14:08 IST\nAffected: Ahmedabad, India - (AMD), Hyderabad, India - (HYD), Kanpur, India - (KNU), Mumbai, India - (BOM) +3\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/njt9j3k2zdfw|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-18T08:22:18Z",
+ "updated": "2026-11-18T08:38:06Z",
  "version": 1
 }
