@@ -67,6 +67,18 @@
    "text": "🟢 *Shopify Status* · Resolved after 3 h 5 min · Major impact\n*Some POS transactions are not completing on iOS devices Actions*\n🕒 25 Jun 2025, 02:22 IST\nAffected: Point of Sale\nBetween 16:31 UTC and 19:48 UTC, we experienced an issue due to which some POS transactions could not be completed as expected. A fix was implemented at 17:44 UTC which resolved the issue. The monitoring period for…\n<https://stspg.io/tn2csdqxzfnn|Read more>"
   },
   {
+   "cat": "security",
+   "kind": "New post",
+   "live": true,
+   "note": "",
+   "source": "WordPress News",
+   "spaces": [
+    "WordPress & PHP",
+    "Downtime"
+   ],
+   "text": "🆕 *WordPress News* · New post\n*WordPress 7.1.5 Release*\n🕒 18 Nov 2026, 22:38 IST\nThis security release features fixes for multiple issues. Because this is a security release, it is recommended that you update your sites immediately. You can download WordPress 7.1.5 from WordPress.org, or visit your…\n<https://wordpress.org/news/2026/11/wordpress-7-1-5-release/|Read more>"
+  },
+  {
    "cat": "news",
    "kind": "New post",
    "live": true,
@@ -98,17 +110,6 @@
     "WordPress & PHP"
    ],
    "text": "🆕 *WordPress News* · New post\n*WordCamp Asia 2027 Is Coming to Penang*\n🕒 11 Nov 2026, 19:30 IST\nNext year, WordCamp Asia 2027 heads to Penang, Malaysia. From April 9 to 11, the WordPress community will gather at the Penang Waterfront Convention Centre for three days of contribution, learning, and connection.…\n<https://wordpress.org/news/2026/11/wc-asia-2027-penang/|Read more>"
-  },
-  {
-   "cat": "news",
-   "kind": "New post",
-   "live": true,
-   "note": "",
-   "source": "WordPress News",
-   "spaces": [
-    "WordPress & PHP"
-   ],
-   "text": "🆕 *WordPress News* · New post\n*WordPress 7.2 Beta 5*\n🕒 10 Nov 2026, 22:29 IST\nWordPress 7.2 Beta 5 is ready for download and testing! This beta release is intended for testing and development only. Please do not install, run, or test this version of WordPress on production or mission-critical…\n<https://wordpress.org/news/2026/11/wordpress-7-2-beta-5/|Read more>"
   },
   {
    "cat": "news",
@@ -539,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-18T17:00:00Z",
+ "updated": "2026-11-18T17:08:59Z",
  "version": 1
 }
