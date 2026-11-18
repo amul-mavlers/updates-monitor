@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Identified · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Increased latency on Analytics API (GraphQL) queries*\n🕒 19 Nov 2026, 02:05 IST\nCloudflare has identified an issue where some customers may experience latency querying the GraphQL API. We are working to analyze and mitigate this problem. More updates to follow shortly.\n<https://www.cloudflarestatus.com/incidents/9zpa7own49hb|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 1 h 17 min · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 1 h 17 min · Minor impact\n*R2 Downloads Stalling in Japan*\n🕒 18 Nov 2026, 20:33 IST\nAffected: R2\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/2wjvsj2kqt07|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 3 h 56 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 3 h 56 min · Minor impact\n*Network Performance Issues in North America*\n🕒 18 Nov 2026, 16:26 IST\nAffected: Network\nBetween approximately 07:00 UTC and 10:00 UTC Cloudflare investigated issues with network performance in North America. This has since been resolved.\n<https://www.cloudflarestatus.com/incidents/76lqmua6x3tk|Read more>"
   },
   {
    "cat": "incidents",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-18T18:17:36Z",
+ "updated": "2026-11-18T20:35:12Z",
  "version": 1
 }
