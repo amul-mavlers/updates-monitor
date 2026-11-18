@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Identified · Minor impact",
+   "kind": "Monitoring · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Cloudflare Access Issue*\n🕒 18 Nov 2026, 06:52 IST\nAffected: Access\nThe issue has been identified and a fix is being implemented.\n<https://www.cloudflarestatus.com/incidents/0jozucwnpzy0|Read more>"
+   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Cloudflare Access Issue*\n🕒 18 Nov 2026, 07:41 IST\nAffected: Access\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/0jozucwnpzy0|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-18T01:22:09Z",
+ "updated": "2026-11-18T02:11:17Z",
  "version": 1
 }
