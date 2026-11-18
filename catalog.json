@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Identified · Minor impact",
+   "kind": "Monitoring · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Network Performance Issues in Paris*\n🕒 18 Nov 2026, 09:19 IST\nAffected: Network, Paris, France - (CDG)\nWe are continuing to work on a fix for the issue.\n<https://www.cloudflarestatus.com/incidents/k3r9i5tbre4i|Read more>"
+   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Network Performance Issues in Paris*\n🕒 18 Nov 2026, 09:27 IST\nAffected: Network, Cloud Network Interconnect (CNI), Paris, France - (CDG)\nA fix has been implemented and we are monitoring the results. This incident impacted Cloudflare Network Interconnect (CNI) only.\n<https://www.cloudflarestatus.com/incidents/k3r9i5tbre4i|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-18T03:49:05Z",
+ "updated": "2026-11-18T03:57:17Z",
  "version": 1
 }
