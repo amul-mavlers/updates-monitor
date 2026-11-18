@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Investigating · Minor impact",
+   "kind": "Monitoring · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*R2 Downloads Stalling in Japan*\n🕒 18 Nov 2026, 19:15 IST\nAffected: R2\nCloudflare is aware of, and investigating an issue where R2 Downloads are stalling for users connecting via datacenters in Japan. Further detail will be provided as more information becomes available.\n<https://www.cloudflarestatus.com/incidents/2wjvsj2kqt07|Read more>"
+   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*R2 Downloads Stalling in Japan*\n🕒 18 Nov 2026, 20:10 IST\nAffected: R2\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/2wjvsj2kqt07|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-18T13:45:19Z",
+ "updated": "2026-11-18T14:40:27Z",
  "version": 1
 }
