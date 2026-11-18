@@ -220,6 +220,7 @@
   ],
   "_health": {},
   "Cloudflare Status": [
+    "tamb2j0a2q9a|2026-11-18T17:00:12.244Z",
     "2wjvsj2kqt07|2026-11-18T15:03:07.334Z",
     "2wjvsj2kqt07|2026-11-18T14:40:27.440Z",
     "2wjvsj2kqt07|2026-11-18T13:45:19.653Z",
@@ -1545,6 +1546,8 @@
     "http://php.net/releases/8_2_35.php"
   ],
   "Shopify Changelog": [
+    "https://shopify.dev/changelog/app-events-send-events-from-admin-ui-extensions-and-embedded-apps",
+    "https://shopify.dev/changelog/draft-order-discount-permission",
     "https://shopify.dev/changelog/admin-created-custom-apps-are-now-built-and-managed-in-the-dev-dashboard",
     "https://shopify.dev/changelog/amazon-eventbridge-webhook-payload-size-limit-increased-to-1-mb",
     "https://shopify.dev/changelog/updated-b2b-location-access-in-the-customer-account-api",

@@ -201,15 +201,15 @@
    "text": "🆕 *PHP Releases* · New release\n*PHP 8.2.35 released!*\n🕒 21 Oct 2026, 05:30 IST\nThere is a new PHP release in town!\n<http://php.net/releases/8_2_35.php|Read more>"
   },
   {
-   "cat": "security",
+   "cat": "news",
    "kind": "Changelog",
    "live": true,
    "note": "",
    "source": "Shopify Changelog",
    "spaces": [
-    "Downtime"
+    "News"
    ],
-   "text": "🆕 *Shopify Changelog* · Changelog\n*Admin-created custom apps now appear in the Dev Dashboard*\n🕒 18 Nov 2026, 02:45 IST\nCustom apps created in the Shopify admin are moving to the Dev Dashboard, where you can view their logs and set up an IP allowlist. Existing integrations keep working. What changed Custom apps that merchants or staff…\n<https://shopify.dev/changelog/admin-created-custom-apps-are-now-built-and-managed-in-the-dev-dashboard|Read more>"
+   "text": "🆕 *Shopify Changelog* · Changelog\n*App Events: Send events from Admin UI extensions and embedded apps*\n🕒 18 Nov 2026, 22:30 IST\nAdmin UI extensions and embedded apps can now send app events to Shopify with shopify.appEvents.emit() . At Editions, we launched app events for Checkout and Customer Account UI extensions. This release adds the…\n<https://shopify.dev/changelog/app-events-send-events-from-admin-ui-extensions-and-embedded-apps|Read more>"
   },
   {
    "cat": "news",
@@ -220,7 +220,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Shopify Changelog* · Changelog\n*Amazon EventBridge webhook payload size limit increased to 1 MB*\n🕒 17 Nov 2026, 22:30 IST\nYou can now receive webhook and Events payloads up to 1 MB (1,000,000 bytes) through Amazon EventBridge, up from 256 KB. This increase applies automatically across all API versions, and you don't need to update your…\n<https://shopify.dev/changelog/amazon-eventbridge-webhook-payload-size-limit-increased-to-1-mb|Read more>"
+   "text": "🆕 *Shopify Changelog* · Changelog\n*draftOrderCreate and draftOrderUpdate require the apply_discounts_to_draft_orders permission to add discounts*\n🕒 18 Nov 2026, 22:30 IST\nIn all supported API versions, draftOrderCreate and draftOrderUpdate return an ACCESS_DENIED error when an app acting as a staff member without the apply_discounts_to_draft_orders permission adds a discount to a draft…\n<https://shopify.dev/changelog/draft-order-discount-permission|Read more>"
   },
   {
    "cat": "security",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-18T15:03:07Z",
+ "updated": "2026-11-18T17:00:00Z",
  "version": 1
 }
