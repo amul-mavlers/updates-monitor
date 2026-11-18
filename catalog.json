@@ -31,7 +31,7 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Elevated R2 error rates in EU and Asia Pacific region*\n🕒 19 Nov 2026, 03:56 IST\nAffected: R2\nRequests to R2 from EU and APAC region may experience elevated error rates.\n<https://www.cloudflarestatus.com/incidents/f33c51cw0ojd|Read more>"
+   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Elevated R2 and D1 error rates in EU and Asia Pacific region*\n🕒 19 Nov 2026, 03:56 IST\nAffected: D1, R2\nRequests to R2 and D1 from the EU and Asia Pacific regions may experience elevated error rates. We are investigating the issue and working to identify the cause. Further updates will be provided as more information…\n<https://www.cloudflarestatus.com/incidents/f33c51cw0ojd|Read more>"
   },
   {
    "cat": "incidents",
