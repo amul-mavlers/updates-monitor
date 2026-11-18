@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Investigating · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Elevated R2 error rates in EU and Asia Pacific region*\n🕒 19 Nov 2026, 03:56 IST\nAffected: R2\nRequests to R2 from EU and APAC region may experience elevated error rates.\n<https://www.cloudflarestatus.com/incidents/f33c51cw0ojd|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Monitoring · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Increased latency on Analytics API (GraphQL) queries*\n🕒 19 Nov 2026, 02:10 IST\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/9zpa7own49hb|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 1 h 17 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 1 h 17 min · Minor impact\n*R2 Downloads Stalling in Japan*\n🕒 18 Nov 2026, 20:33 IST\nAffected: R2\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/2wjvsj2kqt07|Read more>"
   },
   {
    "cat": "incidents",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-18T20:40:40Z",
+ "updated": "2026-11-18T22:26:41Z",
  "version": 1
 }
