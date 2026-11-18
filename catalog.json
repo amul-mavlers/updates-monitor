@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Investigating · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Cloudflare Access Issue*\n🕒 18 Nov 2026, 06:40 IST\nAffected: Access\nCloudflare is investigating issues with Cloudflare Access. Customers may experience a delay making configuration changes to Access. We are working to understand the full impact and mitigate this problem. More updates…\n<https://www.cloudflarestatus.com/incidents/0jozucwnpzy0|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 2 h 21 min · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 2 h 21 min · Minor impact\n*Issues with Durable Objects and Dependent Services*\n🕒 18 Nov 2026, 05:47 IST\nAffected: Durable Objects, Stream, Containers\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/ylj5po752g6h|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 2 h 3 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 2 h 3 min · Minor impact\n*R2 elevated errors and timeouts for requests from South America*\n🕒 18 Nov 2026, 03:38 IST\nAffected: R2\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/gcn9xop0f7zm|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-18T00:17:28Z",
+ "updated": "2026-11-18T01:10:14Z",
  "version": 1
 }
