@@ -2,6 +2,17 @@
  "cards": [
   {
    "cat": "incidents",
+   "kind": "Investigating · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "GitHub Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*Disruption with some GitHub services*\n🕒 19 Nov 2026, 22:36 IST\nWe are investigating reports of impacted performance for some GitHub services.\n<https://stspg.io/pvjz2g01trc7|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 40 min · Minor impact",
    "live": true,
    "note": "",
@@ -10,17 +21,6 @@
     "Downtime"
    ],
    "text": "🟢 *GitHub Status* · Resolved after 40 min · Minor impact\n*Degraded availability for GPT-6 Luna in Copilot*\n🕒 19 Nov 2026, 22:07 IST\nAffected: Copilot AI Model Providers\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/vv0kzmyd9wqs|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 34 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "GitHub Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *GitHub Status* · Resolved after 34 min · Minor impact\n*Degraded Availability for MAI Code 2 Flash in Copilot*\n🕒 18 Nov 2026, 15:04 IST\nAffected: Copilot AI Model Providers\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/3sbmvyy2ctyx|Read more>"
   },
   {
    "cat": "incidents",
@@ -542,6 +542,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-19T17:00:00Z",
+ "updated": "2026-11-19T17:06:27Z",
  "version": 1
 }
