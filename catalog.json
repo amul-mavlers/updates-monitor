@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Identified · Minor impact",
+   "kind": "Monitoring · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Cloudflare Access Issue*\n🕒 19 Nov 2026, 12:18 IST\nAffected: Access\nCloudflare is investigating an issue with Cloudflare Access. A recent Cloudflare Access release removed the sub claim from service token JWTs, which can cause authentication failures for applications that strictly…\n<https://www.cloudflarestatus.com/incidents/sd2sya0mc6df|Read more>"
+   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Cloudflare Access Issue*\n🕒 19 Nov 2026, 14:02 IST\nAffected: Access\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/sd2sya0mc6df|Read more>"
   },
   {
    "cat": "incidents",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-19T06:48:06Z",
+ "updated": "2026-11-19T08:32:01Z",
  "version": 1
 }
