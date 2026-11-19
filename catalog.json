@@ -226,15 +226,15 @@
    "text": "🆕 *Shopify Changelog* · Changelog\n*Network access declarations are now required for apps that run on the online store*\n🕒 19 Nov 2026, 22:30 IST\nWe're adding network access declarations as a requirement to better protect merchants. Apps that run code on the online store must declare allowed_sources in the [network_access] section of shopify.app.toml . Timeline…\n<https://shopify.dev/changelog/network-access-declarations-are-now-required-for-apps-that-run-on-the-online-store|Read more>"
   },
   {
-   "cat": "security",
+   "cat": "news",
    "kind": "WooCommerce",
    "live": true,
    "note": "",
    "source": "WooCommerce Dev",
    "spaces": [
-    "Downtime"
+    "News"
    ],
-   "text": "🆕 *WooCommerce Dev* · WooCommerce\n*Fighting Fraud and Improving Security with AI: Live Event*\n🕒 19 Nov 2026, 22:15 IST\nJoin us for a live panel on how AI is changing fraud and security for WooCommerce stores, from card testing and account takeovers to AI-assisted defense. The post Fighting Fraud and Improving Security with AI: Live…\n<https://developer.woocommerce.com/2026/11/19/fraud-security-ai-live-event/|Read more>"
+   "text": "🆕 *WooCommerce Dev* · WooCommerce\n*WooCommerce 11.3.1: Release Notes*\n🕒 20 Nov 2026, 01:42 IST\nWooCommerce 11.3.1 is a security-focused patch release with updates to checkout, customer accounts, permissions, and data handling. The post WooCommerce 11.3.1: Release Notes appeared first on The WooCommerce Developer…\n<https://developer.woocommerce.com/2026/11/19/woocommerce-11-3-1/|Read more>"
   },
   {
    "cat": "security",
@@ -245,7 +245,7 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🆕 *WooCommerce Dev* · WooCommerce\n*Security fix for WooCommerce Stripe Gateway: update to 11.2.0 or 11.1.2*\n🕒 12 Nov 2026, 00:57 IST\nUpdate WooCommerce Stripe Gateway to 11.2.0 or 11.1.2 for an important security fix. The post Security fix for WooCommerce Stripe Gateway: update to 11.2.0 or 11.1.2 appeared first on The WooCommerce Developer Blog .\n<https://developer.woocommerce.com/2026/11/11/stripe-gateway-security-update/|Read more>"
+   "text": "🆕 *WooCommerce Dev* · WooCommerce\n*Fighting Fraud and Improving Security with AI: Live Event*\n🕒 19 Nov 2026, 22:15 IST\nJoin us for a live panel on how AI is changing fraud and security for WooCommerce stores, from card testing and account takeovers to AI-assisted defense. The post Fighting Fraud and Improving Security with AI: Live…\n<https://developer.woocommerce.com/2026/11/19/fraud-security-ai-live-event/|Read more>"
   },
   {
    "cat": "news",
@@ -542,6 +542,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-19T18:35:00Z",
+ "updated": "2026-11-19T20:12:32Z",
  "version": 1
 }
