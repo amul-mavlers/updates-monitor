@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Identified · Minor impact",
+   "kind": "Resolved after 31 min · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Durable Objects and D1 – Increased Errors*\n🕒 19 Nov 2026, 18:56 IST\nAffected: Durable Objects, D1\nThe issue has been identified and a fix is being implemented.\n<https://www.cloudflarestatus.com/incidents/5pe5mb9fefi8|Read more>"
+   "text": "🟢 *Cloudflare Status* · Resolved after 31 min · Minor impact\n*Durable Objects and D1 – Increased Errors*\n🕒 19 Nov 2026, 19:07 IST\nAffected: Durable Objects, D1\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/5pe5mb9fefi8|Read more>"
   },
   {
    "cat": "incidents",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-19T13:26:41Z",
+ "updated": "2026-11-19T13:37:02Z",
  "version": 1
 }
