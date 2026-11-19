@@ -2,14 +2,14 @@
  "cards": [
   {
    "cat": "incidents",
-   "kind": "Investigating · Minor impact",
+   "kind": "Monitoring · Minor impact",
    "live": true,
    "note": "",
    "source": "GitHub Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*Degraded availability for GPT-6 Luna in Copilot*\n🕒 19 Nov 2026, 21:27 IST\nAffected: Copilot AI Model Providers\nWe are experiencing degraded availability for the GPT-6 Luna model in Copilot products and IDE surfaces. This is due to an issue with an upstream model provider. While we work with them to resolve the issue, we…\n<https://stspg.io/vv0kzmyd9wqs|Read more>"
+   "text": "🟡 *GitHub Status* · Monitoring · Minor impact\n*Degraded availability for GPT-6 Luna in Copilot*\n🕒 19 Nov 2026, 21:58 IST\nAffected: Copilot AI Model Providers\nThe degradation affecting Copilot AI Model Providers has been mitigated. We are monitoring to ensure stability.\n<https://stspg.io/vv0kzmyd9wqs|Read more>"
   },
   {
    "cat": "incidents",
@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Identified · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Observability ingestion delay and query failures*\n🕒 19 Nov 2026, 22:00 IST\nAffected: Workers, Workers Observability\nCloudflare has identified an issue impacting Observability ingestion and querying. Customers may be seeing delays in new data coming in and increased error rates querying Workers Observability and Cloudflare Traces…\n<https://www.cloudflarestatus.com/incidents/ljrvdciu7syf|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 31 min · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 31 min · Minor impact\n*Durable Objects and D1 – Increased Errors*\n🕒 19 Nov 2026, 19:07 IST\nAffected: Durable Objects, D1\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/5pe5mb9fefi8|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 2 h 8 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 2 h 8 min · Minor impact\n*Cloudflare Access Issue*\n🕒 19 Nov 2026, 14:26 IST\nAffected: Access\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/sd2sya0mc6df|Read more>"
   },
   {
    "cat": "incidents",
@@ -542,6 +542,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-19T15:57:24Z",
+ "updated": "2026-11-19T16:30:04Z",
  "version": 1
 }
