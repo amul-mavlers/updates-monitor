@@ -204,15 +204,15 @@
    "text": "🆕 *PHP Releases* · New release\n*PHP 8.3.37 released!*\n🕒 19 Nov 2026, 05:30 IST\nThere is a new PHP release in town!\n<http://php.net/releases/8_3_37.php|Read more>"
   },
   {
-   "cat": "news",
+   "cat": "security",
    "kind": "Changelog",
    "live": true,
    "note": "",
    "source": "Shopify Changelog",
    "spaces": [
-    "News"
+    "Downtime"
    ],
-   "text": "🆕 *Shopify Changelog* · Changelog\n*App Events: Send events from Admin UI extensions and embedded apps*\n🕒 18 Nov 2026, 22:30 IST\nAdmin UI extensions and embedded apps can now send app events to Shopify with shopify.appEvents.emit() . At Editions, we launched app events for Checkout and Customer Account UI extensions. This release adds the…\n<https://shopify.dev/changelog/app-events-send-events-from-admin-ui-extensions-and-embedded-apps|Read more>"
+   "text": "🆕 *Shopify Changelog* · Changelog\n*Network access declarations are now required for apps that run on the online store*\n🕒 19 Nov 2026, 22:30 IST\nWe're adding network access declarations as a requirement to better protect merchants. Apps that run code on the online store must declare allowed_sources in the [network_access] section of shopify.app.toml . Timeline…\n<https://shopify.dev/changelog/network-access-declarations-are-now-required-for-apps-that-run-on-the-online-store|Read more>"
   },
   {
    "cat": "news",
@@ -223,7 +223,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Shopify Changelog* · Changelog\n*draftOrderCreate and draftOrderUpdate require the apply_discounts_to_draft_orders permission to add discounts*\n🕒 18 Nov 2026, 22:30 IST\nIn all supported API versions, draftOrderCreate and draftOrderUpdate return an ACCESS_DENIED error when an app acting as a staff member without the apply_discounts_to_draft_orders permission adds a discount to a draft…\n<https://shopify.dev/changelog/draft-order-discount-permission|Read more>"
+   "text": "🆕 *Shopify Changelog* · Changelog\n*Expiring offline access tokens required for new custom apps as of December 1, 2026*\n🕒 19 Nov 2026, 22:30 IST\nStarting December 1, 2026, every new app must request and use expiring offline access tokens for GraphQL Admin API and REST Admin API requests. This was required for new public apps since April 1, 2026. This update…\n<https://shopify.dev/changelog/expiring-offline-access-tokens-required-for-new-custom-apps-as-of-december-1-2026|Read more>"
   },
   {
    "cat": "security",
@@ -542,6 +542,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-19T16:45:33Z",
+ "updated": "2026-11-19T17:00:00Z",
  "version": 1
 }

@@ -1575,6 +1575,10 @@
     "http://php.net/releases/8_2_35.php"
   ],
   "Shopify Changelog": [
+    "https://shopify.dev/changelog/network-access-declarations-are-now-required-for-apps-that-run-on-the-online-store",
+    "https://shopify.dev/changelog/expiring-offline-access-tokens-required-for-new-custom-apps-as-of-december-1-2026",
+    "https://shopify.dev/changelog/subscriptions-now-support-store-credit-with-allowstorecredit",
+    "https://shopify.dev/changelog/rolloutchange-now-includes-applyresult",
     "https://shopify.dev/changelog/app-events-send-events-from-admin-ui-extensions-and-embedded-apps",
     "https://shopify.dev/changelog/draft-order-discount-permission",
     "https://shopify.dev/changelog/admin-created-custom-apps-are-now-built-and-managed-in-the-dev-dashboard",
