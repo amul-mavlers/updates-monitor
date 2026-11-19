@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Identified · Minor impact",
+   "kind": "Monitoring · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Observability ingestion delay and query failures*\n🕒 19 Nov 2026, 22:00 IST\nAffected: Workers, Workers Observability\nCloudflare has identified an issue impacting Observability ingestion and querying. Customers may be seeing delays in new data coming in and increased error rates querying Workers Observability and Cloudflare Traces…\n<https://www.cloudflarestatus.com/incidents/ljrvdciu7syf|Read more>"
+   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Observability ingestion delay and query failures*\n🕒 20 Nov 2026, 02:53 IST\nAffected: Workers, Workers Observability\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/ljrvdciu7syf|Read more>"
   },
   {
    "cat": "incidents",
@@ -542,6 +542,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-19T20:12:32Z",
+ "updated": "2026-11-19T21:23:35Z",
  "version": 1
 }
