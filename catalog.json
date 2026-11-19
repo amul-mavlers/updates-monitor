@@ -320,7 +320,7 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🆕 *Google Workspace Status* · Incident\n*RESOLVED: Summary: Mitigating elevated error rate with Google Workspace Studio web. Description: Mitigation work is currently underway by our engineering team. We do not have an ETA for…*\n🕒 25 Sep 2026, 22:23 IST\nIncident began at 2026-09-25 15:47 and ended at 2026-09-25 16:40 (times are in Coordinated Universal Time (UTC) ). Summary: Mitigated elevated error rate with Google Workspace Studio web. Description: The issue with…\n<https://www.google.com/appsstatus/dashboard/incidents/BoKRw5LNb3Vb2NadUJRU|Read more>"
+   "text": "🆕 *Google Workspace Status* · Incident\n*RESOLVED: Summary: Mitigating elevated error rate with Google Workspace Studio web. Description: Mitigation work is currently underway by our engineering team. We do not have an ETA for…*\n🕒 25 Sep 2026, 22:23 IST\nIncident began at 2026-09-25 15:47 and ended at 2026-09-25 16:40 (times are in Coordinated Universal Time (UTC) ). Summary: Mitigated elevated error rate with Google Workspace Studio web. Description: The issue…\n<https://www.google.com/appsstatus/dashboard/incidents/BoKRw5LNb3Vb2NadUJRU|Read more>"
   },
   {
    "cat": "incidents",
