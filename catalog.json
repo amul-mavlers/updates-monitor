@@ -112,6 +112,18 @@
    "text": "🆕 *WordPress News* · New post\n*WordCamp Asia 2027 Is Coming to Penang*\n🕒 11 Nov 2026, 19:30 IST\nNext year, WordCamp Asia 2027 heads to Penang, Malaysia. From April 9 to 11, the WordPress community will gather at the Penang Waterfront Convention Centre for three days of contribution, learning, and connection.…\n<https://wordpress.org/news/2026/11/wc-asia-2027-penang/|Read more>"
   },
   {
+   "cat": "security",
+   "kind": "News",
+   "live": true,
+   "note": "",
+   "source": "PHP News",
+   "spaces": [
+    "WordPress & PHP",
+    "Downtime"
+   ],
+   "text": "🆕 *PHP News* · News\n*Upcoming Critical PHP Security Release*\n🕒 18 Nov 2026, 22:39 IST\nThe PHP security team announces upcoming security releases scheduled for Thursday, 19 November 2026, between 14:00 and 14:30 UTC. These releases are part of PHP’s regular four-week release cycle and will address…\n<https://www.php.net/index.php#2026-11-18-1|Read more>"
+  },
+  {
    "cat": "news",
    "kind": "News",
    "live": true,
@@ -144,18 +156,6 @@
     "Downtime"
    ],
    "text": "🆕 *PHP News* · News\n*Updated PHP Windows builds for Brotli security fix*\n🕒 26 Oct 2026, 17:27 IST\nThe PHP team announces updated Windows builds: PHP 8.5.12-1, 8.4.27-1, 8.3.36-1 and 8.2.35-1 . These builds include Brotli 1.2.1, which fixes CVE-2026-111497 , an out-of-bounds write vulnerability in Brotli…\n<https://www.php.net/index.php#2026-10-26-1|Read more>"
-  },
-  {
-   "cat": "security",
-   "kind": "News",
-   "live": true,
-   "note": "",
-   "source": "PHP News",
-   "spaces": [
-    "WordPress & PHP",
-    "Downtime"
-   ],
-   "text": "🆕 *PHP News* · News\n*Informational advisory: Session upload progress*\n🕒 23 Oct 2026, 15:42 IST\nWe suggest you set session.upload_progress.enabled=0 until the next regular bugfix release, to fully protect from an unlikely RCE vector. This setting was already listed as a mitigation in the GHSA-6wmf-4rv5-p3rp…\n<https://www.php.net/index.php#2026-10-23-1|Read more>"
   },
   {
    "cat": "news",
