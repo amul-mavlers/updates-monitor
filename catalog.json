@@ -168,6 +168,17 @@
    "spaces": [
     "WordPress & PHP"
    ],
+   "text": "🆕 *PHP Releases* · New release\n*PHP 8.6.0 released!*\n🕒 19 Nov 2026, 05:30 IST\nThere is a new PHP release in town!\n<http://php.net/releases/8_6_0.php|Read more>"
+  },
+  {
+   "cat": "news",
+   "kind": "New release",
+   "live": true,
+   "note": "",
+   "source": "PHP Releases",
+   "spaces": [
+    "WordPress & PHP"
+   ],
    "text": "🆕 *PHP Releases* · New release\n*PHP 8.5.13 released!*\n🕒 19 Nov 2026, 05:30 IST\nThere is a new PHP release in town!\n<http://php.net/releases/8_5_13.php|Read more>"
   },
   {
@@ -191,17 +202,6 @@
     "WordPress & PHP"
    ],
    "text": "🆕 *PHP Releases* · New release\n*PHP 8.3.37 released!*\n🕒 19 Nov 2026, 05:30 IST\nThere is a new PHP release in town!\n<http://php.net/releases/8_3_37.php|Read more>"
-  },
-  {
-   "cat": "news",
-   "kind": "New release",
-   "live": true,
-   "note": "",
-   "source": "PHP Releases",
-   "spaces": [
-    "WordPress & PHP"
-   ],
-   "text": "🆕 *PHP Releases* · New release\n*PHP 8.2.36 released!*\n🕒 19 Nov 2026, 05:30 IST\nThere is a new PHP release in town!\n<http://php.net/releases/8_2_36.php|Read more>"
   },
   {
    "cat": "news",

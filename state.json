@@ -1560,6 +1560,7 @@
     "http://php.net/archive/2015.php#id2015-01-06-1"
   ],
   "PHP Releases": [
+    "http://php.net/releases/8_6_0.php",
     "http://php.net/releases/8_5_13.php",
     "http://php.net/releases/8_4_28.php",
     "http://php.net/releases/8_3_37.php",
@@ -2415,6 +2416,7 @@
   ],
   "_dedupe": {
     "php": [
+      "php 8 6 0",
       "php 8 5 13",
       "php 8 4 28",
       "php 8 3 37",
