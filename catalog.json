@@ -9,7 +9,7 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🟡 *GitHub Status* · Monitoring · Minor impact\n*Disruption with some GitHub services*\n🕒 19 Nov 2026, 23:13 IST\nStarting around 18:02 UTC on November 5, GitHub web sessions stopped being renewed based on recent activity, so users were signed out when their sessions expired due to inactivity. These sign-outs were caused by a bug…\n<https://stspg.io/pvjz2g01trc7|Read more>"
+   "text": "🟡 *GitHub Status* · Monitoring · Minor impact\n*Disruption with some GitHub services*\n🕒 19 Nov 2026, 23:35 IST\nThe degradation has been mitigated. We are monitoring to ensure stability.\n<https://stspg.io/pvjz2g01trc7|Read more>"
   },
   {
    "cat": "incidents",
@@ -542,6 +542,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-19T17:43:44Z",
+ "updated": "2026-11-19T18:05:21Z",
  "version": 1
 }
