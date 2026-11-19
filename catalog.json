@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Identified · Minor impact",
+   "kind": "Monitoring · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Degraded connectivity between Europe and Asia Pacific*\n🕒 19 Nov 2026, 05:18 IST\nAffected: Cache Reserve, D1, R2\nThe issue has been identified and a fix is being implemented.\n<https://www.cloudflarestatus.com/incidents/f33c51cw0ojd|Read more>"
+   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Degraded connectivity between Europe and Asia Pacific*\n🕒 19 Nov 2026, 06:06 IST\nAffected: Cache Reserve, D1, R2\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/f33c51cw0ojd|Read more>"
   },
   {
    "cat": "incidents",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-18T23:48:52Z",
+ "updated": "2026-11-19T00:36:54Z",
  "version": 1
 }
