@@ -661,6 +661,7 @@
     "https://wordpress.org/news/?p=21420"
   ],
   "PHP News": [
+    "https://www.php.net/archive/2026.php#2026-11-18-1",
     "https://www.php.net/archive/2026.php#2026-11-12-1",
     "https://www.php.net/archive/2026.php#2026-11-05-1",
     "https://www.php.net/archive/2026.php#2026-10-26-1",
@@ -2401,6 +2402,7 @@
   ],
   "_dedupe": {
     "php": [
+      "upcoming critical php security",
       "php 8 6 0rc7 available for testing",
       "php 8 6 0 rc5 available for testing",
       "updated php windows builds for brotli security fix",
