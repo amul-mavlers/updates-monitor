@@ -1581,6 +1581,7 @@
     "http://php.net/releases/8_2_35.php"
   ],
   "Shopify Changelog": [
+    "https://shopify.dev/changelog/abandonedcheckouturl-now-requires-level-2-protected-customer-data-access",
     "https://shopify.dev/changelog/function-settings-extensions-can-now-report-several-errors-at-once",
     "https://shopify.dev/changelog/network-access-declarations-are-now-required-for-apps-that-run-on-the-online-store",
     "https://shopify.dev/changelog/expiring-offline-access-tokens-required-for-new-custom-apps-as-of-december-1-2026",
