@@ -204,15 +204,15 @@
    "text": "🆕 *PHP Releases* · New release\n*PHP 8.3.37 released!*\n🕒 19 Nov 2026, 05:30 IST\nThere is a new PHP release in town!\n<http://php.net/releases/8_3_37.php|Read more>"
   },
   {
-   "cat": "security",
+   "cat": "news",
    "kind": "Changelog",
    "live": true,
    "note": "",
    "source": "Shopify Changelog",
    "spaces": [
-    "Downtime"
+    "News"
    ],
-   "text": "🆕 *Shopify Changelog* · Changelog\n*Network access declarations are now required for apps that run on the online store*\n🕒 19 Nov 2026, 22:30 IST\nWe're adding network access declarations as a requirement to better protect merchants. Apps that run code on the online store must declare allowed_sources in the [network_access] section of shopify.app.toml . Timeline…\n<https://shopify.dev/changelog/network-access-declarations-are-now-required-for-apps-that-run-on-the-online-store|Read more>"
+   "text": "🆕 *Shopify Changelog* · Changelog\n*Expiring offline access tokens required for new custom apps as of December 1, 2026*\n🕒 19 Nov 2026, 22:30 IST\nStarting December 1, 2026, every new app must request and use expiring offline access tokens for GraphQL Admin API and REST Admin API requests. This was required for new public apps since April 1, 2026. This update…\n<https://shopify.dev/changelog/expiring-offline-access-tokens-required-for-new-custom-apps-as-of-december-1-2026|Read more>"
   },
   {
    "cat": "news",
@@ -223,7 +223,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Shopify Changelog* · Changelog\n*Expiring offline access tokens required for new custom apps as of December 1, 2026*\n🕒 19 Nov 2026, 22:30 IST\nStarting December 1, 2026, every new app must request and use expiring offline access tokens for GraphQL Admin API and REST Admin API requests. This was required for new public apps since April 1, 2026. This update…\n<https://shopify.dev/changelog/expiring-offline-access-tokens-required-for-new-custom-apps-as-of-december-1-2026|Read more>"
+   "text": "🆕 *Shopify Changelog* · Changelog\n*Subscriptions now support store credit with allowStoreCredit*\n🕒 19 Nov 2026, 22:30 IST\nAs of API version 2027-01 , apps can read and manage store credit on subscriptions. When a customer opts in to store credit for an eligible subscription at checkout, Shopify applies the customer's store credit to each…\n<https://shopify.dev/changelog/subscriptions-now-support-store-credit-with-allowstorecredit|Read more>"
   },
   {
    "cat": "security",
@@ -256,18 +256,18 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Laravel News* · Laravel\n*Laravel Warrant: Row-Level Permissions With Eloquent*\n🕒 18 Nov 2026, 22:41 IST\nLaravel Warrant compiles authorization rules into SQL. Filter Eloquent queries, check individual records, and return per-row abilities from the same rules. The post Laravel Warrant: Row-Level Permissions With Eloquent…\n<https://laravel-news.com/laravel-warrant?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
+   "text": "🆕 *Laravel News* · Laravel\n*PHP 8.6 is released!*\n🕒 19 Nov 2026, 21:20 IST\nPHP 8.6 is out with partial function application, a clamp() function, a Duration class, JSON error locations, readonly property defaults, and new deprecations. The post PHP 8.6 is released! appeared first on Laravel…\n<https://laravel-news.com/php-8-6-release-day?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
   },
   {
-   "cat": "security",
+   "cat": "news",
    "kind": "Laravel",
    "live": true,
    "note": "",
    "source": "Laravel News",
    "spaces": [
-    "Downtime"
+    "News"
    ],
-   "text": "🆕 *Laravel News* · Laravel\n*JSON Schema Validation Rules and a RetryFor Attribute in Laravel 13.43*\n🕒 18 Nov 2026, 04:37 IST\nLaravel 13.43 turns JSON schemas into validation rules, adds a #[RetryFor] queue attribute and releaseUsingBackoff(), and ships several security fixes. The post JSON Schema Validation Rules and a RetryFor Attribute in…\n<https://laravel-news.com/laravel-13-43-0?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
+   "text": "🆕 *Laravel News* · Laravel\n*Laravel Warrant: Row-Level Permissions With Eloquent*\n🕒 18 Nov 2026, 22:41 IST\nLaravel Warrant compiles authorization rules into SQL. Filter Eloquent queries, check individual records, and return per-row abilities from the same rules. The post Laravel Warrant: Row-Level Permissions With Eloquent…\n<https://laravel-news.com/laravel-warrant?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
   },
   {
    "cat": "news",
