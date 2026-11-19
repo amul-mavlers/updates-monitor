@@ -2,14 +2,14 @@
  "cards": [
   {
    "cat": "incidents",
-   "kind": "Monitoring · Minor impact",
+   "kind": "Resolved after 40 min · Minor impact",
    "live": true,
    "note": "",
    "source": "GitHub Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟡 *GitHub Status* · Monitoring · Minor impact\n*Degraded availability for GPT-6 Luna in Copilot*\n🕒 19 Nov 2026, 21:58 IST\nAffected: Copilot AI Model Providers\nThe degradation affecting Copilot AI Model Providers has been mitigated. We are monitoring to ensure stability.\n<https://stspg.io/vv0kzmyd9wqs|Read more>"
+   "text": "🟢 *GitHub Status* · Resolved after 40 min · Minor impact\n*Degraded availability for GPT-6 Luna in Copilot*\n🕒 19 Nov 2026, 22:07 IST\nAffected: Copilot AI Model Providers\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/vv0kzmyd9wqs|Read more>"
   },
   {
    "cat": "incidents",
@@ -542,6 +542,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-19T16:30:04Z",
+ "updated": "2026-11-19T16:37:00Z",
  "version": 1
 }
