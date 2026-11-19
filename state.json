@@ -666,6 +666,10 @@
     "https://wordpress.org/news/?p=21420"
   ],
   "PHP News": [
+    "https://www.php.net/archive/2026.php#2026-11-19-4",
+    "https://www.php.net/archive/2026.php#2026-11-19-3",
+    "https://www.php.net/archive/2026.php#2026-11-19-2",
+    "https://www.php.net/archive/2026.php#2026-11-19-1",
     "https://www.php.net/archive/2026.php#2026-11-18-1",
     "https://www.php.net/archive/2026.php#2026-11-12-1",
     "https://www.php.net/archive/2026.php#2026-11-05-1",
@@ -1556,6 +1560,10 @@
     "http://php.net/archive/2015.php#id2015-01-06-1"
   ],
   "PHP Releases": [
+    "http://php.net/releases/8_5_13.php",
+    "http://php.net/releases/8_4_28.php",
+    "http://php.net/releases/8_3_37.php",
+    "http://php.net/releases/8_2_36.php",
     "http://php.net/releases/8_5_12.php",
     "http://php.net/releases/8_4_27.php",
     "http://php.net/releases/8_3_36.php",
@@ -2407,6 +2415,10 @@
   ],
   "_dedupe": {
     "php": [
+      "php 8 5 13",
+      "php 8 4 28",
+      "php 8 3 37",
+      "php 8 2 36",
       "upcoming critical php security",
       "php 8 6 0rc7 available for testing",
       "php 8 6 0 rc5 available for testing",
