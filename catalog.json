@@ -300,7 +300,7 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🆕 *Patchstack* · Security blog\n*WordPress 7.1.5 Security Release*\n🕒 18 Nov 2026, 23:47 IST\nWordPress 7.1.5 landed on 18 November 2026. It is a security release with twenty fixes, eighteen of which we have added to the Patchstack database as vulnerabilities; the remaining two are hardening changes with no…\n<https://patchstack.com/articles/wordpress-7-1-5-security-release/|Read more>"
+   "text": "🆕 *Patchstack* · Security blog\n*PHP’s November 2026 Security Release: What Reaches WordPress*\n🕒 19 Nov 2026, 20:52 IST\nPHP 8.5.13, 8.4.28, 8.3.37 and 8.2.36 came out on 19 November 2026. Together they fix 18 CVEs, seven of which are rated Critical at CVSS 9.2. The pre-announcement a day earlier said the critical issues “require either…\n<https://patchstack.com/articles/php-november-2026-security-release-wordpress/|Read more>"
   },
   {
    "cat": "security",
@@ -311,7 +311,7 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🆕 *Patchstack* · Security blog\n*Kinsta now protects every WordPress site it hosts with Patchstack*\n🕒 12 Nov 2026, 21:40 IST\nEvery WordPress site on Kinsta is now protected by Patchstack, automatically and at no extra cost. In its first weeks, that protection blocked more than 1.5 million exploitation attempts across more than 68,000 Kinsta…\n<https://patchstack.com/articles/kinsta-now-protects-every-wordpress-site-it-hosts-with-patchstack/|Read more>"
+   "text": "🆕 *Patchstack* · Security blog\n*WordPress 7.1.5 Security Release*\n🕒 18 Nov 2026, 23:47 IST\nWordPress 7.1.5 landed on 18 November 2026. It is a security release with twenty fixes, eighteen of which we have added to the Patchstack database as vulnerabilities; the remaining two are hardening changes with no…\n<https://patchstack.com/articles/wordpress-7-1-5-security-release/|Read more>"
   },
   {
    "cat": "incidents",
@@ -542,6 +542,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-19T14:00:00Z",
+ "updated": "2026-11-19T15:22:09Z",
  "version": 1
 }
