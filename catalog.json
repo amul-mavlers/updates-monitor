@@ -204,6 +204,17 @@
    "text": "🆕 *PHP Releases* · New release\n*PHP 8.3.37 released!*\n🕒 19 Nov 2026, 05:30 IST\nThere is a new PHP release in town!\n<http://php.net/releases/8_3_37.php|Read more>"
   },
   {
+   "cat": "security",
+   "kind": "Changelog",
+   "live": true,
+   "note": "",
+   "source": "Shopify Changelog",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🆕 *Shopify Changelog* · Changelog\n*App security updates: IP allowlist due tomorrow*\n🕒 20 Nov 2026, 01:00 IST\nThe busiest shopping weeks of the year are almost here. Thanks to everyone who’s already turned on an IP allowlist, enabled expiring tokens, and taken other steps to help keep merchants protected when it matters most.…\n<https://shopify.dev/changelog/app-security-updates-ip-allowlist-due-tomorrow|Read more>"
+  },
+  {
    "cat": "news",
    "kind": "Changelog",
    "live": true,
@@ -213,17 +224,6 @@
     "News"
    ],
    "text": "🆕 *Shopify Changelog* · Changelog\n*Function settings extensions can now report several errors at once*\n🕒 20 Nov 2026, 00:05 IST\nFunction settings extensions can now report several errors at once. When your s-function-settings onSubmit handler rejects with an AggregateError , the Shopify admin shows every error on discount and checkout rule…\n<https://shopify.dev/changelog/function-settings-extensions-can-now-report-several-errors-at-once|Read more>"
-  },
-  {
-   "cat": "security",
-   "kind": "Changelog",
-   "live": true,
-   "note": "",
-   "source": "Shopify Changelog",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🆕 *Shopify Changelog* · Changelog\n*Network access declarations are now required for apps that run on the online store*\n🕒 19 Nov 2026, 22:30 IST\nWe're adding network access declarations as a requirement to better protect merchants. Apps that run code on the online store must declare allowed_sources in the [network_access] section of shopify.app.toml . Timeline…\n<https://shopify.dev/changelog/network-access-declarations-are-now-required-for-apps-that-run-on-the-online-store|Read more>"
   },
   {
    "cat": "news",
