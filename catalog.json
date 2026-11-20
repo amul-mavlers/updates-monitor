@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Investigating",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🔴 *Cloudflare Status* · Investigating\n*Cache Purging Delays in Milan*\n🕒 21 Nov 2026, 02:21 IST\nCloudflare single-file cache purging (purge by URL) called via the Dashboard/API is delayed in Milan. We are working to resolve this issue as soon as possible. Until then you may use the Purge Everything feature but do…\n<https://www.cloudflarestatus.com/incidents/akjr7qn5o622|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Monitoring · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Network Performance Issues in Washington, DC datacenter (IAD)*\n🕒 21 Nov 2026, 02:06 IST\nAffected: Network\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/oz6to8yacrxe|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 1 h 41 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 1 h 41 min · Minor impact\n*Cache Purging Delays in Amsterdam*\n🕒 21 Nov 2026, 01:11 IST\nAffected: CDN Cache Purge\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/xsgbfncq7of7|Read more>"
   },
   {
    "cat": "incidents",
@@ -542,6 +542,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-20T20:36:41Z",
+ "updated": "2026-11-20T20:51:40Z",
  "version": 1
 }
