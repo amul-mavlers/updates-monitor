@@ -256,7 +256,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Laravel News* · Laravel\n*PHP 8.6 is released!*\n🕒 19 Nov 2026, 21:20 IST\nPHP 8.6 is out with partial function application, a clamp() function, a Duration class, JSON error locations, readonly property defaults, and new deprecations. The post PHP 8.6 is released! appeared first on Laravel…\n<https://laravel-news.com/php-8-6-release-day?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
+   "text": "🆕 *Laravel News* · Laravel\n*PHP 8.6 is released!*\n🕒 20 Nov 2026, 18:43 IST\nPHP 8.6 is out with partial function application, a clamp() function, a Duration class, JSON error locations, readonly property defaults, and new deprecations. The post PHP 8.6 is released! appeared first on Laravel…\n<https://laravel-news.com/php-8-6-release-day?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
   },
   {
    "cat": "news",
@@ -267,7 +267,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Laravel News* · Laravel\n*Laravel Warrant: Row-Level Permissions With Eloquent*\n🕒 18 Nov 2026, 22:41 IST\nLaravel Warrant compiles authorization rules into SQL. Filter Eloquent queries, check individual records, and return per-row abilities from the same rules. The post Laravel Warrant: Row-Level Permissions With Eloquent…\n<https://laravel-news.com/laravel-warrant?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
+   "text": "🆕 *Laravel News* · Laravel\n*Laranon: Reversible PII Anonymization for Laravel and LLMs*\n🕒 20 Nov 2026, 07:14 IST\nLaranon finds personal data in Laravel apps and replaces it with tokens before it reaches an LLM, then puts the real values back in the model's reply. The post Laranon: Reversible PII Anonymization for Laravel and LLMs…\n<https://laravel-news.com/laranon-pii-anonymization?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
   },
   {
    "cat": "news",
@@ -542,6 +542,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-20T05:10:34Z",
+ "updated": "2026-11-20T13:13:24Z",
  "version": 1
 }
