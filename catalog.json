@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Monitoring · Major impact",
+   "kind": "Resolved after 28 min · Major impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟡 *Cloudflare Status* · Monitoring · Major impact\n*Cloudflare Dashboard and Cloudflare API service issues in EU region*\n🕒 21 Nov 2026, 00:08 IST\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/iysf3fasf7wn|Read more>"
+   "text": "🟢 *Cloudflare Status* · Resolved after 28 min · Major impact\n*Cloudflare Dashboard and Cloudflare API service issues in EU region*\n🕒 21 Nov 2026, 00:23 IST\nCloudflare has resolved API and dashboard issues in the EU region.\n<https://www.cloudflarestatus.com/incidents/iysf3fasf7wn|Read more>"
   },
   {
    "cat": "incidents",
@@ -542,6 +542,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-20T18:38:28Z",
+ "updated": "2026-11-20T18:53:14Z",
  "version": 1
 }
