@@ -215,15 +215,15 @@
    "text": "🆕 *Shopify Changelog* · Changelog\n*eventBridgeServerPixelUpdate and pubSubServerPixelUpdate now require user access to the app*\n🕒 20 Nov 2026, 22:30 IST\nStarting November 20, 2026, the eventBridgeServerPixelUpdate and pubSubServerPixelUpdate mutations reject online access tokens for users who don't have access to the app. The change applies to all GraphQL Admin API…\n<https://shopify.dev/changelog/eventbridgeserverpixelupdate-and-pubsubserverpixelupdate-now-require-user-access-to-the-app|Read more>"
   },
   {
-   "cat": "security",
+   "cat": "news",
    "kind": "Changelog",
    "live": true,
    "note": "",
    "source": "Shopify Changelog",
    "spaces": [
-    "Downtime"
+    "News"
    ],
-   "text": "🆕 *Shopify Changelog* · Changelog\n*App security updates: IP allowlist due tomorrow*\n🕒 20 Nov 2026, 01:00 IST\nThe busiest shopping weeks of the year are almost here. Thanks to everyone who’s already turned on an IP allowlist, enabled expiring tokens, and taken other steps to help keep merchants protected when it matters most.…\n<https://shopify.dev/changelog/app-security-updates-ip-allowlist-due-tomorrow|Read more>"
+   "text": "🆕 *Shopify Changelog* · Changelog\n*File reference metafields can hold YouTube and Vimeo videos as of API version 2027-01*\n🕒 20 Nov 2026, 20:30 IST\n<https://shopify.dev/changelog/file-reference-metafields-can-hold-youtube-and-vimeo-videos-as-of-api-version-2027-01|Read more>"
   },
   {
    "cat": "news",
