@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Investigating · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Network Performance Issues in Miami*\n🕒 20 Nov 2026, 10:30 IST\nAffected: Miami, United States - (MIA)\nCloudflare has identified issues with Network Performance in Miami. We are working to analyze and mitigate this problem. More updates to follow shortly.\n<https://www.cloudflarestatus.com/incidents/4lv21sf5fzhm|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 1 h 42 min · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 1 h 42 min · Minor impact\n*R2 and Durable Objects availability issues*\n🕒 20 Nov 2026, 10:05 IST\nAffected: Durable Objects, R2\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/pfwuex7qix27|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 5 h 25 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 5 h 25 min · Minor impact\n*Observability ingestion delay and query failures*\n🕒 20 Nov 2026, 03:25 IST\nAffected: Workers, Workers Observability\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/ljrvdciu7syf|Read more>"
   },
   {
    "cat": "incidents",
@@ -542,6 +542,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-20T04:35:18Z",
+ "updated": "2026-11-20T05:00:56Z",
  "version": 1
 }
