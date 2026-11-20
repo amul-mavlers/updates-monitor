@@ -9,7 +9,7 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🟢 *GitHub Status* · Resolved after 1 h 11 min · Minor impact\n*Disruption with some GitHub services*\n🕒 19 Nov 2026, 23:47 IST\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/pvjz2g01trc7|Read more>"
+   "text": "🟢 *GitHub Status* · Resolved after 1 h 11 min · Minor impact\n*Disruption with some GitHub services*\n🕒 19 Nov 2026, 23:47 IST\nBetween November 5, 2026, at 18:02 UTC and November 19, 2026, at 18:05 UTC, GitHub users experienced unexpected expiration of their web browser sessions despite continued activity, requiring them to login. An…\n<https://stspg.io/pvjz2g01trc7|Read more>"
   },
   {
    "cat": "incidents",
