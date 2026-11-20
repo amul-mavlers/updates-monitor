@@ -267,7 +267,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Laravel News* · Laravel\n*Laranon: Reversible PII Anonymization for Laravel and LLMs*\n🕒 20 Nov 2026, 07:14 IST\nLaranon finds personal data in Laravel apps and replaces it with tokens before it reaches an LLM, then puts the real values back in the model's reply. The post Laranon: Reversible PII Anonymization for Laravel and LLMs…\n<https://laravel-news.com/laranon-pii-anonymization?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
+   "text": "🆕 *Laravel News* · Laravel\n*pgjumbo: A PostgreSQL Client for macOS, Windows, and Linux*\n🕒 20 Nov 2026, 07:31 IST\npgjumbo is a new free PostgreSQL client that shows the rows, triggers, and cascades a write will touch, and lets you rehearse it before you commit. The post pgjumbo: A PostgreSQL Client for macOS, Windows, and Linux…\n<https://laravel-news.com/pgjumbo-postgresql-client?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
   },
   {
    "cat": "news",
