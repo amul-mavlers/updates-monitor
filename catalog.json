@@ -67,17 +67,6 @@
    "text": "🟢 *Shopify Status* · Resolved after 3 h 5 min · Major impact\n*Some POS transactions are not completing on iOS devices Actions*\n🕒 25 Jun 2025, 02:22 IST\nAffected: Point of Sale\nBetween 16:31 UTC and 19:48 UTC, we experienced an issue due to which some POS transactions could not be completed as expected. A fix was implemented at 17:44 UTC which resolved the issue. The monitoring period for…\n<https://stspg.io/tn2csdqxzfnn|Read more>"
   },
   {
-   "cat": "news",
-   "kind": "New post",
-   "live": true,
-   "note": "",
-   "source": "WordPress News",
-   "spaces": [
-    "WordPress & PHP"
-   ],
-   "text": "🆕 *WordPress News* · New post\n*WordPress Credits Boost Translation*\n🕒 20 Nov 2026, 19:18 IST\nContributors to the Costa Rican Spanish locale are making WordPress more accessible to Spanish-speaking communities in Costa Rica. Students from local schools and universities have joined the Polyglots team, helping…\n<https://wordpress.org/news/2026/11/wp-credits-boost-translation/|Read more>"
-  },
-  {
    "cat": "security",
    "kind": "New post",
    "live": true,
@@ -110,6 +99,17 @@
     "WordPress & PHP"
    ],
    "text": "🆕 *WordPress News* · New post\n*Copy Your WordPress Site with Reprint*\n🕒 13 Nov 2026, 17:30 IST\nReprint is a free, open-source, PHP-based tool that copies a WordPress site’s files and database. The plugin is available in the WordPress.org Plugin Directory, along with the command-line client used to copy the site.…\n<https://wordpress.org/news/2026/11/reprint-your-site/|Read more>"
+  },
+  {
+   "cat": "news",
+   "kind": "New post",
+   "live": true,
+   "note": "",
+   "source": "WordPress News",
+   "spaces": [
+    "WordPress & PHP"
+   ],
+   "text": "🆕 *WordPress News* · New post\n*WordCamp Asia 2027 Is Coming to Penang*\n🕒 11 Nov 2026, 19:30 IST\nNext year, WordCamp Asia 2027 heads to Penang, Malaysia. From April 9 to 11, the WordPress community will gather at the Penang Waterfront Convention Centre for three days of contribution, learning, and connection.…\n<https://wordpress.org/news/2026/11/wc-asia-2027-penang/|Read more>"
   },
   {
    "cat": "security",
@@ -542,6 +542,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-20T13:48:10Z",
+ "updated": "2026-11-20T13:13:24Z",
  "version": 1
 }
