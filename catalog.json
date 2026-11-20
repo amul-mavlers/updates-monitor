@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Investigating",
+   "kind": "Identified",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *Cloudflare Status* · Investigating\n*Cache Purging Delays in Milan*\n🕒 21 Nov 2026, 02:21 IST\nCloudflare single-file cache purging (purge by URL) called via the Dashboard/API is delayed in Milan. We are working to resolve this issue as soon as possible. Until then you may use the Purge Everything feature but do…\n<https://www.cloudflarestatus.com/incidents/akjr7qn5o622|Read more>"
+   "text": "🟠 *Cloudflare Status* · Identified\n*Cache Purging Delays in Milan*\n🕒 21 Nov 2026, 02:25 IST\nAffected: CDN Cache Purge\nThe issue has been identified and a fix is being implemented.\n<https://www.cloudflarestatus.com/incidents/akjr7qn5o622|Read more>"
   },
   {
    "cat": "incidents",
@@ -542,6 +542,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-20T20:51:40Z",
+ "updated": "2026-11-20T20:55:47Z",
  "version": 1
 }
