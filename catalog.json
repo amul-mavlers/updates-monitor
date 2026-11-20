@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Investigating · Minor impact",
+   "kind": "Monitoring · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*R2 and Durable Objects availability issues*\n🕒 20 Nov 2026, 08:22 IST\nAffected: Durable Objects, R2\nCustomers using R2 and Durable Objects in Eastern North America may be experiencing intermittent errors and failed requests. We are investigating the cause and working to confirm that service availability has…\n<https://www.cloudflarestatus.com/incidents/pfwuex7qix27|Read more>"
+   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*R2 and Durable Objects availability issues*\n🕒 20 Nov 2026, 09:32 IST\nAffected: Durable Objects, R2\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/pfwuex7qix27|Read more>"
   },
   {
    "cat": "incidents",
@@ -542,6 +542,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-20T02:52:58Z",
+ "updated": "2026-11-20T04:02:56Z",
  "version": 1
 }
