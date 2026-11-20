@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Investigating · Minor impact",
+   "kind": "Identified · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Network Performance Issues in Miami*\n🕒 20 Nov 2026, 10:30 IST\nAffected: Miami, United States - (MIA)\nCloudflare has identified issues with Network Performance in Miami. We are working to analyze and mitigate this problem. More updates to follow shortly.\n<https://www.cloudflarestatus.com/incidents/4lv21sf5fzhm|Read more>"
+   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Network Performance Issues in Miami*\n🕒 20 Nov 2026, 10:40 IST\nAffected: Miami, United States - (MIA)\nThe issue has been identified and a fix is being implemented.\n<https://www.cloudflarestatus.com/incidents/4lv21sf5fzhm|Read more>"
   },
   {
    "cat": "incidents",
@@ -542,6 +542,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-20T05:00:56Z",
+ "updated": "2026-11-20T05:10:34Z",
  "version": 1
 }
