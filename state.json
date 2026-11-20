@@ -1592,6 +1592,7 @@
     "http://php.net/releases/8_2_35.php"
   ],
   "Shopify Changelog": [
+    "https://shopify.dev/changelog/eventbridgeserverpixelupdate-and-pubsubserverpixelupdate-now-require-user-access-to-the-app",
     "https://shopify.dev/changelog/app-security-updates-ip-allowlist-due-tomorrow",
     "https://shopify.dev/changelog/abandonedcheckouturl-now-requires-level-2-protected-customer-data-access",
     "https://shopify.dev/changelog/function-settings-extensions-can-now-report-several-errors-at-once",
