@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Investigating · Major impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🔴 *Cloudflare Status* · Investigating · Major impact\n*Cloudflare Dashboard and Cloudflare API service issues in EU region*\n🕒 20 Nov 2026, 23:54 IST\nCloudflare is investigating issues with Cloudflare Dashboard and related APIs in EU region. These issues do not affect the serving of cached files via the Cloudflare CDN or other security features at the Cloudflare…\n<https://www.cloudflarestatus.com/incidents/iysf3fasf7wn|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Investigating · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Cache Purging Delays in Amsterdam*\n🕒 20 Nov 2026, 23:30 IST\nAffected: CDN Cache Purge\nCloudflare single-file cache purging (purge by URL) called via the Dashboard/API is delayed in Amsterdam. We are working to resolve this issue as soon as possible. Until then you may use the Purge Everything feature…\n<https://www.cloudflarestatus.com/incidents/xsgbfncq7of7|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 9 h 27 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 9 h 27 min · Minor impact\n*Network Performance Issues in Miami*\n🕒 20 Nov 2026, 19:58 IST\nAffected: Miami, United States - (MIA)\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/4lv21sf5fzhm|Read more>"
   },
   {
    "cat": "incidents",
@@ -542,6 +542,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-20T18:00:33Z",
+ "updated": "2026-11-20T18:24:29Z",
  "version": 1
 }
