@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Monitoring",
+   "kind": "Resolved after 1 h 33 min",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟡 *Cloudflare Status* · Monitoring\n*Cache Purging Delays in Milan*\n🕒 21 Nov 2026, 03:33 IST\nAffected: CDN Cache Purge\nA fix has been implemented and we are currently monitoring the results.\n<https://www.cloudflarestatus.com/incidents/akjr7qn5o622|Read more>"
+   "text": "🟢 *Cloudflare Status* · Resolved after 1 h 33 min\n*Cache Purging Delays in Milan*\n🕒 21 Nov 2026, 03:55 IST\nAffected: CDN Cache Purge\nThis incident is now resolved.\n<https://www.cloudflarestatus.com/incidents/akjr7qn5o622|Read more>"
   },
   {
    "cat": "incidents",
@@ -542,6 +542,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-20T22:03:50Z",
+ "updated": "2026-11-20T22:25:16Z",
  "version": 1
 }
