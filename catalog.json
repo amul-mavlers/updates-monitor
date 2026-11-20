@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Identified · Minor impact",
+   "kind": "Resolved after 9 h 27 min · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Network Performance Issues in Miami*\n🕒 20 Nov 2026, 10:40 IST\nAffected: Miami, United States - (MIA)\nThe issue has been identified and a fix is being implemented.\n<https://www.cloudflarestatus.com/incidents/4lv21sf5fzhm|Read more>"
+   "text": "🟢 *Cloudflare Status* · Resolved after 9 h 27 min · Minor impact\n*Network Performance Issues in Miami*\n🕒 20 Nov 2026, 19:58 IST\nAffected: Miami, United States - (MIA)\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/4lv21sf5fzhm|Read more>"
   },
   {
    "cat": "incidents",
@@ -542,6 +542,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-20T13:48:10Z",
+ "updated": "2026-11-20T14:28:03Z",
  "version": 1
 }
