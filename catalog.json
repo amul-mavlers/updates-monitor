@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Resolved after 1 h 41 min · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🟢 *Cloudflare Status* · Resolved after 1 h 41 min · Minor impact\n*Cache Purging Delays in Amsterdam*\n🕒 21 Nov 2026, 01:11 IST\nAffected: CDN Cache Purge\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/xsgbfncq7of7|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 28 min · Major impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 28 min · Major impact\n*Cloudflare Dashboard and Cloudflare API service issues in EU region*\n🕒 21 Nov 2026, 00:23 IST\nCloudflare has resolved API and dashboard issues in the EU region.\n<https://www.cloudflarestatus.com/incidents/iysf3fasf7wn|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Investigating · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Cache Purging Delays in Amsterdam*\n🕒 20 Nov 2026, 23:30 IST\nAffected: CDN Cache Purge\nCloudflare single-file cache purging (purge by URL) called via the Dashboard/API is delayed in Amsterdam. We are working to resolve this issue as soon as possible. Until then you may use the Purge Everything feature…\n<https://www.cloudflarestatus.com/incidents/xsgbfncq7of7|Read more>"
   },
   {
    "cat": "incidents",
@@ -542,6 +542,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-20T18:53:14Z",
+ "updated": "2026-11-20T19:41:49Z",
  "version": 1
 }
