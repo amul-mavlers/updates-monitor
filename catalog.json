@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Investigating · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Network Performance Issues in Chicago datacenter (ORD)*\n🕒 22 Nov 2026, 06:02 IST\nAffected: Durable Objects, R2\nCloudflare is investigating issues with network performance in Chicago datacenter, ORD. We are working to analyze and mitigate this problem. More updates to follow shortly.\n<https://www.cloudflarestatus.com/incidents/d2m4kw94ut4f|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 11 h 8 min · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 11 h 8 min · Minor impact\n*Network Performance Issues in Washington, DC datacenter (IAD)*\n🕒 21 Nov 2026, 13:14 IST\nAffected: Network\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/oz6to8yacrxe|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 1 h 33 min",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 1 h 33 min\n*Cache Purging Delays in Milan*\n🕒 21 Nov 2026, 03:55 IST\nAffected: CDN Cache Purge\nThis incident is now resolved.\n<https://www.cloudflarestatus.com/incidents/akjr7qn5o622|Read more>"
   },
   {
    "cat": "incidents",
@@ -542,6 +542,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-21T07:44:10Z",
+ "updated": "2026-11-22T00:32:59Z",
  "version": 1
 }
