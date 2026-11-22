@@ -31,7 +31,7 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Network Performance Issues in Chicago datacenter (ORD)*\n🕒 22 Nov 2026, 06:02 IST\nAffected: Durable Objects, R2\nCloudflare is investigating issues with network performance in Chicago datacenter, ORD. We are working to analyze and mitigate this problem. More updates to follow shortly.\n<https://www.cloudflarestatus.com/incidents/d2m4kw94ut4f|Read more>"
+   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Network Performance Issues in Chicago datacenter (ORD)*\n🕒 22 Nov 2026, 06:07 IST\nAffected: Durable Objects, D1, R2\nWe are continuing to investigate the issue.\n<https://www.cloudflarestatus.com/incidents/d2m4kw94ut4f|Read more>"
   },
   {
    "cat": "incidents",
@@ -542,6 +542,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-22T00:32:59Z",
+ "updated": "2026-11-22T00:37:13Z",
  "version": 1
 }
