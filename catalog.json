@@ -46,17 +46,6 @@
   },
   {
    "cat": "incidents",
-   "kind": "Resolved after 53 min · Critical impact",
-   "live": true,
-   "note": "",
-   "source": "Shopify Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Shopify Status* · Resolved after 53 min · Critical impact\n*Errors at Checkout and Point Of Sale*\n🕒 24 Nov 2026, 00:17 IST\nAffected: Checkout\nBetween 17:40 UTC - 17:57 UTC , we experienced issues with completing checkouts on both the Online Store and Point of Sale. A fix was implemented at 17:57 UTC which resolved the issue. The monitoring period for this…\n<https://stspg.io/h2126z1y946s|Read more>"
-  },
-  {
-   "cat": "incidents",
    "kind": "Resolved after 33 min · Minor impact",
    "live": true,
    "note": "",
@@ -65,6 +54,17 @@
     "Downtime"
    ],
    "text": "🟢 *Shopify Status* · Resolved after 33 min · Minor impact\n*Shop Pay unavailable*\n🕒 25 Jun 2025, 05:00 IST\nAffected: Checkout\nThis incident has been resolved.\n<https://stspg.io/1nx1vcvd553l|Read more>"
+  },
+  {
+   "cat": "incidents",
+   "kind": "Resolved after 3 h 5 min · Major impact",
+   "live": true,
+   "note": "",
+   "source": "Shopify Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🟢 *Shopify Status* · Resolved after 3 h 5 min · Major impact\n*Some POS transactions are not completing on iOS devices Actions*\n🕒 25 Jun 2025, 02:22 IST\nAffected: Point of Sale\nBetween 16:31 UTC and 19:48 UTC, we experienced an issue due to which some POS transactions could not be completed as expected. A fix was implemented at 17:44 UTC which resolved the issue. The monitoring period for…\n<https://stspg.io/tn2csdqxzfnn|Read more>"
   },
   {
    "cat": "news",
@@ -112,6 +112,17 @@
    "text": "🆕 *WordPress News* · New post\n*WordPress 7.2 Release Candidate 1*\n🕒 17 Nov 2026, 21:34 IST\nThe first Release Candidate (“RC1”) for WordPress 7.2 is ready for download and testing! This version of the WordPress software is still under development. Please do not install, run, or test this version of WordPress…\n<https://wordpress.org/news/2026/11/wordpress-7-2-release-candidate-1/|Read more>"
   },
   {
+   "cat": "news",
+   "kind": "News",
+   "live": true,
+   "note": "",
+   "source": "PHP News",
+   "spaces": [
+    "WordPress & PHP"
+   ],
+   "text": "🆕 *PHP News* · News\n*PHP 8.6.0 Released!*\n🕒 19 Nov 2026, 19:31 IST\nThe PHP development team announces the immediate availability of PHP 8.6.0. This release marks a major update to the PHP language. PHP 8.6 comes with numerous improvements and new features such as: Partial Function…\n<https://www.php.net/index.php#2026-11-19-5|Read more>"
+  },
+  {
    "cat": "security",
    "kind": "News",
    "live": true,
@@ -146,18 +157,6 @@
     "Downtime"
    ],
    "text": "🆕 *PHP News* · News\n*PHP 8.3.37 Released!*\n🕒 19 Nov 2026, 19:30 IST\nThe PHP development team announces the immediate availability of PHP 8.3.37. This is a security release. All PHP 8.3 users are encouraged to upgrade to this version. For source downloads of PHP 8.3.37 please visit our…\n<https://www.php.net/index.php#2026-11-19-2|Read more>"
-  },
-  {
-   "cat": "security",
-   "kind": "News",
-   "live": true,
-   "note": "",
-   "source": "PHP News",
-   "spaces": [
-    "WordPress & PHP",
-    "Downtime"
-   ],
-   "text": "🆕 *PHP News* · News\n*PHP 8.2.36 Released!*\n🕒 19 Nov 2026, 19:30 IST\nThe PHP development team announces the immediate availability of PHP 8.2.36. This is a security release. All PHP 8.2 users are encouraged to upgrade to this version. For source downloads of PHP 8.2.36 please visit our…\n<https://www.php.net/index.php#2026-11-19-1|Read more>"
   },
   {
    "cat": "news",
