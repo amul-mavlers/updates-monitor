@@ -710,6 +710,14 @@
     "https://wordpress.org/news/?p=21420"
   ],
   "PHP News": [
+    "https://www.php.net/archive/2026.php#2026-11-20-1",
+    "https://www.php.net/archive/2026.php#2026-09-02-2",
+    "https://www.php.net/archive/2025.php#2025-03-13-2",
+    "https://www.php.net/archive/2021.php#2021-12-16-2",
+    "https://www.php.net/archive/2020.php#2020-07-09-3",
+    "https://www.php.net/archive/2020.php#2020-06-11-1",
+    "http://php.net/archive/2017.php#id2017-09-28-1",
+    "http://php.net/archive/2017.php#id2017-03-03-1",
     "https://www.php.net/archive/2026.php#2026-11-19-5",
     "https://www.php.net/archive/2026.php#2026-11-19-4",
     "https://www.php.net/archive/2026.php#2026-11-19-3",
@@ -2471,6 +2479,7 @@
   ],
   "_dedupe": {
     "php": [
+      "php conference kansai 2026 japan",
       "php 8 6 0",
       "php 8 5 13",
       "php 8 4 28",
