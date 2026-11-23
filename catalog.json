@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Resolved after 34 min",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🟢 *Cloudflare Status* · Resolved after 34 min\n*Elevated latency in Frankfurt*\n🕒 23 Nov 2026, 10:22 IST\nAffected: Network, Frankfurt, Germany - (FRA)\nBetween 04:18-04:28 UTC some customers reaching Frankfurt, DE may have experienced elevated latency.\n<https://www.cloudflarestatus.com/incidents/nosp2iizzvc7|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 11 min · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 11 min · Minor impact\n*Increased HTTP 5xx Errors in Brussels*\n🕒 23 Nov 2026, 08:16 IST\nAffected: Network, Brussels, Belgium - (BRU)\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/pnfv9wfy2q4y|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 1 h 39 min",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 1 h 39 min\n*Single-File Cache Purge Delays*\n🕒 23 Nov 2026, 02:30 IST\nAffected: CDN Cache Purge\nCloudflare identified an issue that delayed a small subset of single file cache purge requests between 19:21 and 20:21 UTC on November 22, 2026. Affected requests were submitted through Cloudflare data centers in parts…\n<https://www.cloudflarestatus.com/incidents/5siv904vn94q|Read more>"
   },
   {
    "cat": "incidents",
@@ -541,6 +541,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-23T02:46:14Z",
+ "updated": "2026-11-23T04:52:22Z",
  "version": 1
 }
