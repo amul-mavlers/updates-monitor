@@ -53,7 +53,7 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🟢 *Shopify Status* · Resolved after 19 min · Critical impact\n*Errors at Checkout and Point Of Sale*\n🕒 23 Nov 2026, 23:43 IST\nAffected: Checkout, Point of Sale\nBetween 17:45 UTC - 17:57 UTC , we experienced issues with completing checkouts on both the Online Store and Point of Sale. A fix was implemented at 17:57 UTC which resolved the issue. The monitoring period for this…\n<https://stspg.io/4ppc7pqmn6xv|Read more>"
+   "text": "🟢 *Shopify Status* · Resolved after 19 min · Critical impact\n*Errors at Checkout and Point Of Sale*\n🕒 23 Nov 2026, 23:43 IST\nAffected: Checkout, Point of Sale\nBetween 17:40 UTC - 17:57 UTC , we experienced issues with completing checkouts on both the Online Store and Point of Sale. A fix was implemented at 17:57 UTC which resolved the issue. The monitoring period for this…\n<https://stspg.io/4ppc7pqmn6xv|Read more>"
   },
   {
    "cat": "incidents",
