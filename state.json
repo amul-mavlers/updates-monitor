@@ -227,6 +227,7 @@
   ],
   "_health": {},
   "Cloudflare Status": [
+    "f7xp1ilx7re2|2026-11-23T17:00:18.787Z",
     "00dp7cliyqqt|2026-11-23T13:52:11.144Z",
     "nosp2iizzvc7|2026-11-23T04:52:22.293Z",
     "pnfv9wfy2q4y|2026-11-23T02:46:14.797Z",
@@ -1625,6 +1626,7 @@
     "http://php.net/releases/8_2_35.php"
   ],
   "Shopify Changelog": [
+    "https://shopify.dev/changelog/query-your-app-s-logs-in-shopify-cli-with-shopify-app-logs",
     "https://shopify.dev/changelog/show-image-swatches-for-product-options-in-the-catalog-api",
     "https://shopify.dev/changelog/file-reference-metafields-can-hold-youtube-and-vimeo-videos-as-of-api-version-2027-01",
     "https://shopify.dev/changelog/eventbridgeserverpixelupdate-and-pubsubserverpixelupdate-now-require-user-access-to-the-app",

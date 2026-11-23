@@ -120,6 +120,17 @@
    "spaces": [
     "WordPress & PHP"
    ],
+   "text": "🆕 *PHP News* · News\n*PHP Conference Kansai 2026 (JAPAN)*\n🕒 20 Nov 2026, 19:24 IST\nWe are excited to announce PHP Conference Kansai 2026! 🎉 About the conference PHP Conference Kansai is a technical conference where PHP engineers in the Kansai region of Japan share their knowledge and experience. It…\n<https://www.php.net/conferences/index.php#2026-11-20-1|Read more>"
+  },
+  {
+   "cat": "news",
+   "kind": "News",
+   "live": true,
+   "note": "",
+   "source": "PHP News",
+   "spaces": [
+    "WordPress & PHP"
+   ],
    "text": "🆕 *PHP News* · News\n*PHP 8.6.0 Released!*\n🕒 19 Nov 2026, 19:31 IST\nThe PHP development team announces the immediate availability of PHP 8.6.0. This release marks a major update to the PHP language. PHP 8.6 comes with numerous improvements and new features such as: Partial Function…\n<https://www.php.net/index.php#2026-11-19-5|Read more>"
   },
   {
@@ -145,18 +156,6 @@
     "Downtime"
    ],
    "text": "🆕 *PHP News* · News\n*PHP 8.4.28 Released!*\n🕒 19 Nov 2026, 19:30 IST\nThe PHP development team announces the immediate availability of PHP 8.4.28. This is a security release. All PHP 8.4 users are encouraged to upgrade to this version. For source downloads of PHP 8.4.28 please visit our…\n<https://www.php.net/index.php#2026-11-19-3|Read more>"
-  },
-  {
-   "cat": "security",
-   "kind": "News",
-   "live": true,
-   "note": "",
-   "source": "PHP News",
-   "spaces": [
-    "WordPress & PHP",
-    "Downtime"
-   ],
-   "text": "🆕 *PHP News* · News\n*PHP 8.3.37 Released!*\n🕒 19 Nov 2026, 19:30 IST\nThe PHP development team announces the immediate availability of PHP 8.3.37. This is a security release. All PHP 8.3 users are encouraged to upgrade to this version. For source downloads of PHP 8.3.37 please visit our…\n<https://www.php.net/index.php#2026-11-19-2|Read more>"
   },
   {
    "cat": "news",
@@ -203,6 +202,17 @@
    "text": "🆕 *PHP Releases* · New release\n*PHP 8.3.37 released!*\n🕒 19 Nov 2026, 05:30 IST\nThere is a new PHP release in town!\n<http://php.net/releases/8_3_37.php|Read more>"
   },
   {
+   "cat": "news",
+   "kind": "Changelog",
+   "live": true,
+   "note": "",
+   "source": "Shopify Changelog",
+   "spaces": [
+    "News"
+   ],
+   "text": "🆕 *Shopify Changelog* · Changelog\n*Access app logs in Shopify CLI*\n🕒 23 Nov 2026, 22:30 IST\nShopify CLI version 5.1 adds the shopify app logs command, which lists your app’s recent logs in your terminal. It returns the same logs you see in the Dev Dashboard, such as webhook deliveries, Admin API requests, and…\n<https://shopify.dev/changelog/query-your-app-s-logs-in-shopify-cli-with-shopify-app-logs|Read more>"
+  },
+  {
    "cat": "security",
    "kind": "Changelog",
    "live": true,
@@ -212,17 +222,6 @@
     "Downtime"
    ],
    "text": "🆕 *Shopify Changelog* · Changelog\n*eventBridgeServerPixelUpdate and pubSubServerPixelUpdate now require user access to the app*\n🕒 20 Nov 2026, 22:30 IST\nStarting November 20, 2026, the eventBridgeServerPixelUpdate and pubSubServerPixelUpdate mutations reject online access tokens for users who don't have access to the app. The change applies to all GraphQL Admin API…\n<https://shopify.dev/changelog/eventbridgeserverpixelupdate-and-pubsubserverpixelupdate-now-require-user-access-to-the-app|Read more>"
-  },
-  {
-   "cat": "news",
-   "kind": "Changelog",
-   "live": true,
-   "note": "",
-   "source": "Shopify Changelog",
-   "spaces": [
-    "News"
-   ],
-   "text": "🆕 *Shopify Changelog* · Changelog\n*File reference metafields can hold YouTube and Vimeo videos as of API version 2027-01*\n🕒 20 Nov 2026, 20:30 IST\n<https://shopify.dev/changelog/file-reference-metafields-can-hold-youtube-and-vimeo-videos-as-of-api-version-2027-01|Read more>"
   },
   {
    "cat": "news",
@@ -541,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-23T14:27:20Z",
+ "updated": "2026-11-23T17:00:00Z",
  "version": 1
 }
