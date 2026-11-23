@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Investigating · Minor impact",
+   "kind": "Monitoring · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Increased HTTP 5xx Errors in Brussels*\n🕒 23 Nov 2026, 08:04 IST\nAffected: Network, Brussels, Belgium - (BRU)\nCloudflare is investigating an increased level of HTTP 5xx errors in Brussels, BE. We are working to analyse and mitigate this problem. More updates to follow shortly.\n<https://www.cloudflarestatus.com/incidents/pnfv9wfy2q4y|Read more>"
+   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Increased HTTP 5xx Errors in Brussels*\n🕒 23 Nov 2026, 08:05 IST\nAffected: Network, Brussels, Belgium - (BRU)\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/pnfv9wfy2q4y|Read more>"
   },
   {
    "cat": "incidents",
@@ -542,6 +542,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-23T02:34:56Z",
+ "updated": "2026-11-23T02:35:17Z",
  "version": 1
 }
