@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Monitoring · Minor impact",
+   "kind": "Resolved after 9 h 4 min · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Issues with Email Routing in France*\n🕒 25 Nov 2026, 03:34 IST\nAffected: Email Routing\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/x5ma22sji8wi|Read more>"
+   "text": "🟢 *Cloudflare Status* · Resolved after 9 h 4 min · Minor impact\n*Issues with Email Routing in France*\n🕒 25 Nov 2026, 04:12 IST\nAffected: Email Routing\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/x5ma22sji8wi|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-24T22:04:58Z",
+ "updated": "2026-11-24T22:42:43Z",
  "version": 1
 }
