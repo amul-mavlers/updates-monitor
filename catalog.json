@@ -2,6 +2,17 @@
  "cards": [
   {
    "cat": "incidents",
+   "kind": "Investigating · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "GitHub Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*Degraded Availability for MAI Code 2 in Copilot*\n🕒 24 Nov 2026, 19:14 IST\nAffected: Copilot AI Model Providers\nWe are experiencing degraded availability for the MAI Code 2 model in Copilot products and IDE surfaces. This is due to an issue with an upstream model provider. While we work with them to resolve the issue, we…\n<https://stspg.io/d5wbprv122kh|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 1 h 11 min · Minor impact",
    "live": true,
    "note": "",
@@ -10,17 +21,6 @@
     "Downtime"
    ],
    "text": "🟢 *GitHub Status* · Resolved after 1 h 11 min · Minor impact\n*Disruption with some GitHub services*\n🕒 19 Nov 2026, 23:47 IST\nBetween November 5, 2026, at 18:02 UTC and November 19, 2026, at 18:05 UTC, GitHub users experienced unexpected expiration of their web browser sessions despite continued activity, requiring them to login. An…\n<https://stspg.io/pvjz2g01trc7|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 40 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "GitHub Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *GitHub Status* · Resolved after 40 min · Minor impact\n*Degraded availability for GPT-6 Luna in Copilot*\n🕒 19 Nov 2026, 22:07 IST\nAffected: Copilot AI Model Providers\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/vv0kzmyd9wqs|Read more>"
   },
   {
    "cat": "incidents",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-24T13:38:40Z",
+ "updated": "2026-11-24T13:44:27Z",
  "version": 1
 }
