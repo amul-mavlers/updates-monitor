@@ -9,7 +9,7 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🟡 *GitHub Status* · Monitoring · Minor impact\n*Degraded Availability for MAI Code 2 in Copilot*\n🕒 24 Nov 2026, 19:34 IST\nAffected: Copilot AI Model Providers\nThe degradation affecting Copilot AI Model Providers has been mitigated. We are monitoring to ensure stability.\n<https://stspg.io/d5wbprv122kh|Read more>"
+   "text": "🟡 *GitHub Status* · Monitoring · Minor impact\n*Degraded Availability for MAI Code 2 in Copilot*\n🕒 24 Nov 2026, 19:35 IST\nAffected: Copilot AI Model Providers\nThe issues with our upstream model provider have been resolved, and MAI Code 2 is once again available in Copilot products and IDE surfaces. We will continue monitoring to ensure stability, but mitigation is complete.\n<https://stspg.io/d5wbprv122kh|Read more>"
   },
   {
    "cat": "incidents",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-24T14:04:47Z",
+ "updated": "2026-11-24T14:05:23Z",
  "version": 1
 }
