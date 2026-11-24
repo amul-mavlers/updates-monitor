@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Monitoring · Minor impact",
+   "kind": "Resolved after 1 h 0 min · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Increased Errors for Durable Objects in Seattle*\n🕒 24 Nov 2026, 13:37 IST\nAffected: Durable Objects, Seattle, United States - (SEA)\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/idlaxmxz4unz|Read more>"
+   "text": "🟢 *Cloudflare Status* · Resolved after 1 h 0 min · Minor impact\n*Increased Errors for Durable Objects in Seattle*\n🕒 24 Nov 2026, 13:56 IST\nAffected: Durable Objects, Seattle, United States - (SEA)\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/idlaxmxz4unz|Read more>"
   },
   {
    "cat": "incidents",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-24T08:07:37Z",
+ "updated": "2026-11-24T08:26:20Z",
  "version": 1
 }
