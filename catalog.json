@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Investigating · Minor impact",
+   "kind": "Identified · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Cloudflare Workers API – Delayed or Inconsistent Responses*\n🕒 23 Nov 2026, 19:22 IST\nAffected: Workers\nCloudflare is investigating an issue affecting the Workers API and Workers configuration in the Cloudflare dashboard. Customers may see out-of-date or inconsistent information when viewing or managing Workers. For…\n<https://www.cloudflarestatus.com/incidents/00dp7cliyqqt|Read more>"
+   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Cloudflare Workers API – Delayed or Inconsistent Responses*\n🕒 24 Nov 2026, 06:58 IST\nAffected: Workers\nMultiple fixes are underway to address the underlying problem.\n<https://www.cloudflarestatus.com/incidents/00dp7cliyqqt|Read more>"
   },
   {
    "cat": "incidents",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-23T19:06:10Z",
+ "updated": "2026-11-24T01:28:49Z",
  "version": 1
 }
