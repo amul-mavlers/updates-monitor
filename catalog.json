@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Identified · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Issues with Email Routing in France*\n🕒 24 Nov 2026, 19:08 IST\nAffected: Email Routing\nCloudflare is investigating issues with Email Routing in France. Some SPF records may intermittently fail to resolve. Impact is restricted to email forwarding functionality and does not affect any connectivity,…\n<https://www.cloudflarestatus.com/incidents/x5ma22sji8wi|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Identified · Major impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟠 *Cloudflare Status* · Identified · Major impact\n*Magic Transit Degraded Performance*\n🕒 24 Nov 2026, 18:28 IST\nAffected: Magic Transit\nThe issue has been identified and a fix is being implemented.\n<https://www.cloudflarestatus.com/incidents/no721jcnlrbh|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 1 h 0 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 1 h 0 min · Minor impact\n*Increased Errors for Durable Objects in Seattle*\n🕒 24 Nov 2026, 13:56 IST\nAffected: Durable Objects, Seattle, United States - (SEA)\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/idlaxmxz4unz|Read more>"
   },
   {
    "cat": "incidents",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-24T12:58:11Z",
+ "updated": "2026-11-24T13:38:40Z",
  "version": 1
 }
