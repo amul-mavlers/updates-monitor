@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Monitoring · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Issues with Email Routing in France*\n🕒 25 Nov 2026, 03:34 IST\nAffected: Email Routing\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/x5ma22sji8wi|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Investigating · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*R2 elevated errors and timeouts for requests from South America*\n🕒 25 Nov 2026, 03:24 IST\nAffected: R2\nWe are investigating elevated errors and read timeouts affecting R2 requests originating from South America. Our team is actively working to identify and resolve the issue.\n<https://www.cloudflarestatus.com/incidents/k8utv1c3ubf2|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 1 d 7 h · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 1 d 7 h · Minor impact\n*Cloudflare Workers API – Delayed or Inconsistent Responses*\n🕒 25 Nov 2026, 03:05 IST\nAffected: Workers\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/00dp7cliyqqt|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-24T21:54:25Z",
+ "updated": "2026-11-24T22:04:58Z",
  "version": 1
 }
