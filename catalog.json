@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Investigating · Major impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🔴 *Cloudflare Status* · Investigating · Major impact\n*Magic Transit Degraded Performance*\n🕒 24 Nov 2026, 16:59 IST\nAffected: Magic Transit\nCloudflare is currently investigating issues related to Magic Transit. Impacted customers may see oversized DF-set inbound packets dropped when clear_dont_fragment_bit is enabled.\n<https://www.cloudflarestatus.com/incidents/no721jcnlrbh|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 1 h 0 min · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 1 h 0 min · Minor impact\n*Increased Errors for Durable Objects in Seattle*\n🕒 24 Nov 2026, 13:56 IST\nAffected: Durable Objects, Seattle, United States - (SEA)\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/idlaxmxz4unz|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Identified · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Cloudflare Workers API – Delayed or Inconsistent Responses*\n🕒 24 Nov 2026, 06:58 IST\nAffected: Workers\nMultiple fixes are underway to address the underlying problem.\n<https://www.cloudflarestatus.com/incidents/00dp7cliyqqt|Read more>"
   },
   {
    "cat": "incidents",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-24T08:26:20Z",
+ "updated": "2026-11-24T11:29:22Z",
  "version": 1
 }
