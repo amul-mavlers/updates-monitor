@@ -2,14 +2,14 @@
  "cards": [
   {
    "cat": "incidents",
-   "kind": "Monitoring · Minor impact",
+   "kind": "Resolved after 29 min · Minor impact",
    "live": true,
    "note": "",
    "source": "GitHub Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟡 *GitHub Status* · Monitoring · Minor impact\n*Degraded Availability for MAI Code 2 in Copilot*\n🕒 24 Nov 2026, 19:35 IST\nAffected: Copilot AI Model Providers\nThe issues with our upstream model provider have been resolved, and MAI Code 2 is once again available in Copilot products and IDE surfaces. We will continue monitoring to ensure stability, but mitigation is complete.\n<https://stspg.io/d5wbprv122kh|Read more>"
+   "text": "🟢 *GitHub Status* · Resolved after 29 min · Minor impact\n*Degraded Availability for MAI Code 2 in Copilot*\n🕒 24 Nov 2026, 19:44 IST\nAffected: Copilot AI Model Providers\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/d5wbprv122kh|Read more>"
   },
   {
    "cat": "incidents",
@@ -112,28 +112,6 @@
    "text": "🆕 *WordPress News* · New post\n*WordPress 7.1.5 Release*\n🕒 18 Nov 2026, 22:38 IST\nThis security release features fixes for multiple issues. Because this is a security release, it is recommended that you update your sites immediately. You can download WordPress 7.1.5 from WordPress.org, or visit your…\n<https://wordpress.org/news/2026/11/wordpress-7-1-5-release/|Read more>"
   },
   {
-   "cat": "news",
-   "kind": "News",
-   "live": true,
-   "note": "",
-   "source": "PHP News",
-   "spaces": [
-    "WordPress & PHP"
-   ],
-   "text": "🆕 *PHP News* · News\n*PHP Conference Kansai 2026 (JAPAN)*\n🕒 20 Nov 2026, 19:24 IST\nWe are excited to announce PHP Conference Kansai 2026! 🎉 About the conference PHP Conference Kansai is a technical conference where PHP engineers in the Kansai region of Japan share their knowledge and experience. It…\n<https://www.php.net/conferences/index.php#2026-11-20-1|Read more>"
-  },
-  {
-   "cat": "news",
-   "kind": "News",
-   "live": true,
-   "note": "",
-   "source": "PHP News",
-   "spaces": [
-    "WordPress & PHP"
-   ],
-   "text": "🆕 *PHP News* · News\n*PHP 8.6.0 Released!*\n🕒 19 Nov 2026, 19:31 IST\nThe PHP development team announces the immediate availability of PHP 8.6.0. This release marks a major update to the PHP language. PHP 8.6 comes with numerous improvements and new features such as: Partial Function…\n<https://www.php.net/index.php#2026-11-19-5|Read more>"
-  },
-  {
    "cat": "security",
    "kind": "News",
    "live": true,
@@ -156,6 +134,30 @@
     "Downtime"
    ],
    "text": "🆕 *PHP News* · News\n*PHP 8.4.28 Released!*\n🕒 19 Nov 2026, 19:30 IST\nThe PHP development team announces the immediate availability of PHP 8.4.28. This is a security release. All PHP 8.4 users are encouraged to upgrade to this version. For source downloads of PHP 8.4.28 please visit our…\n<https://www.php.net/index.php#2026-11-19-3|Read more>"
+  },
+  {
+   "cat": "security",
+   "kind": "News",
+   "live": true,
+   "note": "",
+   "source": "PHP News",
+   "spaces": [
+    "WordPress & PHP",
+    "Downtime"
+   ],
+   "text": "🆕 *PHP News* · News\n*PHP 8.3.37 Released!*\n🕒 19 Nov 2026, 19:30 IST\nThe PHP development team announces the immediate availability of PHP 8.3.37. This is a security release. All PHP 8.3 users are encouraged to upgrade to this version. For source downloads of PHP 8.3.37 please visit our…\n<https://www.php.net/index.php#2026-11-19-2|Read more>"
+  },
+  {
+   "cat": "security",
+   "kind": "News",
+   "live": true,
+   "note": "",
+   "source": "PHP News",
+   "spaces": [
+    "WordPress & PHP",
+    "Downtime"
+   ],
+   "text": "🆕 *PHP News* · News\n*PHP 8.2.36 Released!*\n🕒 19 Nov 2026, 19:30 IST\nThe PHP development team announces the immediate availability of PHP 8.2.36. This is a security release. All PHP 8.2 users are encouraged to upgrade to this version. For source downloads of PHP 8.2.36 please visit our…\n<https://www.php.net/index.php#2026-11-19-1|Read more>"
   },
   {
    "cat": "news",
@@ -540,6 +542,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-24T14:05:23Z",
+ "updated": "2026-11-24T14:14:05Z",
  "version": 1
 }
