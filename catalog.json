@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Monitoring · Minor impact",
+   "kind": "Resolved after 1 d 7 h · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Cloudflare Workers API – Delayed or Inconsistent Responses*\n🕒 25 Nov 2026, 00:55 IST\nAffected: Workers\nFixes have been deployed to production and inconsistent reads no longer appear to occurring. Continuing to monitor throughout the remainder of the day.\n<https://www.cloudflarestatus.com/incidents/00dp7cliyqqt|Read more>"
+   "text": "🟢 *Cloudflare Status* · Resolved after 1 d 7 h · Minor impact\n*Cloudflare Workers API – Delayed or Inconsistent Responses*\n🕒 25 Nov 2026, 03:05 IST\nAffected: Workers\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/00dp7cliyqqt|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-24T19:25:51Z",
+ "updated": "2026-11-24T21:35:41Z",
  "version": 1
 }
