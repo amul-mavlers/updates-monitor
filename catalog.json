@@ -31,7 +31,7 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Issues with Email Routing in France*\n🕒 24 Nov 2026, 19:08 IST\nAffected: Email Routing\nCloudflare is investigating issues with Email Routing in France. Some SPF records may intermittently fail to resolve. Impact is restricted to email forwarding functionality and does not affect any connectivity,…\n<https://www.cloudflarestatus.com/incidents/x5ma22sji8wi|Read more>"
+   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Issues with Email Routing in France*\n🕒 24 Nov 2026, 20:20 IST\nAffected: Email Routing\nWe are continuing to work on a fix for the issue.\n<https://www.cloudflarestatus.com/incidents/x5ma22sji8wi|Read more>"
   },
   {
    "cat": "incidents",
@@ -540,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-24T14:14:05Z",
+ "updated": "2026-11-24T14:50:35Z",
  "version": 1
 }
