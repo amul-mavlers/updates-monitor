@@ -9,7 +9,7 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *GitHub Status* · Investigating · Critical impact\n*Investigating degraded experiences across GitHub products*\n🕒 25 Nov 2026, 21:35 IST\nAffected: Git Operations, Webhooks, Issues, Pull Requests +2\nGit Operations is experiencing degraded availability. We are continuing to investigate.\n<https://stspg.io/5qj9j0p5g4cr|Read more>"
+   "text": "🔴 *GitHub Status* · Investigating · Critical impact\n*Investigating degraded experiences across GitHub products*\n🕒 25 Nov 2026, 21:38 IST\nAffected: Git Operations, Webhooks, Issues, Pull Requests +3\nGit Operations is experiencing degraded performance. We are continuing to investigate.\n<https://stspg.io/5qj9j0p5g4cr|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-25T16:05:03Z",
+ "updated": "2026-11-25T16:08:45Z",
  "version": 1
 }
