@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Investigating · Minor impact",
+   "kind": "Identified · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Elevated R2 Latency*\n🕒 26 Nov 2026, 01:38 IST\nAffected: Stream, Pipelines, R2\nWe are currently investigating reports of high latency for R2, Stream, and Pipelines. Users may experience elevated latency while using these services.\n<https://www.cloudflarestatus.com/incidents/ef6928vi0mic|Read more>"
+   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Elevated R2 Latency*\n🕒 26 Nov 2026, 02:15 IST\nAffected: Stream, Pipelines, R2\nThe issue has been identified and a fix is being implemented.\n<https://www.cloudflarestatus.com/incidents/ef6928vi0mic|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-25T20:08:42Z",
+ "updated": "2026-11-25T20:45:48Z",
  "version": 1
 }
