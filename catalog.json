@@ -2,14 +2,14 @@
  "cards": [
   {
    "cat": "incidents",
-   "kind": "Monitoring · Critical impact",
+   "kind": "Resolved after 56 min · Critical impact",
    "live": true,
    "note": "",
    "source": "GitHub Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟡 *GitHub Status* · Monitoring · Critical impact\n*Investigating degraded experiences across GitHub products*\n🕒 25 Nov 2026, 22:18 IST\nAffected: Git Operations, Webhooks, API Requests, Issues +4\nThe degradation has been mitigated. We are monitoring to ensure stability.\n<https://stspg.io/5qj9j0p5g4cr|Read more>"
+   "text": "🟢 *GitHub Status* · Resolved after 56 min · Critical impact\n*Investigating degraded experiences across GitHub products*\n🕒 25 Nov 2026, 22:22 IST\nAffected: Git Operations, Webhooks, API Requests, Issues +4\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/5qj9j0p5g4cr|Read more>"
   },
   {
    "cat": "incidents",
@@ -31,18 +31,18 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Some customers cannot create monitors*\n🕒 25 Nov 2026, 22:12 IST\nAffected: Notifications\nWe’re investigating an issue that prevents some customers from creating monitors in the Cloudflare dashboard under Alerts → Monitors. Affected customers may see error 17204 stating that their account has a limit of…\n<https://www.cloudflarestatus.com/incidents/vk87u9j2g6if|Read more>"
+   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Elevated R2 errors for buckets in APAC region*\n🕒 25 Nov 2026, 22:20 IST\nAffected: R2\nRequests to R2 buckets in APAC region may experience elevated errors. We are currently investigating this issue.\n<https://www.cloudflarestatus.com/incidents/2quqh864hxdi|Read more>"
   },
   {
    "cat": "incidents",
-   "kind": "Resolved after 1 h 47 min · Minor impact",
+   "kind": "Investigating · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 1 h 47 min · Minor impact\n*Firewall Configuration Delay*\n🕒 25 Nov 2026, 14:41 IST\nAffected: Network, Firewall\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/xufkpdtfdglk|Read more>"
+   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Some customers cannot create monitors*\n🕒 25 Nov 2026, 22:12 IST\nAffected: Notifications\nWe’re investigating an issue that prevents some customers from creating monitors in the Cloudflare dashboard under Alerts → Monitors. Affected customers may see error 17204 stating that their account has a limit of…\n<https://www.cloudflarestatus.com/incidents/vk87u9j2g6if|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-25T16:48:10Z",
+ "updated": "2026-11-25T16:52:16Z",
  "version": 1
 }
