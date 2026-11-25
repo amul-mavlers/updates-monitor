@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Monitoring · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Firewall Configuration Delay*\n🕒 25 Nov 2026, 14:26 IST\nAffected: Network, Firewall\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/xufkpdtfdglk|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 20 h 47 min · Major impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 20 h 47 min · Major impact\n*Magic Transit Degraded Performance*\n🕒 25 Nov 2026, 13:46 IST\nAffected: Magic Transit\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/no721jcnlrbh|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Identified · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Firewall Configuration Delay*\n🕒 25 Nov 2026, 13:19 IST\nAffected: Network, Firewall\nThe issue has been identified and a fix is being implemented.\n<https://www.cloudflarestatus.com/incidents/xufkpdtfdglk|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-25T08:16:26Z",
+ "updated": "2026-11-25T08:56:47Z",
  "version": 1
 }
