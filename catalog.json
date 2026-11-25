@@ -9,7 +9,7 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*LFS degradation for some customers*\n🕒 26 Nov 2026, 04:40 IST\nWe have identified an issue that impacts Large File Storage (LFS) for a small number of customers. We are working on mitigation.\n<https://stspg.io/ywpzwl4yl621|Read more>"
+   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*LFS degradation for some customers*\n🕒 26 Nov 2026, 05:15 IST\nWe're continuing to investigate elevated error rates affecting a small number of customers using Git LFS. We are still assessing mitigation options and will share updates as we learn more.\n<https://stspg.io/ywpzwl4yl621|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-25T23:10:38Z",
+ "updated": "2026-11-25T23:45:35Z",
  "version": 1
 }
