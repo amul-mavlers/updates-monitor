@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Resolved after 2 h 17 min · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🟢 *Cloudflare Status* · Resolved after 2 h 17 min · Minor impact\n*R2 elevated errors and timeouts for requests from South America*\n🕒 25 Nov 2026, 05:42 IST\nAffected: R2\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/k8utv1c3ubf2|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 9 h 0 min",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 9 h 0 min\n*Increased HTTP 530 Errors in Seattle*\n🕒 25 Nov 2026, 04:25 IST\nCloudflare investigated an increased level of HTTP 530 errors in Seattle between 19:55 - 20:39 UTC. We worked to analyse and mitigate this problem, and the issue has since been resolved.\n<https://www.cloudflarestatus.com/incidents/kwqke6nmketa|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 9 h 4 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 9 h 4 min · Minor impact\n*Issues with Email Routing in France*\n🕒 25 Nov 2026, 04:12 IST\nAffected: Email Routing\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/x5ma22sji8wi|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-25T00:08:18Z",
+ "updated": "2026-11-25T00:12:11Z",
  "version": 1
 }
