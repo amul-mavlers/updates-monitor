@@ -2,14 +2,14 @@
  "cards": [
   {
    "cat": "incidents",
-   "kind": "Investigating · Critical impact",
+   "kind": "Resolved after 1 h 7 min · Critical impact",
    "live": true,
    "note": "",
    "source": "GitHub Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *GitHub Status* · Investigating · Critical impact\n*Disruption with Code Completions and Next Edit Suggestions*\n🕒 25 Nov 2026, 06:35 IST\nWe've applied a mitigation to fix the issues with Code Completion and Next Edit Suggestions. We are seeing improvements in telemetry and are monitoring for full recovery.\n<https://stspg.io/bk5200jsb13k|Read more>"
+   "text": "🟢 *GitHub Status* · Resolved after 1 h 7 min · Critical impact\n*Disruption with Code Completions and Next Edit Suggestions*\n🕒 25 Nov 2026, 06:45 IST\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/bk5200jsb13k|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-25T01:05:35Z",
+ "updated": "2026-11-25T01:15:18Z",
  "version": 1
 }
