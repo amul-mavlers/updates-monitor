@@ -9,7 +9,7 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *GitHub Status* · Investigating · Critical impact\n*Investigating degraded experiences across GitHub products*\n🕒 25 Nov 2026, 21:38 IST\nAffected: Git Operations, Webhooks, Issues, Pull Requests +3\nGit Operations is experiencing degraded performance. We are continuing to investigate.\n<https://stspg.io/5qj9j0p5g4cr|Read more>"
+   "text": "🔴 *GitHub Status* · Investigating · Critical impact\n*Investigating degraded experiences across GitHub products*\n🕒 25 Nov 2026, 21:44 IST\nAffected: Git Operations, Webhooks, Issues, Pull Requests +3\nWe are investigating increased failures due to high database load and are working on mitigations to reduce load and restore service.\n<https://stspg.io/5qj9j0p5g4cr|Read more>"
   },
   {
    "cat": "incidents",
@@ -119,17 +119,6 @@
    "spaces": [
     "WordPress & PHP"
    ],
-   "text": "🆕 *PHP News* · News\n*PHP Conference Kansai 2026 (JAPAN)*\n🕒 20 Nov 2026, 19:24 IST\nWe are excited to announce PHP Conference Kansai 2026! 🎉 About the conference PHP Conference Kansai is a technical conference where PHP engineers in the Kansai region of Japan share their knowledge and experience. It…\n<https://www.php.net/conferences/index.php#2026-11-20-1|Read more>"
-  },
-  {
-   "cat": "news",
-   "kind": "News",
-   "live": true,
-   "note": "",
-   "source": "PHP News",
-   "spaces": [
-    "WordPress & PHP"
-   ],
    "text": "🆕 *PHP News* · News\n*PHP 8.6.0 Released!*\n🕒 19 Nov 2026, 19:31 IST\nThe PHP development team announces the immediate availability of PHP 8.6.0. This release marks a major update to the PHP language. PHP 8.6 comes with numerous improvements and new features such as: Partial Function…\n<https://www.php.net/index.php#2026-11-19-5|Read more>"
   },
   {
@@ -155,6 +144,18 @@
     "Downtime"
    ],
    "text": "🆕 *PHP News* · News\n*PHP 8.4.28 Released!*\n🕒 19 Nov 2026, 19:30 IST\nThe PHP development team announces the immediate availability of PHP 8.4.28. This is a security release. All PHP 8.4 users are encouraged to upgrade to this version. For source downloads of PHP 8.4.28 please visit our…\n<https://www.php.net/index.php#2026-11-19-3|Read more>"
+  },
+  {
+   "cat": "security",
+   "kind": "News",
+   "live": true,
+   "note": "",
+   "source": "PHP News",
+   "spaces": [
+    "WordPress & PHP",
+    "Downtime"
+   ],
+   "text": "🆕 *PHP News* · News\n*PHP 8.3.37 Released!*\n🕒 19 Nov 2026, 19:30 IST\nThe PHP development team announces the immediate availability of PHP 8.3.37. This is a security release. All PHP 8.3 users are encouraged to upgrade to this version. For source downloads of PHP 8.3.37 please visit our…\n<https://www.php.net/index.php#2026-11-19-2|Read more>"
   },
   {
    "cat": "news",
@@ -539,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-25T16:08:45Z",
+ "updated": "2026-11-25T16:14:11Z",
  "version": 1
 }
