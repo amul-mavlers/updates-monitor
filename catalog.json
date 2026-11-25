@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Resolved after 28 min · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🟢 *Cloudflare Status* · Resolved after 28 min · Minor impact\n*Elevated number of 5xx errors in Frankfurt*\n🕒 25 Nov 2026, 08:33 IST\nAffected: Network, Frankfurt, Germany - (FRA)\nBetween 02:35-02:45 UTC customers reaching Frankfurt, DE, may have experienced an elevated number of 5xx errors.\n<https://www.cloudflarestatus.com/incidents/lqojvojhdcjv|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 2 h 17 min · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 2 h 17 min · Minor impact\n*R2 elevated errors and timeouts for requests from South America*\n🕒 25 Nov 2026, 05:42 IST\nAffected: R2\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/k8utv1c3ubf2|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 9 h 0 min",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 9 h 0 min\n*Increased HTTP 530 Errors in Seattle*\n🕒 25 Nov 2026, 04:25 IST\nCloudflare investigated an increased level of HTTP 530 errors in Seattle between 19:55 - 20:39 UTC. We worked to analyse and mitigate this problem, and the issue has since been resolved.\n<https://www.cloudflarestatus.com/incidents/kwqke6nmketa|Read more>"
   },
   {
    "cat": "incidents",
@@ -119,17 +119,6 @@
    "spaces": [
     "WordPress & PHP"
    ],
-   "text": "🆕 *PHP News* · News\n*PHP Conference Kansai 2026 (JAPAN)*\n🕒 20 Nov 2026, 19:24 IST\nWe are excited to announce PHP Conference Kansai 2026! 🎉 About the conference PHP Conference Kansai is a technical conference where PHP engineers in the Kansai region of Japan share their knowledge and experience. It…\n<https://www.php.net/conferences/index.php#2026-11-20-1|Read more>"
-  },
-  {
-   "cat": "news",
-   "kind": "News",
-   "live": true,
-   "note": "",
-   "source": "PHP News",
-   "spaces": [
-    "WordPress & PHP"
-   ],
    "text": "🆕 *PHP News* · News\n*PHP 8.6.0 Released!*\n🕒 19 Nov 2026, 19:31 IST\nThe PHP development team announces the immediate availability of PHP 8.6.0. This release marks a major update to the PHP language. PHP 8.6 comes with numerous improvements and new features such as: Partial Function…\n<https://www.php.net/index.php#2026-11-19-5|Read more>"
   },
   {
@@ -155,6 +144,18 @@
     "Downtime"
    ],
    "text": "🆕 *PHP News* · News\n*PHP 8.4.28 Released!*\n🕒 19 Nov 2026, 19:30 IST\nThe PHP development team announces the immediate availability of PHP 8.4.28. This is a security release. All PHP 8.4 users are encouraged to upgrade to this version. For source downloads of PHP 8.4.28 please visit our…\n<https://www.php.net/index.php#2026-11-19-3|Read more>"
+  },
+  {
+   "cat": "security",
+   "kind": "News",
+   "live": true,
+   "note": "",
+   "source": "PHP News",
+   "spaces": [
+    "WordPress & PHP",
+    "Downtime"
+   ],
+   "text": "🆕 *PHP News* · News\n*PHP 8.3.37 Released!*\n🕒 19 Nov 2026, 19:30 IST\nThe PHP development team announces the immediate availability of PHP 8.3.37. This is a security release. All PHP 8.3 users are encouraged to upgrade to this version. For source downloads of PHP 8.3.37 please visit our…\n<https://www.php.net/index.php#2026-11-19-2|Read more>"
   },
   {
    "cat": "news",
@@ -539,6 +540,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-25T01:15:18Z",
+ "updated": "2026-11-25T03:03:35Z",
  "version": 1
 }
