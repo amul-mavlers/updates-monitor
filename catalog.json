@@ -2,14 +2,14 @@
  "cards": [
   {
    "cat": "incidents",
-   "kind": "Investigating · Critical impact",
+   "kind": "Monitoring · Critical impact",
    "live": true,
    "note": "",
    "source": "GitHub Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *GitHub Status* · Investigating · Critical impact\n*Investigating degraded experiences across GitHub products*\n🕒 25 Nov 2026, 22:03 IST\nAffected: Git Operations, Webhooks, API Requests, Issues +4\nThe degradation affecting API Requests has been mitigated. We are monitoring to ensure stability.\n<https://stspg.io/5qj9j0p5g4cr|Read more>"
+   "text": "🟡 *GitHub Status* · Monitoring · Critical impact\n*Investigating degraded experiences across GitHub products*\n🕒 25 Nov 2026, 22:06 IST\nAffected: Git Operations, Webhooks, API Requests, Issues +4\nThe degradation affecting Actions, Packages, Pull Requests and Webhooks has been mitigated. We are monitoring to ensure stability.\n<https://stspg.io/5qj9j0p5g4cr|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-25T16:33:37Z",
+ "updated": "2026-11-25T16:36:44Z",
  "version": 1
 }
