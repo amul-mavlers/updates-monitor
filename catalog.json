@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Monitoring · Minor impact",
+   "kind": "Resolved after 1 h 47 min · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Firewall Configuration Delay*\n🕒 25 Nov 2026, 14:26 IST\nAffected: Network, Firewall\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/xufkpdtfdglk|Read more>"
+   "text": "🟢 *Cloudflare Status* · Resolved after 1 h 47 min · Minor impact\n*Firewall Configuration Delay*\n🕒 25 Nov 2026, 14:41 IST\nAffected: Network, Firewall\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/xufkpdtfdglk|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-25T08:56:47Z",
+ "updated": "2026-11-25T09:11:39Z",
  "version": 1
 }
