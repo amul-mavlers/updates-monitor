@@ -2,6 +2,17 @@
  "cards": [
   {
    "cat": "incidents",
+   "kind": "Investigating · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "GitHub Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*LFS degradation for some customers*\n🕒 26 Nov 2026, 04:36 IST\nWe are investigating reports of impacted performance for some GitHub services.\n<https://stspg.io/ywpzwl4yl621|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 56 min · Critical impact",
    "live": true,
    "note": "",
@@ -10,17 +21,6 @@
     "Downtime"
    ],
    "text": "🟢 *GitHub Status* · Resolved after 56 min · Critical impact\n*Investigating degraded experiences across GitHub products*\n🕒 25 Nov 2026, 22:22 IST\nAffected: Git Operations, Webhooks, API Requests, Issues +4\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/5qj9j0p5g4cr|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 5 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "GitHub Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *GitHub Status* · Resolved after 5 min · Minor impact\n*MAI Code 2 Degredation*\n🕒 25 Nov 2026, 17:33 IST\nAffected: Copilot AI Model Providers\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/djn1brd9cmzj|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-25T21:00:59Z",
+ "updated": "2026-11-25T23:06:54Z",
  "version": 1
 }
