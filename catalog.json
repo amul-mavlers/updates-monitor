@@ -2,6 +2,17 @@
  "cards": [
   {
    "cat": "incidents",
+   "kind": "Investigating · Critical impact",
+   "live": true,
+   "note": "",
+   "source": "GitHub Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🔴 *GitHub Status* · Investigating · Critical impact\n*Investigating degraded experiences across GitHub products*\n🕒 25 Nov 2026, 21:28 IST\nAffected: Webhooks, Issues, Pull Requests, Actions +1\nIssues is experiencing degraded performance. We are continuing to investigate.\n<https://stspg.io/5qj9j0p5g4cr|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 5 min · Minor impact",
    "live": true,
    "note": "",
@@ -10,17 +21,6 @@
     "Downtime"
    ],
    "text": "🟢 *GitHub Status* · Resolved after 5 min · Minor impact\n*MAI Code 2 Degredation*\n🕒 25 Nov 2026, 17:33 IST\nAffected: Copilot AI Model Providers\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/djn1brd9cmzj|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 1 h 7 min · Critical impact",
-   "live": true,
-   "note": "",
-   "source": "GitHub Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *GitHub Status* · Resolved after 1 h 7 min · Critical impact\n*Disruption with Code Completions and Next Edit Suggestions*\n🕒 25 Nov 2026, 06:45 IST\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/bk5200jsb13k|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-25T12:03:55Z",
+ "updated": "2026-11-25T15:58:49Z",
  "version": 1
 }
