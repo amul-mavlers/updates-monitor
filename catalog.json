@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Resolved after 3 h 13 min · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🟢 *Cloudflare Status* · Resolved after 3 h 13 min · Minor impact\n*Elevated R2 errors for buckets in APAC region*\n🕒 26 Nov 2026, 01:33 IST\nAffected: R2\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/2quqh864hxdi|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 1 h 6 min · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 1 h 6 min · Minor impact\n*Some customers cannot create monitors*\n🕒 25 Nov 2026, 23:18 IST\nAffected: Notifications\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/vk87u9j2g6if|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Monitoring · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Elevated R2 errors for buckets in APAC region*\n🕒 25 Nov 2026, 22:53 IST\nAffected: R2\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/2quqh864hxdi|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-25T17:48:50Z",
+ "updated": "2026-11-25T20:03:49Z",
  "version": 1
 }
