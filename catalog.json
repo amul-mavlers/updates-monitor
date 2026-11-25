@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Resolved after 20 h 47 min · Major impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🟢 *Cloudflare Status* · Resolved after 20 h 47 min · Major impact\n*Magic Transit Degraded Performance*\n🕒 25 Nov 2026, 13:46 IST\nAffected: Magic Transit\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/no721jcnlrbh|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Identified · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Firewall Configuration Delay*\n🕒 25 Nov 2026, 13:19 IST\nAffected: Network, Firewall\nThe issue has been identified and a fix is being implemented.\n<https://www.cloudflarestatus.com/incidents/xufkpdtfdglk|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 28 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 28 min · Minor impact\n*Elevated number of 5xx errors in Frankfurt*\n🕒 25 Nov 2026, 08:33 IST\nAffected: Network, Frankfurt, Germany - (FRA)\nBetween 02:35-02:45 UTC customers reaching Frankfurt, DE, may have experienced an elevated number of 5xx errors.\n<https://www.cloudflarestatus.com/incidents/lqojvojhdcjv|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-25T07:49:18Z",
+ "updated": "2026-11-25T08:16:26Z",
  "version": 1
 }
