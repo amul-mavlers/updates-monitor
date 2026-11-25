@@ -9,7 +9,7 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🟡 *GitHub Status* · Monitoring · Critical impact\n*Investigating degraded experiences across GitHub products*\n🕒 25 Nov 2026, 22:06 IST\nAffected: Git Operations, Webhooks, API Requests, Issues +4\nThe degradation affecting Actions, Packages, Pull Requests and Webhooks has been mitigated. We are monitoring to ensure stability.\n<https://stspg.io/5qj9j0p5g4cr|Read more>"
+   "text": "🟡 *GitHub Status* · Monitoring · Critical impact\n*Investigating degraded experiences across GitHub products*\n🕒 25 Nov 2026, 22:14 IST\nAffected: Git Operations, Webhooks, API Requests, Issues +4\nThe degradation has been mitigated. We are monitoring to ensure stability.\n<https://stspg.io/5qj9j0p5g4cr|Read more>"
   },
   {
    "cat": "incidents",
@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Investigating · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Some customers cannot create monitors*\n🕒 25 Nov 2026, 22:12 IST\nAffected: Notifications\nWe’re investigating an issue that prevents some customers from creating monitors in the Cloudflare dashboard under Alerts → Monitors. Affected customers may see error 17204 stating that their account has a limit of…\n<https://www.cloudflarestatus.com/incidents/vk87u9j2g6if|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 1 h 47 min · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 1 h 47 min · Minor impact\n*Firewall Configuration Delay*\n🕒 25 Nov 2026, 14:41 IST\nAffected: Network, Firewall\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/xufkpdtfdglk|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 20 h 47 min · Major impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 20 h 47 min · Major impact\n*Magic Transit Degraded Performance*\n🕒 25 Nov 2026, 13:46 IST\nAffected: Magic Transit\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/no721jcnlrbh|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-25T16:36:44Z",
+ "updated": "2026-11-25T16:44:15Z",
  "version": 1
 }
