@@ -9,7 +9,7 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *GitHub Status* · Investigating · Critical impact\n*Disruption with some GitHub services*\n🕒 25 Nov 2026, 06:11 IST\nWe are investigating reports of issues with Code Completions and Next Edit Suggestions. We will continue to keep users updated on progress towards mitigation.\n<https://stspg.io/bk5200jsb13k|Read more>"
+   "text": "🔴 *GitHub Status* · Investigating · Critical impact\n*Disruption with Code Completions and Next Edit Suggestions*\n🕒 25 Nov 2026, 06:11 IST\nWe are investigating reports of issues with Code Completions and Next Edit Suggestions. We will continue to keep users updated on progress towards mitigation.\n<https://stspg.io/bk5200jsb13k|Read more>"
   },
   {
    "cat": "incidents",
