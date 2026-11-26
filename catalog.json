@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Identified · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*AI Gateway – Elevated errors for Gemini 4 models using Unified Billing*\n🕒 26 Nov 2026, 21:06 IST\nAffected: AI Gateway\nThe issue has been identified and a fix is being implemented.\n<https://www.cloudflarestatus.com/incidents/filussqshtfq|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 1 min · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 1 min · Minor impact\n*Workers AI - Deepseek Flash increased errors*\n🕒 26 Nov 2026, 20:12 IST\nAffected: Workers AI\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/6crqy1zulybd|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Investigating · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*AI Gateway – Elevated errors for Gemini 4 models using Unified Billing*\n🕒 26 Nov 2026, 19:49 IST\nAffected: AI Gateway\nCloudflare is investigating elevated errors affecting AI Gateway requests to Gemini 4 models (gemini-4-argon, gemini-4-carbon, gemini-4-hydrogen, gemini-4-neon) routed through Google Vertex AI with Unified Billing. We…\n<https://www.cloudflarestatus.com/incidents/filussqshtfq|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-26T14:42:37Z",
+ "updated": "2026-11-26T15:36:40Z",
  "version": 1
 }
