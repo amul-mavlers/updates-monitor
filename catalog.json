@@ -9,7 +9,7 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🟢 *GitHub Status* · Resolved after 1 h 36 min · Minor impact\n*LFS degradation for some customers*\n🕒 26 Nov 2026, 06:13 IST\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/ywpzwl4yl621|Read more>"
+   "text": "🟢 *GitHub Status* · Resolved after 1 h 36 min · Minor impact\n*LFS degradation for some customers*\n🕒 26 Nov 2026, 06:13 IST\nOn November 25, 2026, between 21:30 UTC and 00:28 UTC, Git Large File Storage (LFS) operations on github.com were degraded. During this time, an average of 2% of Git LFS requests failed, peaking at 4%. Many more…\n<https://stspg.io/ywpzwl4yl621|Read more>"
   },
   {
    "cat": "incidents",
