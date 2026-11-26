@@ -2,14 +2,14 @@
  "cards": [
   {
    "cat": "incidents",
-   "kind": "Investigating · Minor impact",
+   "kind": "Resolved after 1 h 36 min · Minor impact",
    "live": true,
    "note": "",
    "source": "GitHub Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*LFS degradation for some customers*\n🕒 26 Nov 2026, 05:58 IST\nWe've applied a mitigation to fix the issues in Git LFS. We are seeing improvements in telemetry and are monitoring for full recovery.\n<https://stspg.io/ywpzwl4yl621|Read more>"
+   "text": "🟢 *GitHub Status* · Resolved after 1 h 36 min · Minor impact\n*LFS degradation for some customers*\n🕒 26 Nov 2026, 06:13 IST\nThis incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.\n<https://stspg.io/ywpzwl4yl621|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-26T00:28:37Z",
+ "updated": "2026-11-26T00:43:01Z",
  "version": 1
 }
