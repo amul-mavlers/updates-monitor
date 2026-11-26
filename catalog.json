@@ -275,7 +275,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Node.js Blog* · Node.js\n*Node.js 27.0.0-alpha.0.1.1 (Alpha)*\n🕒 17 Nov 2026, 14:11 IST\n<https://nodejs.org/en/blog/release/v27.0.0-alpha.0.1.1|Read more>"
+   "text": "🆕 *Node.js Blog* · Node.js\n*Node.js 27.0.0-alpha.0.2.0 (Alpha)*\n🕒 26 Nov 2026, 16:00 IST\n<https://nodejs.org/en/blog/release/v27.0.0-alpha.0.2.0|Read more>"
   },
   {
    "cat": "news",
@@ -286,7 +286,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Node.js Blog* · Node.js\n*Node.js 27.0.0-alpha.0.1.0 (Alpha)*\n🕒 12 Nov 2026, 19:06 IST\n<https://nodejs.org/en/blog/release/v27.0.0-alpha.0.1.0|Read more>"
+   "text": "🆕 *Node.js Blog* · Node.js\n*Node.js 27.0.0-alpha.0.1.1 (Alpha)*\n🕒 17 Nov 2026, 14:11 IST\n<https://nodejs.org/en/blog/release/v27.0.0-alpha.0.1.1|Read more>"
   },
   {
    "cat": "security",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-26T10:05:20Z",
+ "updated": "2026-11-26T10:30:16Z",
  "version": 1
 }
