@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Monitoring · Minor impact",
+   "kind": "Resolved after 39 min · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*RealTimeKit Recording Delays*\n🕒 26 Nov 2026, 15:33 IST\nAffected: RealtimeKit\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/mkudgr09g9ax|Read more>"
+   "text": "🟢 *Cloudflare Status* · Resolved after 39 min · Minor impact\n*RealTimeKit Recording Delays*\n🕒 26 Nov 2026, 15:35 IST\nAffected: RealtimeKit\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/mkudgr09g9ax|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-26T10:03:53Z",
+ "updated": "2026-11-26T10:05:20Z",
  "version": 1
 }
