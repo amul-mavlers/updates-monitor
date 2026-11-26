@@ -9,7 +9,7 @@
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*LFS degradation for some customers*\n🕒 26 Nov 2026, 05:15 IST\nWe're continuing to investigate elevated error rates affecting a small number of customers using Git LFS. We are still assessing mitigation options and will share updates as we learn more.\n<https://stspg.io/ywpzwl4yl621|Read more>"
+   "text": "🔴 *GitHub Status* · Investigating · Minor impact\n*LFS degradation for some customers*\n🕒 26 Nov 2026, 05:58 IST\nWe've applied a mitigation to fix the issues in Git LFS. We are seeing improvements in telemetry and are monitoring for full recovery.\n<https://stspg.io/ywpzwl4yl621|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-26T00:11:05Z",
+ "updated": "2026-11-26T00:28:37Z",
  "version": 1
 }
