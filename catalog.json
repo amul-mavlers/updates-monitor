@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Monitoring · Minor impact",
+   "kind": "Resolved after 4 h 2 min · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Elevated R2 Latency*\n🕒 26 Nov 2026, 02:30 IST\nAffected: Stream, Pipelines, R2\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/ef6928vi0mic|Read more>"
+   "text": "🟢 *Cloudflare Status* · Resolved after 4 h 2 min · Minor impact\n*Elevated R2 Latency*\n🕒 26 Nov 2026, 05:41 IST\nAffected: Stream, Pipelines, R2\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/ef6928vi0mic|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-25T23:45:35Z",
+ "updated": "2026-11-26T00:11:05Z",
  "version": 1
 }
