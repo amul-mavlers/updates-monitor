@@ -24,25 +24,25 @@
   },
   {
    "cat": "incidents",
-   "kind": "Investigating · Major impact",
+   "kind": "Monitoring · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *Cloudflare Status* · Investigating · Major impact\n*Cloudflare Dashboard and Cloudflare API service issues*\n🕒 26 Nov 2026, 21:33 IST\nAffected: Dashboard, API\nCloudflare is investigating issues with Cloudflare Dashboard and related APIs. These issues do not affect the serving of cached files via the Cloudflare CDN or other security features at the Cloudflare Edge. Customers…\n<https://www.cloudflarestatus.com/incidents/xiqj67vl5pqm|Read more>"
+   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*AI Gateway – Elevated errors for Gemini 4 models using Unified Billing*\n🕒 26 Nov 2026, 22:09 IST\nAffected: AI Gateway\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/filussqshtfq|Read more>"
   },
   {
    "cat": "incidents",
-   "kind": "Identified · Minor impact",
+   "kind": "Monitoring · Major impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*AI Gateway – Elevated errors for Gemini 4 models using Unified Billing*\n🕒 26 Nov 2026, 21:06 IST\nAffected: AI Gateway\nThe issue has been identified and a fix is being implemented.\n<https://www.cloudflarestatus.com/incidents/filussqshtfq|Read more>"
+   "text": "🟡 *Cloudflare Status* · Monitoring · Major impact\n*Cloudflare Dashboard and Cloudflare API service issues*\n🕒 26 Nov 2026, 22:09 IST\nAffected: Dashboard, API\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/xiqj67vl5pqm|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-26T16:03:50Z",
+ "updated": "2026-11-26T16:39:49Z",
  "version": 1
 }
