@@ -253,7 +253,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Laravel News* · Laravel\n*Form Request Model Lookups and PHP 8.6 Support in Laravel 13.44*\n🕒 25 Nov 2026, 03:37 IST\nLaravel 13.44 adds model() helpers to form requests, alerts for long-running transactions, lockForNoKeyUpdate() for PostgreSQL, and PHP 8.6 support. The post Form Request Model Lookups and PHP 8.6 Support in Laravel…\n<https://laravel-news.com/laravel-13-44-0?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
+   "text": "🆕 *Laravel News* · Laravel\n*Pun: Format, Lint, and Analyze PHP With One Rust Binary*\n🕒 26 Nov 2026, 20:03 IST\nPun is a Rust binary in public beta that formats, lints, and analyzes PHP 8.3+ code, installs Composer packages, and reads one pun.toml config file. The post Pun: Format, Lint, and Analyze PHP With One Rust Binary…\n<https://laravel-news.com/pun-php-toolchain?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
   },
   {
    "cat": "news",
@@ -264,7 +264,7 @@
    "spaces": [
     "News"
    ],
-   "text": "🆕 *Laravel News* · Laravel\n*Black Friday: Learn the habits behind AI workflows that work*\n🕒 23 Nov 2026, 18:30 IST\nUnlearn.dev teaches you to plan, build, review and ship real features with AI agents, and for Black Friday only it's 50% off. The post Black Friday: Learn the habits behind AI workflows that work appeared first on…\n<https://laravel-news.com/unlearn-dev-black-friday?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
+   "text": "🆕 *Laravel News* · Laravel\n*Form Request Model Lookups and PHP 8.6 Support in Laravel 13.44*\n🕒 25 Nov 2026, 03:37 IST\nLaravel 13.44 adds model() helpers to form requests, alerts for long-running transactions, lockForNoKeyUpdate() for PostgreSQL, and PHP 8.6 support. The post Form Request Model Lookups and PHP 8.6 Support in Laravel…\n<https://laravel-news.com/laravel-13-44-0?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews|Read more>"
   },
   {
    "cat": "news",
