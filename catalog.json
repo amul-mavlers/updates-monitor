@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Investigating · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*AI Gateway – Elevated errors for Gemini 4 models using Unified Billing*\n🕒 26 Nov 2026, 19:49 IST\nAffected: AI Gateway\nCloudflare is investigating elevated errors affecting AI Gateway requests to Gemini 4 models (gemini-4-argon, gemini-4-carbon, gemini-4-hydrogen, gemini-4-neon) routed through Google Vertex AI with Unified Billing. We…\n<https://www.cloudflarestatus.com/incidents/filussqshtfq|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 39 min · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 39 min · Minor impact\n*RealTimeKit Recording Delays*\n🕒 26 Nov 2026, 15:35 IST\nAffected: RealtimeKit\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/mkudgr09g9ax|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 8 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 8 min · Minor impact\n*Cloudflare Billing Issues*\n🕒 26 Nov 2026, 15:07 IST\nAffected: Subscriptions, R2\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/qlwszxx4667e|Read more>"
   },
   {
    "cat": "incidents",
@@ -119,6 +119,17 @@
    "spaces": [
     "WordPress & PHP"
    ],
+   "text": "🆕 *PHP News* · News\n*Laracon EU 2027*\n🕒 25 Nov 2026, 16:48 IST\nLaracon EU 2027 brings together PHP and Laravel developers from around the world in Amsterdam, the Netherlands, from April 5–7, 2027. The conference features two days of inspiring talks and a dedicated workshop day,…\n<https://www.php.net/conferences/index.php#2026-11-25-1|Read more>"
+  },
+  {
+   "cat": "news",
+   "kind": "News",
+   "live": true,
+   "note": "",
+   "source": "PHP News",
+   "spaces": [
+    "WordPress & PHP"
+   ],
    "text": "🆕 *PHP News* · News\n*PHP Conference Kansai 2026 (JAPAN)*\n🕒 20 Nov 2026, 19:24 IST\nWe are excited to announce PHP Conference Kansai 2026! 🎉 About the conference PHP Conference Kansai is a technical conference where PHP engineers in the Kansai region of Japan share their knowledge and experience. It…\n<https://www.php.net/conferences/index.php#2026-11-20-1|Read more>"
   },
   {
@@ -143,18 +154,6 @@
     "Downtime"
    ],
    "text": "🆕 *PHP News* · News\n*PHP 8.5.13 Released!*\n🕒 19 Nov 2026, 19:30 IST\nThe PHP development team announces the immediate availability of PHP 8.5.13. This is a security release. All PHP 8.5 users are encouraged to upgrade to this version. For source downloads of PHP 8.5.13 please visit our…\n<https://www.php.net/index.php#2026-11-19-4|Read more>"
-  },
-  {
-   "cat": "security",
-   "kind": "News",
-   "live": true,
-   "note": "",
-   "source": "PHP News",
-   "spaces": [
-    "WordPress & PHP",
-    "Downtime"
-   ],
-   "text": "🆕 *PHP News* · News\n*PHP 8.4.28 Released!*\n🕒 19 Nov 2026, 19:30 IST\nThe PHP development team announces the immediate availability of PHP 8.4.28. This is a security release. All PHP 8.4 users are encouraged to upgrade to this version. For source downloads of PHP 8.4.28 please visit our…\n<https://www.php.net/index.php#2026-11-19-3|Read more>"
   },
   {
    "cat": "news",
@@ -539,6 +538,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-26T10:30:16Z",
+ "updated": "2026-11-26T14:19:51Z",
  "version": 1
 }
