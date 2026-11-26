@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Resolved after 2 h 13 min · Major impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🟢 *Cloudflare Status* · Resolved after 2 h 13 min · Major impact\n*Cloudflare Dashboard and Cloudflare API service issues*\n🕒 26 Nov 2026, 23:47 IST\nAffected: Dashboard, API\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/xiqj67vl5pqm|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 3 h 47 min · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 3 h 47 min · Minor impact\n*AI Gateway – Elevated errors for Gemini 4 models using Unified Billing*\n🕒 26 Nov 2026, 23:37 IST\nAffected: AI Gateway\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/filussqshtfq|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Monitoring · Major impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟡 *Cloudflare Status* · Monitoring · Major impact\n*Cloudflare Dashboard and Cloudflare API service issues*\n🕒 26 Nov 2026, 22:09 IST\nAffected: Dashboard, API\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/xiqj67vl5pqm|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-26T18:07:04Z",
+ "updated": "2026-11-26T18:17:04Z",
  "version": 1
 }
