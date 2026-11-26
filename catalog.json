@@ -24,25 +24,25 @@
   },
   {
    "cat": "incidents",
-   "kind": "Resolved after 4 h 2 min · Minor impact",
+   "kind": "Monitoring · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 4 h 2 min · Minor impact\n*Elevated R2 Latency*\n🕒 26 Nov 2026, 05:41 IST\nAffected: Stream, Pipelines, R2\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/ef6928vi0mic|Read more>"
+   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Cloudflare Billing Issues*\n🕒 26 Nov 2026, 14:58 IST\nAffected: Subscriptions, R2\nCloudflare is experiencing problems in processing changes through our billing subscription service for R2. All other services are operating normally. We will provide an update once billing subscription services return…\n<https://www.cloudflarestatus.com/incidents/qlwszxx4667e|Read more>"
   },
   {
    "cat": "incidents",
-   "kind": "Resolved after 3 h 13 min · Minor impact",
+   "kind": "Investigating · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 3 h 13 min · Minor impact\n*Elevated R2 errors for buckets in APAC region*\n🕒 26 Nov 2026, 01:33 IST\nAffected: R2\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/2quqh864hxdi|Read more>"
+   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*RealTimeKit Recording Delays*\n🕒 26 Nov 2026, 14:56 IST\nAffected: RealtimeKit\nCloudflare is investigating issues with RealTimeKit recordings remaining in an invoked state. We are working to understand the full impact and mitigate this problem. More updates to follow shortly\n<https://www.cloudflarestatus.com/incidents/mkudgr09g9ax|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-26T00:43:01Z",
+ "updated": "2026-11-26T09:28:58Z",
  "version": 1
 }
