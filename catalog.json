@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Investigating · Major impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🔴 *Cloudflare Status* · Investigating · Major impact\n*Cloudflare Dashboard and Cloudflare API service issues*\n🕒 26 Nov 2026, 21:33 IST\nAffected: Dashboard\nCloudflare is investigating issues with Cloudflare Dashboard and related APIs. These issues do not affect the serving of cached files via the Cloudflare CDN or other security features at the Cloudflare Edge. Customers…\n<https://www.cloudflarestatus.com/incidents/xiqj67vl5pqm|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Identified · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*AI Gateway – Elevated errors for Gemini 4 models using Unified Billing*\n🕒 26 Nov 2026, 21:06 IST\nAffected: AI Gateway\nThe issue has been identified and a fix is being implemented.\n<https://www.cloudflarestatus.com/incidents/filussqshtfq|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 1 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 1 min · Minor impact\n*Workers AI - Deepseek Flash increased errors*\n🕒 26 Nov 2026, 20:12 IST\nAffected: Workers AI\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/6crqy1zulybd|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-26T15:36:40Z",
+ "updated": "2026-11-26T16:03:50Z",
  "version": 1
 }
