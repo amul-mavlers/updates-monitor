@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Monitoring · Minor impact",
+   "kind": "Resolved after 3 h 47 min · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*AI Gateway – Elevated errors for Gemini 4 models using Unified Billing*\n🕒 26 Nov 2026, 22:09 IST\nAffected: AI Gateway\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/filussqshtfq|Read more>"
+   "text": "🟢 *Cloudflare Status* · Resolved after 3 h 47 min · Minor impact\n*AI Gateway – Elevated errors for Gemini 4 models using Unified Billing*\n🕒 26 Nov 2026, 23:37 IST\nAffected: AI Gateway\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/filussqshtfq|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-26T16:39:49Z",
+ "updated": "2026-11-26T18:07:04Z",
  "version": 1
 }
