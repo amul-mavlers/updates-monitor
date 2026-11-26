@@ -796,6 +796,7 @@
     "https://wordpress.org/news/?p=21420"
   ],
   "PHP News": [
+    "https://www.php.net/archive/2026.php#2026-11-25-1",
     "https://www.php.net/archive/2026.php#2026-11-20-1",
     "https://www.php.net/archive/2026.php#2026-09-02-2",
     "https://www.php.net/archive/2025.php#2025-03-13-2",
@@ -2566,6 +2567,7 @@
   ],
   "_dedupe": {
     "php": [
+      "laracon eu 2027",
       "php conference kansai 2026 japan",
       "php 8 6 0",
       "php 8 5 13",
