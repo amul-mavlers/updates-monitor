@@ -3738,6 +3738,7 @@
     "/blog/video/welcome-to-the-node-blog"
   ],
   "Patchstack": [
+    "https://patchstack.com/articles/critical-wp-rocket-rce-cve-2026-125812-under-active-attack/",
     "https://patchstack.com/articles/php-november-2026-security-release-wordpress/",
     "https://patchstack.com/articles/wordpress-7-1-5-security-release/",
     "https://patchstack.com/articles/kinsta-now-protects-every-wordpress-site-it-hosts-with-patchstack/",
