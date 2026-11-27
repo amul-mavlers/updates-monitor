@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Investigating · Minor impact",
+   "kind": "Identified · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Cloudflare University website unavailable*\n🕒 27 Nov 2026, 20:19 IST\nThe Cloudflare University website, learn.cloudflare.com, may be unavailable for some customers. Access to it may return a 521 error message.\n<https://www.cloudflarestatus.com/incidents/955xa7dtx0ca|Read more>"
+   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Cloudflare University website unavailable*\n🕒 27 Nov 2026, 20:22 IST\nThe issue has been identified and a fix is being implemented.\n<https://www.cloudflarestatus.com/incidents/955xa7dtx0ca|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-27T14:49:03Z",
+ "updated": "2026-11-27T14:52:29Z",
  "version": 1
 }
