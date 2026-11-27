@@ -119,43 +119,40 @@
    "spaces": [
     "WordPress & PHP"
    ],
+   "text": "🆕 *PHP News* · News\n*phpday 2027 - Call for Papers*\n🕒 26 Nov 2026, 15:43 IST\nThe 24th edition of phpday takes place on May 13–14, 2027, at Hotel San Marco in Verona, Italy, and online. The conference is organized by GrUSP , and all talks are in English. Founded in 2003, phpday is one of the…\n<https://www.php.net/conferences/index.php?view=cfps#2026-11-26-1|Read more>"
+  },
+  {
+   "cat": "news",
+   "kind": "News",
+   "live": true,
+   "note": "",
+   "source": "PHP News",
+   "spaces": [
+    "WordPress & PHP"
+   ],
+   "text": "🆕 *PHP News* · News\n*Laracon EU 2027*\n🕒 25 Nov 2026, 16:48 IST\nLaracon EU 2027 brings together PHP and Laravel developers from around the world in Amsterdam, the Netherlands, from April 5–7, 2027. The conference features two days of inspiring talks and a dedicated workshop day,…\n<https://www.php.net/conferences/index.php#2026-11-25-1|Read more>"
+  },
+  {
+   "cat": "news",
+   "kind": "News",
+   "live": true,
+   "note": "",
+   "source": "PHP News",
+   "spaces": [
+    "WordPress & PHP"
+   ],
+   "text": "🆕 *PHP News* · News\n*PHP Conference Kansai 2026 (JAPAN)*\n🕒 20 Nov 2026, 19:24 IST\nWe are excited to announce PHP Conference Kansai 2026! 🎉 About the conference PHP Conference Kansai is a technical conference where PHP engineers in the Kansai region of Japan share their knowledge and experience. It…\n<https://www.php.net/conferences/index.php#2026-11-20-1|Read more>"
+  },
+  {
+   "cat": "news",
+   "kind": "News",
+   "live": true,
+   "note": "",
+   "source": "PHP News",
+   "spaces": [
+    "WordPress & PHP"
+   ],
    "text": "🆕 *PHP News* · News\n*PHP 8.6.0 Released!*\n🕒 19 Nov 2026, 19:31 IST\nThe PHP development team announces the immediate availability of PHP 8.6.0. This release marks a major update to the PHP language. PHP 8.6 comes with numerous improvements and new features such as: Partial Function…\n<https://www.php.net/index.php#2026-11-19-5|Read more>"
-  },
-  {
-   "cat": "security",
-   "kind": "News",
-   "live": true,
-   "note": "",
-   "source": "PHP News",
-   "spaces": [
-    "WordPress & PHP",
-    "Downtime"
-   ],
-   "text": "🆕 *PHP News* · News\n*PHP 8.5.13 Released!*\n🕒 19 Nov 2026, 19:30 IST\nThe PHP development team announces the immediate availability of PHP 8.5.13. This is a security release. All PHP 8.5 users are encouraged to upgrade to this version. For source downloads of PHP 8.5.13 please visit our…\n<https://www.php.net/index.php#2026-11-19-4|Read more>"
-  },
-  {
-   "cat": "security",
-   "kind": "News",
-   "live": true,
-   "note": "",
-   "source": "PHP News",
-   "spaces": [
-    "WordPress & PHP",
-    "Downtime"
-   ],
-   "text": "🆕 *PHP News* · News\n*PHP 8.4.28 Released!*\n🕒 19 Nov 2026, 19:30 IST\nThe PHP development team announces the immediate availability of PHP 8.4.28. This is a security release. All PHP 8.4 users are encouraged to upgrade to this version. For source downloads of PHP 8.4.28 please visit our…\n<https://www.php.net/index.php#2026-11-19-3|Read more>"
-  },
-  {
-   "cat": "security",
-   "kind": "News",
-   "live": true,
-   "note": "",
-   "source": "PHP News",
-   "spaces": [
-    "WordPress & PHP",
-    "Downtime"
-   ],
-   "text": "🆕 *PHP News* · News\n*PHP 8.3.37 Released!*\n🕒 19 Nov 2026, 19:30 IST\nThe PHP development team announces the immediate availability of PHP 8.3.37. This is a security release. All PHP 8.3 users are encouraged to upgrade to this version. For source downloads of PHP 8.3.37 please visit our…\n<https://www.php.net/index.php#2026-11-19-2|Read more>"
   },
   {
    "cat": "news",
