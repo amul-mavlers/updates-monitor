@@ -119,17 +119,6 @@
    "spaces": [
     "WordPress & PHP"
    ],
-   "text": "🆕 *PHP News* · News\n*Laracon EU 2027*\n🕒 25 Nov 2026, 16:48 IST\nLaracon EU 2027 brings together PHP and Laravel developers from around the world in Amsterdam, the Netherlands, from April 5–7, 2027. The conference features two days of inspiring talks and a dedicated workshop day,…\n<https://www.php.net/conferences/index.php#2026-11-25-1|Read more>"
-  },
-  {
-   "cat": "news",
-   "kind": "News",
-   "live": true,
-   "note": "",
-   "source": "PHP News",
-   "spaces": [
-    "WordPress & PHP"
-   ],
    "text": "🆕 *PHP News* · News\n*PHP Conference Kansai 2026 (JAPAN)*\n🕒 20 Nov 2026, 19:24 IST\nWe are excited to announce PHP Conference Kansai 2026! 🎉 About the conference PHP Conference Kansai is a technical conference where PHP engineers in the Kansai region of Japan share their knowledge and experience. It…\n<https://www.php.net/conferences/index.php#2026-11-20-1|Read more>"
   },
   {
@@ -154,6 +143,18 @@
     "Downtime"
    ],
    "text": "🆕 *PHP News* · News\n*PHP 8.5.13 Released!*\n🕒 19 Nov 2026, 19:30 IST\nThe PHP development team announces the immediate availability of PHP 8.5.13. This is a security release. All PHP 8.5 users are encouraged to upgrade to this version. For source downloads of PHP 8.5.13 please visit our…\n<https://www.php.net/index.php#2026-11-19-4|Read more>"
+  },
+  {
+   "cat": "security",
+   "kind": "News",
+   "live": true,
+   "note": "",
+   "source": "PHP News",
+   "spaces": [
+    "WordPress & PHP",
+    "Downtime"
+   ],
+   "text": "🆕 *PHP News* · News\n*PHP 8.4.28 Released!*\n🕒 19 Nov 2026, 19:30 IST\nThe PHP development team announces the immediate availability of PHP 8.4.28. This is a security release. All PHP 8.4 users are encouraged to upgrade to this version. For source downloads of PHP 8.4.28 please visit our…\n<https://www.php.net/index.php#2026-11-19-3|Read more>"
   },
   {
    "cat": "news",
@@ -200,6 +201,17 @@
    "text": "🆕 *PHP Releases* · New release\n*PHP 8.3.37 released!*\n🕒 19 Nov 2026, 05:30 IST\nThere is a new PHP release in town!\n<http://php.net/releases/8_3_37.php|Read more>"
   },
   {
+   "cat": "news",
+   "kind": "Changelog",
+   "live": true,
+   "note": "",
+   "source": "Shopify Changelog",
+   "spaces": [
+    "News"
+   ],
+   "text": "🆕 *Shopify Changelog* · Changelog\n*Storefront API 2027-01: ask storeAvailability for physical storefronts with physicalStorefront: true*\n🕒 27 Nov 2026, 22:30 IST\nStorefront API version 2027-01 lets you ask ProductVariant.storeAvailability for walk-in storefront locations with a new physicalStorefront argument, without changing existing pickup behavior. Apps that query…\n<https://shopify.dev/changelog/storefront-api-2027-01-ask-storeavailability-for-physical-storefronts-with-physicalstorefront-true|Read more>"
+  },
+  {
    "cat": "security",
    "kind": "Changelog",
    "live": true,
@@ -209,17 +221,6 @@
     "Downtime"
    ],
    "text": "🆕 *Shopify Changelog* · Changelog\n*eventBridgeServerPixelUpdate and pubSubServerPixelUpdate now require user access to the app*\n🕒 20 Nov 2026, 22:30 IST\nStarting November 20, 2026, the eventBridgeServerPixelUpdate and pubSubServerPixelUpdate mutations reject online access tokens for users who don't have access to the app. The change applies to all GraphQL Admin API…\n<https://shopify.dev/changelog/eventbridgeserverpixelupdate-and-pubsubserverpixelupdate-now-require-user-access-to-the-app|Read more>"
-  },
-  {
-   "cat": "news",
-   "kind": "Changelog",
-   "live": true,
-   "note": "",
-   "source": "Shopify Changelog",
-   "spaces": [
-    "News"
-   ],
-   "text": "🆕 *Shopify Changelog* · Changelog\n*File reference metafields can hold YouTube and Vimeo videos as of API version 2027-01*\n🕒 20 Nov 2026, 20:30 IST\n<https://shopify.dev/changelog/file-reference-metafields-can-hold-youtube-and-vimeo-videos-as-of-api-version-2027-01|Read more>"
   },
   {
    "cat": "news",
@@ -538,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-27T15:05:32Z",
+ "updated": "2026-11-27T17:00:00Z",
  "version": 1
 }

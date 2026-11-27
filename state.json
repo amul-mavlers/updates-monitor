@@ -1729,6 +1729,7 @@
     "http://php.net/releases/8_2_35.php"
   ],
   "Shopify Changelog": [
+    "https://shopify.dev/changelog/storefront-api-2027-01-ask-storeavailability-for-physical-storefronts-with-physicalstorefront-true",
     "https://shopify.dev/changelog/query-your-app-s-logs-in-shopify-cli-with-shopify-app-logs",
     "https://shopify.dev/changelog/show-image-swatches-for-product-options-in-the-catalog-api",
     "https://shopify.dev/changelog/file-reference-metafields-can-hold-youtube-and-vimeo-videos-as-of-api-version-2027-01",
