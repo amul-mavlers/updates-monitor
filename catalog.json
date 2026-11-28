@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Investigating · Minor impact",
+   "kind": "Resolved after 33 min · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Increased HTTP 5xx Errors in Bangkok, Thailand region*\n🕒 28 Nov 2026, 20:03 IST\nCloudflare is investigating an increased level of HTTP 5xx errors in Bangkok, Thailand region (BKK). We are working to analyse and mitigate this problem. More updates to follow shortly.\n<https://www.cloudflarestatus.com/incidents/gi1o8ptw764t|Read more>"
+   "text": "🟢 *Cloudflare Status* · Resolved after 33 min · Minor impact\n*Increased HTTP 5xx Errors in Bangkok, Thailand region*\n🕒 28 Nov 2026, 20:37 IST\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/gi1o8ptw764t|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-28T14:33:43Z",
+ "updated": "2026-11-28T15:07:10Z",
  "version": 1
 }
