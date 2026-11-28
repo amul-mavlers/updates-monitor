@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Investigating · Minor impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🔴 *Cloudflare Status* · Investigating · Minor impact\n*Increased HTTP 5xx Errors in Bangkok, Thailand region*\n🕒 28 Nov 2026, 20:03 IST\nCloudflare is investigating an increased level of HTTP 5xx errors in Bangkok, Thailand region (BKK). We are working to analyse and mitigate this problem. More updates to follow shortly.\n<https://www.cloudflarestatus.com/incidents/gi1o8ptw764t|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 2 h 2 min · Critical impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 2 h 2 min · Critical impact\n*Email Delivery Delays*\n🕒 28 Nov 2026, 14:53 IST\nAffected: Dashboard\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/27xnfvjy0n6j|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 52 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 52 min · Minor impact\n*Elevated Errors for Cloudflare Workers Subrequests*\n🕒 28 Nov 2026, 11:08 IST\nAffected: Workers, Atlanta, United States - (ATL), Columbus, United States - (CMH), Dallas, United States - (DFW) +1\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/j7ihgms4mvhb|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-28T09:23:38Z",
+ "updated": "2026-11-28T14:33:43Z",
  "version": 1
 }
