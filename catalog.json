@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Identified · Minor impact",
+   "kind": "Monitoring · Minor impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🟠 *Cloudflare Status* · Identified · Minor impact\n*Elevated Errors for Cloudflare Workers Subrequests*\n🕒 28 Nov 2026, 10:33 IST\nAffected: Workers, Atlanta, United States - (ATL), Columbus, United States - (CMH), Dallas, United States - (DFW) +1\nThe issue has been identified and a fix is being implemented.\n<https://www.cloudflarestatus.com/incidents/j7ihgms4mvhb|Read more>"
+   "text": "🟡 *Cloudflare Status* · Monitoring · Minor impact\n*Elevated Errors for Cloudflare Workers Subrequests*\n🕒 28 Nov 2026, 11:01 IST\nAffected: Workers, Atlanta, United States - (ATL), Columbus, United States - (CMH), Dallas, United States - (DFW) +1\nA fix has been implemented and we are monitoring the results.\n<https://www.cloudflarestatus.com/incidents/j7ihgms4mvhb|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-28T05:03:27Z",
+ "updated": "2026-11-28T05:31:18Z",
  "version": 1
 }
