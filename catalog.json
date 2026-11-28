@@ -24,14 +24,14 @@
   },
   {
    "cat": "incidents",
-   "kind": "Investigating · Critical impact",
+   "kind": "Identified · Critical impact",
    "live": true,
    "note": "",
    "source": "Cloudflare Status",
    "spaces": [
     "Downtime"
    ],
-   "text": "🔴 *Cloudflare Status* · Investigating · Critical impact\n*Email Delivery Delays*\n🕒 28 Nov 2026, 14:03 IST\nAffected: Dashboard\nWe are continuing to investigate the issue.\n<https://www.cloudflarestatus.com/incidents/27xnfvjy0n6j|Read more>"
+   "text": "🟠 *Cloudflare Status* · Identified · Critical impact\n*Email Delivery Delays*\n🕒 28 Nov 2026, 14:43 IST\nAffected: Dashboard\nThe issue has been identified and a fix is being implemented.\n<https://www.cloudflarestatus.com/incidents/27xnfvjy0n6j|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-28T08:33:41Z",
+ "updated": "2026-11-28T09:13:48Z",
  "version": 1
 }
