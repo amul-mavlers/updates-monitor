@@ -24,6 +24,17 @@
   },
   {
    "cat": "incidents",
+   "kind": "Investigating · Critical impact",
+   "live": true,
+   "note": "",
+   "source": "Cloudflare Status",
+   "spaces": [
+    "Downtime"
+   ],
+   "text": "🔴 *Cloudflare Status* · Investigating · Critical impact\n*Email Delivery Delays*\n🕒 28 Nov 2026, 12:51 IST\nAffected: Dashboard\nCloudflare is investigating a delay in our ability to send emails. This includes password reset, mFA token emails. We are working to resolve the issue. More updates to follow shortly.\n<https://www.cloudflarestatus.com/incidents/27xnfvjy0n6j|Read more>"
+  },
+  {
+   "cat": "incidents",
    "kind": "Resolved after 52 min · Minor impact",
    "live": true,
    "note": "",
@@ -32,17 +43,6 @@
     "Downtime"
    ],
    "text": "🟢 *Cloudflare Status* · Resolved after 52 min · Minor impact\n*Elevated Errors for Cloudflare Workers Subrequests*\n🕒 28 Nov 2026, 11:08 IST\nAffected: Workers, Atlanta, United States - (ATL), Columbus, United States - (CMH), Dallas, United States - (DFW) +1\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/j7ihgms4mvhb|Read more>"
-  },
-  {
-   "cat": "incidents",
-   "kind": "Resolved after 16 min · Minor impact",
-   "live": true,
-   "note": "",
-   "source": "Cloudflare Status",
-   "spaces": [
-    "Downtime"
-   ],
-   "text": "🟢 *Cloudflare Status* · Resolved after 16 min · Minor impact\n*Cloudflare University website unavailable*\n🕒 27 Nov 2026, 20:35 IST\nThis incident has been resolved.\n<https://www.cloudflarestatus.com/incidents/955xa7dtx0ca|Read more>"
   },
   {
    "cat": "incidents",
@@ -539,6 +539,6 @@
    "space": "Downtime"
   }
  ],
- "updated": "2026-11-28T05:38:42Z",
+ "updated": "2026-11-28T07:21:21Z",
  "version": 1
 }
